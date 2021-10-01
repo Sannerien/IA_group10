@@ -1,0 +1,2955 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="urn:webprotege:ontology:9217683f-2597-4ea3-98ab-06be196d7e5f"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="urn:webprotege:ontology:9217683f-2597-4ea3-98ab-06be196d7e5f">
+    <Prefix name="" IRI="urn:webprotege:ontology:9217683f-2597-4ea3-98ab-06be196d7e5f"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="webprotege" IRI="http://webprotege.stanford.edu/"/>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R2zIlhLPwW05lkr082rlcW"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R6E6uqVXu8ZEElPBRJksb7"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R7A8fbKu5GYOsrEghdXdMyj"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R7OSewVr9VCmhRZ6AU8a3Nx"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R7VNLFgTErHurhO3CSrPbOr"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R7c1RsTYRsw7PvcUgPp2W5i"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R7pySDplYgp4Ch3L2SB8oqn"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R7u27VcKMlqvjQOSdam1pKP"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R7viGuyboItD8Ks6A6d23u3"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R848M9kwYnDu2CEm5YL9Yn4"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R89EqKXZ7tfBRNDdQCYjuWm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R8QfkHIcVe0Szt14rT3TS65"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R8aW6M0un216uw7DQnHni6B"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R8emLJEMOyuiSH93h8jHWcj"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R8u8CbJw619OEqCs6ikmWJj"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R8wHzIqcHiUsa0FUzRLNaEL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R90Q5FIFdfjpfgoApXN0Nst"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R91cafYhVYtD42YPMTVSbh6"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9NItr6a59HVzF7kq8GCYzW"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9TbU0WnWm79fz9wcGWQQKB"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9cixZ0DMP9xmMPy5GWqhB1"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9nfkJl4dg8WMDqLocXpGum"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9pH3pyRITeEIuQs9tsmVZm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9rNiLqv60KpCFfbTvLDPMP"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:R9zsC7dRAZDQQIUaVtF1XZq"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RB0FdaCYjSoyalAvq1qa55K"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RB6GFPEMQJ7GsshMdqmnrz8"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RBBnAuxmTEDCS4ztl9v29Ph"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RBJabau8JErSwx9DGe1suD8"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RBcZS90WZvLu9taTKR1voq9"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RBd9d2Efy3BL3UKLn4ykVuW"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RBrL4kQhRqzLbYA98vU2klW"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RBxncTI1z6RZ5uUfWEZQa67"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RCHsJ9fVptaYH4D0uEJPVPG"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RCcLFwEQ4A7I3ZMl2bwp2Md"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RCexPaFOagGsTu0PZ95AU0A"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDJXqCYKyDSi1xFybYoyHzM"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDLlwKm04vuetELc30w3mfp"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDWXTLcBnZkH6OI7bXOyKC"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDdol8B5Ckn8SMEN8JfWgxv"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDjrWUAK2ovVEomhB5OrfrN"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RDtoTK5kV3TxxEDv3Jq4NQL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:REcO8p1prRahjA3PzOqLLx"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RG79ULlRUYts7tXFlQ62aq"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RIZXsrHnbtt2AReAK6gtwm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RMVMiUzQiFNaYFk7rJuOVB"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RMYe7goNrrJKw0DFMBxELE"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RXUAtgEEOVYYSFK8P9NosA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RaRDrluREW4bzMTa9oz2I4"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:Rdn17mj3TSzYkDAhngSNA1"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:Rm3sGbHOZWcDS3zizDyO70"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RmE7tP716AmJSnHBZSo3y2"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RnVFYjel8NqyuCFq7E15oV"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RqCYJOLbMrKqPLhzeimvlN"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RqrZojiQ3VhMdzvAfsvq5T"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="webprotege:RsWWq2AyjhZSvATrvXztF6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meat_Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-Vegan_Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pasta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pasta_Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rice_Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seafood_Dish"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:R9PPkXVO69BMJvm0eyHu8hq"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:R9qRCLat35WuP6pAHspyqul"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:R9tQoicKJjDFCcDoAzLgo6b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RB31WkboBZqwNyWvz1kcuXe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RBWY1gfMyAa61aNXRD0nWfd"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RBln8v0aY9VVGQFVC1PW8IG"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RBounPFMHw0DfZf2YMhGGG8"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RC65ZydKj6DXZ1ntFPt10Q2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RCpGnktz3vYMR6WORsebgFM"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RNrTQ4UJVtQOFfNQUtxbEr"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:ROkFmwbSyJRLaCnCobVxGX"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RT067Bc7M43buidFY9kqZ9"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RaW5nNo6AsWCpWKJJo3Pii"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:RaYXZyHPpCJksdMkigWTLV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="webprotege:R9NSvwxdl1RI5IpcP31cYI6"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="webprotege:RDCyvl7qx9Hd64l7cBdgJH0"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R3oMC42FCYVl0nIMMjDmCZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R6RoV1jsdcIZD4ObZhYldl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R71amXkIkGTX2zSlw7OYIaL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R71z3QBSS0CBzKyz3pru5zn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Y65sTzMbo12mvkFIWjkAJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Zh5SqzsgLwO0zYBKb81rJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R7qDsdicRGfJiVM1aAZ9OYK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R7vPOLZm9Iaj9QXZTtKfszF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R7wUwNPofTyRdVpYL1ibQPK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R7wb6cBrNs02cTJiohc8odO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R84UaDHKyLSsU7KfSpU07pa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R8GTCfVbSQv1O7Yn6kFCKN5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R8HeJSpYdChJpzlrbLRFvGj"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R8cQmkUJVAO9x5mXQMJi7du"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R8cuzrBtH73d6TpzgW1cKYE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R8oUejxY3AkMfXdrymoWIWe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R8zDRnZMwnDUOvn9HKPRCS7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R92bAR5ohnKbu2x4gRonRse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R93fS1qwn7zgGk9kvu7s0c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R93l928WhRO3VGXFP5rAMrD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9BScEioElp00HqpX6ugcHT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9CpCLd3tQ8lN8zKD4ZMwR7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9JXZ0DKA8xRk7bL5EndiWo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9MYROUqmAcTf16DKIZZIfA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9cdMwc313dmQSqSdhRImDa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9r0gEQcocyrGxPt7SozTWQ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9sSeKuycYkpoiNkQGgHkkG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9uiybwjw0LxtDxVLtnygP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:R9xYshKQjDEb10XryauFQkU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RB0OcdmQjJRJm0gs0R9eAVs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RB0rrQSbwbSvagmyLZEZeZC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBA8hFjAUcIV0FDzlhPBfOq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBC9O9O0h6XHy3rEPuBWVMX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBDZITWz4o6hpJRLt4ONaVx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBDgUdaOp4N1cH4b76yIl4O"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBfhKAI4CLUymwp77bQAz3R"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBhtsbNHD5X69AYBJMp1EtS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBmp0v4Zr2NjQIbrNwXwCwR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RBw2dpWYUwHAdnF41efoUh4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCK6iI4VJziZBVVvXDuBwPv"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCP1yM6iAtqucgQCNd9X1OZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCR0YA11gwMRFmPRzC7JkAJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCRYqFT0lB0OtS0jT2eCYCa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCRdBEuKAa6Ah4rNXRHPATv"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCieA10LMRpsDlBJK3Dhecm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCnocBf7qkz9naC130yU900"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCtIFzxBxTOml8HmLmFjyMQ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RCy8LxKJJB4kWCGK7WCybVT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RDCdoTnaJVJdhQVofPM4XDP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RDNc92heTP2h4IYb6Q0lG50"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RDV5ozi7Gh7v0y19xI4XrJL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RDaAD2hZtQah7Wih1Aa5P9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RDbRDSFvJEuylL6MGZZFhPs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RDf1caRjQeK60Py9vR8bKMP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RDglGloIKcyMn1xKG8znRfP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RDsUVqyVlyMurj1TFPR7RYV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RE8vsXnKZ1EFTMxZcfn3Q8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RKXCQiWVfFyH4xjGyBcw1h"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RMtdUf77KsyHhwnDlfABKr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:ROWdlx3mzfvD3rOKGHWMLn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RT82zG41niABh2BytvVXIS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RVMBNM7rZdgy1wy9uc1sRM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RVqQBtICMAiQCW7xpAzE3n"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RbWOf4ch3sPxCZZJ4rhYp0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RfcmEVfmG5nQcDM6dKXShP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RfrrAYpLkZSWrG2ZJAV2Eh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RgBqon41ENDHjWl1n6GBAt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RnIQYp8ui54CRM4o3SjADJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:RoYWmBR7hx1lUFolC6EMcB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:Rw6B1zIb6Mc1h083ZdkRAH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="webprotege:Rx8khYk9f7wPf3ijyIBx57"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ice_Cream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lasagna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Milkshake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sushi_Rice"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Meat_Dish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+            <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Non-Vegan_Dish"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+                <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+                <Class abbreviatedIRI="webprotege:R9NItr6a59HVzF7kq8GCYzW"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+                <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Pasta_Dish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+            <Class IRI="#Pasta"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rice_Dish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+            <Class IRI="#Rice"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Seafood_Dish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+            <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
+        <Class abbreviatedIRI="webprotege:RmE7tP716AmJSnHBZSo3y2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R2zIlhLPwW05lkr082rlcW"/>
+        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R6E6uqVXu8ZEElPBRJksb7"/>
+        <Class abbreviatedIRI="webprotege:R7viGuyboItD8Ks6A6d23u3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7A8fbKu5GYOsrEghdXdMyj"/>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7OSewVr9VCmhRZ6AU8a3Nx"/>
+        <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7VNLFgTErHurhO3CSrPbOr"/>
+        <Class abbreviatedIRI="webprotege:RnVFYjel8NqyuCFq7E15oV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7c1RsTYRsw7PvcUgPp2W5i"/>
+        <Class abbreviatedIRI="webprotege:RsWWq2AyjhZSvATrvXztF6"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7c1RsTYRsw7PvcUgPp2W5i"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RCpGnktz3vYMR6WORsebgFM"/>
+            <Class abbreviatedIRI="webprotege:RDtoTK5kV3TxxEDv3Jq4NQL"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7pySDplYgp4Ch3L2SB8oqn"/>
+        <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
+        <Class abbreviatedIRI="webprotege:REcO8p1prRahjA3PzOqLLx"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7u27VcKMlqvjQOSdam1pKP"/>
+        <Class abbreviatedIRI="webprotege:RCcLFwEQ4A7I3ZMl2bwp2Md"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7viGuyboItD8Ks6A6d23u3"/>
+        <Class abbreviatedIRI="webprotege:RDWXTLcBnZkH6OI7bXOyKC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R848M9kwYnDu2CEm5YL9Yn4"/>
+        <Class abbreviatedIRI="webprotege:RCexPaFOagGsTu0PZ95AU0A"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R89EqKXZ7tfBRNDdQCYjuWm"/>
+        <Class abbreviatedIRI="webprotege:RCcLFwEQ4A7I3ZMl2bwp2Md"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R8QfkHIcVe0Szt14rT3TS65"/>
+        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R8aW6M0un216uw7DQnHni6B"/>
+        <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R8emLJEMOyuiSH93h8jHWcj"/>
+        <Class abbreviatedIRI="webprotege:RnVFYjel8NqyuCFq7E15oV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
+        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
+        <Class abbreviatedIRI="webprotege:RDdol8B5Ckn8SMEN8JfWgxv"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R8u8CbJw619OEqCs6ikmWJj"/>
+        <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R8wHzIqcHiUsa0FUzRLNaEL"/>
+        <Class abbreviatedIRI="webprotege:RmE7tP716AmJSnHBZSo3y2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R90Q5FIFdfjpfgoApXN0Nst"/>
+        <Class abbreviatedIRI="webprotege:R9nfkJl4dg8WMDqLocXpGum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R91cafYhVYtD42YPMTVSbh6"/>
+        <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+        <Class abbreviatedIRI="webprotege:RMYe7goNrrJKw0DFMBxELE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RBln8v0aY9VVGQFVC1PW8IG"/>
+            <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RBounPFMHw0DfZf2YMhGGG8"/>
+            <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RNrTQ4UJVtQOFfNQUtxbEr"/>
+            <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
+            <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9NItr6a59HVzF7kq8GCYzW"/>
+        <Class abbreviatedIRI="webprotege:RMYe7goNrrJKw0DFMBxELE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+        <Class abbreviatedIRI="webprotege:Rdn17mj3TSzYkDAhngSNA1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:R9PPkXVO69BMJvm0eyHu8hq"/>
+            <Class abbreviatedIRI="webprotege:R7c1RsTYRsw7PvcUgPp2W5i"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:R9PPkXVO69BMJvm0eyHu8hq"/>
+            <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9cixZ0DMP9xmMPy5GWqhB1"/>
+        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9nfkJl4dg8WMDqLocXpGum"/>
+        <Class abbreviatedIRI="webprotege:R9TbU0WnWm79fz9wcGWQQKB"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9pH3pyRITeEIuQs9tsmVZm"/>
+        <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R9zsC7dRAZDQQIUaVtF1XZq"/>
+        <Class abbreviatedIRI="webprotege:R7OSewVr9VCmhRZ6AU8a3Nx"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RB0FdaCYjSoyalAvq1qa55K"/>
+        <Class abbreviatedIRI="webprotege:RmE7tP716AmJSnHBZSo3y2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+        <Class abbreviatedIRI="webprotege:RDdol8B5Ckn8SMEN8JfWgxv"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RB6GFPEMQJ7GsshMdqmnrz8"/>
+        <Class abbreviatedIRI="webprotege:RBd9d2Efy3BL3UKLn4ykVuW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBBnAuxmTEDCS4ztl9v29Ph"/>
+        <Class abbreviatedIRI="webprotege:R9nfkJl4dg8WMDqLocXpGum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+        <Class abbreviatedIRI="webprotege:RDjrWUAK2ovVEomhB5OrfrN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+            <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+            <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RT067Bc7M43buidFY9kqZ9"/>
+            <Class abbreviatedIRI="webprotege:R7VNLFgTErHurhO3CSrPbOr"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBJabau8JErSwx9DGe1suD8"/>
+        <Class abbreviatedIRI="webprotege:R91cafYhVYtD42YPMTVSbh6"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
+        <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBcZS90WZvLu9taTKR1voq9"/>
+        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBd9d2Efy3BL3UKLn4ykVuW"/>
+        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RBxncTI1z6RZ5uUfWEZQa67"/>
+        <Class abbreviatedIRI="webprotege:RBd9d2Efy3BL3UKLn4ykVuW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
+        <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RCHsJ9fVptaYH4D0uEJPVPG"/>
+        <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
+        <Class abbreviatedIRI="webprotege:RDWXTLcBnZkH6OI7bXOyKC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RCcLFwEQ4A7I3ZMl2bwp2Md"/>
+        <Class abbreviatedIRI="webprotege:REcO8p1prRahjA3PzOqLLx"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RCexPaFOagGsTu0PZ95AU0A"/>
+        <Class abbreviatedIRI="webprotege:R9TbU0WnWm79fz9wcGWQQKB"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+        <Class abbreviatedIRI="webprotege:RDjrWUAK2ovVEomhB5OrfrN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RDJXqCYKyDSi1xFybYoyHzM"/>
+        <Class abbreviatedIRI="webprotege:RCexPaFOagGsTu0PZ95AU0A"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RDLlwKm04vuetELc30w3mfp"/>
+        <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
+        <Class abbreviatedIRI="webprotege:RsWWq2AyjhZSvATrvXztF6"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RCpGnktz3vYMR6WORsebgFM"/>
+            <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RDtoTK5kV3TxxEDv3Jq4NQL"/>
+        <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:REcO8p1prRahjA3PzOqLLx"/>
+        <Class abbreviatedIRI="webprotege:RDWXTLcBnZkH6OI7bXOyKC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RG79ULlRUYts7tXFlQ62aq"/>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RIZXsrHnbtt2AReAK6gtwm"/>
+        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RMVMiUzQiFNaYFk7rJuOVB"/>
+        <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RMYe7goNrrJKw0DFMBxELE"/>
+        <Class abbreviatedIRI="webprotege:R91cafYhVYtD42YPMTVSbh6"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RXUAtgEEOVYYSFK8P9NosA"/>
+        <Class abbreviatedIRI="webprotege:RIZXsrHnbtt2AReAK6gtwm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
+        <Class abbreviatedIRI="webprotege:R8QfkHIcVe0Szt14rT3TS65"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
+        <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:Rdn17mj3TSzYkDAhngSNA1"/>
+        <Class abbreviatedIRI="webprotege:RBrL4kQhRqzLbYA98vU2klW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
+        <Class abbreviatedIRI="webprotege:RDjrWUAK2ovVEomhB5OrfrN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:Rm3sGbHOZWcDS3zizDyO70"/>
+        <Class abbreviatedIRI="webprotege:RIZXsrHnbtt2AReAK6gtwm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RmE7tP716AmJSnHBZSo3y2"/>
+        <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+        <Class abbreviatedIRI="webprotege:RMYe7goNrrJKw0DFMBxELE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RnVFYjel8NqyuCFq7E15oV"/>
+        <Class abbreviatedIRI="webprotege:RaRDrluREW4bzMTa9oz2I4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RqCYJOLbMrKqPLhzeimvlN"/>
+        <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RqrZojiQ3VhMdzvAfsvq5T"/>
+        <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RsWWq2AyjhZSvATrvXztF6"/>
+        <Class abbreviatedIRI="webprotege:RaRDrluREW4bzMTa9oz2I4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bread"/>
+        <Class abbreviatedIRI="webprotege:R8aW6M0un216uw7DQnHni6B"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meat_Dish"/>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-Vegan_Dish"/>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pasta"/>
+        <Class abbreviatedIRI="webprotege:R8aW6M0un216uw7DQnHni6B"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pasta_Dish"/>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rice"/>
+        <Class abbreviatedIRI="webprotege:R8aW6M0un216uw7DQnHni6B"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rice_Dish"/>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seafood_Dish"/>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+        <Class abbreviatedIRI="webprotege:R9NItr6a59HVzF7kq8GCYzW"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+        <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="webprotege:R9NItr6a59HVzF7kq8GCYzW"/>
+        <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R3oMC42FCYVl0nIMMjDmCZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9NItr6a59HVzF7kq8GCYzW"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R6RoV1jsdcIZD4ObZhYldl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R8wHzIqcHiUsa0FUzRLNaEL"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R71amXkIkGTX2zSlw7OYIaL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RBJabau8JErSwx9DGe1suD8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R71z3QBSS0CBzKyz3pru5zn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RMVMiUzQiFNaYFk7rJuOVB"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Y65sTzMbo12mvkFIWjkAJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:Rdn17mj3TSzYkDAhngSNA1"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Zh5SqzsgLwO0zYBKb81rJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7A8fbKu5GYOsrEghdXdMyj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7qDsdicRGfJiVM1aAZ9OYK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RCHsJ9fVptaYH4D0uEJPVPG"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7vPOLZm9Iaj9QXZTtKfszF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7wUwNPofTyRdVpYL1ibQPK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rice"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7wb6cBrNs02cTJiohc8odO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+            <Class abbreviatedIRI="webprotege:R7u27VcKMlqvjQOSdam1pKP"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+            <Class abbreviatedIRI="webprotege:R9cixZ0DMP9xmMPy5GWqhB1"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+            <Class abbreviatedIRI="webprotege:RBcZS90WZvLu9taTKR1voq9"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
+            <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
+            <Class abbreviatedIRI="webprotege:RMVMiUzQiFNaYFk7rJuOVB"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R84UaDHKyLSsU7KfSpU07pa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+            <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:R84UaDHKyLSsU7KfSpU07pa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8GTCfVbSQv1O7Yn6kFCKN5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RBJabau8JErSwx9DGe1suD8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8HeJSpYdChJpzlrbLRFvGj"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R8emLJEMOyuiSH93h8jHWcj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8cuzrBtH73d6TpzgW1cKYE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7OSewVr9VCmhRZ6AU8a3Nx"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8oUejxY3AkMfXdrymoWIWe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7A8fbKu5GYOsrEghdXdMyj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8zDRnZMwnDUOvn9HKPRCS7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R92bAR5ohnKbu2x4gRonRse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDLlwKm04vuetELc30w3mfp"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R93fS1qwn7zgGk9kvu7s0c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R93l928WhRO3VGXFP5rAMrD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7pySDplYgp4Ch3L2SB8oqn"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9BScEioElp00HqpX6ugcHT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7A8fbKu5GYOsrEghdXdMyj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9CpCLd3tQ8lN8zKD4ZMwR7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9JXZ0DKA8xRk7bL5EndiWo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RBJabau8JErSwx9DGe1suD8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9MYROUqmAcTf16DKIZZIfA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9zsC7dRAZDQQIUaVtF1XZq"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9cdMwc313dmQSqSdhRImDa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9r0gEQcocyrGxPt7SozTWQ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9sSeKuycYkpoiNkQGgHkkG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9uiybwjw0LxtDxVLtnygP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDjrWUAK2ovVEomhB5OrfrN"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9xYshKQjDEb10XryauFQkU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7pySDplYgp4Ch3L2SB8oqn"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RB0OcdmQjJRJm0gs0R9eAVs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RB0rrQSbwbSvagmyLZEZeZC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RXUAtgEEOVYYSFK8P9NosA"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBA8hFjAUcIV0FDzlhPBfOq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBC9O9O0h6XHy3rEPuBWVMX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7A8fbKu5GYOsrEghdXdMyj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rice"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBDZITWz4o6hpJRLt4ONaVx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDLlwKm04vuetELc30w3mfp"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBDgUdaOp4N1cH4b76yIl4O"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9rNiLqv60KpCFfbTvLDPMP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBfhKAI4CLUymwp77bQAz3R"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RXUAtgEEOVYYSFK8P9NosA"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBhtsbNHD5X69AYBJMp1EtS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R8wHzIqcHiUsa0FUzRLNaEL"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBmp0v4Zr2NjQIbrNwXwCwR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7A8fbKu5GYOsrEghdXdMyj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDtoTK5kV3TxxEDv3Jq4NQL"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBw2dpWYUwHAdnF41efoUh4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RXUAtgEEOVYYSFK8P9NosA"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+            <Class abbreviatedIRI="webprotege:R2zIlhLPwW05lkr082rlcW"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+            <Class abbreviatedIRI="webprotege:R89EqKXZ7tfBRNDdQCYjuWm"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+            <Class abbreviatedIRI="webprotege:R9cixZ0DMP9xmMPy5GWqhB1"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+            <Class abbreviatedIRI="webprotege:RBcZS90WZvLu9taTKR1voq9"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R8emLJEMOyuiSH93h8jHWcj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCK6iI4VJziZBVVvXDuBwPv"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDLlwKm04vuetELc30w3mfp"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCP1yM6iAtqucgQCNd9X1OZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:R9PPkXVO69BMJvm0eyHu8hq"/>
+            <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:RCR0YA11gwMRFmPRzC7JkAJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RB0FdaCYjSoyalAvq1qa55K"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCRYqFT0lB0OtS0jT2eCYCa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCRdBEuKAa6Ah4rNXRHPATv"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCieA10LMRpsDlBJK3Dhecm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RqCYJOLbMrKqPLhzeimvlN"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCnocBf7qkz9naC130yU900"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RCHsJ9fVptaYH4D0uEJPVPG"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCtIFzxBxTOml8HmLmFjyMQ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCy8LxKJJB4kWCGK7WCybVT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bread"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDCdoTnaJVJdhQVofPM4XDP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RB0FdaCYjSoyalAvq1qa55K"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDNc92heTP2h4IYb6Q0lG50"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDV5ozi7Gh7v0y19xI4XrJL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R8emLJEMOyuiSH93h8jHWcj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDaAD2hZtQah7Wih1Aa5P9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDbRDSFvJEuylL6MGZZFhPs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDLlwKm04vuetELc30w3mfp"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDf1caRjQeK60Py9vR8bKMP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDglGloIKcyMn1xKG8znRfP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RB0FdaCYjSoyalAvq1qa55K"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDsUVqyVlyMurj1TFPR7RYV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:Rdn17mj3TSzYkDAhngSNA1"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RE8vsXnKZ1EFTMxZcfn3Q8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pasta"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RKXCQiWVfFyH4xjGyBcw1h"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RMtdUf77KsyHhwnDlfABKr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDLlwKm04vuetELc30w3mfp"/>
+        <NamedIndividual abbreviatedIRI="webprotege:ROWdlx3mzfvD3rOKGHWMLn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9rNiLqv60KpCFfbTvLDPMP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RT82zG41niABh2BytvVXIS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RVMBNM7rZdgy1wy9uc1sRM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RVqQBtICMAiQCW7xpAzE3n"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RnP1UoKcf69mTdbGNl0RcK"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RbWOf4ch3sPxCZZJ4rhYp0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9rNiLqv60KpCFfbTvLDPMP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RfcmEVfmG5nQcDM6dKXShP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RfrrAYpLkZSWrG2ZJAV2Eh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RgBqon41ENDHjWl1n6GBAt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RnIQYp8ui54CRM4o3SjADJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RoYWmBR7hx1lUFolC6EMcB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+        <NamedIndividual abbreviatedIRI="webprotege:Rw6B1zIb6Mc1h083ZdkRAH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+            <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:Rw6B1zIb6Mc1h083ZdkRAH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+            <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual abbreviatedIRI="webprotege:Rw6B1zIb6Mc1h083ZdkRAH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7pySDplYgp4Ch3L2SB8oqn"/>
+        <NamedIndividual abbreviatedIRI="webprotege:Rx8khYk9f7wPf3ijyIBx57"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RB0FdaCYjSoyalAvq1qa55K"/>
+        <NamedIndividual IRI="#Ice_Cream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pasta"/>
+        <NamedIndividual IRI="#Lasagna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+        <NamedIndividual IRI="#Milkshake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rice"/>
+        <NamedIndividual IRI="#Sushi_Rice"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+        <NamedIndividual abbreviatedIRI="webprotege:Rx8khYk9f7wPf3ijyIBx57"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8oUejxY3AkMfXdrymoWIWe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RNrTQ4UJVtQOFfNQUtxbEr"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8cQmkUJVAO9x5mXQMJi7du"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R84UaDHKyLSsU7KfSpU07pa"/>
+        <NamedIndividual IRI="#Sushi_Rice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8cQmkUJVAO9x5mXQMJi7du"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RE8vsXnKZ1EFTMxZcfn3Q8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RaW5nNo6AsWCpWKJJo3Pii"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8cuzrBtH73d6TpzgW1cKYE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9CpCLd3tQ8lN8zKD4ZMwR7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9BScEioElp00HqpX6ugcHT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9xYshKQjDEb10XryauFQkU"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9BScEioElp00HqpX6ugcHT"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBA8hFjAUcIV0FDzlhPBfOq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7vPOLZm9Iaj9QXZTtKfszF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCnocBf7qkz9naC130yU900"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROkFmwbSyJRLaCnCobVxGX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9CpCLd3tQ8lN8zKD4ZMwR7"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9r0gEQcocyrGxPt7SozTWQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROkFmwbSyJRLaCnCobVxGX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9CpCLd3tQ8lN8zKD4ZMwR7"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RfrrAYpLkZSWrG2ZJAV2Eh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9r0gEQcocyrGxPt7SozTWQ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R6RoV1jsdcIZD4ObZhYldl"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9r0gEQcocyrGxPt7SozTWQ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RKXCQiWVfFyH4xjGyBcw1h"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9r0gEQcocyrGxPt7SozTWQ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RbWOf4ch3sPxCZZJ4rhYp0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCtIFzxBxTOml8HmLmFjyMQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9xYshKQjDEb10XryauFQkU"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RB0OcdmQjJRJm0gs0R9eAVs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9cdMwc313dmQSqSdhRImDa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCK6iI4VJziZBVVvXDuBwPv"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCR0YA11gwMRFmPRzC7JkAJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RaW5nNo6AsWCpWKJJo3Pii"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCK6iI4VJziZBVVvXDuBwPv"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7qDsdicRGfJiVM1aAZ9OYK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCR0YA11gwMRFmPRzC7JkAJ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Zh5SqzsgLwO0zYBKb81rJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDaAD2hZtQah7Wih1Aa5P9"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RgBqon41ENDHjWl1n6GBAt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RaW5nNo6AsWCpWKJJo3Pii"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDaAD2hZtQah7Wih1Aa5P9"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7qDsdicRGfJiVM1aAZ9OYK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RfrrAYpLkZSWrG2ZJAV2Eh"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RVMBNM7rZdgy1wy9uc1sRM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RfrrAYpLkZSWrG2ZJAV2Eh"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RnIQYp8ui54CRM4o3SjADJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RfrrAYpLkZSWrG2ZJAV2Eh"/>
+        <NamedIndividual IRI="#Lasagna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RgBqon41ENDHjWl1n6GBAt"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Zh5SqzsgLwO0zYBKb81rJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RNrTQ4UJVtQOFfNQUtxbEr"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RoYWmBR7hx1lUFolC6EMcB"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDV5ozi7Gh7v0y19xI4XrJL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:Rw6B1zIb6Mc1h083ZdkRAH"/>
+        <NamedIndividual IRI="#Sushi_Rice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual IRI="#Milkshake"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBmp0v4Zr2NjQIbrNwXwCwR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <NamedIndividual IRI="#Milkshake"/>
+        <NamedIndividual IRI="#Ice_Cream"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1299</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7vPOLZm9Iaj9QXZTtKfszF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8oUejxY3AkMfXdrymoWIWe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">299</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9BScEioElp00HqpX6ugcHT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13.89</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">69</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9cdMwc313dmQSqSdhRImDa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9xYshKQjDEb10XryauFQkU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RB0OcdmQjJRJm0gs0R9eAVs"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">199</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">229</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCnocBf7qkz9naC130yU900"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCtIFzxBxTOml8HmLmFjyMQ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RDCyvl7qx9Hd64l7cBdgJH0"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDV5ozi7Gh7v0y19xI4XrJL"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:Rx8khYk9f7wPf3ijyIBx57"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">210</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+        <ObjectProperty abbreviatedIRI="webprotege:R9PPkXVO69BMJvm0eyHu8hq"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="webprotege:RBWY1gfMyAa61aNXRD0nWfd"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <ObjectProperty abbreviatedIRI="webprotege:R9PPkXVO69BMJvm0eyHu8hq"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="webprotege:ROkFmwbSyJRLaCnCobVxGX"/>
+        <ObjectProperty abbreviatedIRI="webprotege:R9PPkXVO69BMJvm0eyHu8hq"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="webprotege:RT067Bc7M43buidFY9kqZ9"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:R9qRCLat35WuP6pAHspyqul"/>
+        <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RB31WkboBZqwNyWvz1kcuXe"/>
+        <Class abbreviatedIRI="webprotege:R9rNiLqv60KpCFfbTvLDPMP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RBWY1gfMyAa61aNXRD0nWfd"/>
+        <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RBln8v0aY9VVGQFVC1PW8IG"/>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RBounPFMHw0DfZf2YMhGGG8"/>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RC65ZydKj6DXZ1ntFPt10Q2"/>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RCpGnktz3vYMR6WORsebgFM"/>
+        <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RNrTQ4UJVtQOFfNQUtxbEr"/>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:ROkFmwbSyJRLaCnCobVxGX"/>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RT067Bc7M43buidFY9kqZ9"/>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RaW5nNo6AsWCpWKJJo3Pii"/>
+        <Class abbreviatedIRI="webprotege:R8emLJEMOyuiSH93h8jHWcj"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RaYXZyHPpCJksdMkigWTLV"/>
+        <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
+        <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:R9qRCLat35WuP6pAHspyqul"/>
+        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RB31WkboBZqwNyWvz1kcuXe"/>
+        <Class abbreviatedIRI="webprotege:R9TbU0WnWm79fz9wcGWQQKB"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RB31WkboBZqwNyWvz1kcuXe"/>
+        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RBWY1gfMyAa61aNXRD0nWfd"/>
+        <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RBln8v0aY9VVGQFVC1PW8IG"/>
+        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RBounPFMHw0DfZf2YMhGGG8"/>
+        <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+        <Class abbreviatedIRI="webprotege:RDWXTLcBnZkH6OI7bXOyKC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RC65ZydKj6DXZ1ntFPt10Q2"/>
+        <Class abbreviatedIRI="webprotege:R9TbU0WnWm79fz9wcGWQQKB"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RCnBPuBz45B41WSo8mLphau"/>
+        <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RCpGnktz3vYMR6WORsebgFM"/>
+        <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
+        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RNrTQ4UJVtQOFfNQUtxbEr"/>
+        <Class abbreviatedIRI="webprotege:R9ONx3ZFzVV9JPPsjcVtPgE"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
+        <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:ROkFmwbSyJRLaCnCobVxGX"/>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RT067Bc7M43buidFY9kqZ9"/>
+        <Class abbreviatedIRI="webprotege:R7VNLFgTErHurhO3CSrPbOr"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RaW5nNo6AsWCpWKJJo3Pii"/>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:RaYXZyHPpCJksdMkigWTLV"/>
+        <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
+        <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="webprotege:RDCyvl7qx9Hd64l7cBdgJH0"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="webprotege:R9NSvwxdl1RI5IpcP31cYI6"/>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+        <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="webprotege:R9NSvwxdl1RI5IpcP31cYI6"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="webprotege:RDCyvl7qx9Hd64l7cBdgJH0"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R0vqcwVwnci9d1gIUQoYq4</AbbreviatedIRI>
+        <Literal xml:lang="en">Cheese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R2zIlhLPwW05lkr082rlcW</AbbreviatedIRI>
+        <Literal xml:lang="en">Dizziness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R3oMC42FCYVl0nIMMjDmCZ</AbbreviatedIRI>
+        <Literal xml:lang="en">Shrimp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R6E6uqVXu8ZEElPBRJksb7</AbbreviatedIRI>
+        <Literal xml:lang="en">Mental Ilnesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R6RoV1jsdcIZD4ObZhYldl</AbbreviatedIRI>
+        <Literal xml:lang="en">Egg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R70CedMeplj9bLh9gNETZXX</AbbreviatedIRI>
+        <Literal xml:lang="en">isFairTrade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R71amXkIkGTX2zSlw7OYIaL</AbbreviatedIRI>
+        <Literal xml:lang="en">Goat Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R71z3QBSS0CBzKyz3pru5zn</AbbreviatedIRI>
+        <Literal xml:lang="en">Chickpea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7A8fbKu5GYOsrEghdXdMyj</AbbreviatedIRI>
+        <Literal xml:lang="en">Everyday Clothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7OSewVr9VCmhRZ6AU8a3Nx</AbbreviatedIRI>
+        <Literal xml:lang="en">European Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7VNLFgTErHurhO3CSrPbOr</AbbreviatedIRI>
+        <Literal xml:lang="en">Clothing Store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7Y65sTzMbo12mvkFIWjkAJ</AbbreviatedIRI>
+        <Literal xml:lang="en">BikeOfEmma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7Zh5SqzsgLwO0zYBKb81rJ</AbbreviatedIRI>
+        <Literal xml:lang="en">Amsterdam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7c1RsTYRsw7PvcUgPp2W5i</AbbreviatedIRI>
+        <Literal xml:lang="en">Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7jhIrM8sfG1ZcsK1UWR1L4</AbbreviatedIRI>
+        <Literal xml:lang="en">Our Legacy Leather Overshirt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7pySDplYgp4Ch3L2SB8oqn</AbbreviatedIRI>
+        <Literal xml:lang="en">Natural Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7qDsdicRGfJiVM1aAZ9OYK</AbbreviatedIRI>
+        <Literal xml:lang="en">Asian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7rHSs0T2tI4cQzU3INU2Ww</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical Discomfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7u27VcKMlqvjQOSdam1pKP</AbbreviatedIRI>
+        <Literal xml:lang="en">Stomach Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7vPOLZm9Iaj9QXZTtKfszF</AbbreviatedIRI>
+        <Literal xml:lang="en">Acrylic Fabric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7viGuyboItD8Ks6A6d23u3</AbbreviatedIRI>
+        <Literal xml:lang="en">Mental Symptoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7wUwNPofTyRdVpYL1ibQPK</AbbreviatedIRI>
+        <Literal xml:lang="en">Argentinian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7wb6cBrNs02cTJiohc8odO</AbbreviatedIRI>
+        <Literal xml:lang="en">Couscous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R7xMwIFHfGfxTN0Pa3yUrEl</AbbreviatedIRI>
+        <Literal xml:lang="en">Sophie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R848M9kwYnDu2CEm5YL9Yn4</AbbreviatedIRI>
+        <Literal xml:lang="en">Wind Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R84UaDHKyLSsU7KfSpU07pa</AbbreviatedIRI>
+        <Literal xml:lang="en">Vegetable Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R875IOYL0N3CcxcOJOEzWkI</AbbreviatedIRI>
+        <Literal xml:lang="en">isLocatedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R89EqKXZ7tfBRNDdQCYjuWm</AbbreviatedIRI>
+        <Literal xml:lang="en">Chest Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8GTCfVbSQv1O7Yn6kFCKN5</AbbreviatedIRI>
+        <Literal xml:lang="en">Anna</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8HeJSpYdChJpzlrbLRFvGj</AbbreviatedIRI>
+        <Literal xml:lang="en">Tofu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8QfkHIcVe0Szt14rT3TS65</AbbreviatedIRI>
+        <Literal xml:lang="en">Public Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8YDC9Zu0KHCdQDEOvlOltX</AbbreviatedIRI>
+        <Literal xml:lang="en">emitsCO2PerKm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8aW6M0un216uw7DQnHni6B</AbbreviatedIRI>
+        <Literal xml:lang="en">Grains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8cQmkUJVAO9x5mXQMJi7du</AbbreviatedIRI>
+        <Literal xml:lang="en">Parkwijk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8cuzrBtH73d6TpzgW1cKYE</AbbreviatedIRI>
+        <Literal xml:lang="en">Bella Italia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8emLJEMOyuiSH93h8jHWcj</AbbreviatedIRI>
+        <Literal xml:lang="en">Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8lggl1bEyVe1u5NFjKa47X</AbbreviatedIRI>
+        <Literal xml:lang="en">Private Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8oUejxY3AkMfXdrymoWIWe</AbbreviatedIRI>
+        <Literal xml:lang="en">Romanian Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8p8eLznF1UkRfMdyT4Ql8T</AbbreviatedIRI>
+        <Literal xml:lang="en">MM Woolen Topcoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8rmSzaAytolnbxoEpdW72X</AbbreviatedIRI>
+        <Literal xml:lang="en">Ingredient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8u8CbJw619OEqCs6ikmWJj</AbbreviatedIRI>
+        <Literal xml:lang="en">Loss of Taste</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8wHzIqcHiUsa0FUzRLNaEL</AbbreviatedIRI>
+        <Literal xml:lang="en">Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R8zDRnZMwnDUOvn9HKPRCS7</AbbreviatedIRI>
+        <Literal>Parmesan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R90Q5FIFdfjpfgoApXN0Nst</AbbreviatedIRI>
+        <Literal xml:lang="en">GasEnergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R91cafYhVYtD42YPMTVSbh6</AbbreviatedIRI>
+        <Literal xml:lang="en">Protein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R92bAR5ohnKbu2x4gRonRse</AbbreviatedIRI>
+        <Literal xml:lang="en">Tuna</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R93fS1qwn7zgGk9kvu7s0c</AbbreviatedIRI>
+        <Literal xml:lang="en">Pineapple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R93l928WhRO3VGXFP5rAMrD</AbbreviatedIRI>
+        <Literal xml:lang="en">Broccoli</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R94GgFMWp8eWJEc6Sqd5EJm</AbbreviatedIRI>
+        <Literal xml:lang="en">Fish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9BScEioElp00HqpX6ugcHT</AbbreviatedIRI>
+        <Literal xml:lang="en">Wool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9CN0iMZOrP38qotIBCAsWU</AbbreviatedIRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9Cik0Ex0sH1JRzYuLfL0zx</AbbreviatedIRI>
+        <Literal xml:lang="en">Bershka Topcoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9CpCLd3tQ8lN8zKD4ZMwR7</AbbreviatedIRI>
+        <Literal xml:lang="en">Italian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9JXZ0DKA8xRk7bL5EndiWo</AbbreviatedIRI>
+        <Literal xml:lang="en">Emmentaler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9MYROUqmAcTf16DKIZZIfA</AbbreviatedIRI>
+        <Literal xml:lang="en">Cashew</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9NItr6a59HVzF7kq8GCYzW</AbbreviatedIRI>
+        <Literal xml:lang="en">By-Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9NSvwxdl1RI5IpcP31cYI6</AbbreviatedIRI>
+        <Literal xml:lang="en">usedFor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9ONx3ZFzVV9JPPsjcVtPgE</AbbreviatedIRI>
+        <Literal xml:lang="en">Neighborhood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9PPkXVO69BMJvm0eyHu8hq</AbbreviatedIRI>
+        <Literal xml:lang="en">contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9TbU0WnWm79fz9wcGWQQKB</AbbreviatedIRI>
+        <Literal xml:lang="en">Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9W6IBdd6TLabxsqlASzuJu</AbbreviatedIRI>
+        <Literal xml:lang="en">isDurableHighToLow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9cdMwc313dmQSqSdhRImDa</AbbreviatedIRI>
+        <Literal xml:lang="en">Dutch Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9cixZ0DMP9xmMPy5GWqhB1</AbbreviatedIRI>
+        <Literal xml:lang="en">Swollen Tongue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9fTiJlgQknkTZGpHxfspGV</AbbreviatedIRI>
+        <Literal xml:lang="en">containsMaterial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9nfkJl4dg8WMDqLocXpGum</AbbreviatedIRI>
+        <Literal xml:lang="en">Unsustainable Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9pH3pyRITeEIuQs9tsmVZm</AbbreviatedIRI>
+        <Literal xml:lang="en">Cough</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9qRCLat35WuP6pAHspyqul</AbbreviatedIRI>
+        <Literal xml:lang="en">forbids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9r0gEQcocyrGxPt7SozTWQ</AbbreviatedIRI>
+        <Literal xml:lang="en">Spaghetti Carbonara</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9rNiLqv60KpCFfbTvLDPMP</AbbreviatedIRI>
+        <Literal xml:lang="en">Weather Conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9sSeKuycYkpoiNkQGgHkkG</AbbreviatedIRI>
+        <Literal xml:lang="en">Lombok</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9tQoicKJjDFCcDoAzLgo6b</AbbreviatedIRI>
+        <Literal xml:lang="en">causesCondition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9uiybwjw0LxtDxVLtnygP</AbbreviatedIRI>
+        <Literal xml:lang="en">Salmon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9vPba3FsXMI5vaJIvjVQbk</AbbreviatedIRI>
+        <Literal xml:lang="en">Recipe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9xYshKQjDEb10XryauFQkU</AbbreviatedIRI>
+        <Literal xml:lang="en">French Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:R9zsC7dRAZDQQIUaVtF1XZq</AbbreviatedIRI>
+        <Literal xml:lang="en">Local Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RB0FdaCYjSoyalAvq1qa55K</AbbreviatedIRI>
+        <Literal xml:lang="en">Processed Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RB0OcdmQjJRJm0gs0R9eAVs</AbbreviatedIRI>
+        <Literal xml:lang="en">Recycled Cotton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RB0rrQSbwbSvagmyLZEZeZC</AbbreviatedIRI>
+        <Literal xml:lang="en">Amsterdam-Oost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RB31WkboBZqwNyWvz1kcuXe</AbbreviatedIRI>
+        <Literal xml:lang="en">influences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RB4s087VbA641UU91nZRCih</AbbreviatedIRI>
+        <Literal xml:lang="en">Cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RB6GFPEMQJ7GsshMdqmnrz8</AbbreviatedIRI>
+        <Literal xml:lang="en">Food Poisoning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBA8hFjAUcIV0FDzlhPBfOq</AbbreviatedIRI>
+        <Literal xml:lang="en">Wool Allergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBBnAuxmTEDCS4ztl9v29Ph</AbbreviatedIRI>
+        <Literal xml:lang="en">CoalEnergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBC9O9O0h6XHy3rEPuBWVMX</AbbreviatedIRI>
+        <Literal xml:lang="en">Chicken</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBD4HwlSlm6fKxEjDMkv5CE</AbbreviatedIRI>
+        <Literal xml:lang="en">Nanushka Nylon Trenchcoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBDZITWz4o6hpJRLt4ONaVx</AbbreviatedIRI>
+        <Literal xml:lang="en">Brown Rice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBDgUdaOp4N1cH4b76yIl4O</AbbreviatedIRI>
+        <Literal xml:lang="en">Apple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBJ5GhKK7aIieN3x3Da5wpC</AbbreviatedIRI>
+        <Literal xml:lang="en">Clothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBJabau8JErSwx9DGe1suD8</AbbreviatedIRI>
+        <Literal xml:lang="en">Plant Based</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBLxbNm7VoeCjPVkf6D9W9r</AbbreviatedIRI>
+        <Literal xml:lang="en">emitsCO2PerItem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBTRjwjUZXRAqYZWP5Echfr</AbbreviatedIRI>
+        <Literal xml:lang="en">Vegetables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBWY1gfMyAa61aNXRD0nWfd</AbbreviatedIRI>
+        <Literal xml:lang="en">hasOwner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBcZS90WZvLu9taTKR1voq9</AbbreviatedIRI>
+        <Literal xml:lang="en">Itching</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBd9d2Efy3BL3UKLn4ykVuW</AbbreviatedIRI>
+        <Literal xml:lang="en">Temporal Conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBfhKAI4CLUymwp77bQAz3R</AbbreviatedIRI>
+        <Literal xml:lang="en">Sunny</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBhtsbNHD5X69AYBJMp1EtS</AbbreviatedIRI>
+        <Literal xml:lang="en">Citrus Allergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBln8v0aY9VVGQFVC1PW8IG</AbbreviatedIRI>
+        <Literal xml:lang="en">travelsWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBmp0v4Zr2NjQIbrNwXwCwR</AbbreviatedIRI>
+        <Literal xml:lang="en">Cow Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBounPFMHw0DfZf2YMhGGG8</AbbreviatedIRI>
+        <Literal xml:lang="en">rideSharing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBrL4kQhRqzLbYA98vU2klW</AbbreviatedIRI>
+        <Literal xml:lang="en">Residential location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBvO3wZbQLsDo9XSvkSFCXF</AbbreviatedIRI>
+        <Literal xml:lang="en">Recycled Sails Raincoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBw2dpWYUwHAdnF41efoUh4</AbbreviatedIRI>
+        <Literal xml:lang="en">Car1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RBxncTI1z6RZ5uUfWEZQa67</AbbreviatedIRI>
+        <Literal xml:lang="en">COVID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RC4CuaLdt2GtySqWUJki82H</AbbreviatedIRI>
+        <Literal xml:lang="en">hasSymptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RC65ZydKj6DXZ1ntFPt10Q2</AbbreviatedIRI>
+        <Literal xml:lang="en">consumes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCBZYygdgG2yVfoH8z1d56U</AbbreviatedIRI>
+        <Literal xml:lang="en">Gasoline car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCFJ6AonPTNbH2buvvn2ufy</AbbreviatedIRI>
+        <Literal xml:lang="en">Shellfish Allergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCHsJ9fVptaYH4D0uEJPVPG</AbbreviatedIRI>
+        <Literal xml:lang="en">Synthetic Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCK6iI4VJziZBVVvXDuBwPv</AbbreviatedIRI>
+        <Literal xml:lang="en">Tasty Asian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCKN4uia4UXTCeh9ztOQUsL</AbbreviatedIRI>
+        <Literal xml:lang="en">COVID-related Symptoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCP1yM6iAtqucgQCNd9X1OZ</AbbreviatedIRI>
+        <Literal xml:lang="en">Blueberry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCR0YA11gwMRFmPRzC7JkAJ</AbbreviatedIRI>
+        <Literal xml:lang="en">Binnenstad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCRYqFT0lB0OtS0jT2eCYCa</AbbreviatedIRI>
+        <Literal xml:lang="en">Yoghurt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCRdBEuKAa6Ah4rNXRHPATv</AbbreviatedIRI>
+        <Literal xml:lang="en">Charging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCcLFwEQ4A7I3ZMl2bwp2Md</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCexPaFOagGsTu0PZ95AU0A</AbbreviatedIRI>
+        <Literal xml:lang="en">Sustainable Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCieA10LMRpsDlBJK3Dhecm</AbbreviatedIRI>
+        <Literal xml:lang="en">Spinach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCnBPuBz45B41WSo8mLphau</AbbreviatedIRI>
+        <Literal xml:lang="en">hasOrigin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCnocBf7qkz9naC130yU900</AbbreviatedIRI>
+        <Literal xml:lang="en">Bangladesh Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCpGnktz3vYMR6WORsebgFM</AbbreviatedIRI>
+        <Literal xml:lang="en">provides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCtIFzxBxTOml8HmLmFjyMQ</AbbreviatedIRI>
+        <Literal xml:lang="en">Nylon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RCy8LxKJJB4kWCGK7WCybVT</AbbreviatedIRI>
+        <Literal xml:lang="en">Gouda</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDCdoTnaJVJdhQVofPM4XDP</AbbreviatedIRI>
+        <Literal xml:lang="en">Baguette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDCyvl7qx9Hd64l7cBdgJH0</AbbreviatedIRI>
+        <Literal xml:lang="en">hasPopulationInt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDG0b4zhV91zHUZlTCgpT23</AbbreviatedIRI>
+        <Literal xml:lang="en">Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDGTVY4cPs0ESmq0ITRZEFh</AbbreviatedIRI>
+        <Literal xml:lang="en">Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDJXqCYKyDSi1xFybYoyHzM</AbbreviatedIRI>
+        <Literal xml:lang="en">Solar Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDLlwKm04vuetELc30w3mfp</AbbreviatedIRI>
+        <Literal xml:lang="en">Fruit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDNc92heTP2h4IYb6Q0lG50</AbbreviatedIRI>
+        <Literal xml:lang="en">Butter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDV5ozi7Gh7v0y19xI4XrJL</AbbreviatedIRI>
+        <Literal xml:lang="en">De Pijp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDWXTLcBnZkH6OI7bXOyKC</AbbreviatedIRI>
+        <Literal xml:lang="en">Symptoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDaAD2hZtQah7Wih1Aa5P9</AbbreviatedIRI>
+        <Literal xml:lang="en">Shiso Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDbRDSFvJEuylL6MGZZFhPs</AbbreviatedIRI>
+        <Literal xml:lang="en">Carrot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDcQa14U4r92f59f2mS807g</AbbreviatedIRI>
+        <Literal xml:lang="en">Train Station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDdol8B5Ckn8SMEN8JfWgxv</AbbreviatedIRI>
+        <Literal xml:lang="en">Food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDf1caRjQeK60Py9vR8bKMP</AbbreviatedIRI>
+        <Literal xml:lang="en">Orange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDglGloIKcyMn1xKG8znRfP</AbbreviatedIRI>
+        <Literal xml:lang="en">DoingLaundry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDjrWUAK2ovVEomhB5OrfrN</AbbreviatedIRI>
+        <Literal xml:lang="en">Clothing Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDsUVqyVlyMurj1TFPR7RYV</AbbreviatedIRI>
+        <Literal xml:lang="en">Greek Yoghurt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RDtoTK5kV3TxxEDv3Jq4NQL</AbbreviatedIRI>
+        <Literal xml:lang="en">Electric car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RE8vsXnKZ1EFTMxZcfn3Q8</AbbreviatedIRI>
+        <Literal xml:lang="en">Utrecht</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:REcO8p1prRahjA3PzOqLLx</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical Symptoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RG79ULlRUYts7tXFlQ62aq</AbbreviatedIRI>
+        <Literal xml:lang="en">Sport Clothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RGSBvJNK0GjmPyLNO5RHGv</AbbreviatedIRI>
+        <Literal xml:lang="en">causesCaseOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RIZXsrHnbtt2AReAK6gtwm</AbbreviatedIRI>
+        <Literal xml:lang="en">Chronical Conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RKXCQiWVfFyH4xjGyBcw1h</AbbreviatedIRI>
+        <Literal xml:lang="en">Spaghetti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RLZkY19UTupBf7uuekQdYL</AbbreviatedIRI>
+        <Literal xml:lang="en">Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RMVMiUzQiFNaYFk7rJuOVB</AbbreviatedIRI>
+        <Literal xml:lang="en">Bike</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RMYe7goNrrJKw0DFMBxELE</AbbreviatedIRI>
+        <Literal xml:lang="en">Animal Based</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RMtdUf77KsyHhwnDlfABKr</AbbreviatedIRI>
+        <Literal xml:lang="en">Emma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RNrTQ4UJVtQOFfNQUtxbEr</AbbreviatedIRI>
+        <Literal xml:lang="en">livesIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:ROEvAS3CRHVo9VjN8G5Jwm</AbbreviatedIRI>
+        <Literal xml:lang="en">containsIngredient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:ROWdlx3mzfvD3rOKGHWMLn</AbbreviatedIRI>
+        <Literal xml:lang="en">Kiwi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:ROkFmwbSyJRLaCnCobVxGX</AbbreviatedIRI>
+        <Literal xml:lang="en">containsMeal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RT067Bc7M43buidFY9kqZ9</AbbreviatedIRI>
+        <Literal xml:lang="en">availableIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RT82zG41niABh2BytvVXIS</AbbreviatedIRI>
+        <Literal xml:lang="en">Windy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RVMBNM7rZdgy1wy9uc1sRM</AbbreviatedIRI>
+        <Literal xml:lang="en">Cow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RVqQBtICMAiQCW7xpAzE3n</AbbreviatedIRI>
+        <Literal xml:lang="en">Gorgonzola</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RXUAtgEEOVYYSFK8P9NosA</AbbreviatedIRI>
+        <Literal xml:lang="en">Allergies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RZ7riuyoSXUK27zXCe1fRe</AbbreviatedIRI>
+        <Literal xml:lang="en">Train</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RaBbhhYruUvx8C5tyNa7ct</AbbreviatedIRI>
+        <Literal xml:lang="en">Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RaRDrluREW4bzMTa9oz2I4</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical Infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RaW5nNo6AsWCpWKJJo3Pii</AbbreviatedIRI>
+        <Literal xml:lang="en">hasCuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RaYXZyHPpCJksdMkigWTLV</AbbreviatedIRI>
+        <Literal xml:lang="en">hasStopIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RbWOf4ch3sPxCZZJ4rhYp0</AbbreviatedIRI>
+        <Literal xml:lang="en">Pork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:Rdn17mj3TSzYkDAhngSNA1</AbbreviatedIRI>
+        <Literal xml:lang="en">City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:ReHuScGj8VTczaWNRGgo6n</AbbreviatedIRI>
+        <Literal xml:lang="en">owns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:ReOU0MPu2pK8kd0ovqaxIS</AbbreviatedIRI>
+        <Literal xml:lang="en">Place of Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RfcmEVfmG5nQcDM6dKXShP</AbbreviatedIRI>
+        <Literal xml:lang="en">Rainy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RfrrAYpLkZSWrG2ZJAV2Eh</AbbreviatedIRI>
+        <Literal xml:lang="en">Lasagna Bolognese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RgBqon41ENDHjWl1n6GBAt</AbbreviatedIRI>
+        <Literal xml:lang="en">Grachtengordel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RhueRBQyPsRlgMYxA75pF8</AbbreviatedIRI>
+        <Literal xml:lang="en">hasPriceEur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:Rm3sGbHOZWcDS3zizDyO70</AbbreviatedIRI>
+        <Literal xml:lang="en">Intolerance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RmE7tP716AmJSnHBZSo3y2</AbbreviatedIRI>
+        <Literal xml:lang="en">Dairy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RnIQYp8ui54CRM4o3SjADJ</AbbreviatedIRI>
+        <Literal xml:lang="en">Tomato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RnP1UoKcf69mTdbGNl0RcK</AbbreviatedIRI>
+        <Literal xml:lang="en">Meat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RnVFYjel8NqyuCFq7E15oV</AbbreviatedIRI>
+        <Literal xml:lang="en">Businesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RoOgteTV3q65pV2uyvP0Kj</AbbreviatedIRI>
+        <Literal xml:lang="en">Health Conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RoYWmBR7hx1lUFolC6EMcB</AbbreviatedIRI>
+        <Literal xml:lang="en">Alex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RqCYJOLbMrKqPLhzeimvlN</AbbreviatedIRI>
+        <Literal xml:lang="en">Remote Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RqrZojiQ3VhMdzvAfsvq5T</AbbreviatedIRI>
+        <Literal xml:lang="en">Fever</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RsWWq2AyjhZSvATrvXztF6</AbbreviatedIRI>
+        <Literal xml:lang="en">Infrastructural Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:RuhG2gaNySClyQz5w7kpzM</AbbreviatedIRI>
+        <Literal xml:lang="en">emitsCO2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:Rw6B1zIb6Mc1h083ZdkRAH</AbbreviatedIRI>
+        <Literal xml:lang="en">Seafood Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>webprotege:Rx8khYk9f7wPf3ijyIBx57</AbbreviatedIRI>
+        <Literal xml:lang="en">Leather</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ice_Cream</IRI>
+        <Literal>Ice Cream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Meat_Dish</IRI>
+        <Literal>Meat Dish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Milkshake</IRI>
+        <Literal>Milkshake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Non-Vegan_Dish</IRI>
+        <Literal>Non-Vegan Dish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pasta_Dish</IRI>
+        <Literal>Pasta Dish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rice_Dish</IRI>
+        <Literal>Rice Dish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Seafood_Dish</IRI>
+        <Literal>Seafood Dish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sushi_Rice</IRI>
+        <Literal>Sushi Rice</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
