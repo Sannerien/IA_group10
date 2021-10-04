@@ -359,6 +359,9 @@
         <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#travelsDistance"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual abbreviatedIRI="webprotege:R3oMC42FCYVl0nIMMjDmCZ"/>
     </Declaration>
     <Declaration>
@@ -491,9 +494,6 @@
         <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="webprotege:RBw2dpWYUwHAdnF41efoUh4"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
     </Declaration>
     <Declaration>
@@ -603,6 +603,18 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sushi_Rice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TeslaModel3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#Meat_Dish"/>
@@ -1256,10 +1268,6 @@
         <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="webprotege:RDtoTK5kV3TxxEDv3Jq4NQL"/>
-        <NamedIndividual abbreviatedIRI="webprotege:RBw2dpWYUwHAdnF41efoUh4"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class abbreviatedIRI="webprotege:RXUAtgEEOVYYSFK8P9NosA"/>
         <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
     </ClassAssertion>
@@ -1452,6 +1460,27 @@
         <Class IRI="#Rice"/>
         <NamedIndividual IRI="#Sushi_Rice"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RDtoTK5kV3TxxEDv3Jq4NQL"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RBWY1gfMyAa61aNXRD0nWfd"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Y65sTzMbo12mvkFIWjkAJ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RMtdUf77KsyHhwnDlfABKr"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
         <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
@@ -1618,6 +1647,11 @@
         <NamedIndividual IRI="#Ice_Cream"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Y65sTzMbo12mvkFIWjkAJ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
         <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
@@ -1741,6 +1775,41 @@
         <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
         <NamedIndividual abbreviatedIRI="webprotege:Rx8khYk9f7wPf3ijyIBx57"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.081</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.197</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.037</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#travelsDistance"/>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.037</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#travelsDistance"/>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
+        <AnonymousIndividual nodeID="_:genid-29aa78e0-d320-413f-bfd5-df89d42c1efe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.48</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
@@ -1980,7 +2049,11 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#travelsDistance"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2486,11 +2559,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:RBvO3wZbQLsDo9XSvkSFCXF</AbbreviatedIRI>
         <Literal xml:lang="en">Recycled Sails Raincoat</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>webprotege:RBw2dpWYUwHAdnF41efoUh4</AbbreviatedIRI>
-        <Literal xml:lang="en">Car1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
