@@ -332,6 +332,9 @@
         <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isFromCuisine"/>
+    </Declaration>
+    <Declaration>
         <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
     </Declaration>
     <Declaration>
@@ -354,6 +357,9 @@
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#costsCO2"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isVegan"/>
@@ -779,7 +785,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
-        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+        <Class abbreviatedIRI="webprotege:RDdol8B5Ckn8SMEN8JfWgxv"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:R9zsC7dRAZDQQIUaVtF1XZq"/>
@@ -1572,6 +1578,93 @@
         <NamedIndividual IRI="#Milkshake"/>
         <NamedIndividual IRI="#Sushi_Rice"/>
     </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual abbreviatedIRI="webprotege:R3oMC42FCYVl0nIMMjDmCZ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R6RoV1jsdcIZD4ObZhYldl"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R71amXkIkGTX2zSlw7OYIaL"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R71z3QBSS0CBzKyz3pru5zn"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Y65sTzMbo12mvkFIWjkAJ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7Zh5SqzsgLwO0zYBKb81rJ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7qDsdicRGfJiVM1aAZ9OYK"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7vPOLZm9Iaj9QXZTtKfszF"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7wUwNPofTyRdVpYL1ibQPK"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7wb6cBrNs02cTJiohc8odO"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R84UaDHKyLSsU7KfSpU07pa"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8GTCfVbSQv1O7Yn6kFCKN5"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8HeJSpYdChJpzlrbLRFvGj"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8cQmkUJVAO9x5mXQMJi7du"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8cuzrBtH73d6TpzgW1cKYE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8oUejxY3AkMfXdrymoWIWe"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8zDRnZMwnDUOvn9HKPRCS7"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R92bAR5ohnKbu2x4gRonRse"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R93fS1qwn7zgGk9kvu7s0c"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R93l928WhRO3VGXFP5rAMrD"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9BScEioElp00HqpX6ugcHT"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9CpCLd3tQ8lN8zKD4ZMwR7"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9JXZ0DKA8xRk7bL5EndiWo"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9MYROUqmAcTf16DKIZZIfA"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9cdMwc313dmQSqSdhRImDa"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9r0gEQcocyrGxPt7SozTWQ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9sSeKuycYkpoiNkQGgHkkG"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9uiybwjw0LxtDxVLtnygP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9xYshKQjDEb10XryauFQkU"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RB0OcdmQjJRJm0gs0R9eAVs"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RB0rrQSbwbSvagmyLZEZeZC"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBA8hFjAUcIV0FDzlhPBfOq"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBC9O9O0h6XHy3rEPuBWVMX"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBDZITWz4o6hpJRLt4ONaVx"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBDgUdaOp4N1cH4b76yIl4O"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBfhKAI4CLUymwp77bQAz3R"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBhtsbNHD5X69AYBJMp1EtS"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBmp0v4Zr2NjQIbrNwXwCwR"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBw2dpWYUwHAdnF41efoUh4"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCK6iI4VJziZBVVvXDuBwPv"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCP1yM6iAtqucgQCNd9X1OZ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCR0YA11gwMRFmPRzC7JkAJ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCRYqFT0lB0OtS0jT2eCYCa"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCRdBEuKAa6Ah4rNXRHPATv"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCieA10LMRpsDlBJK3Dhecm"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCnocBf7qkz9naC130yU900"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCtIFzxBxTOml8HmLmFjyMQ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCy8LxKJJB4kWCGK7WCybVT"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDCdoTnaJVJdhQVofPM4XDP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDNc92heTP2h4IYb6Q0lG50"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDV5ozi7Gh7v0y19xI4XrJL"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDaAD2hZtQah7Wih1Aa5P9"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDbRDSFvJEuylL6MGZZFhPs"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDf1caRjQeK60Py9vR8bKMP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDglGloIKcyMn1xKG8znRfP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDsUVqyVlyMurj1TFPR7RYV"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RE8vsXnKZ1EFTMxZcfn3Q8"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RKXCQiWVfFyH4xjGyBcw1h"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RMtdUf77KsyHhwnDlfABKr"/>
+        <NamedIndividual abbreviatedIRI="webprotege:ROWdlx3mzfvD3rOKGHWMLn"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RT82zG41niABh2BytvVXIS"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RVMBNM7rZdgy1wy9uc1sRM"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RVqQBtICMAiQCW7xpAzE3n"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RbWOf4ch3sPxCZZJ4rhYp0"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RfcmEVfmG5nQcDM6dKXShP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RfrrAYpLkZSWrG2ZJAV2Eh"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RgBqon41ENDHjWl1n6GBAt"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RnIQYp8ui54CRM4o3SjADJ"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RoYWmBR7hx1lUFolC6EMcB"/>
+        <NamedIndividual abbreviatedIRI="webprotege:Rw6B1zIb6Mc1h083ZdkRAH"/>
+        <NamedIndividual abbreviatedIRI="webprotege:Rx8khYk9f7wPf3ijyIBx57"/>
+        <NamedIndividual IRI="#Ice_Cream"/>
+        <NamedIndividual IRI="#Lasagna"/>
+        <NamedIndividual IRI="#Milkshake"/>
+        <NamedIndividual IRI="#Sushi_Rice"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+    </DifferentIndividuals>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="webprotege:RBWY1gfMyAa61aNXRD0nWfd"/>
         <NamedIndividual abbreviatedIRI="webprotege:R7Y65sTzMbo12mvkFIWjkAJ"/>
@@ -1808,6 +1901,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">299</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8zDRnZMwnDUOvn9HKPRCS7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
         <NamedIndividual abbreviatedIRI="webprotege:R9BScEioElp00HqpX6ugcHT"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13.89</Literal>
@@ -1828,6 +1926,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">69</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9JXZ0DKA8xRk7bL5EndiWo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
         <NamedIndividual abbreviatedIRI="webprotege:R9cdMwc313dmQSqSdhRImDa"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.01</Literal>
@@ -1843,6 +1946,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBC9O9O0h6XHy3rEPuBWVMX"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
         <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
@@ -1856,6 +1964,11 @@
         <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
         <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">199</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBDgUdaOp4N1cH4b76yIl4O"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.06</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
@@ -1878,6 +1991,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.081</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCP1yM6iAtqucgQCNd9X1OZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
         <NamedIndividual abbreviatedIRI="webprotege:RCnocBf7qkz9naC130yU900"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.79</Literal>
@@ -1888,9 +2006,34 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.31</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCy8LxKJJB4kWCGK7WCybVT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RDCyvl7qx9Hd64l7cBdgJH0"/>
         <NamedIndividual abbreviatedIRI="webprotege:RDV5ozi7Gh7v0y19xI4XrJL"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RDf1caRjQeK60Py9vR8bKMP"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RVMBNM7rZdgy1wy9uc1sRM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RVqQBtICMAiQCW7xpAzE3n"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsCO2"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RbWOf4ch3sPxCZZJ4rhYp0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
@@ -1950,6 +2093,10 @@
         <ObjectProperty abbreviatedIRI="webprotege:RT067Bc7M43buidFY9kqZ9"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="webprotege:ROkFmwbSyJRLaCnCobVxGX"/>
+        <ObjectProperty IRI="#isFromCuisine"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="webprotege:R9fTiJlgQknkTZGpHxfspGV"/>
         <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
@@ -2017,6 +2164,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
         <Class abbreviatedIRI="webprotege:R9CN0iMZOrP38qotIBCAsWU"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFromCuisine"/>
+        <Class abbreviatedIRI="webprotege:R9vPba3FsXMI5vaJIvjVQbk"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
@@ -2098,6 +2249,10 @@
         <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
         <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFromCuisine"/>
+        <Class abbreviatedIRI="webprotege:RB4s087VbA641UU91nZRCih"/>
+    </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty abbreviatedIRI="webprotege:R70CedMeplj9bLh9gNETZXX"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
@@ -2147,6 +2302,10 @@
         <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#costsCO2"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#isVegan"/>
         <Class abbreviatedIRI="webprotege:RMYe7goNrrJKw0DFMBxELE"/>
     </DataPropertyDomain>
@@ -2172,6 +2331,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#costsCO2"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -2731,7 +2894,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:RCP1yM6iAtqucgQCNd9X1OZ</AbbreviatedIRI>
-        <Literal xml:lang="en">Blueberry</Literal>
+        <Literal xml:lang="en">Berry</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2961,7 +3124,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:RVMBNM7rZdgy1wy9uc1sRM</AbbreviatedIRI>
-        <Literal xml:lang="en">Cow</Literal>
+        <Literal xml:lang="en">Beef</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
