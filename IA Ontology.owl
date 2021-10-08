@@ -14,10 +14,10 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="webprotege" IRI="http://webprotege.stanford.edu/"/>
     <Declaration>
-        <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
+        <Class abbreviatedIRI="webprotege:Health_Condition"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="webprotege:R2zIlhLPwW05lkr082rlcW"/>
+        <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="webprotege:R6E6uqVXu8ZEElPBRJksb7"/>
@@ -95,9 +95,6 @@
         <Class abbreviatedIRI="webprotege:R9TbU0WnWm79fz9wcGWQQKB"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="webprotege:R9cixZ0DMP9xmMPy5GWqhB1"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="webprotege:R9nfkJl4dg8WMDqLocXpGum"/>
     </Declaration>
     <Declaration>
@@ -132,9 +129,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="webprotege:RBTRjwjUZXRAqYZWP5Echfr"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="webprotege:RBcZS90WZvLu9taTKR1voq9"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="webprotege:RBd9d2Efy3BL3UKLn4ykVuW"/>
@@ -236,9 +230,6 @@
         <Class abbreviatedIRI="webprotege:RnVFYjel8NqyuCFq7E15oV"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="webprotege:RqCYJOLbMrKqPLhzeimvlN"/>
     </Declaration>
     <Declaration>
@@ -279,9 +270,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="webprotege:R9qRCLat35WuP6pAHspyqul"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="webprotege:R9tQoicKJjDFCcDoAzLgo6b"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="webprotege:RB31WkboBZqwNyWvz1kcuXe"/>
@@ -602,7 +590,13 @@
         <NamedIndividual abbreviatedIRI="webprotege:Rx8khYk9f7wPf3ijyIBx57"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Dizziness"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Ice_Cream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Itching"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Lasagna"/>
@@ -611,7 +605,13 @@
         <NamedIndividual IRI="#Milkshake"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#StomacheAche"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Sushi_Rice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SwollenTongue"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ToyotaCorolla2020"/>
@@ -625,10 +625,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:R0vqcwVwnci9d1gIUQoYq4"/>
         <Class abbreviatedIRI="webprotege:RmE7tP716AmJSnHBZSo3y2"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="webprotege:R2zIlhLPwW05lkr082rlcW"/>
-        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:R6E6uqVXu8ZEElPBRJksb7"/>
@@ -772,10 +768,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="webprotege:R9cixZ0DMP9xmMPy5GWqhB1"/>
-        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="webprotege:R9nfkJl4dg8WMDqLocXpGum"/>
         <Class abbreviatedIRI="webprotege:R9TbU0WnWm79fz9wcGWQQKB"/>
     </SubClassOf>
@@ -841,12 +833,8 @@
         <Class abbreviatedIRI="webprotege:R8rmSzaAytolnbxoEpdW72X"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="webprotege:RBcZS90WZvLu9taTKR1voq9"/>
-        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="webprotege:RBd9d2Efy3BL3UKLn4ykVuW"/>
-        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+        <Class abbreviatedIRI="webprotege:Health_Condition"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RBxncTI1z6RZ5uUfWEZQa67"/>
@@ -909,7 +897,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RIZXsrHnbtt2AReAK6gtwm"/>
-        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+        <Class abbreviatedIRI="webprotege:Health_Condition"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
@@ -1135,20 +1123,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
-            <Class abbreviatedIRI="webprotege:R9cixZ0DMP9xmMPy5GWqhB1"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
-            <Class abbreviatedIRI="webprotege:RBcZS90WZvLu9taTKR1voq9"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
             <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
         </ObjectSomeValuesFrom>
@@ -1241,6 +1215,10 @@
         <NamedIndividual abbreviatedIRI="webprotege:R9sSeKuycYkpoiNkQGgHkkG"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7u27VcKMlqvjQOSdam1pKP"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9uiybwjw0LxtDxVLtnygP"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="webprotege:R94GgFMWp8eWJEc6Sqd5EJm"/>
         <NamedIndividual abbreviatedIRI="webprotege:R9uiybwjw0LxtDxVLtnygP"/>
     </ClassAssertion>
@@ -1303,28 +1281,7 @@
     <ClassAssertion>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
-            <Class abbreviatedIRI="webprotege:R2zIlhLPwW05lkr082rlcW"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
             <Class abbreviatedIRI="webprotege:R89EqKXZ7tfBRNDdQCYjuWm"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
-            <Class abbreviatedIRI="webprotege:R9cixZ0DMP9xmMPy5GWqhB1"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
-            <Class abbreviatedIRI="webprotege:RBcZS90WZvLu9taTKR1voq9"/>
         </ObjectSomeValuesFrom>
         <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
     </ClassAssertion>
@@ -1467,8 +1424,16 @@
         <NamedIndividual abbreviatedIRI="webprotege:Rx8khYk9f7wPf3ijyIBx57"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="webprotege:RB0FdaCYjSoyalAvq1qa55K"/>
         <NamedIndividual IRI="#Ice_Cream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
+        <NamedIndividual IRI="#Itching"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Pasta"/>
@@ -1479,8 +1444,16 @@
         <NamedIndividual IRI="#Milkshake"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7u27VcKMlqvjQOSdam1pKP"/>
+        <NamedIndividual IRI="#StomacheAche"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Rice"/>
         <NamedIndividual IRI="#Sushi_Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
+        <NamedIndividual IRI="#SwollenTongue"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
@@ -1779,6 +1752,21 @@
         <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
         <NamedIndividual abbreviatedIRI="webprotege:RBw2dpWYUwHAdnF41efoUh4"/>
         <NamedIndividual abbreviatedIRI="webprotege:R9sSeKuycYkpoiNkQGgHkkG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+        <NamedIndividual IRI="#Itching"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+        <NamedIndividual IRI="#StomacheAche"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RCFJ6AonPTNbH2buvvn2ufy"/>
+        <NamedIndividual IRI="#SwollenTongue"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="webprotege:R875IOYL0N3CcxcOJOEzWkI"/>
@@ -2094,6 +2082,10 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
+        <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty abbreviatedIRI="webprotege:ROkFmwbSyJRLaCnCobVxGX"/>
         <ObjectProperty IRI="#isFromCuisine"/>
     </InverseObjectProperties>
@@ -2123,7 +2115,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
-        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+        <Class abbreviatedIRI="webprotege:Health_Condition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="webprotege:RC65ZydKj6DXZ1ntFPt10Q2"/>
@@ -2136,6 +2128,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="webprotege:RCpGnktz3vYMR6WORsebgFM"/>
         <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
+        <Class abbreviatedIRI="webprotege:RDWXTLcBnZkH6OI7bXOyKC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="webprotege:RNrTQ4UJVtQOFfNQUtxbEr"/>
@@ -2219,7 +2215,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
-        <Class abbreviatedIRI="webprotege:RoOgteTV3q65pV2uyvP0Kj"/>
+        <Class abbreviatedIRI="webprotege:Health_Condition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="webprotege:RNrTQ4UJVtQOFfNQUtxbEr"/>
@@ -2343,13 +2339,13 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>webprotege:R0vqcwVwnci9d1gIUQoYq4</AbbreviatedIRI>
-        <Literal xml:lang="en">Cheese</Literal>
+        <AbbreviatedIRI>webprotege:Health_Condition</AbbreviatedIRI>
+        <Literal xml:lang="en">Health Condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>webprotege:R2zIlhLPwW05lkr082rlcW</AbbreviatedIRI>
-        <Literal xml:lang="en">Dizziness</Literal>
+        <AbbreviatedIRI>webprotege:R0vqcwVwnci9d1gIUQoYq4</AbbreviatedIRI>
+        <Literal xml:lang="en">Cheese</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2444,7 +2440,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:R7viGuyboItD8Ks6A6d23u3</AbbreviatedIRI>
-        <Literal xml:lang="en">Mental Symptoms</Literal>
+        <Literal xml:lang="en">Mental Symptom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2653,11 +2649,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>webprotege:R9cixZ0DMP9xmMPy5GWqhB1</AbbreviatedIRI>
-        <Literal xml:lang="en">Swollen Tongue</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:R9fTiJlgQknkTZGpHxfspGV</AbbreviatedIRI>
         <Literal xml:lang="en">containsMaterial</Literal>
     </AnnotationAssertion>
@@ -2690,11 +2681,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:R9sSeKuycYkpoiNkQGgHkkG</AbbreviatedIRI>
         <Literal xml:lang="en">Lombok</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>webprotege:R9tQoicKJjDFCcDoAzLgo6b</AbbreviatedIRI>
-        <Literal xml:lang="en">causesCondition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2803,13 +2789,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>webprotege:RBcZS90WZvLu9taTKR1voq9</AbbreviatedIRI>
-        <Literal xml:lang="en">Itching</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:RBd9d2Efy3BL3UKLn4ykVuW</AbbreviatedIRI>
-        <Literal xml:lang="en">Temporal Conditions</Literal>
+        <Literal xml:lang="en">Temporal Condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2889,7 +2870,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:RCKN4uia4UXTCeh9ztOQUsL</AbbreviatedIRI>
-        <Literal xml:lang="en">COVID-related Symptoms</Literal>
+        <Literal xml:lang="en">COVID-related Symptom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2994,7 +2975,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:RDWXTLcBnZkH6OI7bXOyKC</AbbreviatedIRI>
-        <Literal xml:lang="en">Symptoms</Literal>
+        <Literal xml:lang="en">Symptom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3049,7 +3030,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:REcO8p1prRahjA3PzOqLLx</AbbreviatedIRI>
-        <Literal xml:lang="en">Physical Symptoms</Literal>
+        <Literal xml:lang="en">Physical Symptom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3064,7 +3045,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:RIZXsrHnbtt2AReAK6gtwm</AbbreviatedIRI>
-        <Literal xml:lang="en">Chronical Conditions</Literal>
+        <Literal xml:lang="en">Chronical Condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3225,11 +3206,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>webprotege:RnVFYjel8NqyuCFq7E15oV</AbbreviatedIRI>
         <Literal xml:lang="en">Businesses</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>webprotege:RoOgteTV3q65pV2uyvP0Kj</AbbreviatedIRI>
-        <Literal xml:lang="en">Health Conditions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
