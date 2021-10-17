@@ -1,5 +1,6 @@
 from owlready2 import *
 from pprint import pprint
+import json
 
 # Ignore useless warnings
 #warnings.filterwarnings("ignore")
@@ -68,11 +69,18 @@ class Agent:
         class_results = [self.prop_to_label[result] for result in results if type(result) == self.property_type]
         pprint(class_results)
 
+def main(data_path):
+
+    data = json.load(open(data_path))
+
 
 
 '''
 Run program
 '''
+
+# data_path = ""
+# main(data_path)
 
 # Initialize agent and run some simple queries
 agent = Agent("onto_pizza.owl")
@@ -96,3 +104,8 @@ print(type(t) == agent.property_type)
 for x in t:
     print(agent.class_to_label[x])
 '''
+
+
+
+
+

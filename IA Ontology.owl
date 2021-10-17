@@ -230,6 +230,9 @@
         <Class IRI="#Bread"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ChargingPhone"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CoalEnergy"/>
     </Declaration>
     <Declaration>
@@ -255,6 +258,21 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingDishwasher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingWashingMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WashingByHand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WatchingTV"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WindEnergy"/>
@@ -651,6 +669,13 @@
         <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7OSewVr9VCmhRZ6AU8a3Nx"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="webprotege:R7VNLFgTErHurhO3CSrPbOr"/>
         <Class abbreviatedIRI="webprotege:RnVFYjel8NqyuCFq7E15oV"/>
     </SubClassOf>
@@ -668,6 +693,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:R7pySDplYgp4Ch3L2SB8oqn"/>
         <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:R7pySDplYgp4Ch3L2SB8oqn"/>
+        <DataExactCardinality cardinality="2">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
@@ -859,8 +891,22 @@
         <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
+        <DataExactCardinality cardinality="5">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="webprotege:RCHsJ9fVptaYH4D0uEJPVPG"/>
         <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RCHsJ9fVptaYH4D0uEJPVPG"/>
+        <DataExactCardinality cardinality="4">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
@@ -905,6 +951,13 @@
         <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RDtoTK5kV3TxxEDv3Jq4NQL"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="webprotege:REcO8p1prRahjA3PzOqLLx"/>
         <Class abbreviatedIRI="webprotege:RDWXTLcBnZkH6OI7bXOyKC"/>
     </SubClassOf>
@@ -928,6 +981,13 @@
         <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RMVMiUzQiFNaYFk7rJuOVB"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="webprotege:RMYe7goNrrJKw0DFMBxELE"/>
         <Class abbreviatedIRI="webprotege:R91cafYhVYtD42YPMTVSbh6"/>
     </SubClassOf>
@@ -938,6 +998,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
         <Class abbreviatedIRI="webprotege:R8QfkHIcVe0Szt14rT3TS65"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
+        <DataExactCardinality cardinality="2">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
@@ -972,6 +1039,13 @@
         <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="webprotege:RqCYJOLbMrKqPLhzeimvlN"/>
+        <DataExactCardinality cardinality="4">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="webprotege:RqrZojiQ3VhMdzvAfsvq5T"/>
         <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
     </SubClassOf>
@@ -984,12 +1058,23 @@
         <Class abbreviatedIRI="webprotege:R8aW6M0un216uw7DQnHni6B"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ChargingPhone"/>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargingPhone"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CoalEnergy"/>
         <Class abbreviatedIRI="webprotege:R9nfkJl4dg8WMDqLocXpGum"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CoalEnergy"/>
-        <DataExactCardinality cardinality="25">
+        <DataExactCardinality cardinality="5">
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
             <Datatype abbreviatedIRI="xsd:decimal"/>
         </DataExactCardinality>
@@ -1000,7 +1085,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GasEnergy"/>
-        <DataExactCardinality cardinality="15">
+        <DataExactCardinality cardinality="4">
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
             <Datatype abbreviatedIRI="xsd:decimal"/>
         </DataExactCardinality>
@@ -1039,7 +1124,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SolarEnergy"/>
-        <DataExactCardinality cardinality="2">
+        <DataExactCardinality cardinality="1">
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
             <Datatype abbreviatedIRI="xsd:decimal"/>
         </DataExactCardinality>
@@ -1063,6 +1148,61 @@
         <ObjectExactCardinality cardinality="2">
             <ObjectProperty abbreviatedIRI="webprotege:ROEvAS3CRHVo9VjN8G5Jwm"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingDishwasher"/>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingDishwasher"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingHeating"/>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingHeating"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingWashingMachine"/>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingWashingMachine"/>
+        <DataExactCardinality cardinality="4">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WashingByHand"/>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WashingByHand"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WatchingTV"/>
+        <Class abbreviatedIRI="webprotege:RDG0b4zhV91zHUZlTCgpT23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WatchingTV"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WindEnergy"/>
