@@ -1,0 +1,14 @@
+ {
+  "name": "Sophie",
+  "neighborhood": "Parkwijk",
+  "time_of_activity": "20:00",
+  "owns": ["Bike", "Car"],
+  "health_conditions": [],
+  "symptoms": ["swollenTongue", "itching", "stomachPain"],
+  "cuisines": [],
+  "food": ["seaFood", "shellFish", "and not seaFood", "and not shellFish"],
+  "pref_location": "Amsterdam",
+  "misc_activities": [],
+  "clothing_items": [],
+  "materials": []
+ }
