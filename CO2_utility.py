@@ -2,9 +2,9 @@
 strict_prefs1 = ["Shellfish"]
 strict_prefs2 = ["notShellfish"]
 #other preferences fulfilled by the agent; provided as a list
-prefs = ["not containsIngredient 'Grain'", "containsIngredient 'Carrot'"] 
+prefs = ["not containsIngredient 'Grain'"] 
 # user's preferences. [0] refers to strict preferences, [1] to other preferences, both provided as lists
-story = [["notShellfish"],["not containsIngredient 'Grain'"]] 
+story = [["notShellfish"],["not containsIngredient 'Grain'", "containsIngredient 'Carrot'"]] 
 # we will obtain the number of domains by getting the class of each object in the query 
 # and mapping it to a top-level doming, then converting to a set to remove duplicates 
 domains = {"Food"}
@@ -19,7 +19,7 @@ def CO2_utility(story, strict_prefs, prefs, CO2_value):
 
         #we calculate the percentage of unstrict conditions
         #by intersecting their set with users's prefs set
-        percent_match = len(set(prefs).intersection(story[1])) / max(len(set(prefs)),len(set(story[1])))
+        percent_match = len(set(prefs).intersection(story[1])) / len(set(story[1]))
         print("percent match is {}".format(percent_match))
         #we calculate the score; CO2 value is summed over the list
         score = percent_match * len(domains) / sum(CO2_value)
