@@ -1,0 +1,14 @@
+{
+  "name": "Bob",
+  "neighborhood": "Amsterdam-West",
+  "time_of_activity": "11:00",
+  "owns": ["Bike"],
+  "health_conditions": [],
+  "symptoms": ["sneezing", "fever"],
+  "cuisines": [],
+  "food": ["not 'Animal Based'"],
+  "pref_location": [],
+  "misc_activities": [],
+  "clothing_items": [],
+  "materials": []
+ }
