@@ -2086,6 +2086,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
         <NamedIndividual abbreviatedIRI="webprotege:R7jhIrM8sfG1ZcsK1UWR1L4"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1299</Literal>
@@ -2116,6 +2121,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
         <NamedIndividual abbreviatedIRI="webprotege:R8p8eLznF1UkRfMdyT4Ql8T"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">299</Literal>
@@ -2134,6 +2144,11 @@
         <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
         <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:R9Cik0Ex0sH1JRzYuLfL0zx"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
@@ -2171,6 +2186,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
         <NamedIndividual abbreviatedIRI="webprotege:RBD4HwlSlm6fKxEjDMkv5CE"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">199</Literal>
@@ -2184,6 +2204,11 @@
         <DataProperty abbreviatedIRI="webprotege:R9W6IBdd6TLabxsqlASzuJu"/>
         <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <NamedIndividual abbreviatedIRI="webprotege:RBvO3wZbQLsDo9XSvkSFCXF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
