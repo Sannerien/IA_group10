@@ -18,12 +18,16 @@ class Agent:
                 sync_reasoner(infer_property_values=True)
 
         # Additional
+        print(self.ontology.name)
+        print("IA Ontology".startswith(self.ontology.name))
+        for i in self.ontology.classes():
+            print(i, len(i.label))
         # Reference dictionaries between IRIs and given labels that might be useful
-        self.label_to_class = {ent.label[0]: ent for ent in self.ontology.classes()}
-        self.label_to_prop = {prop.label[0]: prop for prop in self.ontology.properties()}
+        self.label_to_class = {ent.label[0]: ent for ent in self.ontology.classes() if len(ent.label) > 0}
+        self.label_to_prop = {prop.label[0]: prop for prop in self.ontology.properties()if len(prop.label) > 0}
 
-        self.class_to_label = {ent:ent.label[0] for ent in self.ontology.classes()}
-        self.prop_to_label = {prop:prop.label[0] for prop in self.ontology.properties()}
+        self.class_to_label = {ent:ent.label[0] for ent in self.ontology.classes() if len(ent.label) > 0}
+        self.prop_to_label = {prop:prop.label[0] for prop in self.ontology.properties()if len(prop.label) > 0}
 
         # Save types to help differentiate between classes and properties later on
         self.class_type = type(list(self.ontology.classes())[0])
@@ -44,21 +48,21 @@ class Agent:
         print("Query responses:")
 
         # Get all the classes with the label ending in "_topping"
-        results = self.ontology.search(label="*_topping")
+        results = self.ontology.search(label="Transportation")
         class_results = [self.class_to_label[result] for result in results if type(result) == self.class_type]
         pprint(class_results)
 
         print("-" * 75)
 
         # Get all the classes that have "Vegetarian" as a superclass
-        results2 = self.ontology.search(subclass_of=self.ontology.search_one(label="Vegetarian"))
+        results2 = self.ontology.search(subclass_of=self.ontology.search_one(label="Public Transportation"))
         subclasses = [self.class_to_label[result] for result in results2 if type(result) == self.class_type]
         pprint(subclasses)
 
         print("-" * 75)
 
         # Get all the classes with a label containing "Pizza"
-        results = self.ontology.search(label="*Pizza*")
+        results = self.ontology.search(label="*Cloth*")
         class_results = [self.class_to_label[result] for result in results if type(result) == self.class_type]
         pprint(class_results)
 
@@ -83,27 +87,28 @@ Run program
 # main(data_path)
 
 # Initialize agent and run some simple queries
-agent = Agent("onto_pizza.owl")
+agent = Agent("IA Ontology.owl")
+#agent = Agent("onto_pizza.owl")
 agent.sanity_check()
 agent.simple_queries()
 
 
 
 # Old code still kept for referencing
-'''
-for c in list(agent.ontology.classes()):
-    print(c.label)
-    print(c.iri)
-    print(c.name)
-    print('\n')
 
-t = agent.ontology.search(label = "*Pizza*")
-print(t)
-print(type(t) == agent.class_type)
-print(type(t) == agent.property_type)
-for x in t:
-    print(agent.class_to_label[x])
-'''
+# for c in list(agent.ontology.classes()):
+#     print(c.label)
+#     print(c.iri)
+#     print(c.name)
+#     print('\n')
+#
+# t = agent.ontology.search(label = "*Pizza*")
+# print(t)
+# print(type(t) == agent.class_type)
+# print(type(t) == agent.property_type)
+# for x in t:
+#     print(agent.class_to_label[x])
+
 
 
 
