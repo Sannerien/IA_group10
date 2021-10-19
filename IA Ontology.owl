@@ -371,9 +371,6 @@
         <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#costsCO2"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasWeather"/>
     </Declaration>
     <Declaration>
@@ -729,10 +726,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:R7pySDplYgp4Ch3L2SB8oqn"/>
-        <DataExactCardinality cardinality="2">
+        <DataHasValue>
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:R7rHSs0T2tI4cQzU3INU2Ww"/>
@@ -925,10 +922,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
-        <DataExactCardinality cardinality="5">
+        <DataHasValue>
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RCHsJ9fVptaYH4D0uEJPVPG"/>
@@ -936,10 +933,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RCHsJ9fVptaYH4D0uEJPVPG"/>
-        <DataExactCardinality cardinality="4">
+        <DataHasValue>
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RCKN4uia4UXTCeh9ztOQUsL"/>
@@ -985,10 +982,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RDtoTK5kV3TxxEDv3Jq4NQL"/>
-        <DataExactCardinality cardinality="3">
+        <DataHasValue>
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:REcO8p1prRahjA3PzOqLLx"/>
@@ -1003,22 +1000,15 @@
         <Class abbreviatedIRI="webprotege:Health_Condition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="webprotege:RLZkY19UTupBf7uuekQdYL"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="webprotege:R8YDC9Zu0KHCdQDEOvlOltX"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="webprotege:RMVMiUzQiFNaYFk7rJuOVB"/>
         <Class abbreviatedIRI="webprotege:R8lggl1bEyVe1u5NFjKa47X"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RMVMiUzQiFNaYFk7rJuOVB"/>
-        <DataExactCardinality cardinality="0">
+        <DataHasValue>
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RMYe7goNrrJKw0DFMBxELE"/>
@@ -1034,10 +1024,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
-        <DataExactCardinality cardinality="2">
+        <DataHasValue>
             <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="webprotege:RaBbhhYruUvx8C5tyNa7ct"/>
@@ -2101,7 +2091,7 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.53</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
         <NamedIndividual abbreviatedIRI="webprotege:R84UaDHKyLSsU7KfSpU07pa"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
     </DataPropertyAssertion>
@@ -2161,7 +2151,7 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.01</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
         <NamedIndividual abbreviatedIRI="webprotege:R9r0gEQcocyrGxPt7SozTWQ"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
     </DataPropertyAssertion>
@@ -2236,12 +2226,12 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
         <NamedIndividual abbreviatedIRI="webprotege:RfrrAYpLkZSWrG2ZJAV2Eh"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
         <NamedIndividual abbreviatedIRI="webprotege:Rw6B1zIb6Mc1h083ZdkRAH"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
@@ -2251,22 +2241,22 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">210</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
         <NamedIndividual IRI="#Cheeseburger"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
         <NamedIndividual IRI="#Green_Curry"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
         <NamedIndividual IRI="#Milkshake"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
+        <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
         <NamedIndividual IRI="#Red_Curry"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
     </DataPropertyAssertion>
@@ -2368,10 +2358,6 @@
         <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="webprotege:RCpGnktz3vYMR6WORsebgFM"/>
-        <Class abbreviatedIRI="webprotege:RDcQa14U4r92f59f2mS807g"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
         <Class abbreviatedIRI="webprotege:RDWXTLcBnZkH6OI7bXOyKC"/>
     </ObjectPropertyDomain>
@@ -2452,10 +2438,6 @@
         <Class abbreviatedIRI="webprotege:ReOU0MPu2pK8kd0ovqaxIS"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="webprotege:RCpGnktz3vYMR6WORsebgFM"/>
-        <Class abbreviatedIRI="webprotege:RZ7riuyoSXUK27zXCe1fRe"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="webprotege:RGSBvJNK0GjmPyLNO5RHGv"/>
         <Class abbreviatedIRI="webprotege:Health_Condition"/>
     </ObjectPropertyRange>
@@ -2532,16 +2514,8 @@
         <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="webprotege:RBLxbNm7VoeCjPVkf6D9W9r"/>
-        <Class abbreviatedIRI="webprotege:RDGTVY4cPs0ESmq0ITRZEFh"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty abbreviatedIRI="webprotege:RhueRBQyPsRlgMYxA75pF8"/>
         <Class abbreviatedIRI="webprotege:RBJ5GhKK7aIieN3x3Da5wpC"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#costsCO2"/>
-        <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasWeather"/>
@@ -2573,10 +2547,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="webprotege:RuhG2gaNySClyQz5w7kpzM"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#costsCO2"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
