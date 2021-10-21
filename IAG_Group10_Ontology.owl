@@ -25,6 +25,9 @@
         <Class IRI="#Bike"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Bread"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Business"/>
     </Declaration>
     <Declaration>
@@ -35,9 +38,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Car"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ChargingPhone"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ChargingSpot"/>
@@ -103,7 +103,7 @@
         <Class IRI="#GasolineCar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Grain"/>
+        <Class IRI="#Grains"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hamburger"/>
@@ -143,6 +143,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Neighborhood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pasta"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
@@ -190,6 +193,9 @@
         <Class IRI="#Restaurant"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Rice"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Shellfish"/>
     </Declaration>
     <Declaration>
@@ -217,6 +223,9 @@
         <Class IRI="#Symptom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SyntheticMaterial"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TemporalCondition"/>
     </Declaration>
     <Declaration>
@@ -232,22 +241,7 @@
         <Class IRI="#UnsustainableEnergy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UsingDishwasher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UsingHeating"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UsingWashingMachine"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Vegetable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WashingByHand"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WatchingTV"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WeatherConditions"/>
@@ -278,6 +272,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#containsMeal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#forbids"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCuisine"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasOrigin"/>
@@ -346,6 +346,9 @@
         <DataProperty IRI="#travelDistance"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AcyclicFabric"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Alex"/>
     </Declaration>
     <Declaration>
@@ -364,19 +367,37 @@
         <NamedIndividual IRI="#Apple"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Baguette"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BangladeshOrigin"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Beef"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BellaItalia"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Berry"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Bershka"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BershkaTopcoat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BikeOfEmma"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Binnenstad"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Broccoli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bun"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Butter"/>
@@ -415,6 +436,9 @@
         <NamedIndividual IRI="#Cough"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Couscous"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#CowMilk"/>
     </Declaration>
     <Declaration>
@@ -427,6 +451,9 @@
         <NamedIndividual IRI="#Dizziness"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DutchOrigin"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Egg"/>
     </Declaration>
     <Declaration>
@@ -437,6 +464,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrenchOrigin"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GoatMilk"/>
@@ -469,10 +499,22 @@
         <NamedIndividual IRI="#Japanese"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#JasminRice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KiaE-Niro"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Kiwi"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Lasagna"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#LasagnaBolognese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leather"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Lombok"/>
@@ -485,6 +527,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nylon"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Orange"/>
@@ -505,6 +550,9 @@
         <NamedIndividual IRI="#Pork"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#RecycledCotton"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#RecycledSailsRaincoat"/>
     </Declaration>
     <Declaration>
@@ -523,10 +571,16 @@
         <NamedIndividual IRI="#ShellfishAllergy"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ShisoSushi"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Shrimp"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sophie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spaghetti"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SpaghettiCarbonara"/>
@@ -541,7 +595,13 @@
         <NamedIndividual IRI="#StrawberryMilkshake"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#SushiRice"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SwollenTongue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TastyAsian"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TeslaModel3"/>
@@ -577,10 +637,16 @@
         <NamedIndividual IRI="#UsingWashingMachine"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Utrecht"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#VegetableSushi"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WatchingTV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wool"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WoolAllergy"/>
@@ -608,6 +674,10 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Bread"/>
+        <Class IRI="#Grains"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Business"/>
         <Class IRI="#PhysicalStructure"/>
     </SubClassOf>
@@ -624,19 +694,15 @@
         <Class IRI="#PrivateTransportation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ChargingPhone"/>
-        <Class IRI="#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ChargingPhone"/>
-        <DataExactCardinality cardinality="2">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
+        <Class IRI="#ChargingSpot"/>
+        <Class IRI="#InfrastructuralObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChargingSpot"/>
-        <Class IRI="#InfrastructuralObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provides"/>
+            <Class IRI="#ElectricCar"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cheese"/>
@@ -657,6 +723,27 @@
     <SubClassOf>
         <Class IRI="#Clothing"/>
         <Class IRI="#ClothingEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clothing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#availableIn"/>
+            <Class IRI="#ClothingStore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clothing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#containsMaterial"/>
+            <Class IRI="#Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clothing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOrigin"/>
+            <Class IRI="#PlaceOfOrigin"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ClothingStore"/>
@@ -708,15 +795,15 @@
         <Class IRI="#PlaceOfOrigin"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#EverydayClothing"/>
-        <Class IRI="#Clothing"/>
+        <Class IRI="#EuropeanOrigin"/>
+        <DataExactCardinality cardinality="2">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EverydayClothing"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#availableIn"/>
-            <Class IRI="#ClothingStore"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#Clothing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fish"/>
@@ -749,7 +836,7 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Grain"/>
+        <Class IRI="#Grains"/>
         <Class IRI="#Ingredient"/>
     </SubClassOf>
     <SubClassOf>
@@ -788,7 +875,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LocalOrigin"/>
-        <Class IRI="#EuropeanOrigin"/>
+        <Class IRI="#PlaceOfOrigin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LocalOrigin"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Material"/>
@@ -811,6 +905,13 @@
         <Class IRI="#Material"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NaturalMaterial"/>
+        <DataExactCardinality cardinality="2">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Neighborhood"/>
         <Class IRI="#City"/>
     </SubClassOf>
@@ -827,6 +928,10 @@
             <ObjectProperty IRI="#contains"/>
             <Class IRI="#TrainStation"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pasta"/>
+        <Class IRI="#Grains"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhysicalDiscomfort"/>
@@ -873,8 +978,19 @@
         <Class IRI="#PlaceOfOrigin"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RemoteOrigin"/>
+        <DataExactCardinality cardinality="4">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Restaurant"/>
         <Class IRI="#Business"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rice"/>
+        <Class IRI="#Grains"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Shellfish"/>
@@ -937,6 +1053,17 @@
         <Class IRI="#Energy"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SyntheticMaterial"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntheticMaterial"/>
+        <DataExactCardinality cardinality="4">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TemporalCondition"/>
         <Class IRI="#HealthCondition"/>
     </SubClassOf>
@@ -956,67 +1083,19 @@
         <Class IRI="#InfrastructuralObject"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#provides"/>
+            <Class IRI="#Train"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UnsustainableEnergy"/>
         <Class IRI="#Energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UsingDishwasher"/>
-        <Class IRI="#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UsingDishwasher"/>
-        <DataExactCardinality cardinality="3">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UsingHeating"/>
-        <Class IRI="#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UsingHeating"/>
-        <DataExactCardinality cardinality="3">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UsingWashingMachine"/>
-        <Class IRI="#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UsingWashingMachine"/>
-        <DataExactCardinality cardinality="5">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Vegetable"/>
         <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WashingByHand"/>
-        <Class IRI="#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WashingByHand"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WatchingTV"/>
-        <Class IRI="#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WatchingTV"/>
-        <DataExactCardinality cardinality="3">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WindEnergy"/>
@@ -1034,6 +1113,11 @@
         <Class IRI="#PlantBased"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Bread"/>
+        <Class IRI="#Pasta"/>
+        <Class IRI="#Rice"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#By-Product"/>
         <Class IRI="#Fish"/>
         <Class IRI="#Meat"/>
@@ -1042,14 +1126,6 @@
         <Class IRI="#COVID-RelatedSymptom"/>
         <Class IRI="#MentalIlness"/>
         <Class IRI="#PhysicalSymptom"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ChargingPhone"/>
-        <Class IRI="#UsingDishwasher"/>
-        <Class IRI="#UsingHeating"/>
-        <Class IRI="#UsingWashingMachine"/>
-        <Class IRI="#WashingByHand"/>
-        <Class IRI="#WatchingTV"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Cheese"/>
@@ -1080,7 +1156,7 @@
     <DisjointClasses>
         <Class IRI="#Dairy"/>
         <Class IRI="#Fruit"/>
-        <Class IRI="#Grain"/>
+        <Class IRI="#Grains"/>
         <Class IRI="#Protein"/>
         <Class IRI="#Vegetable"/>
     </DisjointClasses>
@@ -1093,6 +1169,10 @@
         <Class IRI="#UnsustainableEnergy"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#SyntheticMaterial"/>
+        <NamedIndividual IRI="#AcyclicFabric"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Alex"/>
     </ClassAssertion>
@@ -1101,7 +1181,7 @@
         <NamedIndividual IRI="#American"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Neighborhood"/>
+        <Class IRI="#City"/>
         <NamedIndividual IRI="#Amsterdam"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1117,24 +1197,55 @@
         <NamedIndividual IRI="#Apple"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Bread"/>
+        <NamedIndividual IRI="#Baguette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RemoteOrigin"/>
+        <NamedIndividual IRI="#BangladeshOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Meat"/>
         <NamedIndividual IRI="#Beef"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#BellaItalia"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Fruit"/>
         <NamedIndividual IRI="#Berry"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ClothingStore"/>
+        <NamedIndividual IRI="#Bershka"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EverydayClothing"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bike"/>
+        <NamedIndividual IRI="#BikeOfEmma"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Neighborhood"/>
         <NamedIndividual IRI="#Binnenstad"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#TrainStation"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Broccoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bread"/>
+        <NamedIndividual IRI="#Bun"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ProcessedMilk"/>
@@ -1185,6 +1296,10 @@
         <NamedIndividual IRI="#Cough"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Rice"/>
+        <NamedIndividual IRI="#Couscous"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Milk"/>
         <NamedIndividual IRI="#CowMilk"/>
     </ClassAssertion>
@@ -1201,6 +1316,10 @@
         <NamedIndividual IRI="#Dizziness"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#LocalOrigin"/>
+        <NamedIndividual IRI="#DutchOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#By-Product"/>
         <NamedIndividual IRI="#Egg"/>
     </ClassAssertion>
@@ -1215,6 +1334,10 @@
     <ClassAssertion>
         <Class IRI="#COVID-RelatedSymptom"/>
         <NamedIndividual IRI="#Fever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanOrigin"/>
+        <NamedIndividual IRI="#FrenchOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Milk"/>
@@ -1257,12 +1380,28 @@
         <NamedIndividual IRI="#Japanese"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Rice"/>
+        <NamedIndividual IRI="#JasminRice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElectricCar"/>
+        <NamedIndividual IRI="#KiaE-Niro"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Fruit"/>
         <NamedIndividual IRI="#Kiwi"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Pasta"/>
+        <NamedIndividual IRI="#Lasagna"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Lasagna"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalMaterial"/>
+        <NamedIndividual IRI="#Leather"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Neighborhood"/>
@@ -1279,6 +1418,10 @@
     <ClassAssertion>
         <Class IRI="#EverydayClothing"/>
         <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntheticMaterial"/>
+        <NamedIndividual IRI="#Nylon"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Fruit"/>
@@ -1305,6 +1448,10 @@
         <NamedIndividual IRI="#Pork"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#NaturalMaterial"/>
+        <NamedIndividual IRI="#RecycledCotton"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EverydayClothing"/>
         <NamedIndividual IRI="#RecycledSailsRaincoat"/>
     </ClassAssertion>
@@ -1329,12 +1476,20 @@
         <NamedIndividual IRI="#ShellfishAllergy"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#ShisoSushi"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Shellfish"/>
         <NamedIndividual IRI="#Shrimp"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Sophie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pasta"/>
+        <NamedIndividual IRI="#Spaghetti"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Spaghetti"/>
@@ -1353,8 +1508,16 @@
         <NamedIndividual IRI="#StrawberryMilkshake"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Rice"/>
+        <NamedIndividual IRI="#SushiRice"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#PhysicalDiscomfort"/>
         <NamedIndividual IRI="#SwollenTongue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#TastyAsian"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ElectricCar"/>
@@ -1401,12 +1564,20 @@
         <NamedIndividual IRI="#UsingWashingMachine"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Utrecht"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Sushi"/>
         <NamedIndividual IRI="#VegetableSushi"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Activity"/>
         <NamedIndividual IRI="#WatchingTV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalMaterial"/>
+        <NamedIndividual IRI="#Wool"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Allergy"/>
@@ -1416,6 +1587,571 @@
         <Class IRI="#ProcessedMilk"/>
         <NamedIndividual IRI="#Yoghurt"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#American"/>
+        <NamedIndividual IRI="#Cheeseburger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#American"/>
+        <NamedIndividual IRI="#StrawberryMilkshake"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <NamedIndividual IRI="#BellaItalia"/>
+        <NamedIndividual IRI="#Italian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#availableIn"/>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+        <NamedIndividual IRI="#Bershka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+        <NamedIndividual IRI="#AcyclicFabric"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+        <NamedIndividual IRI="#BangladeshOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOwner"/>
+        <NamedIndividual IRI="#BikeOfEmma"/>
+        <NamedIndividual IRI="#Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#Amsterdam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#Cheeseburger"/>
+        <NamedIndividual IRI="#Beef"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#Cheeseburger"/>
+        <NamedIndividual IRI="#Bun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#Cheeseburger"/>
+        <NamedIndividual IRI="#Cheddar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#Amsterdam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#GreenCurry"/>
+        <NamedIndividual IRI="#ChiliPepper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#GreenCurry"/>
+        <NamedIndividual IRI="#CoconutMilk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#GreenCurry"/>
+        <NamedIndividual IRI="#JasminRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#GreenCurry"/>
+        <NamedIndividual IRI="#Tofu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Italian"/>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Italian"/>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causesCaseOf"/>
+        <NamedIndividual IRI="#Itching"/>
+        <NamedIndividual IRI="#ShellfishAllergy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Japanese"/>
+        <NamedIndividual IRI="#SalmonSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Japanese"/>
+        <NamedIndividual IRI="#VegetableSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
+        <NamedIndividual IRI="#Beef"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
+        <NamedIndividual IRI="#Lasagna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
+        <NamedIndividual IRI="#Tomato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#Utrecht"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMaterial"/>
+        <NamedIndividual IRI="#MMWoolenTopcoat"/>
+        <NamedIndividual IRI="#Wool"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#MMWoolenTopcoat"/>
+        <NamedIndividual IRI="#FrenchOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMaterial"/>
+        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+        <NamedIndividual IRI="#Nylon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+        <NamedIndividual IRI="#FrenchOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMaterial"/>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+        <NamedIndividual IRI="#Leather"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+        <NamedIndividual IRI="#RomanianOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#Utrecht"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMaterial"/>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
+        <NamedIndividual IRI="#RecycledCotton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
+        <NamedIndividual IRI="#DutchOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#RedCurry"/>
+        <NamedIndividual IRI="#Chicken"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#RedCurry"/>
+        <NamedIndividual IRI="#ChiliPepper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#RedCurry"/>
+        <NamedIndividual IRI="#CoconutMilk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#RedCurry"/>
+        <NamedIndividual IRI="#JasminRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SalmonSushi"/>
+        <NamedIndividual IRI="#Salmon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SalmonSushi"/>
+        <NamedIndividual IRI="#SushiRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#ShellfishAllergy"/>
+        <NamedIndividual IRI="#Itching"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#ShellfishAllergy"/>
+        <NamedIndividual IRI="#StomachAche"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#ShellfishAllergy"/>
+        <NamedIndividual IRI="#SwollenTongue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <NamedIndividual IRI="#ShisoSushi"/>
+        <NamedIndividual IRI="#Japanese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ShisoSushi"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Sophie"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+        <NamedIndividual IRI="#Beef"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+        <NamedIndividual IRI="#Egg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+        <NamedIndividual IRI="#Spaghetti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#StrawberryMilkshake"/>
+        <NamedIndividual IRI="#CowMilk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#StrawberryMilkshake"/>
+        <NamedIndividual IRI="#IceCream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <NamedIndividual IRI="#TastyAsian"/>
+        <NamedIndividual IRI="#Thai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#TastyAsian"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Thai"/>
+        <NamedIndividual IRI="#GreenCurry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Thai"/>
+        <NamedIndividual IRI="#RedCurry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#VegetableSushi"/>
+        <NamedIndividual IRI="#Cucumber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#VegetableSushi"/>
+        <NamedIndividual IRI="#SushiRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causesCaseOf"/>
+        <NamedIndividual IRI="#Wool"/>
+        <NamedIndividual IRI="#WoolAllergy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#WoolAllergy"/>
+        <NamedIndividual IRI="#Itching"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#AcyclicFabric"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#BangladeshOrigin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">69</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerKm"/>
+        <NamedIndividual IRI="#BikeOfEmma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#ChargingPhone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#Cheeseburger"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#DutchOrigin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#FrenchOrigin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#GreenCurry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#KiaE-Niro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#KiaE-Niro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#Leather"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#MMWoolenTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#MMWoolenTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#MMWoolenTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">299</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#MMWoolenTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">199</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#Nylon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1299</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#RecycledCotton"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">229</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#RedCurry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#RomanianOrigin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#SalmonSushi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#StrawberryMilkshake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.081</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerKm"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.197</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerKm"/>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.037</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#travelDistance"/>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerKm"/>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.037</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#travelDistance"/>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#UsingDishwasher"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#UsingHeating"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#UsingWashingMachine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#VegetableSushi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#WatchingTV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#Wool"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13.89</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#availableIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -1521,6 +2257,14 @@
         <Class IRI="#Cuisine"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#forbids"/>
+        <Class IRI="#COVID-RelatedSymptom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOrigin"/>
         <Class IRI="#Clothing"/>
     </ObjectPropertyDomain>
@@ -1571,6 +2315,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#containsMeal"/>
         <Class IRI="#Recipe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#forbids"/>
+        <Class IRI="#Transportation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <Class IRI="#Cuisine"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOrigin"/>
@@ -1683,6 +2435,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AcyclicFabric</IRI>
+        <Literal>Acyclic Fabric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Allergy</IRI>
         <Literal>Allergy</Literal>
     </AnnotationAssertion>
@@ -1693,8 +2450,63 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BangladeshOrigin</IRI>
+        <Literal>Bangladesh Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Beef</IRI>
+        <Literal>Beef</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BellaItalia</IRI>
+        <Literal>Bella Italia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Berry</IRI>
+        <Literal>Berry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bershka</IRI>
+        <Literal>Bershka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BershkaTopcoat</IRI>
+        <Literal>Bershka Topcoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Bike</IRI>
         <Literal>Bike</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BikeOfEmma</IRI>
+        <Literal>Bike Of Emma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Binnenstad</IRI>
+        <Literal>Binnenstad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Broccoli</IRI>
+        <Literal>Vegetable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bun</IRI>
+        <Literal>Bun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Butter</IRI>
+        <Literal>Butter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1713,6 +2525,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Carrot</IRI>
+        <Literal>Carrot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cashew</IRI>
+        <Literal>Cashew</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ChargingPhone</IRI>
         <Literal>Charging Phone</Literal>
     </AnnotationAssertion>
@@ -1723,8 +2545,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cheddar</IRI>
+        <Literal>Cheddar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Cheese</IRI>
         <Literal>Cheese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cheeseburger</IRI>
+        <Literal>Cheeseburger</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1733,8 +2565,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chicken</IRI>
+        <Literal>Chicken</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chickpea</IRI>
+        <Literal>Chickpea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChiliPepper</IRI>
+        <Literal>Chili Pepper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ChronicalCondition</IRI>
         <Literal>Chronical Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CitrusAllergy</IRI>
+        <Literal>Citrus Allergy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1758,6 +2610,31 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CoconutMilk</IRI>
+        <Literal>Coconut Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cough</IRI>
+        <Literal>Cough</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Couscous</IRI>
+        <Literal>Couscous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CowMilk</IRI>
+        <Literal>Cow Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cucumber</IRI>
+        <Literal>Cucumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Cuisine</IRI>
         <Literal>Cuisine</Literal>
     </AnnotationAssertion>
@@ -1768,8 +2645,33 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DePijp</IRI>
+        <Literal>De Pijp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DutchOrigin</IRI>
+        <Literal>Dutch Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Egg</IRI>
+        <Literal>Egg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ElectricCar</IRI>
         <Literal>Electric Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Emma</IRI>
+        <Literal>Emma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Emmentaler</IRI>
+        <Literal>Emmentaler</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1788,6 +2690,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fever</IRI>
+        <Literal>Fever</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Fish</IRI>
         <Literal>Fish</Literal>
     </AnnotationAssertion>
@@ -1795,6 +2702,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Food</IRI>
         <Literal>Food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FrenchOrigin</IRI>
+        <Literal>French Origin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1813,13 +2725,48 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Grain</IRI>
-        <Literal>Grain</Literal>
+        <IRI>#GoatMilk</IRI>
+        <Literal>Goat Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gorgonzola</IRI>
+        <Literal>Gorgonzola</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gouda</IRI>
+        <Literal>Gouda</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grachtengordel</IRI>
+        <Literal>Grachtengordel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grains</IRI>
+        <Literal>Grains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GreekYoghurt</IRI>
+        <Literal>Greek Yoghurt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GreenCurry</IRI>
+        <Literal>Green Curry</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HealthCondition</IRI>
         <Literal>Health Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IceCream</IRI>
+        <Literal>Ice Cream</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1838,8 +2785,63 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Italian</IRI>
+        <Literal>Italian Cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Itching</IRI>
+        <Literal>Itching</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Japanese</IRI>
+        <Literal>Japanese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JasminRice</IRI>
+        <Literal>Jasmin Rice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KiaE-Niro</IRI>
+        <Literal>Kia E-Niro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Kiwi</IRI>
+        <Literal>Kiwi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Lasagna</IRI>
         <Literal>Lasagna</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LasagnaBolognese</IRI>
+        <Literal>Lasagna Bolognese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Leather</IRI>
+        <Literal>Leather</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lombok</IRI>
+        <Literal>Lombok</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LossOfTaste</IRI>
+        <Literal>Loss Of Taste</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MMWoolenTopcoat</IRI>
+        <Literal>MMM Woolen Topcoat</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1863,8 +2865,38 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NanushkaNylonTrenchcoat</IRI>
+        <Literal>Nanushka Nylon Overcoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NaturalMaterial</IRI>
         <Literal>Natural Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nylon</IRI>
+        <Literal>Nylon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Orange</IRI>
+        <Literal>Orange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OurLegacyLeatherOvershirt</IRI>
+        <Literal>Our Legacy Leather Overshirt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Parkwijk</IRI>
+        <Literal>Parkwijk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Parmesan</IRI>
+        <Literal>Parmesan</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1888,6 +2920,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pineapple</IRI>
+        <Literal>Pineapple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PlaceOfOrigin</IRI>
         <Literal>Place Of Origin</Literal>
     </AnnotationAssertion>
@@ -1895,6 +2932,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PlantBased</IRI>
         <Literal>Plant Based</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pork</IRI>
+        <Literal>Pork</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1918,6 +2960,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RecycledCotton</IRI>
+        <Literal>Recycled Cotton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RecycledSailsRaincoat</IRI>
+        <Literal>Recycled Sails Raincoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RedCurry</IRI>
+        <Literal>Red Curry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RemoteOrigin</IRI>
         <Literal>Remote Origin</Literal>
     </AnnotationAssertion>
@@ -1938,13 +2995,43 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Salmon</IRI>
+        <Literal>Salmon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SalmonSushi</IRI>
+        <Literal>Salmon Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Shellfish</IRI>
         <Literal>Shellfish</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShellfishAllergy</IRI>
+        <Literal>Shellfish Allergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShisoSushi</IRI>
+        <Literal>Shiso Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Shrimp</IRI>
+        <Literal>Shrimp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SolarEnergy</IRI>
         <Literal>Solar Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sophie</IRI>
+        <Literal>Sophie</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1958,8 +3045,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spinach</IRI>
+        <Literal>Spinach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SportClothing</IRI>
         <Literal>Sport Clothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StomachAche</IRI>
+        <Literal>Stomach Ache</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1978,8 +3075,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SushiRice</IRI>
+        <Literal>Sushi Rice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SustainableEnergy</IRI>
         <Literal>Sustainable Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SwollenTongue</IRI>
+        <Literal>Swollen Tongue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1988,13 +3095,53 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SyntheticMaterial</IRI>
+        <Literal>Synthetic Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TastyAsian</IRI>
+        <Literal>Tasty Asian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TemporalCondition</IRI>
         <Literal>Temporal Condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TeslaModel3</IRI>
+        <Literal>Tesla Model 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tofu</IRI>
+        <Literal>Tofu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tomato</IRI>
+        <Literal>Tomato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ToyotaCorolla2020</IRI>
+        <Literal>Toyota Corolla 2020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Train</IRI>
         <Literal>Train</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TrainFromAmsterdamToUtrecht</IRI>
+        <Literal>Train From Amsterdam To Utrecht</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TrainFromUtrechtToAmsterdam</IRI>
+        <Literal>Train From Utrecht To Amsterdam</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2005,6 +3152,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Transportation</IRI>
         <Literal>Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tuna</IRI>
+        <Literal>Tuna</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2028,13 +3180,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Utrecht</IRI>
+        <Literal>Utrecht</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Vegetable</IRI>
         <Literal>Vegetable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WashingByHand</IRI>
-        <Literal>Washing By Hand</Literal>
+        <IRI>#VegetableSushi</IRI>
+        <Literal>Vegetable Sushi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2050,6 +3207,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#WindEnergy</IRI>
         <Literal>Wind Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wool</IRI>
+        <Literal>Wool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WoolAllergy</IRI>
+        <Literal>Wool Allergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Yoghurt</IRI>
+        <Literal>Yoghurt</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2090,6 +3262,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#containsMeal</IRI>
         <Literal>containsMeal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#forbids</IRI>
+        <Literal>forbids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCuisine</IRI>
+        <Literal>hasCuisine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
