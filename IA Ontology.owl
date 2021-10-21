@@ -1375,27 +1375,6 @@
         <NamedIndividual abbreviatedIRI="webprotege:R7wb6cBrNs02cTJiohc8odO"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="webprotege:RC4CuaLdt2GtySqWUJki82H"/>
-            <Class abbreviatedIRI="webprotege:R7u27VcKMlqvjQOSdam1pKP"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
-            <Class abbreviatedIRI="webprotege:RCBZYygdgG2yVfoH8z1d56U"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="webprotege:ReHuScGj8VTczaWNRGgo6n"/>
-            <Class abbreviatedIRI="webprotege:RMVMiUzQiFNaYFk7rJuOVB"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI="webprotege:R7xMwIFHfGfxTN0Pa3yUrEl"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Sushi"/>
         <NamedIndividual abbreviatedIRI="webprotege:R84UaDHKyLSsU7KfSpU07pa"/>
     </ClassAssertion>

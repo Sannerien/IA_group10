@@ -1,0 +1,2159 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alecf/ontologies/2021/9/IAG_Group10_Ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alecf/ontologies/2021/9/IAG_Group10_Ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/alecf/ontologies/2021/9/IAG_Group10_Ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Allergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalBased"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#By-Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COVID-RelatedSymptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChargingPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cheese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChestPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChronicalCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clothing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClothingEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClothingStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoalEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cuisine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Curry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dairy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EuropeanOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EverydayClothing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasolineCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hamburger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfrastructuralObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lasagna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocalOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MentalIlness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Milk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neighborhood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalDiscomfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalSymptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceOfOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantBased"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateTransportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessedMilk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicTransportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemoteOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidentialLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shellfish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spaghetti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportClothing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StomachPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrawberryMilkshake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SustainableEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnsustainableEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingDishwasher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingWashingMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WashingByHand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WatchingTV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherConditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindEnergy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adjacentTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#availableIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causesCaseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consumesEnergy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsMeal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStopIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#influences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFromCuisine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#livesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesEnergyTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rideSharing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#travelsWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#emitsCO2PerKm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCO2score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPopulation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPriceEur"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeather"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isFairTrade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isVegan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#travelDistance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#American"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amsterdam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beef"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Berry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Broccoli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Butter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carrot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cashew"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChargingPhone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cheddar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cheeseburger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chicken"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chickpea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChiliPepper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CitrusAllergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoconutMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CowMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cucumber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DePijp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dizziness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Egg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emmentaler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GoatMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gorgonzola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gouda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GreekYoghurt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GreenCurry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IceCream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Itching"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Japanese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kiwi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lombok"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LossOfTaste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MMWoolenTopcoat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Orange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parmesan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pineapple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RedCurry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RomanianOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salmon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SalmonSushi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShellfishAllergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shrimp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sophie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spinach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StomachAche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StrawberryMilkshake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SwollenTongue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TeslaModel3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tofu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tomato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tuna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UsingDishwasher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UsingHeating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UsingWashingMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VegetableSushi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WatchingTV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WoolAllergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yoghurt"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Allergy"/>
+        <Class IRI="#ChronicalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalBased"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bike"/>
+        <Class IRI="#PrivateTransportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bike"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Business"/>
+        <Class IRI="#PhysicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#By-Product"/>
+        <Class IRI="#AnimalBased"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COVID-RelatedSymptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#PrivateTransportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargingPhone"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargingPhone"/>
+        <DataExactCardinality cardinality="2">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargingSpot"/>
+        <Class IRI="#InfrastructuralObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cheese"/>
+        <Class IRI="#Dairy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChestPain"/>
+        <Class IRI="#PhysicalPain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChronicalCondition"/>
+        <Class IRI="#HealthCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#ResidentialLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clothing"/>
+        <Class IRI="#ClothingEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClothingStore"/>
+        <Class IRI="#Business"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoalEnergy"/>
+        <Class IRI="#UnsustainableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoalEnergy"/>
+        <DataExactCardinality cardinality="5">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cuisine"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Curry"/>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Curry"/>
+        <ObjectExactCardinality cardinality="4">
+            <ObjectProperty IRI="#containsIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dairy"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricCar"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricCar"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EuropeanOrigin"/>
+        <Class IRI="#PlaceOfOrigin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EverydayClothing"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EverydayClothing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#availableIn"/>
+            <Class IRI="#ClothingStore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <Class IRI="#AnimalBased"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruit"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasEnergy"/>
+        <Class IRI="#UnsustainableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasEnergy"/>
+        <DataExactCardinality cardinality="4">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasolineCar"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasolineCar"/>
+        <DataExactCardinality cardinality="5">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grain"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hamburger"/>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hamburger"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="#containsIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfrastructuralObject"/>
+        <Class IRI="#PhysicalStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intolerance"/>
+        <Class IRI="#ChronicalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lasagna"/>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lasagna"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="#containsIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LocalOrigin"/>
+        <Class IRI="#EuropeanOrigin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class IRI="#ClothingEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meat"/>
+        <Class IRI="#AnimalBased"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MentalIlness"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Milk"/>
+        <Class IRI="#Dairy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalMaterial"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighborhood"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighborhood"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#ChargingSpot"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighborhood"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#TrainStation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalDiscomfort"/>
+        <Class IRI="#PhysicalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalPain"/>
+        <Class IRI="#PhysicalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalSymptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfOrigin"/>
+        <Class IRI="#ClothingEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlantBased"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateTransportation"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessedMilk"/>
+        <Class IRI="#Dairy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protein"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicTransportation"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteOrigin"/>
+        <Class IRI="#PlaceOfOrigin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <Class IRI="#Business"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shellfish"/>
+        <Class IRI="#AnimalBased"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarEnergy"/>
+        <Class IRI="#SustainableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarEnergy"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spaghetti"/>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spaghetti"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="#containsIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportClothing"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StomachPain"/>
+        <Class IRI="#PhysicalPain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrawberryMilkshake"/>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrawberryMilkshake"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#containsIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sushi"/>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sushi"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#containsIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SustainableEnergy"/>
+        <Class IRI="#Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemporalCondition"/>
+        <Class IRI="#HealthCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#PublicTransportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <DataExactCardinality cardinality="2">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <Class IRI="#InfrastructuralObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnsustainableEnergy"/>
+        <Class IRI="#Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingDishwasher"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingDishwasher"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingHeating"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingHeating"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingWashingMachine"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingWashingMachine"/>
+        <DataExactCardinality cardinality="5">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetable"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WashingByHand"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WashingByHand"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WatchingTV"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WatchingTV"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindEnergy"/>
+        <Class IRI="#SustainableEnergy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindEnergy"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AnimalBased"/>
+        <Class IRI="#PlantBased"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#By-Product"/>
+        <Class IRI="#Fish"/>
+        <Class IRI="#Meat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#COVID-RelatedSymptom"/>
+        <Class IRI="#MentalIlness"/>
+        <Class IRI="#PhysicalSymptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChargingPhone"/>
+        <Class IRI="#UsingDishwasher"/>
+        <Class IRI="#UsingHeating"/>
+        <Class IRI="#UsingWashingMachine"/>
+        <Class IRI="#WashingByHand"/>
+        <Class IRI="#WatchingTV"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cheese"/>
+        <Class IRI="#Milk"/>
+        <Class IRI="#ProcessedMilk"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChronicalCondition"/>
+        <Class IRI="#TemporalCondition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CoalEnergy"/>
+        <Class IRI="#GasEnergy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cuisine"/>
+        <Class IRI="#Ingredient"/>
+        <Class IRI="#Recipe"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Curry"/>
+        <Class IRI="#Hamburger"/>
+        <Class IRI="#Lasagna"/>
+        <Class IRI="#Spaghetti"/>
+        <Class IRI="#StrawberryMilkshake"/>
+        <Class IRI="#Sushi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dairy"/>
+        <Class IRI="#Fruit"/>
+        <Class IRI="#Grain"/>
+        <Class IRI="#Protein"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SolarEnergy"/>
+        <Class IRI="#WindEnergy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SustainableEnergy"/>
+        <Class IRI="#UnsustainableEnergy"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Alex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#American"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#Amsterdam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Anna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruit"/>
+        <NamedIndividual IRI="#Apple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meat"/>
+        <NamedIndividual IRI="#Beef"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruit"/>
+        <NamedIndividual IRI="#Berry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EverydayClothing"/>
+        <NamedIndividual IRI="#BershkaTopcoat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Broccoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessedMilk"/>
+        <NamedIndividual IRI="#Butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Carrot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantBased"/>
+        <NamedIndividual IRI="#Cashew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#ChargingPhone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cheese"/>
+        <NamedIndividual IRI="#Cheddar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hamburger"/>
+        <NamedIndividual IRI="#Cheeseburger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meat"/>
+        <NamedIndividual IRI="#Chicken"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantBased"/>
+        <NamedIndividual IRI="#Chickpea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#ChiliPepper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Allergy"/>
+        <NamedIndividual IRI="#CitrusAllergy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Milk"/>
+        <NamedIndividual IRI="#CoconutMilk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COVID-RelatedSymptom"/>
+        <NamedIndividual IRI="#Cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Milk"/>
+        <NamedIndividual IRI="#CowMilk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Cucumber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalDiscomfort"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#By-Product"/>
+        <NamedIndividual IRI="#Egg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Emma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cheese"/>
+        <NamedIndividual IRI="#Emmentaler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COVID-RelatedSymptom"/>
+        <NamedIndividual IRI="#Fever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Milk"/>
+        <NamedIndividual IRI="#GoatMilk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cheese"/>
+        <NamedIndividual IRI="#Gorgonzola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cheese"/>
+        <NamedIndividual IRI="#Gouda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessedMilk"/>
+        <NamedIndividual IRI="#GreekYoghurt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Curry"/>
+        <NamedIndividual IRI="#GreenCurry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessedMilk"/>
+        <NamedIndividual IRI="#IceCream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Italian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalDiscomfort"/>
+        <NamedIndividual IRI="#Itching"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Japanese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruit"/>
+        <NamedIndividual IRI="#Kiwi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lasagna"/>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#COVID-RelatedSymptom"/>
+        <NamedIndividual IRI="#LossOfTaste"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EverydayClothing"/>
+        <NamedIndividual IRI="#MMWoolenTopcoat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EverydayClothing"/>
+        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruit"/>
+        <NamedIndividual IRI="#Orange"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EverydayClothing"/>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cheese"/>
+        <NamedIndividual IRI="#Parmesan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruit"/>
+        <NamedIndividual IRI="#Pineapple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meat"/>
+        <NamedIndividual IRI="#Pork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EverydayClothing"/>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Curry"/>
+        <NamedIndividual IRI="#RedCurry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanOrigin"/>
+        <NamedIndividual IRI="#RomanianOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fish"/>
+        <NamedIndividual IRI="#Salmon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sushi"/>
+        <NamedIndividual IRI="#SalmonSushi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Allergy"/>
+        <NamedIndividual IRI="#ShellfishAllergy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shellfish"/>
+        <NamedIndividual IRI="#Shrimp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Sophie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spaghetti"/>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Spinach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StomachPain"/>
+        <NamedIndividual IRI="#StomachAche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrawberryMilkshake"/>
+        <NamedIndividual IRI="#StrawberryMilkshake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalDiscomfort"/>
+        <NamedIndividual IRI="#SwollenTongue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElectricCar"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Thai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantBased"/>
+        <NamedIndividual IRI="#Tofu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Tomato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GasolineCar"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Train"/>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Train"/>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fish"/>
+        <NamedIndividual IRI="#Tuna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#UsingDishwasher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#UsingHeating"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#UsingWashingMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sushi"/>
+        <NamedIndividual IRI="#VegetableSushi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#WatchingTV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Allergy"/>
+        <NamedIndividual IRI="#WoolAllergy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessedMilk"/>
+        <NamedIndividual IRI="#Yoghurt"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#availableIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#causesCaseOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsMaterial"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsMeal"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOwner"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStopIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#influences"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFromCuisine"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#livesIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#owns"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#provides"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#rideSharing"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#travelsWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#causesCaseOf"/>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#containsMeal"/>
+        <ObjectProperty IRI="#isFromCuisine"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#consumesEnergy"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#adjacentTo"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#availableIn"/>
+        <Class IRI="#Clothing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causesCaseOf"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#causesCaseOf"/>
+            <Class IRI="#Symptom"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consumesEnergy"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsMeal"/>
+        <Class IRI="#Cuisine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <Class IRI="#Clothing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOwner"/>
+        <Class IRI="#PrivateTransportation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStopIn"/>
+        <Class IRI="#Train"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#influences"/>
+        <Class IRI="#WeatherConditions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFromCuisine"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#livesIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rideSharing"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#travelsWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#availableIn"/>
+        <Class IRI="#ClothingStore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consumesEnergy"/>
+        <Class IRI="#Energy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsMeal"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <Class IRI="#PlaceOfOrigin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOwner"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStopIn"/>
+        <Class IRI="#TrainStation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#influences"/>
+        <Class IRI="#Energy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#influences"/>
+        <Class IRI="#Transportation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFromCuisine"/>
+        <Class IRI="#Cuisine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#livesIn"/>
+        <Class IRI="#Neighborhood"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#PrivateTransportation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rideSharing"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#travelsWith"/>
+        <Class IRI="#Transportation"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <DataProperty IRI="#hasCO2score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#emitsCO2PerKm"/>
+        <DataProperty IRI="#hasCO2score"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCO2score"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPopulation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPriceEur"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWeather"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isFairTrade"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isVegan"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#travelDistance"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPriceEur"/>
+        <Class IRI="#Clothing"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCO2score"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPopulation"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPriceEur"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isFairTrade"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isVegan"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#travelDistance"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Activity</IRI>
+        <Literal>Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Allergy</IRI>
+        <Literal>Allergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnimalBased</IRI>
+        <Literal>Animal Based</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bike</IRI>
+        <Literal>Bike</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#By-Product</IRI>
+        <Literal>By-Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#COVID-RelatedSymptom</IRI>
+        <Literal>COVID-Related Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Car</IRI>
+        <Literal>Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChargingPhone</IRI>
+        <Literal>Charging Phone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChargingSpot</IRI>
+        <Literal>Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cheese</IRI>
+        <Literal>Cheese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChestPain</IRI>
+        <Literal>Chest Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChronicalCondition</IRI>
+        <Literal>Chronical Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Clothing</IRI>
+        <Literal>Clothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClothingEntity</IRI>
+        <Literal>Clothing Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClothingStore</IRI>
+        <Literal>Clothing Store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CoalEnergy</IRI>
+        <Literal>Coal Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cuisine</IRI>
+        <Literal>Cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dairy</IRI>
+        <Literal>Dairy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElectricCar</IRI>
+        <Literal>Electric Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Energy</IRI>
+        <Literal>Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EuropeanOrigin</IRI>
+        <Literal>European Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EverydayClothing</IRI>
+        <Literal>Everyday Clothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fish</IRI>
+        <Literal>Fish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Food</IRI>
+        <Literal>Food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fruit</IRI>
+        <Literal>Fruit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GasEnergy</IRI>
+        <Literal>Gas Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GasolineCar</IRI>
+        <Literal>Gasoline Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grain</IRI>
+        <Literal>Grain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HealthCondition</IRI>
+        <Literal>Health Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InfrastructuralObject</IRI>
+        <Literal>Infrastructural Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ingredient</IRI>
+        <Literal>Ingredient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Intolerance</IRI>
+        <Literal>Intolerance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lasagna</IRI>
+        <Literal>Lasagna</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Material</IRI>
+        <Literal>Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Meat</IRI>
+        <Literal>Meat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MentalIlness</IRI>
+        <Literal>Mental Illnesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Milk</IRI>
+        <Literal>Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaturalMaterial</IRI>
+        <Literal>Natural Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalDiscomfort</IRI>
+        <Literal>Physical Discomfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalPain</IRI>
+        <Literal>Physical Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalStructure</IRI>
+        <Literal>Physical Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalSymptom</IRI>
+        <Literal>Physical Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PlaceOfOrigin</IRI>
+        <Literal>Place Of Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PlantBased</IRI>
+        <Literal>Plant Based</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrivateTransportation</IRI>
+        <Literal>Private Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProcessedMilk</IRI>
+        <Literal>Processed Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PublicTransportation</IRI>
+        <Literal>Public Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Recipe</IRI>
+        <Literal>Recipe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RemoteOrigin</IRI>
+        <Literal>Remote Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ResidentialLocation</IRI>
+        <Literal>Residential Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Restaurant</IRI>
+        <Literal>Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RomanianOrigin</IRI>
+        <Literal>Romanian Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Shellfish</IRI>
+        <Literal>Shellfish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SolarEnergy</IRI>
+        <Literal>Solar Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spaghetti</IRI>
+        <Literal>Spaghetti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpaghettiCarbonara</IRI>
+        <Literal>Spaghetti Carbonara</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SportClothing</IRI>
+        <Literal>Sport Clothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StomachPain</IRI>
+        <Literal>Stomach Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StrawberryMilkshake</IRI>
+        <Literal>Strawberry Milkshake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sushi</IRI>
+        <Literal>Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SustainableEnergy</IRI>
+        <Literal>Sustainable Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Symptom</IRI>
+        <Literal>Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TemporalCondition</IRI>
+        <Literal>Temporal Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Train</IRI>
+        <Literal>Train</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TrainStation</IRI>
+        <Literal>Train Station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transportation</IRI>
+        <Literal>Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnsustainableEnergy</IRI>
+        <Literal>Unsustainable Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UsingDishwasher</IRI>
+        <Literal>Using Dishwasher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UsingHeating</IRI>
+        <Literal>Using Heating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UsingWashingMachine</IRI>
+        <Literal>Using Washing Machine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vegetable</IRI>
+        <Literal>Vegetable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WashingByHand</IRI>
+        <Literal>Washing By Hand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WatchingTV</IRI>
+        <Literal>Watching TV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeatherConditions</IRI>
+        <Literal>Weather Conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WindEnergy</IRI>
+        <Literal>Wind Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#adjacentTo</IRI>
+        <Literal>adjacentTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#availableIn</IRI>
+        <Literal>availableIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#causesCaseOf</IRI>
+        <Literal>causesCaseOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#consumesEnergy</IRI>
+        <Literal>consumesEnergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contains</IRI>
+        <Literal>contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#containsIngredient</IRI>
+        <Literal>containsIngredient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#containsMaterial</IRI>
+        <Literal>containsMaterial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#containsMeal</IRI>
+        <Literal>containsMeal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOrigin</IRI>
+        <Literal>hasOrigin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOwner</IRI>
+        <Literal>hasOwner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStopIn</IRI>
+        <Literal>hasStopIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSymptom</IRI>
+        <Literal>hasSymptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#influences</IRI>
+        <Literal>influences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFromCuisine</IRI>
+        <Literal>isFromCuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isLocatedIn</IRI>
+        <Literal>isLocatedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#livesIn</IRI>
+        <Literal>livesIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#owns</IRI>
+        <Literal>owns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#provides</IRI>
+        <Literal>provides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#providesEnergyTo</IRI>
+        <Literal>providesEnergyTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#travelsWith</IRI>
+        <Literal>travelsWith</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

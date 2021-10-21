@@ -1,6 +1,6 @@
  {
-  "name": "Sophie",
-  "neighborhood": "Parkwijk",
+  "Person": "Sophie",
+  "Neighborhood": "Parkwijk",
   "time_of_activity": "20:00",
   "owns": ["Bike", "Car"],
   "health_conditions": [],
