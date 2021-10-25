@@ -316,6 +316,9 @@
         <ObjectProperty IRI="#rideSharing"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#serves"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#travelsWith"/>
     </Declaration>
     <Declaration>
@@ -323,6 +326,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#emitsCO2PerKm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasArea"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasCO2score"/>
@@ -391,9 +397,6 @@
         <NamedIndividual IRI="#BikeOfEmma"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Binnenstad"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Broccoli"/>
     </Declaration>
     <Declaration>
@@ -430,6 +433,9 @@
         <NamedIndividual IRI="#CitrusAllergy"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Coal_Energy"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#CoconutMilk"/>
     </Declaration>
     <Declaration>
@@ -451,6 +457,9 @@
         <NamedIndividual IRI="#Dizziness"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Doing_Handwash"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DutchOrigin"/>
     </Declaration>
     <Declaration>
@@ -467,6 +476,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FrenchOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gas_Energy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GoatMilk"/>
@@ -577,6 +589,9 @@
         <NamedIndividual IRI="#Shrimp"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Solar_Energy"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Sophie"/>
     </Declaration>
     <Declaration>
@@ -593,6 +608,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunny"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SushiRice"/>
@@ -644,6 +662,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WatchingTV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wind_Energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Wool"/>
@@ -928,6 +952,20 @@
             <ObjectProperty IRI="#contains"/>
             <Class IRI="#TrainStation"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighborhood"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasArea"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighborhood"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPopulation"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pasta"/>
@@ -1229,17 +1267,6 @@
         <NamedIndividual IRI="#BikeOfEmma"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Neighborhood"/>
-        <NamedIndividual IRI="#Binnenstad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#contains"/>
-            <Class IRI="#TrainStation"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Binnenstad"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Broccoli"/>
     </ClassAssertion>
@@ -1286,6 +1313,10 @@
     <ClassAssertion>
         <Class IRI="#Allergy"/>
         <NamedIndividual IRI="#CitrusAllergy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnsustainableEnergy"/>
+        <NamedIndividual IRI="#Coal_Energy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Milk"/>
@@ -1338,6 +1369,10 @@
     <ClassAssertion>
         <Class IRI="#EuropeanOrigin"/>
         <NamedIndividual IRI="#FrenchOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnsustainableEnergy"/>
+        <NamedIndividual IRI="#Gas_Energy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Milk"/>
@@ -1484,6 +1519,10 @@
         <NamedIndividual IRI="#Shrimp"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SustainableEnergy"/>
+        <NamedIndividual IRI="#Solar_Energy"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Sophie"/>
     </ClassAssertion>
@@ -1506,6 +1545,10 @@
     <ClassAssertion>
         <Class IRI="#StrawberryMilkshake"/>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeatherConditions"/>
+        <NamedIndividual IRI="#Sunny"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Rice"/>
@@ -1576,6 +1619,14 @@
         <NamedIndividual IRI="#WatchingTV"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SustainableEnergy"/>
+        <NamedIndividual IRI="#Wind_Energy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeatherConditions"/>
+        <NamedIndividual IRI="#Windy"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#NaturalMaterial"/>
         <NamedIndividual IRI="#Wool"/>
     </ClassAssertion>
@@ -1603,6 +1654,11 @@
         <NamedIndividual IRI="#StrawberryMilkshake"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#Amsterdam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#livesIn"/>
         <NamedIndividual IRI="#Anna"/>
         <NamedIndividual IRI="#Lombok"/>
@@ -1611,6 +1667,11 @@
         <ObjectProperty IRI="#hasCuisine"/>
         <NamedIndividual IRI="#BellaItalia"/>
         <NamedIndividual IRI="#Italian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#BellaItalia"/>
+        <NamedIndividual IRI="#Lasagna"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#availableIn"/>
@@ -1633,11 +1694,6 @@
         <NamedIndividual IRI="#Emma"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isLocatedIn"/>
-        <NamedIndividual IRI="#Binnenstad"/>
-        <NamedIndividual IRI="#Amsterdam"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#Cheeseburger"/>
         <NamedIndividual IRI="#Beef"/>
@@ -1651,6 +1707,16 @@
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#Cheeseburger"/>
         <NamedIndividual IRI="#Cheddar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adjacentTo"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#Amsterdam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -1753,6 +1819,11 @@
         <NamedIndividual IRI="#RomanianOrigin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adjacentTo"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Parkwijk"/>
         <NamedIndividual IRI="#Utrecht"/>
@@ -1823,6 +1894,11 @@
         <NamedIndividual IRI="#Grachtengordel"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#ShisoSushi"/>
+        <NamedIndividual IRI="#SushiRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#livesIn"/>
         <NamedIndividual IRI="#Sophie"/>
         <NamedIndividual IRI="#Parkwijk"/>
@@ -1858,9 +1934,9 @@
         <NamedIndividual IRI="#Thai"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isLocatedIn"/>
+        <ObjectProperty IRI="#serves"/>
         <NamedIndividual IRI="#TastyAsian"/>
-        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#GreenCurry"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -1903,6 +1979,16 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.53</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasArea"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">142000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#BangladeshOrigin"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.79</Literal>
@@ -1943,9 +2029,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#Coal_Energy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasArea"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">750000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasPopulation"/>
         <NamedIndividual IRI="#DePijp"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33000</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">19000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
@@ -1956,6 +2052,21 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#FrenchOrigin"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#Gas_Energy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasArea"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1100000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12160</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -1976,6 +2087,16 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#Leather"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasArea"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">430000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7470</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
@@ -2043,6 +2164,16 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasArea"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">830000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7220</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#RecycledCotton"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.8</Literal>
@@ -2081,6 +2212,11 @@
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#SalmonSushi"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#Solar_Energy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -2146,6 +2282,11 @@
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#WatchingTV"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#Wind_Energy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
@@ -2295,6 +2436,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#rideSharing"/>
         <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#serves"/>
+        <Class IRI="#Restaurant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#travelsWith"/>
@@ -2487,11 +2632,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BikeOfEmma</IRI>
         <Literal>Bike Of Emma</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Binnenstad</IRI>
-        <Literal>Binnenstad</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3025,7 +3165,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SolarEnergy</IRI>
+        <IRI>#Solar_Energy</IRI>
         <Literal>Solar Energy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
