@@ -1,0 +1,16 @@
+ {
+  "name": "Carly",
+  "neighborhood": "De Pijp",
+  "time_of_activity": 20,
+  "owns": ["bike"],
+  "health_conditions": [],
+   "weather Condition": ["Windy"],
+  "symptoms": [],
+  "cuisines": [],
+  "food": [],
+  "pref_location": "",
+  "misc_activities": [],
+  "clothing_items": [],
+  "materials": [],
+   "query":["Activity"]
+ }

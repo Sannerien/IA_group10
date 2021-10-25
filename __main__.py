@@ -29,21 +29,25 @@ class RecommendationState:
             print("critical unmatch")
 
         return utility
+
+
 class Agent:
     def __init__(self, path, reasoner=False):
         # Load the desired ontology using the path file
         self.ontology = get_ontology(path)
         self.ontology.load()
         self.recommendations = []
+        self.query = []
+        self.rushhour = False
         self.graph = default_world.as_rdflib_graph()
 
         # Run the reasoner to obtain the inferences; TODO: gives an error when run
-        # if reasoner:
-        #     with self.ontology:
-        #         sync_reasoner(infer_property_values=True)
-        # else:
-        with self.ontology:
-            sync_reasoner(infer_property_values=True)
+        if reasoner:
+            with self.ontology:
+                sync_reasoner(infer_property_values=True)
+        else:
+            with self.ontology:
+                sync_reasoner(infer_property_values=True)
 
         # Additional
         print(self.ontology.name)
@@ -102,28 +106,44 @@ class Agent:
 
     def query_ontology(self, query: str):
         results = self.ontology.search(label="Transportation")
-        # restaurants = list(default_world.sparql("""
-        #        SELECT ?r
-        #        { ?x rdfs:label "Restaurant" .
-        #          ?r a/rdfs:subClassOf* ?x }
-        #     """))
-        restaurants = list(default_world.sparql("""
-            prefix ont: <http://www.semanticweb.org/alecf/ontologies/2021/9/IAG_Group10_Ontology#>
-            SELECT ?x
-            WHERE 
-              { ?x rdf:type ont:Activity . }
-            """))
+        for i in query:
 
-        print(restaurants[0][0].name)
+            query_parts = []
+            prefix = "PREFIX ont: <http://www.semanticweb.org/alecf/ontologies/2021/9/IAG_Group10_Ontology#>"
+            prefix_rdfs = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
+            prefix_rdf = "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+            select_where = "SELECT * WHERE {"
+            queryonto = "?x rdf:type ont:%s ." % i
+            queryonto2 = "?x rdf:type ont:%s ." % "Restaurant"
+            closing = "}"
+            query_parts.append(prefix)
+            query_parts.append(prefix_rdfs)
+            query_parts.append(prefix_rdf)
+            query_parts.append(select_where)
+            query_parts.append(queryonto)
+           # query_parts.append(queryonto2)
+            query_parts.append(closing)
+            #query_parts.append("ORDER BY DESC(?value)")
+            request = "\n".join(query_parts)
+            test = list(default_world.sparql(request))
+            print("werkt", test)
 
-        class_results = [self.class_to_label[result] for result in results if type(result) == self.class_type]
+        print(self.class_to_label)
+
+    def read_preferences(self, preferences):
+        query = preferences["query"]
+        self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
+        for i in query:
+            self.query_ontology(query)
+
 
 
 if __name__ == "__main__":
-    with open('sophie.json', 'r') as openfile:
+    with open('charly.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
+    agent.read_preferences(preferences)
     agent.sanity_check()
-    agent.query_ontology('')
+    agent.query_ontology(query=["Activity"])
     print(preferences)

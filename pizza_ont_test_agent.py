@@ -2,15 +2,39 @@ from owlready2 import *
 from pprint import pprint
 import json
 
-# Ignore useless warnings
-#warnings.filterwarnings("ignore")
 
+class RecommendationState:
+
+    def __init__(self, activity, transportation, restaurant, food, clothing_store, clothing_item, time_of_activity):
+        activity = activity
+        transportation = transportation
+        restaurant = restaurant
+        food = food
+        clothing_store = clothing_store
+        clothing_item = clothing_item
+        time_of_activity = time_of_activity
+
+    def calculate_utility(self, story, strict_prefs, prefs, CO2_scores_per_domain, domains):
+        utility = 0
+        # we only count the actual score if all crucial conditions are met
+        if set(strict_prefs) == set(story[0]):
+            # we calculate the percentage of unstrict conditions
+            # by intersecting their set with users's prefs set
+            percent_match = len(set(prefs).intersection(story[1])) / len(set(story[1]))
+            print("percent match is {}".format(percent_match))
+            # we calculate the score; CO2 value is summed over the list
+            utility = percent_match * len(domains) / sum(CO2_scores_per_domain)
+
+        else:
+            print("critical unmatch")
+
+        return utility
 class Agent:
-
     def __init__(self, path, reasoner=False):
         # Load the desired ontology using the path file
         self.ontology = get_ontology(path)
         self.ontology.load()
+        self.recommendations = []
 
         # Run the reasoner to obtain the inferences; TODO: gives an error when run
         if reasoner:
@@ -26,8 +50,9 @@ class Agent:
         self.label_to_class = {ent.label[0]: ent for ent in self.ontology.classes() if len(ent.label) > 0}
         self.label_to_prop = {prop.label[0]: prop for prop in self.ontology.properties()if len(prop.label) > 0}
 
-        self.class_to_label = {ent:ent.label[0] for ent in self.ontology.classes() if len(ent.label) > 0}
-        self.prop_to_label = {prop:prop.label[0] for prop in self.ontology.properties()if len(prop.label) > 0}
+        self.class_to_label = {ent: ent.label[0] for ent in self.ontology.classes() if len(ent.label) > 0}
+        x = self.ontology.Rice
+        self.prop_to_label = {prop: prop.label[0] for prop in self.ontology.properties()if len(prop.label) > 0}
 
         # Save types to help differentiate between classes and properties later on
         self.class_type = type(list(self.ontology.classes())[0])
@@ -42,7 +67,6 @@ class Agent:
         # Display the labels (the names given in Protege) of all the classes & properties present in the ontology
         pprint(self.label_to_class)
         pprint(self.label_to_prop)
-
 
     def simple_queries(self):
         print("Query responses:")
@@ -73,41 +97,24 @@ class Agent:
         class_results = [self.prop_to_label[result] for result in results if type(result) == self.property_type]
         pprint(class_results)
 
-def main(data_path):
 
-    data = json.load(open(data_path))
-
-
-
-'''
-Run program
-'''
-
-# data_path = ""
-# main(data_path)
-
-# Initialize agent and run some simple queries
-agent = Agent("IA Ontology.owl")
-#agent = Agent("onto_pizza.owl")
-agent.sanity_check()
-agent.simple_queries()
+    def query_ontology(self, query: str = "Transportation"):
+        results = self.ontology.search(label=query)
+        print("hoi", self.ontology.Transportation)
+        #class_results = [self.class_to_label[result] for result in results if type(result) == self.]
+        #print(self.ontology.instances())
 
 
 
-# Old code still kept for referencing
+if __name__ == "__main__":
+    with open('sophie.json', 'r') as openfile:
+        # Reading from json file
+        preferences = json.load(openfile)
+    agent = Agent("IA Ontology.owl")
 
-# for c in list(agent.ontology.classes()):
-#     print(c.label)
-#     print(c.iri)
-#     print(c.name)
-#     print('\n')
-#
-# t = agent.ontology.search(label = "*Pizza*")
-# print(t)
-# print(type(t) == agent.class_type)
-# print(type(t) == agent.property_type)
-# for x in t:
-#     print(agent.class_to_label[x])
+    agent.query_ontology()
+    print(preferences)
+
 
 
 

@@ -1,7 +1,7 @@
 {
   "name": "Bob",
   "neighborhood": "Amsterdam-West",
-  "time_of_activity": "11:00",
+  "time_of_activity": 11,
   "owns": ["Bike"],
   "health_conditions": [],
   "symptoms": ["sneezing", "fever"],
@@ -10,5 +10,7 @@
   "pref_location": [],
   "misc_activities": [],
   "clothing_items": [],
-  "materials": []
+  "materials": [],
+  "strict_pref": ["Restaurant has not Shellfish", "Restaurant has Seafood"],
+  "advise": ["Restaurant"]
  }
