@@ -520,9 +520,6 @@
         <NamedIndividual IRI="#Kiwi"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Lasagna"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#LasagnaBolognese"/>
     </Declaration>
     <Declaration>
@@ -1427,10 +1424,6 @@
         <NamedIndividual IRI="#Kiwi"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Pasta"/>
-        <NamedIndividual IRI="#Lasagna"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Lasagna"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
     </ClassAssertion>
@@ -1669,11 +1662,6 @@
         <NamedIndividual IRI="#Italian"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#serves"/>
-        <NamedIndividual IRI="#BellaItalia"/>
-        <NamedIndividual IRI="#Lasagna"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#availableIn"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
         <NamedIndividual IRI="#Bershka"/>
@@ -1772,11 +1760,6 @@
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
         <NamedIndividual IRI="#Beef"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#containsIngredient"/>
-        <NamedIndividual IRI="#LasagnaBolognese"/>
-        <NamedIndividual IRI="#Lasagna"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
@@ -2952,11 +2935,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Kiwi</IRI>
         <Literal>Kiwi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Lasagna</IRI>
-        <Literal>Lasagna</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
