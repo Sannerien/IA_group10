@@ -1,0 +1,14 @@
+ {
+  "name": "Alex",
+  "neighborhood": "De Pijp",
+  "time_of_activity": "23:00",
+  "owns": [],
+  "health_conditions": ["Wool Allergy", "Shellfish Allergy", "Citrus Allergy"],
+  "symptoms": [],
+  "cuisines": [],
+  "food": ["Protein", "not containsIngredient 'Shrimp'", "not containsIngredient 'Grains'"],
+  "pref_location": "Amsterdam",
+  "misc_activities": [],
+  "clothing_items": [],
+  "materials": []
+ }

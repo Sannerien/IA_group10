@@ -139,6 +139,9 @@
         <Class IRI="#Milk"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Milkshake"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NaturalMaterial"/>
     </Declaration>
     <Declaration>
@@ -146,6 +149,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Pasta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastaRecipe"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
@@ -209,9 +215,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#StomachPain"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Milkshake"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sushi"/>
@@ -311,6 +314,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#providesEnergyTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresWeather"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#rideSharing"/>
@@ -457,7 +463,7 @@
         <NamedIndividual IRI="#Dizziness"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Doing_Handwash"/>
+        <NamedIndividual IRI="#DoingHandwash"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DutchOrigin"/>
@@ -922,6 +928,17 @@
         <Class IRI="#Dairy"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Milkshake"/>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Milkshake"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#containsIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NaturalMaterial"/>
         <Class IRI="#Material"/>
     </SubClassOf>
@@ -967,6 +984,17 @@
     <SubClassOf>
         <Class IRI="#Pasta"/>
         <Class IRI="#Grains"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaRecipe"/>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastaRecipe"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="#containsIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhysicalDiscomfort"/>
@@ -1043,34 +1071,12 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PastaRecipe"/>
-        <Class IRI="#Recipe"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PastaRecipe"/>
-        <ObjectExactCardinality cardinality="3">
-            <ObjectProperty IRI="#containsIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SportClothing"/>
         <Class IRI="#Clothing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StomachPain"/>
         <Class IRI="#PhysicalPain"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Milkshake"/>
-        <Class IRI="#Recipe"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Milkshake"/>
-        <ObjectExactCardinality cardinality="2">
-            <ObjectProperty IRI="#containsIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sushi"/>
@@ -1184,8 +1190,8 @@
         <Class IRI="#Curry"/>
         <Class IRI="#Hamburger"/>
         <Class IRI="#Lasagna"/>
-        <Class IRI="#PastaRecipe"/>
         <Class IRI="#Milkshake"/>
+        <Class IRI="#PastaRecipe"/>
         <Class IRI="#Sushi"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -1342,6 +1348,10 @@
     <ClassAssertion>
         <Class IRI="#PhysicalDiscomfort"/>
         <NamedIndividual IRI="#Dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#DoingHandwash"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#LocalOrigin"/>
@@ -1882,6 +1892,11 @@
         <NamedIndividual IRI="#SushiRice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresWeather"/>
+        <NamedIndividual IRI="#Solar_Energy"/>
+        <NamedIndividual IRI="#Sunny"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#livesIn"/>
         <NamedIndividual IRI="#Sophie"/>
         <NamedIndividual IRI="#Parkwijk"/>
@@ -1945,6 +1960,11 @@
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#VegetableSushi"/>
         <NamedIndividual IRI="#SushiRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresWeather"/>
+        <NamedIndividual IRI="#Wind_Energy"/>
+        <NamedIndividual IRI="#Windy"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#causesCaseOf"/>
@@ -2025,6 +2045,11 @@
         <DataProperty IRI="#hasPopulation"/>
         <NamedIndividual IRI="#DePijp"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">19000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#DoingHandwash"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
@@ -2483,6 +2508,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#owns"/>
         <Class IRI="#PrivateTransportation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresWeather"/>
+        <Class IRI="#WeatherConditions"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#rideSharing"/>
