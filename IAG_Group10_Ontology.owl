@@ -211,7 +211,7 @@
         <Class IRI="#StomachPain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StrawberryMilkshake"/>
+        <Class IRI="#Milkshake"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sushi"/>
@@ -1043,11 +1043,11 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Spaghetti"/>
+        <Class IRI="#PastaRecipe"/>
         <Class IRI="#Recipe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Spaghetti"/>
+        <Class IRI="#PastaRecipe"/>
         <ObjectExactCardinality cardinality="3">
             <ObjectProperty IRI="#containsIngredient"/>
             <Class IRI="#Ingredient"/>
@@ -1062,11 +1062,11 @@
         <Class IRI="#PhysicalPain"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StrawberryMilkshake"/>
+        <Class IRI="#Milkshake"/>
         <Class IRI="#Recipe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StrawberryMilkshake"/>
+        <Class IRI="#Milkshake"/>
         <ObjectExactCardinality cardinality="2">
             <ObjectProperty IRI="#containsIngredient"/>
             <Class IRI="#Ingredient"/>
@@ -1184,8 +1184,8 @@
         <Class IRI="#Curry"/>
         <Class IRI="#Hamburger"/>
         <Class IRI="#Lasagna"/>
-        <Class IRI="#Spaghetti"/>
-        <Class IRI="#StrawberryMilkshake"/>
+        <Class IRI="#PastaRecipe"/>
+        <Class IRI="#Milkshake"/>
         <Class IRI="#Sushi"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -1524,7 +1524,7 @@
         <NamedIndividual IRI="#Spaghetti"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Spaghetti"/>
+        <Class IRI="#PastaRecipe"/>
         <NamedIndividual IRI="#SpaghettiCarbonara"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1536,7 +1536,7 @@
         <NamedIndividual IRI="#StomachAche"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#StrawberryMilkshake"/>
+        <Class IRI="#Milkshake"/>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
     </ClassAssertion>
     <ClassAssertion>
