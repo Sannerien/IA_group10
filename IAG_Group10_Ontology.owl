@@ -2024,7 +2024,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#ChargingPhone"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -2279,7 +2279,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#UsingWashingMachine"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>

@@ -1,7 +1,7 @@
  {
-  "name": "Alex",
+  "name": "Dennis",
   "neighborhood": "De Pijp",
-  "time_of_activity": "23:00",
+  "time_of_activity": 20,
   "owns": [],
   "health_conditions": ["Wool Allergy", "Shellfish Allergy", "Citrus Allergy"],
   "symptoms": [],
@@ -10,5 +10,8 @@
   "pref_location": "Amsterdam",
   "misc_activities": [],
   "clothing_items": [],
+   "query" : ["Activity", "Energy"],
+ "strict_prefs" : [],
+    "loose_prefs" : [],
   "materials": []
  }

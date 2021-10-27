@@ -118,10 +118,10 @@ class Agent:
         x = list(list(sorted_options.keys())[0])[0]
         print('The first advise for selection of {} would be {} with utility score {}.'.format(preferences["query"][0], x, list(sorted_options.values())[0]))
 
-        if preferences["time"] >= 20 and "Activity" in preferences["query"]:
+        if preferences["time_of_activity"] >= 20 and "Activity" in preferences["query"]:
             self.rushhour = True
-            sorted_options = self.choose_actions(self, options)
-            print("An alternative option is to wait {} hour. In that case another option would be {}".format(21-preferences["time"], list(list(sorted_options.keys())[0])[0]))
+            sorted_options = self.choose_actions(options)
+            print("An alternative option is to wait {} hour. In that case another option would be {}".format(21-preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
 
     def find_preferences(self, preferences):
         query = preferences["query"]
