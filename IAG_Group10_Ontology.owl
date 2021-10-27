@@ -298,6 +298,9 @@
         <ObjectProperty IRI="#influences"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isFromCuisine"/>
     </Declaration>
     <Declaration>
@@ -592,6 +595,9 @@
         <NamedIndividual IRI="#Shrimp"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ShrimpSushi"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Solar_Energy"/>
     </Declaration>
     <Declaration>
@@ -884,6 +890,13 @@
     <SubClassOf>
         <Class IRI="#Ingredient"/>
         <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isForbiddenBy"/>
+            <Class IRI="#Allergy"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Intolerance"/>
@@ -1522,6 +1535,10 @@
         <NamedIndividual IRI="#Shrimp"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Sushi"/>
+        <NamedIndividual IRI="#ShrimpSushi"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SustainableEnergy"/>
         <NamedIndividual IRI="#Solar_Energy"/>
     </ClassAssertion>
@@ -1889,6 +1906,31 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#serves"/>
         <NamedIndividual IRI="#ShisoSushi"/>
+        <NamedIndividual IRI="#SalmonSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#ShisoSushi"/>
+        <NamedIndividual IRI="#ShrimpSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#ShisoSushi"/>
+        <NamedIndividual IRI="#VegetableSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#Shrimp"/>
+        <NamedIndividual IRI="#ShellfishAllergy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#ShrimpSushi"/>
+        <NamedIndividual IRI="#Shrimp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#ShrimpSushi"/>
         <NamedIndividual IRI="#SushiRice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -2223,6 +2265,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#ShrimpSushi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#Solar_Energy"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
@@ -2430,6 +2477,10 @@
         <Class IRI="#WeatherConditions"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFromCuisine"/>
         <Class IRI="#Recipe"/>
     </ObjectPropertyDomain>
@@ -2496,6 +2547,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#influences"/>
         <Class IRI="#Transportation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <Class IRI="#HealthCondition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isFromCuisine"/>
@@ -3172,6 +3227,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShrimpSushi</IRI>
+        <Literal>Shrimp Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Solar_Energy</IRI>
         <Literal>Solar Energy</Literal>
     </AnnotationAssertion>
@@ -3444,6 +3504,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#influences</IRI>
         <Literal>influences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isForbiddenBy</IRI>
+        <Literal>isForbiddenBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
