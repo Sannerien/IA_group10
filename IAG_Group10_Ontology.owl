@@ -2702,6 +2702,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bread</IRI>
+        <Literal>Bread</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Broccoli</IRI>
         <Literal>Vegetable</Literal>
     </AnnotationAssertion>
@@ -2847,6 +2852,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Curry</IRI>
+        <Literal>Curry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Dairy</IRI>
         <Literal>Dairy</Literal>
     </AnnotationAssertion>
@@ -2967,6 +2977,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hamburger</IRI>
+        <Literal>Hamburger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HealthCondition</IRI>
         <Literal>Health Condition</Literal>
     </AnnotationAssertion>
@@ -3022,6 +3037,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lasagna</IRI>
+        <Literal>Lasagna</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LasagnaBolognese</IRI>
         <Literal>Lasagna Bolognese</Literal>
     </AnnotationAssertion>
@@ -3067,6 +3087,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Milkshake</IRI>
+        <Literal>Milkshake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NanushkaNylonTrenchcoat</IRI>
         <Literal>Nanushka Nylon Overcoat</Literal>
     </AnnotationAssertion>
@@ -3099,6 +3124,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Parmesan</IRI>
         <Literal>Parmesan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pasta</IRI>
+        <Literal>Pasta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PastaRecipe</IRI>
+        <Literal>Pasta Recipe</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3152,6 +3187,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Protein</IRI>
+        <Literal>Protein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PublicTransportation</IRI>
         <Literal>Public Transportation</Literal>
     </AnnotationAssertion>
@@ -3189,6 +3229,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Restaurant</IRI>
         <Literal>Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rice</IRI>
+        <Literal>Rice</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
