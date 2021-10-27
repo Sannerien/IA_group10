@@ -76,9 +76,6 @@ class Agent:
                 energy = self.ontology.search(label="Unsustainable Energy")
                 selected_energy = energy[0].instances()
 
-
-                # if preferences["time"] >= 20:
-                #     self.rushhour = True
             else:
                 energy = self.ontology.search(label="Energy")
                 selected_energy = []
@@ -116,11 +113,15 @@ class Agent:
         sorted_options = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
         return sorted_options
 
-    def explain_actions(self, preferences, sorted_options):
+    def explain_actions(self, preferences, sorted_options, options):
         print("Dear", preferences["name"])
         x = list(list(sorted_options.keys())[0])[0]
         print('The first advise for selection of {} would be {} with utility score {}.'.format(preferences["query"][0], x, list(sorted_options.values())[0]))
 
+        if preferences["time"] >= 20 and "Activity" in preferences["query"]:
+            self.rushhour = True
+            sorted_options = self.choose_actions(self, options)
+            print("An alternative option is to wait {} hour. In that case another option would be {}".format(21-preferences["time"], list(list(sorted_options.keys())[0])[0]))
 
     def find_preferences(self, preferences):
         query = preferences["query"]
@@ -128,7 +129,7 @@ class Agent:
         self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
         options = self.find_options(preferences)
         sorted_options = self.choose_actions(options)
-        self.explain_actions(preferences, sorted_options)
+        self.explain_actions(preferences, sorted_options, options)
 
 
         print(options)
