@@ -1,16 +1,11 @@
- {
-  "name": "Carly",
-  "neighborhood": "De Pijp",
+{
+  "user": "Charly",
+  "current_location": "De Pijp",
   "time_of_activity": 20,
-  "owns": ["bike"],
-  "health_conditions": [],
-   "weather Condition": ["Windy"],
+  "weather Condition": ["Windy"],
   "symptoms": [],
-  "cuisines": [],
-  "food": [],
-  "pref_location": "",
-  "misc_activities": [],
-  "clothing_items": [],
-  "materials": [],
-   "query":["Activity"]
- }
+  "pref_cuisines": [],
+  "pref_food": ["Recipe and containsIngredient only (not Meat and not Fish)"],
+  "pref_location": [],
+  "pref_clothing": []
+}

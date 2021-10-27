@@ -4,7 +4,7 @@
   "time_of_activity": "20:00",
   "owns": ["Bike", "Car"],
   "health_conditions": [],
-  "symptoms": ["Swollen Tongue", "Itching", "Stomach Pain"],
+  "symptoms": ["SwollenTongue", "Itching", "Stomach Ache"],
   "cuisines": [],
   "food": ["containsIngredient 'Seafood'", "containsIngredient 'Shell Fish'", "not containsIngredient 'Sea Food'", "not containsIngredient 'Shell Fish'"],
   "pref_location": "Amsterdam",

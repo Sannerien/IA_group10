@@ -54,6 +54,11 @@ class Agent:
         # Reference dictionaries between IRIs and given labels that might be useful
         self.label_to_class = {ent.label[0]: ent for ent in self.ontology.classes() if len(ent.label) > 0}
         self.label_to_prop = {prop.label[0]: prop for prop in self.ontology.properties()if len(prop.label) > 0}
+        self.individuals = []
+        for c in self.ontology.classes():
+            for indiv in c.instances():
+                self.individuals.append(indiv)
+        self.label_to_indiv = {ent.label[0]: ent for ent in self.individuals if len(ent.label) > 0}
 
         self.class_to_label = {ent:ent.label[0] for ent in self.ontology.classes() if len(ent.label) > 0}
         self.prop_to_label = {prop:prop.label[0] for prop in self.ontology.properties()if len(prop.label) > 0}
@@ -71,6 +76,16 @@ class Agent:
         # Display the labels (the names given in Protege) of all the classes & properties present in the ontology
         pprint(self.label_to_class)
         pprint(self.label_to_prop)
+
+    def infer_health_cond(self, symptoms):
+        symptom_instances = []
+        for symptom in symptoms:
+            symptom_instances.append(self.label_to_indiv[symptom])
+
+        results = self.ontology.search(hasSymptom = [self.ontology.Itching, self.ontology.StomachAche])
+        for c in results:
+            for i in c.instances():
+                pprint(i)
 
     def simple_queries(self):
         print("Query responses:")
@@ -127,7 +142,8 @@ if __name__ == "__main__":
     with open('charly.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
-    agent = Agent("ont.owl")
+    agent = Agent("IAG_Group10_Ontology.owl")
     agent.sanity_check()
-    agent.simple_queries()
+    agent.infer_health_cond(preferences['symptoms'])
+    #agent.simple_queries()
     print(preferences)
