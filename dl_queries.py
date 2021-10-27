@@ -45,7 +45,6 @@ class Agent:
         with self.ontology:
             sync_reasoner(infer_property_values=True)
 
-
         # Additional
         print(self.ontology.name)
         print("IA Ontology".startswith(self.ontology.name))
@@ -53,15 +52,15 @@ class Agent:
             print(i, len(i.label))
         # Reference dictionaries between IRIs and given labels that might be useful
         self.label_to_class = {ent.label[0]: ent for ent in self.ontology.classes() if len(ent.label) > 0}
-        self.label_to_prop = {prop.label[0]: prop for prop in self.ontology.properties()if len(prop.label) > 0}
+        self.label_to_prop = {prop.label[0]: prop for prop in self.ontology.properties() if len(prop.label) > 0}
         self.individuals = []
         for c in self.ontology.classes():
             for indiv in c.instances():
                 self.individuals.append(indiv)
         self.label_to_indiv = {ent.label[0]: ent for ent in self.individuals if len(ent.label) > 0}
 
-        self.class_to_label = {ent:ent.label[0] for ent in self.ontology.classes() if len(ent.label) > 0}
-        self.prop_to_label = {prop:prop.label[0] for prop in self.ontology.properties()if len(prop.label) > 0}
+        self.class_to_label = {ent: ent.label[0] for ent in self.ontology.classes() if len(ent.label) > 0}
+        self.prop_to_label = {prop: prop.label[0] for prop in self.ontology.properties() if len(prop.label) > 0}
 
         # Save types to help differentiate between classes and properties later on
         self.class_type = type(list(self.ontology.classes())[0])
@@ -79,13 +78,89 @@ class Agent:
 
     def infer_health_cond(self, symptoms):
         symptom_instances = []
-        for symptom in symptoms:
-            symptom_instances.append(self.label_to_indiv[symptom])
+        if len(symptoms) > 0:
+            for symptom in symptoms:
+                symptom_instances.append(self.label_to_indiv[symptom])
+            results = self.ontology.search(hasSymptom=symptom_instances)
+            print(results)
 
-        results = self.ontology.search(hasSymptom = [self.ontology.Itching, self.ontology.StomachAche])
-        for c in results:
+    def infer_forbidden_ingredients(self, health_conditions):
+        list_forbidden_ingredients = []
+        if len(health_conditions) > 0:
+            for health_cond in health_conditions:
+                forbidden_ingredients = list(self.ontology.search(isForbiddenBy=self.label_to_indiv[health_cond]))
+                list_forbidden_ingredients = list(set(list_forbidden_ingredients + forbidden_ingredients))
+        return list_forbidden_ingredients
+
+    def infer_recipes(self, cuisines, pref_food, health_cond):
+        # Find what recipes aren't allowed due to health conditions
+        health_prevented_ingredients = self.infer_forbidden_ingredients(health_cond)
+        health_prevented_recipes = []
+        for ingredient in health_prevented_ingredients:
+            health_prevented_recipes = list(set(health_prevented_recipes + list(self.ontology.search(containsIngredient=ingredient))))
+
+        # Keep track of all recipes and initialize logic operators
+        all_recipes = []
+        recipes = self.ontology.search(label="Recipe")
+        for c in recipes:
             for i in c.instances():
-                pprint(i)
+                all_recipes.append(i)
+        food_list = all_recipes
+        union = False
+        or_found = False
+        negation = False
+
+        # Search in ontology based on preferred food and ingredients
+        for food in pref_food:
+            containsIngredient = False
+            some_clause = False
+            for word in food.split(' '):
+                if word == 'not':
+                    negation = True
+                elif word == 'ingredient':
+                    containsIngredient = True
+                elif word == 'some':
+                    some_clause = True
+                elif word == 'or':
+                    or_found = True
+                    union = True
+                    break
+                else:
+                    if containsIngredient:
+                        if some_clause:
+                            found_ingredients = list(self.label_to_class[word].instances())
+                            found_recipes = []
+                            for ingredient in found_ingredients:
+                                found_recipes = list(set(found_recipes + list(self.ontology.search(containsIngredient=ingredient))))
+                        else:
+                            found_recipes = list(self.ontology.search(containsIngredient=self.label_to_indiv[word]))
+                    elif some_clause:
+                        found_recipes = list(self.label_to_class[word].instances())
+                        some_clause = False
+                    else:
+                        found_recipes = list(self.ontology.search(self.label_to_class[word]))
+            if negation:
+                if union:
+                    included_food = list(set(all_recipes) - set(found_recipes))
+                    food_list = list(set(food_list + included_food))
+                    union = False
+                else:
+                    food_list = list(set(food_list) - set(found_recipes))
+                negation = False
+                continue
+            if union:
+                food_list = list(set(food_list + found_recipes))
+                if or_found:
+                    or_found = False
+                    continue
+                union = False
+            else:
+                food_list = list(set(food_list) & set(found_recipes))
+            print(food_list)
+
+        preferred_recipes = list(set(food_list) - set(health_prevented_recipes))
+        print('Recipes found based on preferences and health conditions: ', preferred_recipes)
+        return preferred_recipes
 
     def simple_queries(self):
         print("Query responses:")
@@ -112,14 +187,13 @@ class Agent:
             for i in c.instances():
                 pprint(i)
 
-
         for c in results:
             for i in c.instances():
                 for prop in i.get_properties():
                     for value in prop[i]:
                         print(".%s == %s" % (prop.python_name, value))
-                    #pprint(p)
-            #pprint(list(c.instances()))
+                    # pprint(p)
+            # pprint(list(c.instances()))
 
         results2 = self.ontology.search(label="Ingredient")
         for c in results2:
@@ -135,15 +209,13 @@ class Agent:
         pprint(class_results)
 
 
-
-
-
 if __name__ == "__main__":
-    with open('charly.json', 'r') as openfile:
+    with open('dennis.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
     agent.sanity_check()
     agent.infer_health_cond(preferences['symptoms'])
-    #agent.simple_queries()
+    agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], preferences['health_conditions'])
+    # agent.simple_queries()
     print(preferences)
