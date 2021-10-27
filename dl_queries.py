@@ -84,6 +84,13 @@ class Agent:
             results = self.ontology.search(hasSymptom=symptom_instances)
             print(results)
 
+    def infer_recipes_for_cuisines(self, cuisines):
+        cuisine_meals = []
+        if len(cuisines) > 0:
+            for cuisine in cuisines:
+                cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
+        return cuisine_meals
+
     def infer_forbidden_ingredients(self, health_conditions):
         list_forbidden_ingredients = []
         if len(health_conditions) > 0:
@@ -99,6 +106,7 @@ class Agent:
         for ingredient in health_prevented_ingredients:
             health_prevented_recipes = list(set(health_prevented_recipes + list(self.ontology.search(containsIngredient=ingredient))))
 
+        cuisine_recipes = self.infer_recipes_for_cuisines(cuisines)
         # Keep track of all recipes and initialize logic operators
         all_recipes = []
         recipes = self.ontology.search(label="Recipe")
@@ -159,7 +167,9 @@ class Agent:
             print(food_list)
 
         preferred_recipes = list(set(food_list) - set(health_prevented_recipes))
+        prefered_recipes_cuisines = list(set(preferred_recipes) & set(cuisine_recipes))
         print('Recipes found based on preferences and health conditions: ', preferred_recipes)
+        print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines)
         return preferred_recipes
 
     def simple_queries(self):

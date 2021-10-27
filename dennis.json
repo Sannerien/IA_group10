@@ -1,17 +1,15 @@
  {
-  "name": "Dennis",
-  "neighborhood": "De Pijp",
+  "user": "Dennis",
+  "current_location": "De Pijp",
   "time_of_activity": 20,
-  "owns": [],
+  "weather_condition": ["Windy"],
   "health_conditions": ["Wool Allergy", "Shellfish Allergy", "Citrus Allergy"],
   "symptoms": [],
-  "pref_cuisines": [],
+  "pref_cuisines": ["Japanese"],
   "pref_food": ["ingredient some Protein", "not ingredient some Dairy"],
   "pref_location": "Amsterdam",
-  "misc_activities": [],
-  "clothing_items": [],
-   "query" : ["Activity", "Energy"],
- "strict_prefs" : [],
-    "loose_prefs" : [],
-  "materials": []
+  "pref_clothing": [],
+  "activity": "Restaurant",
+  "strict_prefs" : [],
+  "loose_prefs" : []
  }
