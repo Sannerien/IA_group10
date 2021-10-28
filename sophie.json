@@ -1,14 +1,15 @@
- {
-  "Person": "Sophie",
-  "Neighborhood": "Parkwijk",
-  "time_of_activity": "20:00",
-  "owns": ["Bike", "Car"],
+{
+  "user": "Sophie",
+  "current_location": "Parkwijk",
+  "time_of_activity": 20,
+  "weather_condition": ["Windy"],
   "health_conditions": [],
   "symptoms": ["SwollenTongue", "Itching", "Stomach Ache"],
-  "cuisines": [],
-  "food": ["containsIngredient 'Seafood'", "containsIngredient 'Shell Fish'", "not containsIngredient 'Sea Food'", "not containsIngredient 'Shell Fish'"],
+  "pref_cuisines": ["Japanese"],
+  "pref_food": ["ingredient some Fish", "not ingredient some Dairy"],
   "pref_location": "Amsterdam",
-  "misc_activities": [],
-  "clothing_items": [],
-  "materials": []
+  "pref_clothing": [],
+  "activity": "Restaurant",
+  "strict_prefs" : [],
+  "loose_prefs" : []
  }

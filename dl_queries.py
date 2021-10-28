@@ -91,6 +91,13 @@ class Agent:
                 cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
         return cuisine_meals
 
+    def filter_restaurants_on_location(self, pref_locations, restaurant):
+        cuisine_meals = []
+        if len(pref_locations) > 0:
+            for pref_location in pref_locations:
+                cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
+        return cuisine_meals
+
     def infer_forbidden_ingredients(self, health_conditions):
         list_forbidden_ingredients = []
         if len(health_conditions) > 0:
@@ -98,6 +105,16 @@ class Agent:
                 forbidden_ingredients = list(self.ontology.search(isForbiddenBy=self.label_to_indiv[health_cond]))
                 list_forbidden_ingredients = list(set(list_forbidden_ingredients + forbidden_ingredients))
         return list_forbidden_ingredients
+
+    def infer_restaurants(self, recipes):
+        restaurants = []
+        if len(recipes) > 0:
+            for recipe in recipes:
+                possible_restaurants = list(self.ontology.search(serves=recipe))
+                restaurants = list(set(restaurants + possible_restaurants))
+        else:
+            restaurants = self.ontology.Restaurant.instances()
+        return restaurants
 
     def infer_recipes(self, cuisines, pref_food, health_cond):
         # Find what recipes aren't allowed due to health conditions
@@ -170,6 +187,9 @@ class Agent:
         prefered_recipes_cuisines = list(set(preferred_recipes) & set(cuisine_recipes))
         print('Recipes found based on preferences and health conditions: ', preferred_recipes)
         print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines)
+
+        restaurants = self.infer_restaurants([])
+        print('Restaurants found that serve this food: ', restaurants)
         return preferred_recipes
 
     def simple_queries(self):
