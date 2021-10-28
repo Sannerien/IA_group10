@@ -283,6 +283,9 @@
         <ObjectProperty IRI="#hasCuisine"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasOrigin"/>
     </Declaration>
     <Declaration>
@@ -403,6 +406,9 @@
         <NamedIndividual IRI="#BershkaTopcoat"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BikeOfDennis"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BikeOfEmma"/>
     </Declaration>
     <Declaration>
@@ -448,6 +454,9 @@
         <NamedIndividual IRI="#CoconutMilk"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Cold"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cough"/>
     </Declaration>
     <Declaration>
@@ -461,6 +470,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DePijp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dennis"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dizziness"/>
@@ -1339,6 +1351,10 @@
         <NamedIndividual IRI="#CoconutMilk"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PhysicalDiscomfort"/>
+        <NamedIndividual IRI="#Cold"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#COVID-RelatedSymptom"/>
         <NamedIndividual IRI="#Cough"/>
     </ClassAssertion>
@@ -1357,6 +1373,10 @@
     <ClassAssertion>
         <Class IRI="#Neighborhood"/>
         <NamedIndividual IRI="#DePijp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Dennis"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#PhysicalDiscomfort"/>
@@ -1732,6 +1752,16 @@
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#DePijp"/>
         <NamedIndividual IRI="#Amsterdam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Dennis"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Dennis"/>
+        <NamedIndividual IRI="#BikeOfDennis"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -2461,6 +2491,10 @@
         <Class IRI="#Restaurant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOrigin"/>
         <Class IRI="#Clothing"/>
     </ObjectPropertyDomain>
@@ -2527,6 +2561,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCuisine"/>
         <Class IRI="#Cuisine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <Class IRI="#HealthCondition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOrigin"/>
@@ -2697,6 +2735,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BikeOfDennis</IRI>
+        <Literal>Bike Of Dennis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BikeOfEmma</IRI>
         <Literal>Bike Of Emma</Literal>
     </AnnotationAssertion>
@@ -2827,6 +2870,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cold</IRI>
+        <Literal>Cold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Cough</IRI>
         <Literal>Cough</Literal>
     </AnnotationAssertion>
@@ -2864,6 +2912,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DePijp</IRI>
         <Literal>De Pijp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dennis</IRI>
+        <Literal>Dennis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
