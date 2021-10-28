@@ -412,6 +412,9 @@
         <NamedIndividual IRI="#BikeOfEmma"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BikeOfSophie"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Binnenstad"/>
     </Declaration>
     <Declaration>
@@ -1305,6 +1308,10 @@
         <NamedIndividual IRI="#BikeOfEmma"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Bike"/>
+        <NamedIndividual IRI="#BikeOfSophie"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Neighborhood"/>
         <NamedIndividual IRI="#Binnenstad"/>
     </ClassAssertion>
@@ -1997,6 +2004,16 @@
         <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Sophie"/>
+        <NamedIndividual IRI="#BikeOfSophie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Sophie"/>
+        <NamedIndividual IRI="#KiaE-Niro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#SpaghettiCarbonara"/>
         <NamedIndividual IRI="#Beef"/>
@@ -2137,8 +2154,18 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#BikeOfDennis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerKm"/>
         <NamedIndividual IRI="#BikeOfEmma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#BikeOfSophie"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -2835,6 +2862,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BikeOfEmma</IRI>
         <Literal>Bike Of Emma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BikeOfSophie</IRI>
+        <Literal>Bike Of Sophie</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
