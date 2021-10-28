@@ -1,10 +1,12 @@
 import json
 from owlready2 import *
 from pprint import pprint
+import numpy as np
+import operator
 
 class RecommendationState:
 
-    def __init__(self, activity, transportation, restaurant, food, clothing_store, clothing_item, time_of_activity):
+    def __init__(self, activity = [], transportation = [], restaurant = [], food = [], clothing_store = [], clothing_item= [], time_of_activity= []):
         activity = activity
         transportation = transportation
         restaurant = restaurant
@@ -13,20 +15,18 @@ class RecommendationState:
         clothing_item = clothing_item
         time_of_activity = time_of_activity
 
-    def calculate_utility(self, story, strict_prefs, prefs, CO2_scores_per_domain, domains):
+    def calculate_utility(self, strict_prefs, loose_prefs, CO2_scores_per_domain, n_domains, completed_pref=0):
         utility = 0
-
-        # we only count the actual score if all crucial conditions are met
-        if set(strict_prefs) == set(story[0]):
-            # we calculate the percentage of unstrict conditions
-            # by intersecting their set with users's prefs set
-            percent_match = len(set(prefs).intersection(story[1])) / len(set(story[1]))
-            print("percent match is {}".format(percent_match))
-            # we calculate the score; CO2 value is summed over the list
-            utility = percent_match * len(domains) / sum(CO2_scores_per_domain)
-
+        x = len(set(loose_prefs)) + len(set(strict_prefs))
+        if x == 0:
+            percent_match = 1
         else:
-            print("critical unmatch")
+        # by intersecting their set with users's prefs set
+            percent_match = np.divide(int(completed_pref), int(x))
+        #print("percent match is {}".format(percent_match))
+        # we calculate the score; CO2 value is summed over the list
+        utility = (percent_match * n_domains) / sum(CO2_scores_per_domain)
+
 
         return utility
 
@@ -188,7 +188,7 @@ class Agent:
         print('Recipes found based on preferences and health conditions: ', preferred_recipes)
         print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines)
 
-        restaurants = self.infer_restaurants([])
+        restaurants = self.infer_restaurants(prefered_recipes_cuisines)
         print('Restaurants found that serve this food: ', restaurants)
         return preferred_recipes
 
@@ -314,6 +314,8 @@ if __name__ == "__main__":
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
     agent.sanity_check()
+    agent.find_preferences(preferences)
+    #
     agent.infer_health_cond(preferences['symptoms'])
     agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], preferences['health_conditions'])
     # agent.simple_queries()
