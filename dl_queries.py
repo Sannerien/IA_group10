@@ -91,12 +91,16 @@ class Agent:
                 cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
         return cuisine_meals
 
-    #def filter_restaurants_on_location(self, pref_locations, restaurants):
-        #cuisine_meals = []
-        #if len(restaurants) > 0:
-        ##    for restaurant in restaurants:
-        #        cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[restaurants].isLocatedIn pref_locations))
-        #return cuisine_meals
+    def filter_restaurants_on_location(self, pref_locations, restaurants):
+        restaurants_in_pref_locations = []
+        if len(restaurants) > 0 and len(pref_locations) > 0:
+            for restaurant in restaurants:
+                for location in pref_locations:
+                    if self.label_to_indiv[location] in list(restaurant.isLocatedIn) and restaurant not in restaurants_in_pref_locations:
+                        restaurants_in_pref_locations.append(restaurant)
+            return restaurants_in_pref_locations
+        else:
+            return restaurants
 
     def infer_forbidden_ingredients(self, health_conditions):
         list_forbidden_ingredients = []
@@ -190,6 +194,8 @@ class Agent:
 
         restaurants = self.infer_restaurants(prefered_recipes_cuisines)
         print('Restaurants found that serve this food: ', restaurants)
+        restaurants = self.filter_restaurants_on_location(preferences['pref_location'], restaurants)
+        print('Of these restaurants, these restaurants are found in ', preferences['pref_location'], ' : ', restaurants)
         return preferred_recipes
 
     def simple_queries(self):
@@ -309,12 +315,12 @@ class Agent:
 
 
 if __name__ == "__main__":
-    with open('./Users/dennis.json', 'r') as openfile:
+    with open('./Users/sophie.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
     agent.sanity_check()
-    agent.find_preferences(preferences)
+    #agent.find_preferences(preferences)
     #
     agent.infer_health_cond(preferences['symptoms'])
     agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], preferences['health_conditions'])

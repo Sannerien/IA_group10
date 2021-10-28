@@ -412,6 +412,9 @@
         <NamedIndividual IRI="#BikeOfEmma"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Broccoli"/>
     </Declaration>
     <Declaration>
@@ -632,6 +635,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sunny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SushiKoi"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SushiRice"/>
@@ -1292,7 +1298,15 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Bike"/>
+        <NamedIndividual IRI="#BikeOfDennis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bike"/>
         <NamedIndividual IRI="#BikeOfEmma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#Binnenstad"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
@@ -1591,6 +1605,10 @@
         <NamedIndividual IRI="#Sunny"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#SushiKoi"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Rice"/>
         <NamedIndividual IRI="#SushiRice"/>
     </ClassAssertion>
@@ -1727,6 +1745,11 @@
         <ObjectProperty IRI="#hasOwner"/>
         <NamedIndividual IRI="#BikeOfEmma"/>
         <NamedIndividual IRI="#Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#Utrecht"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
@@ -2000,6 +2023,31 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCuisine"/>
+        <NamedIndividual IRI="#SushiKoi"/>
+        <NamedIndividual IRI="#Japanese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#SushiKoi"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#SushiKoi"/>
+        <NamedIndividual IRI="#SalmonSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#SushiKoi"/>
+        <NamedIndividual IRI="#ShrimpSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#SushiKoi"/>
+        <NamedIndividual IRI="#VegetableSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCuisine"/>
         <NamedIndividual IRI="#TastyAsian"/>
         <NamedIndividual IRI="#Thai"/>
     </ObjectPropertyAssertion>
@@ -2092,6 +2140,16 @@
         <DataProperty IRI="#emitsCO2PerKm"/>
         <NamedIndividual IRI="#BikeOfEmma"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasArea"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1460000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14500</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -2780,6 +2838,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Binnenstad</IRI>
+        <Literal>Binnenstad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Bread</IRI>
         <Literal>Bread</Literal>
     </AnnotationAssertion>
@@ -3437,6 +3500,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Sushi</IRI>
         <Literal>Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SushiKoi</IRI>
+        <Literal>Sushi Koi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
