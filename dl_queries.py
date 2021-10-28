@@ -91,12 +91,12 @@ class Agent:
                 cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
         return cuisine_meals
 
-    def filter_restaurants_on_location(self, pref_locations, restaurant):
-        cuisine_meals = []
-        if len(pref_locations) > 0:
-            for pref_location in pref_locations:
-                cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
-        return cuisine_meals
+    #def filter_restaurants_on_location(self, pref_locations, restaurants):
+        #cuisine_meals = []
+        #if len(restaurants) > 0:
+        ##    for restaurant in restaurants:
+        #        cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[restaurants].isLocatedIn pref_locations))
+        #return cuisine_meals
 
     def infer_forbidden_ingredients(self, health_conditions):
         list_forbidden_ingredients = []
@@ -240,7 +240,7 @@ class Agent:
 
 
 if __name__ == "__main__":
-    with open('dennis.json', 'r') as openfile:
+    with open('./Users/dennis.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
