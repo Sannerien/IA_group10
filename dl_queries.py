@@ -120,6 +120,37 @@ class Agent:
             restaurants = self.ontology.Restaurant.instances()
         return restaurants
 
+    def get_user_location(self, current_location, user):
+        if current_location:
+            return self.label_to_indiv[current_location]
+        else:
+            return self.label_to_indiv[user].livesIn[0]
+
+    def determine_travel_options(self, current_location, destinations, user):
+        train_available = False
+        available_transport = self.label_to_indiv[user].owns
+        bike_available = False
+        if current_location.is_a[0] == self.ontology.City:
+            current_location_train_station = True
+        else:
+            if current_location.hasPopulation[0] > 20000:
+                current_location_train_station = True
+            else:
+                current_location_train_station = False
+        destination_dict = {}
+        if len(restaurants) > 0:
+            for destination in destinations:
+                destination_location = destination.isLocatedIn[0]
+                destination_dict[destination] = destination_location
+                if current_location_train_station and current_location.hasPopulation[0] > 20000:
+                    train_available = True
+
+                if current_location.isLocatedIn[0] == destination_location.IsLocatedIn[0]:
+                    bike_available = True
+
+                print(destinations)
+
+
     def infer_recipes(self, cuisines, pref_food, health_cond):
         # Find what recipes aren't allowed due to health conditions
         health_prevented_ingredients = self.infer_forbidden_ingredients(health_cond)
@@ -192,11 +223,13 @@ class Agent:
         print('Recipes found based on preferences and health conditions: ', preferred_recipes)
         print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines)
 
-        restaurants = self.infer_restaurants(prefered_recipes_cuisines)
-        print('Restaurants found that serve this food: ', restaurants)
-        restaurants = self.filter_restaurants_on_location(preferences['pref_location'], restaurants)
-        print('Of these restaurants, these restaurants are found in ', preferences['pref_location'], ' : ', restaurants)
-        return preferred_recipes
+        restaurants_by_cuisines = self.infer_restaurants(prefered_recipes_cuisines)
+        restaurants = self.infer_restaurants(preferred_recipes)
+        print('Restaurants found that serve this food: ', restaurants_by_cuisines)
+        restaurants_by_location = self.filter_restaurants_on_location(preferences['pref_location'], restaurants)
+        restaurants_by_cuisines_location = self.filter_restaurants_on_location(preferences['pref_location'], restaurants_by_cuisines)
+        print('Of these restaurants, these restaurants are found in ', preferences['pref_location'], ' : ', restaurants_by_cuisines_location)
+        return preferred_recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location
 
     def simple_queries(self):
         print("Query responses:")
@@ -322,7 +355,10 @@ if __name__ == "__main__":
     agent.sanity_check()
     #agent.find_preferences(preferences)
     #
+    current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
     agent.infer_health_cond(preferences['symptoms'])
-    agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], preferences['health_conditions'])
+    recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location = \
+        agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], preferences['health_conditions'])
+    #agent.determine_travel_options(current_location, restaurants_by_cuisines_location, preferences['user'])
     # agent.simple_queries()
 
