@@ -70,7 +70,7 @@ class Agent:
 
         options = []
 
-        if "Energy" in preferences["query"]:
+        if "Activity" in preferences["activity"]:
             selected_energy = {}
             if self.rushhour:
                 energy = self.ontology.search(label="Unsustainable Energy")
@@ -88,7 +88,7 @@ class Agent:
                                         selected_energy = i
             #options_domains["Energy"] = selected_energy
 
-        if "Activity" in preferences["query"]:
+
             possible_activities = self.ontology.search(label="Activity")
             selected_activities = possible_activities[0].instances()
 
@@ -114,17 +114,17 @@ class Agent:
         return sorted_options
 
     def explain_actions(self, preferences, sorted_options, options):
-        print("Dear", preferences["name"])
+        print("Dear", preferences["user"])
         x = list(list(sorted_options.keys())[0])[0]
-        print('The first advise for selection of {} would be {} with utility score {}.'.format(preferences["query"][0], x, list(sorted_options.values())[0]))
+        print('The first advise for selection of {} would be {} with utility score {}.'.format(preferences["activity"][0], x, list(sorted_options.values())[0]))
 
-        if preferences["time_of_activity"] >= 20 and "Activity" in preferences["query"]:
+        if preferences["time_of_activity"] >= 20 and "Activity" in preferences["activity"]:
             self.rushhour = True
             sorted_options = self.choose_actions(options)
             print("An alternative option is to wait {} hour. In that case another option would be {}".format(21-preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
 
     def find_preferences(self, preferences):
-        query = preferences["query"]
+        query = preferences["activity"]
 
         self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
         options = self.find_options(preferences)
@@ -132,15 +132,13 @@ class Agent:
         self.explain_actions(preferences, sorted_options, options)
 
 
-        print(options)
 
 
 
 if __name__ == "__main__":
-    with open('dennis.json', 'r') as openfile:
+    with open('./Users/dennis.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
    # agent.sanity_check()
     agent.find_preferences(preferences)
-    print(preferences)

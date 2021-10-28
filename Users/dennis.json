@@ -7,9 +7,9 @@
   "symptoms": [],
   "pref_cuisines": ["Japanese"],
   "pref_food": ["ingredient some Protein", "not ingredient some Dairy"],
-  "pref_location": "Amsterdam",
+  "pref_location": ["Amsterdam"],
   "pref_clothing": [],
-  "activity": "Restaurant",
+  "activity": "Activity",
   "strict_prefs" : [],
   "loose_prefs" : []
  }

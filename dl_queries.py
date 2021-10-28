@@ -219,6 +219,75 @@ class Agent:
         pprint(class_results)
 
 
+    def find_options(self, preferences):
+
+        options = []
+
+        if "Activity" in preferences["activity"]:
+            selected_energy = {}
+            if self.rushhour:
+                energy = self.ontology.search(label="Unsustainable Energy")
+                selected_energy = energy[0].instances()
+
+            else:
+                energy = self.ontology.search(label="Energy")
+                selected_energy = []
+                for i in energy[0].instances():
+                    for prop in i.get_properties():
+                        if prop.python_name == "requiresWeather":
+                            for value in prop[i]:
+                                for weather in preferences["weather_condition"]:
+                                    if str(value).endswith(weather):
+                                        selected_energy = i
+            #options_domains["Energy"] = selected_energy
+
+
+            possible_activities = self.ontology.search(label="Activity")
+            selected_activities = possible_activities[0].instances()
+
+            options = [[x,y] for x in selected_activities for y in selected_energy]
+
+        return options
+
+    def check_preferences(self, preference):
+        preference["strict_prefs"]
+
+    def choose_actions(self, options):
+        recommender = RecommendationState()
+        d = {}
+
+        for idx, option in enumerate(options):
+            CO2_scores_per_domain = [item.hasCO2score[0] for item in option]
+            len_domain = len(option)
+            #completed_pref = self.check_preferences(preferences)
+            utility = recommender.calculate_utility(preferences["strict_prefs"], preferences["loose_prefs"],
+                                          CO2_scores_per_domain, len_domain)
+            d[(option[0].name, option[0].name)] = utility
+        sorted_options = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
+        return sorted_options
+
+    def explain_actions(self, preferences, sorted_options, options):
+        print("Dear", preferences["user"])
+        x = list(list(sorted_options.keys())[0])[0]
+        print('The first advise for selection of {} would be {} with utility score {}.'.format(preferences["activity"][0], x, list(sorted_options.values())[0]))
+
+        if preferences["time_of_activity"] >= 20 and "Activity" in preferences["activity"]:
+            self.rushhour = True
+            sorted_options = self.choose_actions(options)
+            print("An alternative option is to wait {} hour. In that case another option would be {}".format(21-preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
+
+    def find_preferences(self, preferences):
+        query = preferences["activity"]
+
+        self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
+        options = self.find_options(preferences)
+        sorted_options = self.choose_actions(options)
+        self.explain_actions(preferences, sorted_options, options)
+
+
+
+
+
 if __name__ == "__main__":
     with open('dennis.json', 'r') as openfile:
         # Reading from json file
@@ -228,4 +297,4 @@ if __name__ == "__main__":
     agent.infer_health_cond(preferences['symptoms'])
     agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], preferences['health_conditions'])
     # agent.simple_queries()
-    print(preferences)
+
