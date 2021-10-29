@@ -41,7 +41,7 @@ class Agent:
         self.rushhour = False
         self.graph = default_world.as_rdflib_graph()
 
-        # Run the reasoner to obtain the inferences; TODO: gives an error when run
+        # Run the reasoner to obtain the inferences;
         with self.ontology:
             sync_reasoner(infer_property_values=True)
 
@@ -128,11 +128,15 @@ class Agent:
 
     def determine_travel_options(self, current_location, destinations, user):
         train_available = False
-        available_transport = self.label_to_indiv[user].owns
+        available_transport = list(self.label_to_indiv[user].owns)
         bike_available = False
+        is_city = False
         if current_location.is_a[0] == self.ontology.City:
             current_location_train_station = True
+            city = current_location
+            is_city = True
         else:
+            city = current_location.isLocatedIn[0]
             if current_location.hasPopulation[0] > 20000:
                 current_location_train_station = True
             else:
@@ -142,13 +146,23 @@ class Agent:
             for destination in destinations:
                 destination_location = destination.isLocatedIn[0]
                 destination_dict[destination] = destination_location
-                if current_location_train_station and current_location.hasPopulation[0] > 20000:
+                if current_location_train_station and destination_location.hasPopulation[0] > 20000:
                     train_available = True
-
-                if current_location.isLocatedIn[0] == destination_location.IsLocatedIn[0]:
-                    bike_available = True
-
-                print(destinations)
+                if is_city:
+                    if destination_location.isLocatedIn[0] == current_location:
+                        bike_available = True
+                else:
+                    if current_location.isLocatedIn[0] == destination_location.isLocatedIn[0]:
+                        bike_available = True
+        for transport in available_transport:
+            type = transport.is_a[0]
+            if type == self.ontology.Bike and not bike_available:
+                available_transport.remove(transport)
+        # if train_available and city == self.ontology.Utrecht:
+        #     available_transport.append(self.label_to_indiv['Train From Utrecht To Amsterdam'])
+        # elif train_available and city == self.ontology.Utrecht:
+        #     available_transport.append(self.label_to_indiv['Train From Amsterdam To Utrecht'])
+        print(available_transport)
 
 
     def infer_recipes(self, cuisines, pref_food, health_cond):
@@ -359,6 +373,6 @@ if __name__ == "__main__":
     agent.infer_health_cond(preferences['symptoms'])
     recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location = \
         agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], preferences['health_conditions'])
-    #agent.determine_travel_options(current_location, restaurants_by_cuisines_location, preferences['user'])
+    agent.determine_travel_options(current_location, restaurants_by_cuisines_location, preferences['user'])
     # agent.simple_queries()
 
