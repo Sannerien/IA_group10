@@ -3,7 +3,6 @@
   "current_location": "Parkwijk",
   "time_of_activity": 20,
   "weather_condition": ["Windy"],
-  "health_conditions": [],
   "symptoms": ["Swollen Tongue", "Itching", "Stomach Ache"],
   "pref_cuisines": ["Japanese"],
   "pref_food": ["ingredient some Fish", "not ingredient some Dairy"],

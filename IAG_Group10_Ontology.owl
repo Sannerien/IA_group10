@@ -280,6 +280,9 @@
         <ObjectProperty IRI="#forbids"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasCuisine"/>
     </Declaration>
     <Declaration>
@@ -296,6 +299,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTrainStation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#influences"/>
@@ -364,6 +370,9 @@
         <DataProperty IRI="#travelDistance"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#travelTimeToNearestTrainStation"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AcyclicFabric"/>
     </Declaration>
     <Declaration>
@@ -377,6 +386,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmsterdamCentraal"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Anna"/>
@@ -418,6 +430,9 @@
         <NamedIndividual IRI="#Binnenstad"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BloatedStomach"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Broccoli"/>
     </Declaration>
     <Declaration>
@@ -425,6 +440,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Butter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COVID19"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Carrot"/>
@@ -479,6 +497,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dennis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diarrhea"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dizziness"/>
@@ -545,6 +566,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Kiwi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LasagnaBolognese"/>
@@ -634,6 +658,9 @@
         <NamedIndividual IRI="#StomachAche"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#StomachRumbling"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
     </Declaration>
     <Declaration>
@@ -686,6 +713,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Utrecht"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UtrechtCentraal"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VegetableSushi"/>
@@ -1264,6 +1294,10 @@
         <NamedIndividual IRI="#Amsterdam-Oost"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#TrainStation"/>
+        <NamedIndividual IRI="#AmsterdamCentraal"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Anna"/>
     </ClassAssertion>
@@ -1316,6 +1350,10 @@
         <NamedIndividual IRI="#Binnenstad"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#StomachPain"/>
+        <NamedIndividual IRI="#BloatedStomach"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Broccoli"/>
     </ClassAssertion>
@@ -1326,6 +1364,24 @@
     <ClassAssertion>
         <Class IRI="#ProcessedMilk"/>
         <NamedIndividual IRI="#Butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemporalCondition"/>
+        <NamedIndividual IRI="#COVID19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymptom"/>
+            <Class IRI="#COVID-RelatedSymptom"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#COVID19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#forbids"/>
+            <Class IRI="#Transportation"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#COVID19"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
@@ -1398,6 +1454,10 @@
     <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Dennis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StomachPain"/>
+        <NamedIndividual IRI="#Diarrhea"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#PhysicalDiscomfort"/>
@@ -1486,6 +1546,10 @@
     <ClassAssertion>
         <Class IRI="#Fruit"/>
         <NamedIndividual IRI="#Kiwi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intolerance"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Lasagna"/>
@@ -1604,6 +1668,10 @@
         <NamedIndividual IRI="#StomachAche"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#StomachPain"/>
+        <NamedIndividual IRI="#StomachRumbling"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Milkshake"/>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
     </ClassAssertion>
@@ -1676,6 +1744,10 @@
         <NamedIndividual IRI="#Utrecht"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#TrainStation"/>
+        <NamedIndividual IRI="#UtrechtCentraal"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Sushi"/>
         <NamedIndividual IRI="#VegetableSushi"/>
     </ClassAssertion>
@@ -1719,6 +1791,11 @@
         <NamedIndividual IRI="#StrawberryMilkshake"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTrainStation"/>
+        <NamedIndividual IRI="#Amsterdam"/>
+        <NamedIndividual IRI="#AmsterdamCentraal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Amsterdam-Oost"/>
         <NamedIndividual IRI="#Amsterdam"/>
@@ -1749,14 +1826,24 @@
         <NamedIndividual IRI="#BangladeshOrigin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasOwner"/>
-        <NamedIndividual IRI="#BikeOfEmma"/>
-        <NamedIndividual IRI="#Emma"/>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BikeOfSophie"/>
+        <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Binnenstad"/>
         <NamedIndividual IRI="#Utrecht"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#Butter"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#Cheddar"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
@@ -1772,6 +1859,16 @@
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#Cheeseburger"/>
         <NamedIndividual IRI="#Cheddar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#CoconutMilk"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#CowMilk"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#adjacentTo"/>
@@ -1794,9 +1891,34 @@
         <NamedIndividual IRI="#BikeOfDennis"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#Emmentaler"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#GoatMilk"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#Gorgonzola"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#Gouda"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Grachtengordel"/>
         <NamedIndividual IRI="#Amsterdam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#GreekYoghurt"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
@@ -1817,6 +1939,11 @@
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#GreenCurry"/>
         <NamedIndividual IRI="#Tofu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#IceCream"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMeal"/>
@@ -1842,6 +1969,26 @@
         <ObjectProperty IRI="#containsMeal"/>
         <NamedIndividual IRI="#Japanese"/>
         <NamedIndividual IRI="#VegetableSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#KiaE-Niro"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+        <NamedIndividual IRI="#BloatedStomach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+        <NamedIndividual IRI="#Diarrhea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+        <NamedIndividual IRI="#StomachRumbling"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
@@ -1897,6 +2044,11 @@
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Parkwijk"/>
         <NamedIndividual IRI="#Utrecht"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#Parmesan"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMaterial"/>
@@ -1999,6 +2151,11 @@
         <NamedIndividual IRI="#Sunny"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#Sophie"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#livesIn"/>
         <NamedIndividual IRI="#Sophie"/>
         <NamedIndividual IRI="#Parkwijk"/>
@@ -2089,6 +2246,11 @@
         <NamedIndividual IRI="#RedCurry"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTrainStation"/>
+        <NamedIndividual IRI="#Utrecht"/>
+        <NamedIndividual IRI="#UtrechtCentraal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#VegetableSushi"/>
         <NamedIndividual IRI="#Cucumber"/>
@@ -2112,6 +2274,11 @@
         <ObjectProperty IRI="#hasSymptom"/>
         <NamedIndividual IRI="#WoolAllergy"/>
         <NamedIndividual IRI="#Itching"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <NamedIndividual IRI="#Yoghurt"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
@@ -2167,6 +2334,11 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#BikeOfSophie"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#travelTimeToNearestTrainStation"/>
+        <NamedIndividual IRI="#BikeOfSophie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasArea"/>
@@ -2484,6 +2656,10 @@
         <ObjectProperty IRI="#contains"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <ObjectProperty IRI="#hasTrainStation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasOrigin"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -2535,6 +2711,10 @@
         <ObjectProperty IRI="#containsMeal"/>
         <ObjectProperty IRI="#isFromCuisine"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOwner"/>
+        <ObjectProperty IRI="#owns"/>
+    </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#consumesEnergy"/>
     </FunctionalObjectProperty>
@@ -2545,6 +2725,10 @@
         <ObjectProperty IRI="#isLocatedIn"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adjacentTo"/>
+        <Class IRI="#Neighborhood"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#availableIn"/>
         <Class IRI="#Clothing"/>
     </ObjectPropertyDomain>
@@ -2552,7 +2736,7 @@
         <ObjectProperty IRI="#causesCaseOf"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#causesCaseOf"/>
-            <Class IRI="#Symptom"/>
+            <Class IRI="#HealthCondition"/>
         </ObjectAllValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2569,7 +2753,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#forbids"/>
-        <Class IRI="#COVID-RelatedSymptom"/>
+        <Class IRI="#TemporalCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <Class IRI="#Neighborhood"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCuisine"/>
@@ -2590,6 +2778,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasStopIn"/>
         <Class IRI="#Train"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTrainStation"/>
+        <Class IRI="#City"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#influences"/>
@@ -2624,6 +2816,10 @@
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#adjacentTo"/>
+        <Class IRI="#Neighborhood"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#availableIn"/>
         <Class IRI="#ClothingStore"/>
     </ObjectPropertyRange>
@@ -2644,6 +2840,10 @@
         <Class IRI="#Transportation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <Class IRI="#ChargingSpot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCuisine"/>
         <Class IRI="#Cuisine"/>
     </ObjectPropertyRange>
@@ -2661,6 +2861,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasStopIn"/>
+        <Class IRI="#TrainStation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTrainStation"/>
         <Class IRI="#TrainStation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -2739,6 +2943,10 @@
         <DataProperty IRI="#hasPriceEur"/>
         <Class IRI="#Clothing"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#travelTimeToNearestTrainStation"/>
+        <Class IRI="#Bike"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasCO2score"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
@@ -2761,6 +2969,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#travelDistance"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#travelTimeToNearestTrainStation"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <AnnotationAssertion>
@@ -2797,6 +3009,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Amsterdam-Oost</IRI>
         <Literal>Amsterdam-Oost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AmsterdamCentraal</IRI>
+        <Literal>Amsterdam Centraal</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2875,6 +3092,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BloatedStomach</IRI>
+        <Literal>Bloated Stomach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Bread</IRI>
         <Literal>Bread</Literal>
     </AnnotationAssertion>
@@ -2902,6 +3124,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#COVID-RelatedSymptom</IRI>
         <Literal>COVID-Related Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#COVID19</IRI>
+        <Literal>COVID19</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3052,6 +3279,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Dennis</IRI>
         <Literal>Dennis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Diarrhea</IRI>
+        <Literal>Diarrhea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3237,6 +3469,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Kiwi</IRI>
         <Literal>Kiwi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LactoseIntolerance</IRI>
+        <Literal>Lactose Intolerance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3520,6 +3757,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StomachRumbling</IRI>
+        <Literal>Stomach Rumbling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#StrawberryMilkshake</IRI>
         <Literal>Strawberry Milkshake</Literal>
     </AnnotationAssertion>
@@ -3655,6 +3897,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UtrechtCentraal</IRI>
+        <Literal>Utrecht Centraal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Vegetable</IRI>
         <Literal>Vegetable</Literal>
     </AnnotationAssertion>
@@ -3750,6 +3997,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasChargingSpot</IRI>
+        <Literal>hasChargingSpot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasCuisine</IRI>
         <Literal>hasCuisine</Literal>
     </AnnotationAssertion>
@@ -3772,6 +4024,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasSymptom</IRI>
         <Literal>hasSymptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTrainStation</IRI>
+        <Literal>hasTrainStation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
