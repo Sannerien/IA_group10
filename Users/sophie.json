@@ -4,7 +4,7 @@
   "time_of_activity": 20,
   "weather_condition": ["Windy"],
   "symptoms": ["Swollen Tongue", "Itching", "Stomach Ache"],
-  "pref_cuisines": [],
+  "pref_cuisines": ["Japanese"],
   "pref_food": ["ingredient some Fish", "not ingredient some Dairy"],
   "pref_location": ["Amsterdam"],
   "pref_clothing": [],
