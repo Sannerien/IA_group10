@@ -412,7 +412,13 @@
         <NamedIndividual IRI="#Baguette"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BalistraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BangladeshOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BataviastraatChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Beef"/>
@@ -439,10 +445,19 @@
         <NamedIndividual IRI="#BikeOfSophie"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BilderdijkstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BiltstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Binnenstad"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BloatedStomach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoteykenChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Broccoli"/>
@@ -461,6 +476,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cashew"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CeintuurbaanChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ChargingPhone"/>
@@ -502,7 +520,13 @@
         <NamedIndividual IRI="#CowMilk"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CremerpleinChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cucumber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DamraklaanChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DePijp"/>
@@ -514,13 +538,28 @@
         <NamedIndividual IRI="#Diarrhea"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DillestraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Dizziness"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DoingHandwash"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DomstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DragonstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DriftChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DutchOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EersteJanSteenstraatChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Egg"/>
@@ -532,13 +571,25 @@
         <NamedIndividual IRI="#Emmentaler"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#FerdinandBolstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlevoparkChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FrenchOrigin"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#GalileiplantsoenChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Gas_Energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GerardDoustraatChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GoatMilk"/>
@@ -559,7 +610,22 @@
         <NamedIndividual IRI="#GreenCurry"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#GroenedijkChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HartenstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HerengrachtChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HerenstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#IceCream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InsulindewegChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Italian"/>
@@ -568,10 +634,22 @@
         <NamedIndividual IRI="#Itching"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#JanskerkhofChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Japanese"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#JasminRice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KanaalstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KarwijstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KeizergrachtChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#KiaE-Niro"/>
@@ -583,10 +661,19 @@
         <NamedIndividual IRI="#LactoseIntolerance"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LangerakbrugChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#LasagnaBolognese"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Leather"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeidsegrachtChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeliegrachtChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Lombok"/>
@@ -595,10 +682,40 @@
         <NamedIndividual IRI="#LossOfTaste"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LutmastraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MMWoolenTopcoat"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MaanzaadstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MajellaparkChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MariaplaatsChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MolensteynChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MolukkenstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaamrijkChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NeudeChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NewtonstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NieuwegrachtChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Nylon"/>
@@ -607,10 +724,19 @@
         <NamedIndividual IRI="#Orange"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#OudengrachtChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Oudenrijn"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#OudenrijnsepadChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParkDeHogeWeideChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Parkwijk"/>
@@ -622,7 +748,25 @@
         <NamedIndividual IRI="#Pineapple"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#PolderwegChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Pork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PotgieterstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrinsengrachtChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QuellijnstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RaadhuisstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RadiowegChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#RecycledCotton"/>
@@ -634,13 +778,28 @@
         <NamedIndividual IRI="#RedCurry"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#RijnzatheChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RokinChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#RomanianOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RozemarijnsingelChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Salmon"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SalmonSushi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SarphatiparkChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SelderiestraatChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ShellfishAllergy"/>
@@ -653,6 +812,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ShrimpSushi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SingelChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Solar_Energy"/>
@@ -670,6 +832,9 @@
         <NamedIndividual IRI="#Spinach"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#SpinozawegChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#StomachAche"/>
     </Declaration>
     <Declaration>
@@ -677,6 +842,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StrijkviertelChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SumatrastraatChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Sunny"/>
@@ -700,7 +871,13 @@
         <NamedIndividual IRI="#Thai"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#TidorestraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Tofu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TolstraatChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Tomato"/>
@@ -716,6 +893,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Tuna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TweedeOosterparklaanChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UsingDishwasher"/>
@@ -736,7 +916,25 @@
         <NamedIndividual IRI="#UtrechtTram"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ValentijnskadeChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VanOstadestraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VanWoustraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#VegetableSushi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VeldzigtChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VleutensewegChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VoorstraatChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WatchingTV"/>
@@ -748,6 +946,9 @@
         <NamedIndividual IRI="#Windy"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#WolvenstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Wool"/>
     </Declaration>
     <Declaration>
@@ -755,6 +956,15 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Yoghurt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZandwegChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZeeburgerdijkChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZonstraatChargingSpot"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Allergy"/>
@@ -1343,8 +1553,16 @@
         <NamedIndividual IRI="#Baguette"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#BalistraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#RemoteOrigin"/>
         <NamedIndividual IRI="#BangladeshOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#BataviastraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Meat"/>
@@ -1379,12 +1597,24 @@
         <NamedIndividual IRI="#BikeOfSophie"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#BilderdijkstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#BiltstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Neighborhood"/>
         <NamedIndividual IRI="#Binnenstad"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#StomachPain"/>
         <NamedIndividual IRI="#BloatedStomach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#BoteykenChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
@@ -1423,6 +1653,10 @@
     <ClassAssertion>
         <Class IRI="#PlantBased"/>
         <NamedIndividual IRI="#Cashew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#CeintuurbaanChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Activity"/>
@@ -1477,8 +1711,16 @@
         <NamedIndividual IRI="#CowMilk"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#CremerpleinChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Cucumber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#DamraklaanChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Neighborhood"/>
@@ -1493,6 +1735,10 @@
         <NamedIndividual IRI="#Diarrhea"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#DillestraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#PhysicalDiscomfort"/>
         <NamedIndividual IRI="#Dizziness"/>
     </ClassAssertion>
@@ -1501,8 +1747,24 @@
         <NamedIndividual IRI="#DoingHandwash"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#DomstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#DragonstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#DriftChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#LocalOrigin"/>
         <NamedIndividual IRI="#DutchOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#EersteJanSteenstraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#By-Product"/>
@@ -1517,16 +1779,32 @@
         <NamedIndividual IRI="#Emmentaler"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#FerdinandBolstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#COVID-RelatedSymptom"/>
         <NamedIndividual IRI="#Fever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#FlevoparkChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#EuropeanOrigin"/>
         <NamedIndividual IRI="#FrenchOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#GalileiplantsoenChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#UnsustainableEnergy"/>
         <NamedIndividual IRI="#Gas_Energy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#GerardDoustraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Milk"/>
@@ -1553,8 +1831,28 @@
         <NamedIndividual IRI="#GreenCurry"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#GroenedijkChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#HartenstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#HerengrachtChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#HerenstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ProcessedMilk"/>
         <NamedIndividual IRI="#IceCream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#InsulindewegChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Cuisine"/>
@@ -1565,12 +1863,28 @@
         <NamedIndividual IRI="#Itching"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#JanskerkhofChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Cuisine"/>
         <NamedIndividual IRI="#Japanese"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Rice"/>
         <NamedIndividual IRI="#JasminRice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#KanaalstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#KarwijstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#KeizergrachtChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ElectricCar"/>
@@ -1585,12 +1899,24 @@
         <NamedIndividual IRI="#LactoseIntolerance"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#LangerakbrugChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Lasagna"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#NaturalMaterial"/>
         <NamedIndividual IRI="#Leather"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#LeidsegrachtChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#LeliegrachtChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Neighborhood"/>
@@ -1601,12 +1927,52 @@
         <NamedIndividual IRI="#LossOfTaste"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#LutmastraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EverydayClothing"/>
         <NamedIndividual IRI="#MMWoolenTopcoat"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#MaanzaadstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#MajellaparkChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#MariaplaatsChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#MolensteynChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#MolukkenstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#NaamrijkChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EverydayClothing"/>
         <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#NeudeChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#NewtonstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#NieuwegrachtChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SyntheticMaterial"/>
@@ -1617,12 +1983,24 @@
         <NamedIndividual IRI="#Orange"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#OudengrachtChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Neighborhood"/>
         <NamedIndividual IRI="#Oudenrijn"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#OudenrijnsepadChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EverydayClothing"/>
         <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#ParkDeHogeWeideChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Neighborhood"/>
@@ -1637,8 +2015,32 @@
         <NamedIndividual IRI="#Pineapple"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#PolderwegChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Meat"/>
         <NamedIndividual IRI="#Pork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#PotgieterstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#PrinsengrachtChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#QuellijnstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#RaadhuisstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#RadiowegChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#NaturalMaterial"/>
@@ -1653,8 +2055,20 @@
         <NamedIndividual IRI="#RedCurry"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#RijnzatheChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#RokinChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EuropeanOrigin"/>
         <NamedIndividual IRI="#RomanianOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#RozemarijnsingelChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Fish"/>
@@ -1663,6 +2077,14 @@
     <ClassAssertion>
         <Class IRI="#Sushi"/>
         <NamedIndividual IRI="#SalmonSushi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#SarphatiparkChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#SelderiestraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Allergy"/>
@@ -1679,6 +2101,10 @@
     <ClassAssertion>
         <Class IRI="#Sushi"/>
         <NamedIndividual IRI="#ShrimpSushi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#SingelChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SustainableEnergy"/>
@@ -1701,6 +2127,10 @@
         <NamedIndividual IRI="#Spinach"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#SpinozawegChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#StomachPain"/>
         <NamedIndividual IRI="#StomachAche"/>
     </ClassAssertion>
@@ -1711,6 +2141,14 @@
     <ClassAssertion>
         <Class IRI="#Milkshake"/>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#StrijkviertelChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#SumatrastraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#WeatherConditions"/>
@@ -1741,8 +2179,16 @@
         <NamedIndividual IRI="#Thai"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#TidorestraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#PlantBased"/>
         <NamedIndividual IRI="#Tofu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#TolstraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
@@ -1763,6 +2209,10 @@
     <ClassAssertion>
         <Class IRI="#Fish"/>
         <NamedIndividual IRI="#Tuna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#TweedeOosterparklaanChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Activity"/>
@@ -1789,8 +2239,32 @@
         <NamedIndividual IRI="#UtrechtTram"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#ValentijnskadeChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#VanOstadestraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#VanWoustraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Sushi"/>
         <NamedIndividual IRI="#VegetableSushi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#VeldzigtChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#VleutensewegChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#VoorstraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Activity"/>
@@ -1805,6 +2279,10 @@
         <NamedIndividual IRI="#Windy"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#WolvenstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#NaturalMaterial"/>
         <NamedIndividual IRI="#Wool"/>
     </ClassAssertion>
@@ -1815,6 +2293,18 @@
     <ClassAssertion>
         <Class IRI="#ProcessedMilk"/>
         <NamedIndividual IRI="#Yoghurt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#ZandwegChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#ZeeburgerdijkChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpot"/>
+        <NamedIndividual IRI="#ZonstraatChargingSpot"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#livesIn"/>
@@ -1842,9 +2332,24 @@
         <NamedIndividual IRI="#Amsterdam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#AmsterdamCentraal"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#livesIn"/>
         <NamedIndividual IRI="#Anna"/>
         <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BalistraatChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BataviastraatChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCuisine"/>
@@ -1873,13 +2378,33 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BilderdijkstraatChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BiltstraatChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Binnenstad"/>
         <NamedIndividual IRI="#Utrecht"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BoteykenChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#Butter"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#CeintuurbaanChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isForbiddenBy"/>
@@ -1912,6 +2437,16 @@
         <NamedIndividual IRI="#LactoseIntolerance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#CremerpleinChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DamraklaanChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#adjacentTo"/>
         <NamedIndividual IRI="#DePijp"/>
         <NamedIndividual IRI="#Amsterdam-Oost"/>
@@ -1932,9 +2467,54 @@
         <NamedIndividual IRI="#BikeOfDennis"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DillestraatChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DomstraatChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DragonstraatChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#DriftChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#EersteJanSteenstraatChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#Emmentaler"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FerdinandBolstraatChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FlevoparkChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#GalileiplantsoenChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#GerardDoustraatChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isForbiddenBy"/>
@@ -1982,9 +2562,34 @@
         <NamedIndividual IRI="#Tofu"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#GroenedijkChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#HartenstraatChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#HerengrachtChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#HerenstraatChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#IceCream"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#InsulindewegChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMeal"/>
@@ -2002,6 +2607,11 @@
         <NamedIndividual IRI="#ShellfishAllergy"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#JanskerkhofChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMeal"/>
         <NamedIndividual IRI="#Japanese"/>
         <NamedIndividual IRI="#SalmonSushi"/>
@@ -2010,6 +2620,21 @@
         <ObjectProperty IRI="#containsMeal"/>
         <NamedIndividual IRI="#Japanese"/>
         <NamedIndividual IRI="#VegetableSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#KanaalstraatChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#KarwijstraatChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#KeizergrachtChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -2032,6 +2657,11 @@
         <NamedIndividual IRI="#StomachRumbling"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#LangerakbrugChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
         <NamedIndividual IRI="#Beef"/>
@@ -2043,8 +2673,23 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#LeidsegrachtChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#LeliegrachtChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Lombok"/>
         <NamedIndividual IRI="#Utrecht"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#LutmastraatChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMaterial"/>
@@ -2057,6 +2702,36 @@
         <NamedIndividual IRI="#FrenchOrigin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#MaanzaadstraatChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#MajellaparkChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#MariaplaatsChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#MolensteynChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#MolukkenstraatChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#NaamrijkChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMaterial"/>
         <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
         <NamedIndividual IRI="#Nylon"/>
@@ -2067,9 +2742,34 @@
         <NamedIndividual IRI="#FrenchOrigin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#NeudeChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#NewtonstraatChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#NieuwegrachtChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#OudengrachtChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#adjacentTo"/>
         <NamedIndividual IRI="#Oudenrijn"/>
         <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#OudenrijnsepadChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMaterial"/>
@@ -2080,6 +2780,11 @@
         <ObjectProperty IRI="#hasOrigin"/>
         <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
         <NamedIndividual IRI="#RomanianOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ParkDeHogeWeideChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#adjacentTo"/>
@@ -2095,6 +2800,36 @@
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#Parmesan"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#PolderwegChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#PotgieterstraatChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#PrinsengrachtChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#QuellijnstraatChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#RaadhuisstraatChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#RadiowegChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMaterial"/>
@@ -2127,6 +2862,21 @@
         <NamedIndividual IRI="#JasminRice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#RijnzatheChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#RokinChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#RozemarijnsingelChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#SalmonSushi"/>
         <NamedIndividual IRI="#Salmon"/>
@@ -2135,6 +2885,16 @@
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#SalmonSushi"/>
         <NamedIndividual IRI="#SushiRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#SarphatiparkChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#SelderiestraatChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSymptom"/>
@@ -2190,6 +2950,11 @@
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#ShrimpSushi"/>
         <NamedIndividual IRI="#SushiRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#SingelChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requiresWeather"/>
@@ -2232,6 +2997,11 @@
         <NamedIndividual IRI="#Spaghetti"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#SpinozawegChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
         <NamedIndividual IRI="#CowMilk"/>
@@ -2240,6 +3010,16 @@
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
         <NamedIndividual IRI="#IceCream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#StrijkviertelChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#SumatrastraatChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCuisine"/>
@@ -2292,9 +3072,44 @@
         <NamedIndividual IRI="#RedCurry"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#TidorestraatChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#TolstraatChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#TweedeOosterparklaanChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasTrainStation"/>
         <NamedIndividual IRI="#Utrecht"/>
         <NamedIndividual IRI="#UtrechtCentraal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#UtrechtCentraal"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ValentijnskadeChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#VanOstadestraatChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#VanWoustraatChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
@@ -2307,9 +3122,29 @@
         <NamedIndividual IRI="#SushiRice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#VeldzigtChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#VleutensewegChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#VoorstraatChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requiresWeather"/>
         <NamedIndividual IRI="#Wind_Energy"/>
         <NamedIndividual IRI="#Windy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#WolvenstraatChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#causesCaseOf"/>
@@ -2325,6 +3160,21 @@
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#Yoghurt"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ZandwegChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ZeeburgerdijkChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ZonstraatChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
@@ -3350,7 +4200,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DePijp</IRI>
-        <Literal>De Pijp</Literal>
+        <Literal>DePijp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
