@@ -2347,6 +2347,7 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Bershka"/>
         <NamedIndividual IRI="#Binnenstad"/>
@@ -2367,6 +2368,8 @@
 >>>>>>> 2ef220574dbd4c83f5c644983de12ca34035d45f
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+=======
+>>>>>>> origin
         <ObjectProperty IRI="#availableIn"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
         <NamedIndividual IRI="#Bershka"/>
@@ -3377,11 +3380,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasCO2score"/>
-        <NamedIndividual IRI="#LasagnaBolognese"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#Leather"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">210</Literal>
@@ -3567,11 +3565,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.037</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasCO2score"/>
-        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#travelDistance"/>
         <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
@@ -3580,11 +3573,6 @@
         <DataProperty IRI="#emitsCO2PerKm"/>
         <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.037</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasCO2score"/>
-        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#travelDistance"/>

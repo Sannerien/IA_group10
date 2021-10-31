@@ -9,13 +9,13 @@ class RecommendationState:
 
     def __init__(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
                  time_of_activity=[]):
-        self.activity = activity
-        self.transportation = transportation
-        self.restaurant = restaurant
-        self.food = food
-        self.clothing_store = clothing_store
-        self.clothing_item = clothing_item
-        self.time_of_activity = time_of_activity
+        activity = activity
+        transportation = transportation
+        restaurant = restaurant
+        food = food
+        clothing_store = clothing_store
+        clothing_item = clothing_item
+        time_of_activity = time_of_activity
 
     def calculate_utility(self, strict_prefs, loose_prefs, CO2_scores_per_domain, n_domains, completed_pref=0):
         utility = 0
@@ -30,7 +30,6 @@ class RecommendationState:
         utility = (percent_match * n_domains) / sum(CO2_scores_per_domain)
 
         return utility
-
 
 
 class Agent:
@@ -90,13 +89,12 @@ class Agent:
         else:
             return health_conditions
 
-    def infer_recipes_for_cuisines(self, preferred_recipes, cuisines):
+    def infer_recipes_for_cuisines(self, cuisines):
         cuisine_meals = []
         if len(cuisines) > 0:
             for cuisine in cuisines:
                 cuisine_meals = list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
-            return preferred_recipes & cuisine_meals
-        return preferred_recipes
+        return cuisine_meals
 
     def filter_restaurants_on_location(self, pref_locations, restaurants):
         restaurants_in_pref_locations = []
@@ -119,11 +117,11 @@ class Agent:
         return list_forbidden_ingredients
 
     def infer_restaurants(self, recipes):
-        restaurants = {}
+        restaurants = []
         if len(recipes) > 0:
             for recipe in recipes:
                 possible_restaurants = list(self.ontology.search(serves=recipe))
-                restaurants[recipe] = list(possible_restaurants)
+                restaurants = list(set(restaurants + possible_restaurants))
         else:
             restaurants = self.ontology.Restaurant.instances()
         return restaurants
@@ -143,7 +141,7 @@ class Agent:
                 if vehicle.is_a[0] == self.ontology.ElectricCar:  # Check if electric battery is charged
                     if not vehicle.isBatteryCharged[0]:
                         extra_travel_time = int(vehicle.timeToChargeElectricCar[0])
-                available_transport.append([vehicle, extra_travel_time])
+                available_transport.append([vehicle.is_a[0], extra_travel_time])
         return available_transport
 
     def determine_travel_options(self, current_location, destinations, user):
@@ -160,21 +158,21 @@ class Agent:
                         current_location == destination_neighborhood:  # check if neighborhoods adjacent
                     if current_location in list(destination_neighborhood.adjacentTo):
                         for i in destination_dict[destination]:
-                            if i[0].is_a[0] == self.ontology.Bike:
+                            if i[0] == self.ontology.Bike:
                                 i[1] += 10
                             if i[0].is_a[0] == self.ontology.Car:
                                 i[1] += 5
                         destination_dict[destination].append(['Walk', 30])
                     else:
                         for i in destination_dict[destination]:
-                            if i[0].is_a[0] == self.ontology.Bike:
+                            if i[0] == self.ontology.Bike:
                                 i[1] += 5
-                            if i[0].is_a[0] == self.ontology.Car:
+                            if i[0] == self.ontology.Car:
                                 i[1] += 2
                         destination_dict[destination].append(['Walk', 10])
                 else:  # neighborhoods not adjacent
                     for i in destination_dict[destination]:
-                        if i[0].is_a[0] == self.ontology.Bike:
+                        if i[0] == self.ontology.Bike:
                             i[1] += 15
                         if i[0].is_a[0] == self.ontology.Car:
                             i[1] += 15
@@ -182,7 +180,7 @@ class Agent:
 
             else:  # Not in the same city
                 for i in destination_dict[destination]: # Can no longer bike to destination
-                    if i[0].is_a[0] == self.ontology.Bike:
+                    if i[0] == self.ontology.Bike:
                         destination_dict[destination].remove(i)
                 if city == self.ontology.Amsterdam and destination.isLocatedIn[1] == self.ontology.Utrecht:
                     train = self.ontology.TrainFromAmsterdamToUtrecht
@@ -217,7 +215,7 @@ class Agent:
             health_prevented_recipes = list(
                 set(health_prevented_recipes + list(self.ontology.search(containsIngredient=ingredient))))
 
-
+        cuisine_recipes = self.infer_recipes_for_cuisines(cuisines)
         # Keep track of all recipes and initialize logic operators
         all_recipes = []
         recipes = self.ontology.search(label="Recipe")
@@ -279,30 +277,19 @@ class Agent:
             print(food_list)
 
         preferred_recipes = list(set(food_list) - set(health_prevented_recipes))
-
-        prefered_recipes_cuisines = self.infer_recipes_for_cuisines(preferred_recipes, cuisines)
+        prefered_recipes_cuisines = list(set(preferred_recipes) & set(cuisine_recipes))
         print('Recipes found based on preferences and health conditions: ', preferred_recipes)
-        print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines, '\n')
+        print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines)
 
-        recipe_with_restaurants = self.infer_restaurants(preferred_recipes)
-        recipes_restaurants_cuisines = self.infer_restaurants(prefered_recipes_cuisines)
-        recipes_restaurants_by_cuisines_loc = {}
-        recipe_with_restaurants_by_loc ={}
-        # recipe_with_restaurants = self.infer_restaurants(preferred_recipes)
-        for recipe, restaurants in recipe_with_restaurants.items():
-            print('Ignoring the cuisine wishes, found the following restaurants that serve:', recipe.label[0])
-            print(restaurants)
-            recipe_with_restaurants_by_loc[recipe] = self.filter_restaurants_on_location(preferences['pref_location'], restaurants)
-            print('Of these restaurants, the following are available in',preferences['pref_location'][0])
-            print(recipe_with_restaurants_by_loc[recipe],'\n')
-
-        for recipe, restaurants in recipes_restaurants_cuisines.items():
-            print('Found the following', preferences['pref_cuisines'],'restaurants that serve:', recipe.label[0])
-            print(restaurants)
-            recipes_restaurants_by_cuisines_loc[recipe] = self.filter_restaurants_on_location(preferences['pref_location'], restaurants)
-            print('Of these restaurants, the following are available in',preferences['pref_location'][0])
-            print(recipes_restaurants_by_cuisines_loc[recipe],'\n')
-        return recipe_with_restaurants, recipe_with_restaurants_by_loc, recipes_restaurants_cuisines, recipes_restaurants_by_cuisines_loc
+        restaurants_by_cuisines = self.infer_restaurants(prefered_recipes_cuisines)
+        restaurants = self.infer_restaurants(preferred_recipes)
+        print('Restaurants found that serve this food: ', restaurants_by_cuisines)
+        restaurants_by_location = self.filter_restaurants_on_location(preferences['pref_location'], restaurants)
+        restaurants_by_cuisines_location = self.filter_restaurants_on_location(preferences['pref_location'],
+                                                                               restaurants_by_cuisines)
+        print('Of these restaurants, these restaurants are found in ', preferences['pref_location'], ' : ',
+              restaurants_by_cuisines_location)
+        return preferred_recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location
 
     def simple_queries(self):
         print("Query responses:")
@@ -376,23 +363,7 @@ class Agent:
             selected_activities = possible_activities[0].instances()
 
             options = [[x, y] for x in selected_activities for y in selected_energy]
-        if "Restaurant" in preferences["activity"]:
-            current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
-            health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
-            restaurants, restaurants_by_loc, restaurants_cuisines, restaurants_by_cuisines_loc = \
-                agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], health_conditions)
 
-            if agent.ontology.COVID in health_conditions:  # Agent believes user has COVID
-                print('From either your specified health conditions or inferred through your symptoms, '
-                      'it has been concluded that you might have COVID-19.\n'
-                      'Therefore the agent recommends not travelling and staying inside.')
-                return
-            if len(restaurants_by_cuisines_loc) == 0:
-                print('Unfortunately, no restaurants were found in that location. '
-                      'The agent will recommend other restaurants which are not located in your specified location.\n')
-                agent.create_recommendations(restaurants_cuisines, current_location)
-            else:
-                options = agent.create_recommendations(restaurants_by_cuisines_loc, current_location)
         return options
 
     def check_preferences(self, preference):
@@ -432,30 +403,6 @@ class Agent:
         sorted_options = self.choose_actions(options)
         self.explain_actions(preferences, sorted_options, options)
 
-    def create_recommendations(self, recipe_restaurants, current_location):
-        recommendations = []
-        for recipe, restaurants in recipe_restaurants.items():
-            CO2_scores_per_domain = []
-            CO2_scores_per_domain.append(recipe.hasCO2score[0])
-            travel_options = agent.determine_travel_options(current_location, restaurants,
-                                                            preferences['user'])
-            for restaurant, travel_options in travel_options.items():
-                for travel_option in travel_options:
-                    del CO2_scores_per_domain[1:]
-                    if travel_option[0] == 'Walk':
-                        CO2_scores_per_domain.append(1)
-                    if len(travel_option) == 3:
-                        CO2_scores_per_domain.append(travel_option[0].hasCO2score[0] + travel_option[2])
-                    else:
-                        CO2_scores_per_domain.append(travel_option[0].hasCO2score[0])
-                    n_domains = len(CO2_scores_per_domain)
-                    recommendation = RecommendationState('Restaurant', travel_option[0], restaurant, recipe, [],
-                                                         [], preferences['time_of_activity'])
-                    utility = recommendation.calculate_utility(preferences["strict_prefs"], preferences["loose_prefs"],
-                                                        CO2_scores_per_domain, n_domains)
-                    recommendations.append([recommendation,utility])
-        recommendations.sort(key=lambda x: x[1], reverse=True)
-        return recommendations
 
 if __name__ == "__main__":
     with open('./Users/sophie.json', 'r') as openfile:
@@ -463,4 +410,14 @@ if __name__ == "__main__":
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
     agent.sanity_check()
-    options = agent.find_options(preferences)
+    # agent.find_preferences(preferences)
+    #
+    current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
+    health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
+    recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location = \
+        agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], health_conditions)
+    if agent.ontology.COVID in health_conditions: # Agent believes user has COVID
+        agent.determine_travel_options(current_location, restaurants_by_cuisines_location, preferences['user'])
+    else:
+        agent.determine_travel_options(current_location, restaurants_by_cuisines_location, preferences['user'])
+    # agent.simple_queries()
