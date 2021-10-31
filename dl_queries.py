@@ -4,9 +4,11 @@ from pprint import pprint
 import numpy as np
 import operator
 
+
 class RecommendationState:
 
-    def __init__(self, activity = [], transportation = [], restaurant = [], food = [], clothing_store = [], clothing_item= [], time_of_activity= []):
+    def __init__(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
+                 time_of_activity=[]):
         activity = activity
         transportation = transportation
         restaurant = restaurant
@@ -21,12 +23,11 @@ class RecommendationState:
         if x == 0:
             percent_match = 1
         else:
-        # by intersecting their set with users's prefs set
+            # by intersecting their set with users's prefs set
             percent_match = np.divide(int(completed_pref), int(x))
-        #print("percent match is {}".format(percent_match))
+        # print("percent match is {}".format(percent_match))
         # we calculate the score; CO2 value is summed over the list
         utility = (percent_match * n_domains) / sum(CO2_scores_per_domain)
-
 
         return utility
 
@@ -76,19 +77,23 @@ class Agent:
         pprint(self.label_to_class)
         pprint(self.label_to_prop)
 
-    def infer_health_cond(self, symptoms):
+    def infer_health_cond(self, symptoms, user):
         symptom_instances = []
+        user = self.label_to_indiv[user]
+        health_conditions = list(user.hasHealthCondition)
         if len(symptoms) > 0:
             for symptom in symptoms:
                 symptom_instances.append(self.label_to_indiv[symptom])
-            results = self.ontology.search(hasSymptom=symptom_instances)
-            print(results)
+            results = list(self.ontology.search(hasSymptom=symptom_instances))
+            return list(set(health_conditions + results))
+        else:
+            return health_conditions
 
     def infer_recipes_for_cuisines(self, cuisines):
         cuisine_meals = []
         if len(cuisines) > 0:
             for cuisine in cuisines:
-                cuisine_meals =  list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
+                cuisine_meals = list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
         return cuisine_meals
 
     def filter_restaurants_on_location(self, pref_locations, restaurants):
@@ -96,7 +101,8 @@ class Agent:
         if len(restaurants) > 0 and len(pref_locations) > 0:
             for restaurant in restaurants:
                 for location in pref_locations:
-                    if self.label_to_indiv[location] in list(restaurant.isLocatedIn) and restaurant not in restaurants_in_pref_locations:
+                    if self.label_to_indiv[location] in list(
+                            restaurant.isLocatedIn) and restaurant not in restaurants_in_pref_locations:
                         restaurants_in_pref_locations.append(restaurant)
             return restaurants_in_pref_locations
         else:
@@ -106,7 +112,7 @@ class Agent:
         list_forbidden_ingredients = []
         if len(health_conditions) > 0:
             for health_cond in health_conditions:
-                forbidden_ingredients = list(self.ontology.search(isForbiddenBy=self.label_to_indiv[health_cond]))
+                forbidden_ingredients = list(self.ontology.search(isForbiddenBy=health_cond))
                 list_forbidden_ingredients = list(set(list_forbidden_ingredients + forbidden_ingredients))
         return list_forbidden_ingredients
 
@@ -126,51 +132,88 @@ class Agent:
         else:
             return self.label_to_indiv[user].livesIn[0]
 
-    def determine_travel_options(self, current_location, destinations, user):
-        train_available = False
-        available_transport = list(self.label_to_indiv[user].owns)
-        bike_available = False
-        is_city = False
-        if current_location.is_a[0] == self.ontology.City:
-            current_location_train_station = True
-            city = current_location
-            is_city = True
-        else:
-            city = current_location.isLocatedIn[0]
-            if current_location.hasPopulation[0] > 20000:
-                current_location_train_station = True
-            else:
-                current_location_train_station = False
-        destination_dict = {}
-        if len(restaurants) > 0:
-            for destination in destinations:
-                destination_location = destination.isLocatedIn[0]
-                destination_dict[destination] = destination_location
-                if current_location_train_station and destination_location.hasPopulation[0] > 20000:
-                    train_available = True
-                if is_city:
-                    if destination_location.isLocatedIn[0] == current_location:
-                        bike_available = True
-                else:
-                    if current_location.isLocatedIn[0] == destination_location.isLocatedIn[0]:
-                        bike_available = True
-        for transport in available_transport:
-            type = transport.is_a[0]
-            if type == self.ontology.Bike and not bike_available:
-                available_transport.remove(transport)
-        # if train_available and city == self.ontology.Utrecht:
-        #     available_transport.append(self.label_to_indiv['Train From Utrecht To Amsterdam'])
-        # elif train_available and city == self.ontology.Utrecht:
-        #     available_transport.append(self.label_to_indiv['Train From Amsterdam To Utrecht'])
-        print(available_transport)
+    def check_user_transport_options(self, owned_transport, current_neighborhood):
+        available_transport = []
+        for vehicle in owned_transport:
+            extra_travel_time = 0
+            if vehicle.isLocatedIn[0] in list(current_neighborhood.adjacentTo) or \
+                    vehicle.isLocatedIn[0] == current_neighborhood:
+                if vehicle.is_a[0] == self.ontology.ElectricCar:  # Check if electric battery is charged
+                    if not vehicle.isBatteryCharged[0]:
+                        extra_travel_time = int(vehicle.timeToChargeElectricCar[0])
+                available_transport.append([vehicle.is_a[0], extra_travel_time])
+        return available_transport
 
+    def determine_travel_options(self, current_location, destinations, user):
+        city = current_location.isLocatedIn[0]
+        owned_transport = list(self.label_to_indiv[user].owns)
+        available_transport = self.check_user_transport_options(owned_transport, current_location)
+        destination_dict = {}
+
+        for destination in destinations:
+            destination_dict[destination] = available_transport
+            destination_neighborhood = destination.isLocatedIn[0]
+            if city == destination.isLocatedIn[1]:  # Check if current location is in the same city as the destination
+                if current_location in list(destination_neighborhood.adjacentTo) or \
+                        current_location == destination_neighborhood:  # check if neighborhoods adjacent
+                    if current_location in list(destination_neighborhood.adjacentTo):
+                        for i in destination_dict[destination]:
+                            if i[0] == self.ontology.Bike:
+                                i[1] += 10
+                            if i[0].is_a[0] == self.ontology.Car:
+                                i[1] += 5
+                        destination_dict[destination].append(['Walk', 30])
+                    else:
+                        for i in destination_dict[destination]:
+                            if i[0] == self.ontology.Bike:
+                                i[1] += 5
+                            if i[0] == self.ontology.Car:
+                                i[1] += 2
+                        destination_dict[destination].append(['Walk', 10])
+                else:  # neighborhoods not adjacent
+                    for i in destination_dict[destination]:
+                        if i[0] == self.ontology.Bike:
+                            i[1] += 15
+                        if i[0].is_a[0] == self.ontology.Car:
+                            i[1] += 15
+                        destination_dict[destination].append(['Public Transport', 15])
+
+            else:  # Not in the same city
+                for i in destination_dict[destination]: # Can no longer bike to destination
+                    if i[0] == self.ontology.Bike:
+                        destination_dict[destination].remove(i)
+                if city == self.ontology.Amsterdam and destination.isLocatedIn[1] == self.ontology.Utrecht:
+                    train = self.ontology.TrainFromAmsterdamToUtrecht
+                else:
+                    train = self.ontology.TrainFromUtrechtToAmsterdam
+                public_transport_time = 27  # Duration of train in minutes
+                extra_co2score = 0 # If user has to take a tram or a bus in the other city, CO2 score becomes worse
+                if current_location.hasPopulation[0] > 20000:  # Check if current neighborhood has train station
+                    public_transport_time += 5  # User needs to walk about 5 minutes
+                else:
+                    if self.ontology.Bike in destination_dict[destination]:  # Check if user has bike
+                        for i in destination_dict[destination]:
+                            if i[0] == self.ontology.Bike:
+                                public_transport_time += int(i[0].travelTimeToNearestTrainStation[0])
+                if destination_neighborhood.hasPopulation[0] > 20000:  # Check if destination neighborhood
+                    # has train station
+                    public_transport_time += 5
+                else:  # User needs to use public transport (bus/tram) to get to destination
+                    public_transport_time += 15
+                    extra_co2score += 1
+                destination_dict[destination].append([train, public_transport_time, extra_co2score])
+                for i in destination_dict[destination]:
+                    if i[0].is_a[0] == self.ontology.Car:
+                        i[1] += 55
+        return destination_dict
 
     def infer_recipes(self, cuisines, pref_food, health_cond):
         # Find what recipes aren't allowed due to health conditions
         health_prevented_ingredients = self.infer_forbidden_ingredients(health_cond)
         health_prevented_recipes = []
         for ingredient in health_prevented_ingredients:
-            health_prevented_recipes = list(set(health_prevented_recipes + list(self.ontology.search(containsIngredient=ingredient))))
+            health_prevented_recipes = list(
+                set(health_prevented_recipes + list(self.ontology.search(containsIngredient=ingredient))))
 
         cuisine_recipes = self.infer_recipes_for_cuisines(cuisines)
         # Keep track of all recipes and initialize logic operators
@@ -205,7 +248,8 @@ class Agent:
                             found_ingredients = list(self.label_to_class[word].instances())
                             found_recipes = []
                             for ingredient in found_ingredients:
-                                found_recipes = list(set(found_recipes + list(self.ontology.search(containsIngredient=ingredient))))
+                                found_recipes = list(
+                                    set(found_recipes + list(self.ontology.search(containsIngredient=ingredient))))
                         else:
                             found_recipes = list(self.ontology.search(containsIngredient=self.label_to_indiv[word]))
                     elif some_clause:
@@ -241,8 +285,10 @@ class Agent:
         restaurants = self.infer_restaurants(preferred_recipes)
         print('Restaurants found that serve this food: ', restaurants_by_cuisines)
         restaurants_by_location = self.filter_restaurants_on_location(preferences['pref_location'], restaurants)
-        restaurants_by_cuisines_location = self.filter_restaurants_on_location(preferences['pref_location'], restaurants_by_cuisines)
-        print('Of these restaurants, these restaurants are found in ', preferences['pref_location'], ' : ', restaurants_by_cuisines_location)
+        restaurants_by_cuisines_location = self.filter_restaurants_on_location(preferences['pref_location'],
+                                                                               restaurants_by_cuisines)
+        print('Of these restaurants, these restaurants are found in ', preferences['pref_location'], ' : ',
+              restaurants_by_cuisines_location)
         return preferred_recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location
 
     def simple_queries(self):
@@ -291,7 +337,6 @@ class Agent:
         class_results = [self.prop_to_label[result] for result in results if type(result) == self.property_type]
         pprint(class_results)
 
-
     def find_options(self, preferences):
 
         options = []
@@ -312,13 +357,12 @@ class Agent:
                                 for weather in preferences["weather_condition"]:
                                     if str(value).endswith(weather):
                                         selected_energy = i
-            #options_domains["Energy"] = selected_energy
-
+            # options_domains["Energy"] = selected_energy
 
             possible_activities = self.ontology.search(label="Activity")
             selected_activities = possible_activities[0].instances()
 
-            options = [[x,y] for x in selected_activities for y in selected_energy]
+            options = [[x, y] for x in selected_activities for y in selected_energy]
 
         return options
 
@@ -332,9 +376,9 @@ class Agent:
         for idx, option in enumerate(options):
             CO2_scores_per_domain = [item.hasCO2score[0] for item in option]
             len_domain = len(option)
-            #completed_pref = self.check_preferences(preferences)
+            # completed_pref = self.check_preferences(preferences)
             utility = recommender.calculate_utility(preferences["strict_prefs"], preferences["loose_prefs"],
-                                          CO2_scores_per_domain, len_domain)
+                                                    CO2_scores_per_domain, len_domain)
             d[(option[0].name, option[0].name)] = utility
         sorted_options = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
         return sorted_options
@@ -342,23 +386,22 @@ class Agent:
     def explain_actions(self, preferences, sorted_options, options):
         print("Dear", preferences["user"])
         x = list(list(sorted_options.keys())[0])[0]
-        print('The first advise for selection of {} would be {} with utility score {}.'.format(preferences["activity"][0], x, list(sorted_options.values())[0]))
+        print(
+            'The first advise for selection of {} would be {} with utility score {}.'.format(preferences["activity"][0],
+                                                                                             x, list(
+                    sorted_options.values())[0]))
 
         if preferences["time_of_activity"] >= 20 and "Activity" in preferences["activity"]:
             self.rushhour = True
             sorted_options = self.choose_actions(options)
-            print("An alternative option is to wait {} hour. In that case another option would be {}".format(21-preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
+            print("An alternative option is to wait {} hour. In that case another option would be {}".format(
+                21 - preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
 
     def find_preferences(self, preferences):
-        query = preferences["activity"]
-
         self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
         options = self.find_options(preferences)
         sorted_options = self.choose_actions(options)
         self.explain_actions(preferences, sorted_options, options)
-
-
-
 
 
 if __name__ == "__main__":
@@ -367,12 +410,14 @@ if __name__ == "__main__":
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
     agent.sanity_check()
-    #agent.find_preferences(preferences)
+    # agent.find_preferences(preferences)
     #
     current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
-    agent.infer_health_cond(preferences['symptoms'])
+    health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
     recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location = \
-        agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], preferences['health_conditions'])
-    agent.determine_travel_options(current_location, restaurants_by_cuisines_location, preferences['user'])
+        agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], health_conditions)
+    if agent.ontology.COVID in health_conditions: # Agent believes user has COVID
+        agent.determine_travel_options(current_location, restaurants_by_cuisines_location, preferences['user'])
+    else:
+        agent.determine_travel_options(current_location, restaurants_by_cuisines_location, preferences['user'])
     # agent.simple_queries()
-

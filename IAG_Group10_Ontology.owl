@@ -238,9 +238,6 @@
         <Class IRI="#TrainStation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Tram"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Transportation"/>
     </Declaration>
     <Declaration>
@@ -398,9 +395,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AmsterdamCentraal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AmsterdamTram"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Anna"/>
@@ -913,9 +907,6 @@
         <NamedIndividual IRI="#UtrechtCentraal"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UtrechtTram"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#ValentijnskadeChargingSpot"/>
     </Declaration>
     <Declaration>
@@ -1423,17 +1414,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Tram"/>
-        <Class IRI="#PublicTransportation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tram"/>
-        <DataExactCardinality cardinality="2">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#UnsustainableEnergy"/>
         <Class IRI="#Energy"/>
     </SubClassOf>
@@ -1535,10 +1515,6 @@
     <ClassAssertion>
         <Class IRI="#TrainStation"/>
         <NamedIndividual IRI="#AmsterdamCentraal"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Tram"/>
-        <NamedIndividual IRI="#AmsterdamTram"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
@@ -2233,10 +2209,6 @@
     <ClassAssertion>
         <Class IRI="#TrainStation"/>
         <NamedIndividual IRI="#UtrechtCentraal"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Tram"/>
-        <NamedIndividual IRI="#UtrechtTram"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
@@ -3939,11 +3911,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#AmsterdamTram</IRI>
-        <Literal>Amsterdam Tram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AnimalBased</IRI>
         <Literal>Animal Based</Literal>
     </AnnotationAssertion>
@@ -4826,11 +4793,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UtrechtCentraal</IRI>
         <Literal>Utrecht Centraal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UtrechtTram</IRI>
-        <Literal>Utrecht Tram</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
