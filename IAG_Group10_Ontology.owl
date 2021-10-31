@@ -2346,6 +2346,11 @@
         <NamedIndividual IRI="#Italian"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#BellaItalia"/>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Bershka"/>
         <NamedIndividual IRI="#Binnenstad"/>
@@ -2361,7 +2366,7 @@
         <NamedIndividual IRI="#Bershka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#containsMaterial"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
         <NamedIndividual IRI="#AcyclicFabric"/>
     </ObjectPropertyAssertion>
@@ -3237,6 +3242,26 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">49</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#BikeOfDennis"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
@@ -3346,6 +3371,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#Leather"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">210</Literal>
@@ -3423,7 +3453,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#isFairTrade"/>
         <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasArea"/>
@@ -3501,9 +3531,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.081</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">399</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerKm"/>
@@ -3516,6 +3561,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.037</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#travelDistance"/>
         <NamedIndividual IRI="#TrainFromAmsterdamToUtrecht"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
@@ -3524,6 +3574,11 @@
         <DataProperty IRI="#emitsCO2PerKm"/>
         <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.037</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#TrainFromUtrechtToAmsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#travelDistance"/>
@@ -3724,6 +3779,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isForbiddenBy"/>
         <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isForbiddenBy"/>
+        <Class IRI="#Material"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFromCuisine"/>
