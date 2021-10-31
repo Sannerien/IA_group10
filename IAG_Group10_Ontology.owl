@@ -334,6 +334,9 @@
         <ObjectProperty IRI="#rideSharing"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#selling"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#serves"/>
     </Declaration>
     <Declaration>
@@ -428,6 +431,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BershkaTopcoat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BikeOfDennis"/>
@@ -863,6 +869,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Thai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TidorestraatChargingSpot"/>
@@ -1561,6 +1570,10 @@
         <NamedIndividual IRI="#BershkaTopcoat"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SportClothing"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Bike"/>
         <NamedIndividual IRI="#BikeOfDennis"/>
     </ClassAssertion>
@@ -2155,6 +2168,10 @@
         <NamedIndividual IRI="#Thai"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SportClothing"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#TidorestraatChargingSpot"/>
     </ClassAssertion>
@@ -2329,18 +2346,38 @@
         <NamedIndividual IRI="#Italian"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Bershka"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#selling"/>
+        <NamedIndividual IRI="#Bershka"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#availableIn"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
         <NamedIndividual IRI="#Bershka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#containsMaterial"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
         <NamedIndividual IRI="#AcyclicFabric"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOrigin"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
+        <NamedIndividual IRI="#BangladeshOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMaterial"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+        <NamedIndividual IRI="#RecycledCotton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
         <NamedIndividual IRI="#BangladeshOrigin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -3044,6 +3081,16 @@
         <NamedIndividual IRI="#RedCurry"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMaterial"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <NamedIndividual IRI="#Nylon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <NamedIndividual IRI="#FrenchOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#TidorestraatChargingSpot"/>
         <NamedIndividual IRI="#Amsterdam-Oost"/>
@@ -3119,7 +3166,7 @@
         <NamedIndividual IRI="#Grachtengordel"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#causesCaseOf"/>
+        <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#Wool"/>
         <NamedIndividual IRI="#WoolAllergy"/>
     </ObjectPropertyAssertion>
@@ -3186,6 +3233,26 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#isFairTrade"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">49</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#Bershka_Tracksuit"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -3376,7 +3443,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#isFairTrade"/>
         <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasArea"/>
@@ -3452,6 +3519,26 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#TeslaModel3"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.081</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsCO2PerItem"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceEur"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">399</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isFairTrade"/>
+        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerKm"/>
@@ -3582,6 +3669,10 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#availableIn"/>
+        <ObjectProperty IRI="#selling"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#causesCaseOf"/>
         <ObjectProperty IRI="#hasSymptom"/>
     </InverseObjectProperties>
@@ -3686,6 +3777,10 @@
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#selling"/>
+        <Class IRI="#ClothingStore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#serves"/>
         <Class IRI="#Restaurant"/>
     </ObjectPropertyDomain>
@@ -3776,6 +3871,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#rideSharing"/>
         <Class IRI="#Car"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#selling"/>
+        <Class IRI="#Clothing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#travelsWith"/>
@@ -3877,7 +3976,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AcyclicFabric</IRI>
-        <Literal>Acyclic Fabric</Literal>
+        <Literal>AcrylicFabric</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3932,7 +4031,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BangladeshOrigin</IRI>
-        <Literal>Bangladesh Origin</Literal>
+        <Literal>BangladeshOrigin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3958,6 +4057,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BershkaTopcoat</IRI>
         <Literal>Bershka Topcoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bershka_Tracksuit</IRI>
+        <Literal>Bershka Tracksuit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4107,7 +4211,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ClothingStore</IRI>
-        <Literal>Clothing Store</Literal>
+        <Literal>ClothingStore</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4222,12 +4326,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EuropeanOrigin</IRI>
-        <Literal>European Origin</Literal>
+        <Literal>EuropeanOrigin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EverydayClothing</IRI>
-        <Literal>Everyday Clothing</Literal>
+        <Literal>EverydayClothing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4247,7 +4351,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#FrenchOrigin</IRI>
-        <Literal>French Origin</Literal>
+        <Literal>FrenchOrigin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4432,7 +4536,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NaturalMaterial</IRI>
-        <Literal>Natural Material</Literal>
+        <Literal>NaturalMaterial</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4497,7 +4601,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PlaceOfOrigin</IRI>
-        <Literal>Place Of Origin</Literal>
+        <Literal>PlaceOfOrigin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4537,7 +4641,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RecycledCotton</IRI>
-        <Literal>Recycled Cotton</Literal>
+        <Literal>RecycledCotton</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4552,7 +4656,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RemoteOrigin</IRI>
-        <Literal>Remote Origin</Literal>
+        <Literal>RemoteOrigin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4572,7 +4676,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RomanianOrigin</IRI>
-        <Literal>Romanian Origin</Literal>
+        <Literal>RomanianOrigin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4637,7 +4741,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SportClothing</IRI>
-        <Literal>Sport Clothing</Literal>
+        <Literal>SportClothing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4697,7 +4801,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SyntheticMaterial</IRI>
-        <Literal>Synthetic Material</Literal>
+        <Literal>SyntheticMaterial</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4718,6 +4822,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Thai</IRI>
         <Literal>Thai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_North_Face_Puffer_Jacket</IRI>
+        <Literal>The North Face Puffer Jacket</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4968,6 +5077,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#providesEnergyTo</IRI>
         <Literal>providesEnergyTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#selling</IRI>
+        <Literal>selling</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
