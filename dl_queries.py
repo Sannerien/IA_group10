@@ -3,6 +3,7 @@ from owlready2 import *
 from pprint import pprint
 import numpy as np
 import operator
+import copy
 
 
 class RecommendationState:
@@ -16,6 +17,15 @@ class RecommendationState:
         self.clothing_store = clothing_store
         self.clothing_item = clothing_item
         self.time_of_activity = time_of_activity
+
+    def calculate_utility2(self, strict_prefs, per_loose_prefs, CO2_scores_per_domain, n_domains):
+        utility = 0
+        #x = len(set(per_loose_prefs)) + len(set(strict_prefs))
+        # print("percent match is {}".format(percent_match))
+        # we calculate the score; CO2 value is summed over the list
+        utility = (per_loose_prefs * n_domains) / sum(CO2_scores_per_domain)
+
+        return utility
 
     def calculate_utility(self, strict_prefs, loose_prefs, CO2_scores_per_domain, n_domains, completed_pref=0):
         utility = 0
@@ -153,50 +163,48 @@ class Agent:
         destination_dict = {}
 
         for destination in destinations:
-            destination_dict[destination] = available_transport
+            destination_dict[destination] = self.check_user_transport_options(owned_transport, current_location)
             destination_neighborhood = destination.isLocatedIn[0]
             if city == destination.isLocatedIn[1]:  # Check if current location is in the same city as the destination
+                temp = list(destination_neighborhood.adjacentTo)
                 if current_location in list(destination_neighborhood.adjacentTo) or \
                         current_location == destination_neighborhood:  # check if neighborhoods adjacent
                     if current_location in list(destination_neighborhood.adjacentTo):
                         for i in destination_dict[destination]:
                             if i[0].is_a[0] == self.ontology.Bike:
                                 i[1] += 10
-                            if i[0].is_a[0] == self.ontology.Car:
+                            if i[0].is_a[0].is_a[0] == self.ontology.Car:
                                 i[1] += 5
                         destination_dict[destination].append(['Walk', 30])
                     else:
                         for i in destination_dict[destination]:
                             if i[0].is_a[0] == self.ontology.Bike:
                                 i[1] += 5
-                            if i[0].is_a[0] == self.ontology.Car:
+                            if i[0].is_a[0].is_a[0] == self.ontology.Car:
                                 i[1] += 2
                         destination_dict[destination].append(['Walk', 10])
                 else:  # neighborhoods not adjacent
                     for i in destination_dict[destination]:
                         if i[0].is_a[0] == self.ontology.Bike:
                             i[1] += 15
-                        if i[0].is_a[0] == self.ontology.Car:
+                        if i[0].is_a[0].is_a[0] == self.ontology.Car:
                             i[1] += 15
-                        destination_dict[destination].append(['Public Transport', 15])
+                    destination_dict[destination].append(['Public Transport', 15])
 
             else:  # Not in the same city
-                for i in destination_dict[destination]: # Can no longer bike to destination
-                    if i[0].is_a[0] == self.ontology.Bike:
-                        destination_dict[destination].remove(i)
                 if city == self.ontology.Amsterdam and destination.isLocatedIn[1] == self.ontology.Utrecht:
                     train = self.ontology.TrainFromAmsterdamToUtrecht
                 else:
                     train = self.ontology.TrainFromUtrechtToAmsterdam
                 public_transport_time = 27  # Duration of train in minutes
                 extra_co2score = 0 # If user has to take a tram or a bus in the other city, CO2 score becomes worse
+
                 if current_location.hasPopulation[0] > 20000:  # Check if current neighborhood has train station
                     public_transport_time += 5  # User needs to walk about 5 minutes
                 else:
-                    if self.ontology.Bike in destination_dict[destination]:  # Check if user has bike
-                        for i in destination_dict[destination]:
-                            if i[0] == self.ontology.Bike:
-                                public_transport_time += int(i[0].travelTimeToNearestTrainStation[0])
+                    for i in destination_dict[destination]: # Check if user has bike
+                        if i[0].is_a[0] == self.ontology.Bike:
+                            public_transport_time += int(i[0].travelTimeToNearestTrainStation[0])
                 if destination_neighborhood.hasPopulation[0] > 20000:  # Check if destination neighborhood
                     # has train station
                     public_transport_time += 5
@@ -205,8 +213,11 @@ class Agent:
                     extra_co2score += 1
                 destination_dict[destination].append([train, public_transport_time, extra_co2score])
                 for i in destination_dict[destination]:
-                    if i[0].is_a[0] == self.ontology.Car:
+                    if i[0].is_a[0].is_a[0] == self.ontology.Car:
                         i[1] += 55
+                for i in destination_dict[destination]:  # Can no longer bike to destination
+                    if i[0].is_a[0] == self.ontology.Bike:
+                        destination_dict[destination].remove(i)
         return destination_dict
 
     def infer_recipes(self, cuisines, pref_food, health_cond):
@@ -379,7 +390,7 @@ class Agent:
         if "Restaurant" in preferences["activity"]:
             current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
             health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
-            restaurants, restaurants_by_loc, restaurants_cuisines, restaurants_by_cuisines_loc = \
+            restaurants, restaurants_loc, restaurants_cuisines, restaurants_by_cuisines_loc = \
                 agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], health_conditions)
 
             if agent.ontology.COVID in health_conditions:  # Agent believes user has COVID
@@ -392,7 +403,11 @@ class Agent:
                       'The agent will recommend other restaurants which are not located in your specified location.\n')
                 agent.create_recommendations(restaurants_cuisines, current_location)
             else:
-                options = agent.create_recommendations(restaurants_by_cuisines_loc, current_location)
+                options = agent.create_recommendations(restaurants, restaurants_loc, restaurants_cuisines, \
+                                                       current_location, preferences['loose_prefs'])
+                #options.append(agent.create_recommendations(restaurants_cuisines, current_location))
+                #options.append(agent.create_recommendations(restaurants, current_location))
+                options.sort(key=lambda x: x[1], reverse=True)
         return options
 
     def check_preferences(self, preference):
@@ -432,29 +447,43 @@ class Agent:
         sorted_options = self.choose_actions(options)
         self.explain_actions(preferences, sorted_options, options)
 
-    def create_recommendations(self, recipe_restaurants, current_location):
+    def create_recommendations(self, recipe_restaurants, restaurants_loc, restaurants_cuisines,
+                               current_location, loose_prefs):
         recommendations = []
         for recipe, restaurants in recipe_restaurants.items():
-            CO2_scores_per_domain = []
-            CO2_scores_per_domain.append(recipe.hasCO2score[0])
+            CO2_scores_per_domain = [recipe.hasCO2score[0]]
             travel_options = agent.determine_travel_options(current_location, restaurants,
                                                             preferences['user'])
             for restaurant, travel_options in travel_options.items():
+                restaurant_prefs_not_adhered_to = 0
+                if not restaurant in list(restaurants_loc.values())[0]: # Location preference not adhered to
+                    restaurant_prefs_not_adhered_to += 1
+                if not restaurant in list(restaurants_cuisines.values())[0]: # Cuisine preferences not adhered to
+                    restaurant_prefs_not_adhered_to += 1
                 for travel_option in travel_options:
+                    adhered_prefs = len(loose_prefs)
                     del CO2_scores_per_domain[1:]
-                    if travel_option[0] == 'Walk':
-                        CO2_scores_per_domain.append(1)
                     if len(travel_option) == 3:
                         CO2_scores_per_domain.append(travel_option[0].hasCO2score[0] + travel_option[2])
+                    elif travel_option[0] == 'Walk':
+                        CO2_scores_per_domain.append(1)
+                    elif travel_option[0] == 'Public Transport':
+                        CO2_scores_per_domain.append(2)
                     else:
                         CO2_scores_per_domain.append(travel_option[0].hasCO2score[0])
                     n_domains = len(CO2_scores_per_domain)
+                    for pref in preferences['loose_prefs']:
+                        if 'duration' in pref:
+                            max_duration = int(pref.split('duration<')[1])
+                            if travel_option[1] > max_duration-1:
+                                adhered_prefs -= 1
+                    adhered_prefs -= restaurant_prefs_not_adhered_to
                     recommendation = RecommendationState('Restaurant', travel_option[0], restaurant, recipe, [],
                                                          [], preferences['time_of_activity'])
-                    utility = recommendation.calculate_utility(preferences["strict_prefs"], preferences["loose_prefs"],
+                    percentage_loose = adhered_prefs/len(loose_prefs)
+                    utility = recommendation.calculate_utility2(preferences["strict_prefs"], percentage_loose,
                                                         CO2_scores_per_domain, n_domains)
-                    recommendations.append([recommendation,utility])
-        recommendations.sort(key=lambda x: x[1], reverse=True)
+                    recommendations.append([recommendation,utility,travel_option[1], adhered_prefs])
         return recommendations
 
 if __name__ == "__main__":
@@ -464,3 +493,6 @@ if __name__ == "__main__":
     agent = Agent("IAG_Group10_Ontology.owl")
     agent.sanity_check()
     options = agent.find_options(preferences)
+    #if preferences['activity'] == 'Restaurant':
+    #    agent.recommend_restaurant(options)
+

@@ -3276,6 +3276,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#BikeOfSophie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#travelTimeToNearestTrainStation"/>
         <NamedIndividual IRI="#BikeOfSophie"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
