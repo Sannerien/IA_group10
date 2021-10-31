@@ -238,6 +238,9 @@
         <Class IRI="#TrainStation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Tram"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Transportation"/>
     </Declaration>
     <Declaration>
@@ -361,10 +364,16 @@
         <DataProperty IRI="#hasWeather"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#isBatteryCharged"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#isFairTrade"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isVegan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timeToChargeElectricCar"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#travelDistance"/>
@@ -389,6 +398,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AmsterdamCentraal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmsterdamTram"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Anna"/>
@@ -595,6 +607,9 @@
         <NamedIndividual IRI="#Orange"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
     </Declaration>
     <Declaration>
@@ -716,6 +731,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UtrechtCentraal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UtrechtTram"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VegetableSushi"/>
@@ -1195,6 +1213,17 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Tram"/>
+        <Class IRI="#PublicTransportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tram"/>
+        <DataExactCardinality cardinality="2">
+            <DataProperty IRI="#hasCO2score"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UnsustainableEnergy"/>
         <Class IRI="#Energy"/>
     </SubClassOf>
@@ -1296,6 +1325,10 @@
     <ClassAssertion>
         <Class IRI="#TrainStation"/>
         <NamedIndividual IRI="#AmsterdamCentraal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tram"/>
+        <NamedIndividual IRI="#AmsterdamTram"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
@@ -1584,6 +1617,10 @@
         <NamedIndividual IRI="#Orange"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EverydayClothing"/>
         <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
     </ClassAssertion>
@@ -1746,6 +1783,10 @@
     <ClassAssertion>
         <Class IRI="#TrainStation"/>
         <NamedIndividual IRI="#UtrechtCentraal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tram"/>
+        <NamedIndividual IRI="#UtrechtTram"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Sushi"/>
@@ -2024,6 +2065,11 @@
         <ObjectProperty IRI="#hasOrigin"/>
         <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
         <NamedIndividual IRI="#FrenchOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adjacentTo"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMaterial"/>
@@ -2419,6 +2465,16 @@
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#KiaE-Niro"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBatteryCharged"/>
+        <NamedIndividual IRI="#KiaE-Niro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#timeToChargeElectricCar"/>
+        <NamedIndividual IRI="#KiaE-Niro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
@@ -2944,6 +3000,14 @@
         <Class IRI="#Clothing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#isBatteryCharged"/>
+        <Class IRI="#ElectricCar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#timeToChargeElectricCar"/>
+        <Class IRI="#ElectricCar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#travelTimeToNearestTrainStation"/>
         <Class IRI="#Bike"/>
     </DataPropertyDomain>
@@ -2960,12 +3024,20 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#isBatteryCharged"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#isFairTrade"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isVegan"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#timeToChargeElectricCar"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#travelDistance"/>
@@ -3014,6 +3086,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AmsterdamCentraal</IRI>
         <Literal>Amsterdam Centraal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AmsterdamTram</IRI>
+        <Literal>Amsterdam Tram</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3902,6 +3979,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UtrechtTram</IRI>
+        <Literal>Utrecht Tram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Vegetable</IRI>
         <Literal>Vegetable</Literal>
     </AnnotationAssertion>
@@ -4037,6 +4119,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isBatteryCharged</IRI>
+        <Literal>isBatteryCharged</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isForbiddenBy</IRI>
         <Literal>isForbiddenBy</Literal>
     </AnnotationAssertion>
@@ -4069,6 +4156,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#providesEnergyTo</IRI>
         <Literal>providesEnergyTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#timeToChargeElectricCar</IRI>
+        <Literal>timeToChargeElectricCar</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
