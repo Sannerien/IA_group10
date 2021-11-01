@@ -548,6 +548,10 @@ class Agent:
                 'in {}.'.format(options[0][0].restaurant.isLocatedIn[0].label[0]))
             print( 'It is recommended to travel to the restaurant '
                   'by {}'.format(options[0][0].transportation.is_a[0].label[0]), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
+            if options[0][0].charging_spot:
+                print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
+                      ' minutes. The nearest car charging spot can be found on {}'.format(options[0][0].charging_spot.label[0].split('Charging')[1]))
+
             if options[1][1] > options[0][1]:
                 print('However, a more environmentally friendly option was found when we ignore your preference of '
                       '{}.'.format(options[1][0].pref_not_adhered_to), ' If you are able to loosen this preference, '
