@@ -2317,6 +2317,11 @@
         <NamedIndividual IRI="#ZonstraatChargingSpot"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#WoolAllergy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#livesIn"/>
         <NamedIndividual IRI="#Alex"/>
         <NamedIndividual IRI="#DePijp"/>
