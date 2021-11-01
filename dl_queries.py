@@ -3,15 +3,13 @@ from owlready2 import *
 from pprint import pprint
 import numpy as np
 import operator
-import copy
-
+import random_agent
 
 class RecommendationState:
 
-    def __init__(self, activity=[], neighborhood=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
+    def __init__(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
                  time_of_activity=[], pref_not_adhered_to=[]):
         self.activity = activity
-        self.neighborhood = neighborhood
         self.transportation = transportation
         self.restaurant = restaurant
         self.food = food
@@ -19,12 +17,9 @@ class RecommendationState:
         self.clothing_item = clothing_item
         self.time_of_activity = time_of_activity
         self.pref_not_adhered_to = pref_not_adhered_to
+        self.duration = 0
 
-    def calculate_utility2(self, strict_prefs, per_loose_prefs, CO2_scores_per_domain, n_domains):
-        utility = 0
-        # x = len(set(per_loose_prefs)) + len(set(strict_prefs))
-        # print("percent match is {}".format(percent_match))
-        # we calculate the score; CO2 value is summed over the list
+    def calculate_utility2(self, per_loose_prefs, CO2_scores_per_domain, n_domains):
         utility = (per_loose_prefs * n_domains) / sum(CO2_scores_per_domain)
 
         return utility
@@ -58,11 +53,6 @@ class Agent:
         with self.ontology:
             sync_reasoner(infer_property_values=True)
 
-        # Additional
-        print(self.ontology.name)
-        print("IAG_Group10_Ontology".startswith(self.ontology.name))
-        for i in self.ontology.classes():
-            print(i, len(i.label))
         # Reference dictionaries between IRIs and given labels that might be useful
         self.label_to_class = {ent.label[0]: ent for ent in self.ontology.classes() if len(ent.label) > 0}
         self.label_to_prop = {prop.label[0]: prop for prop in self.ontology.properties() if len(prop.label) > 0}
@@ -79,15 +69,6 @@ class Agent:
         self.class_type = type(list(self.ontology.classes())[0])
         self.property_type = type(list(self.ontology.properties())[0])
 
-    def sanity_check(self):
-        # Base iri of the ontology
-        print("Ontology name:\n{}".format(self.ontology.base_iri))
-        # Count number of different classes and properties
-        print("# of classes: {}".format(len(list(self.ontology.classes()))))
-        print("# of properties: {}".format(len(list(self.ontology.properties()))))
-        # Display the labels (the names given in Protege) of all the classes & properties present in the ontology
-        pprint(self.label_to_class)
-        pprint(self.label_to_prop)
 
     def infer_forbidden_materials(self, health_conditions):
         list_forbidden_materials = []
@@ -305,11 +286,13 @@ class Agent:
     def check_user_transport_options(self, owned_transport, current_neighborhood):
         available_transport = []
         for vehicle in owned_transport:
+            location_of_vehicle = vehicle.isLocatedIn[0]
             extra_travel_time = 0
-            if vehicle.isLocatedIn[0] in list(current_neighborhood.adjacentTo) or \
-                    vehicle.isLocatedIn[0] == current_neighborhood:
+            if location_of_vehicle in list(current_neighborhood.adjacentTo) or \
+                    location_of_vehicle == current_neighborhood:
                 if vehicle.is_a[0] == self.ontology.ElectricCar:  # Check if electric battery is charged
-                    if not vehicle.isBatteryCharged[0]:
+                    if not vehicle.isBatteryCharged[0]: # TODO add random charging spot in neighborhood
+                        location_of_vehicle.hasChargingStation
                         extra_travel_time = int(vehicle.timeToChargeElectricCar[0])
                 available_transport.append([vehicle, extra_travel_time])
         return available_transport
@@ -442,81 +425,33 @@ class Agent:
                 union = False
             else:
                 food_list = list(set(food_list) & set(found_recipes))
-            print(food_list)
 
         preferred_recipes = list(set(food_list) - set(health_prevented_recipes))
 
         prefered_recipes_cuisines = self.infer_recipes_for_cuisines(preferred_recipes, cuisines)
-        print('Recipes found based on preferences and health conditions: ', preferred_recipes)
-        print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines, '\n')
+        #print('Recipes found based on preferences and health conditions: ', preferred_recipes)
+        #print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines, '\n')
 
         recipe_with_restaurants = self.infer_restaurants(preferred_recipes)
         recipes_restaurants_cuisines = self.infer_restaurants(prefered_recipes_cuisines)
         recipes_restaurants_by_cuisines_loc = {}
         recipe_with_restaurants_by_loc = {}
-        # recipe_with_restaurants = self.infer_restaurants(preferred_recipes)
         for recipe, restaurants in recipe_with_restaurants.items():
-            print('Ignoring the cuisine wishes, found the following restaurants that serve:', recipe.label[0])
-            print(restaurants)
+            #print('Ignoring the cuisine wishes, found the following restaurants that serve:', recipe.label[0])
+            #print(restaurants)
             recipe_with_restaurants_by_loc[recipe] = self.filter_restaurants_on_location(preferences['pref_location'],
                                                                                          restaurants)
-            print('Of these restaurants, the following are available in', preferences['pref_location'][0])
-            print(recipe_with_restaurants_by_loc[recipe], '\n')
+            #print('Of these restaurants, the following are available in', preferences['pref_location'][0])
+            #print(recipe_with_restaurants_by_loc[recipe], '\n')
 
         for recipe, restaurants in recipes_restaurants_cuisines.items():
-            print('Found the following', preferences['pref_cuisines'], 'restaurants that serve:', recipe.label[0])
-            print(restaurants)
+            #print('Found the following', preferences['pref_cuisines'], 'restaurants that serve:', recipe.label[0])
+            #print(restaurants)
             recipes_restaurants_by_cuisines_loc[recipe] = self.filter_restaurants_on_location(
                 preferences['pref_location'], restaurants)
-            print('Of these restaurants, the following are available in', preferences['pref_location'][0])
-            print(recipes_restaurants_by_cuisines_loc[recipe], '\n')
+            #print('Of these restaurants, the following are available in', preferences['pref_location'][0])
+            #print(recipes_restaurants_by_cuisines_loc[recipe], '\n')
         return recipe_with_restaurants, recipe_with_restaurants_by_loc, recipes_restaurants_cuisines, recipes_restaurants_by_cuisines_loc
-
-    def simple_queries(self):
-        print("Query responses:")
-
-        # Get all the classes with the label ending in "_topping"
-        results = self.ontology.search(label="Transportation")
-        class_results = [self.class_to_label[result] for result in results if type(result) == self.class_type]
-        pprint(class_results)
-
-        print("-" * 75)
-
-        # Get all the classes that have "Vegetarian" as a superclass
-        results2 = self.ontology.search(subclass_of=self.ontology.search_one(label="Public Transportation"))
-        subclasses = [self.class_to_label[result] for result in results2 if type(result) == self.class_type]
-        pprint(subclasses)
-
-        print("-" * 75)
-
-        # Get all the classes with a label containing "Pizza"
-        results = self.ontology.search(label="Recipe")
-        class_results = [self.class_to_label[result] for result in results if type(result) == self.class_type]
-
-        for c in results:
-            for i in c.instances():
-                pprint(i)
-
-        for c in results:
-            for i in c.instances():
-                for prop in i.get_properties():
-                    for value in prop[i]:
-                        print(".%s == %s" % (prop.python_name, value))
-                    # pprint(p)
-            # pprint(list(c.instances()))
-
-        results2 = self.ontology.search(label="Ingredient")
-        for c in results2:
-            pprint(list(c.instances()))
-
-        pprint(class_results)
-
-        print("-" * 75)
-
-        # Get all the properties with a label containing "has"
-        results = self.ontology.search(label="*has*")
-        class_results = [self.prop_to_label[result] for result in results if type(result) == self.property_type]
-        pprint(class_results)
 
     def find_options(self, preferences):
 
@@ -600,15 +535,15 @@ class Agent:
                 21 - preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
 
     def offer_restaurant_recommendations(self, options, preferences):
-        print("Dear", preferences["user"])
+        print('Dear {},'.format(preferences["user"]))
         print(
             'For your entered preferences, {}'.format(len(options)), 'recommendations were found.')
         if len(options[0][0].pref_not_adhered_to) == 0:
             print('Of these recommendations, the most environmentally friendly option which completely pertains to all your '
                   'preferences is to eat at the following restaurant: {}.'.format(options[0][0].restaurant.label[0]))
             print('This restaurant offers {}'.format(options[0][0].food.label[0]), 'which matches your food preferences.'
-                ' {}'.format(options[0][0].restaurant.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].neighborhood[0].label[0]),
-                'in {}.'.format(options[0][0].neighborhood[1].label[0]))
+                ' {}'.format(options[0][0].restaurant.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].restaurant.isLocatedIn[0].label[0]),
+                'in {}.'.format(options[0][0].restaurant.isLocatedIn[0].label[0]))
             print( 'It is recommended to travel to the restaurant '
                   'by {}'.format(options[0][0].transportation.is_a[0].label[0]), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
             if options[1][1] > options[0][1]:
@@ -621,8 +556,8 @@ class Agent:
                 print('This restaurant offers {}'.format(options[1][0].food.label[0]),
                       'which matches your food preferences.'
                       ' The restaurant {}'.format(options[1][0].restaurant.label[0]),
-                      'is located in the neighborhood of {}'.format(options[1][0].neighborhood[0].label[0]),
-                      'in {}.'.format(options[1][0].neighborhood[1].label[0]))
+                      'is located in the neighborhood of {}'.format(options[1][0].restaurant.isLocatedIn[0].label[0]),
+                      'in {}.'.format(options[1][0].restaurant.isLocatedIn[0].label[0]))
                 print('It is recommended to travel to the restaurant '
                       'by {}'.format(options[1][0].transportation.is_a[0].label[0]),
                       'which is estimated to take {}'.format(options[1][2]), 'minutes of travel time.\n')
@@ -678,14 +613,17 @@ class Agent:
                             max_duration = int(pref.split('duration<')[1])
                             if travel_option[1] > max_duration - 1:
                                 pref_not_adhered_to.append('Duration')
-                    recommendation = RecommendationState('Restaurant', restaurant.isLocatedIn, travel_option[0], restaurant, recipe, [],
+                    recommendation = RecommendationState('Restaurant', travel_option[0], restaurant, recipe, [],
                                                          [], preferences['time_of_activity'], pref_not_adhered_to)
                     adhered_prefs = adhered_prefs - len(pref_not_adhered_to)
                     percentage_loose = adhered_prefs / len(loose_prefs)
-                    utility = recommendation.calculate_utility2(preferences["strict_prefs"], percentage_loose,
+                    utility = recommendation.calculate_utility2(percentage_loose,
                                                                 CO2_scores_per_domain, n_domains)
                     recommendations.append([recommendation, utility, travel_option[1], adhered_prefs])
         return recommendations
+
+
+
 
 
 if __name__ == "__main__":
@@ -693,10 +631,12 @@ if __name__ == "__main__":
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
-    agent.sanity_check()
     options = agent.find_options(preferences)
     # if preferences['activity'] == 'Restaurant':
     #    agent.recommend_restaurant(options)
+
+    random_agent = random_agent.RandomRecommendationAgent("IAG_Group10_Ontology.owl")
+    random_agent.recommend_random_restaurant(preferences)
 
     with open('./Users/alex.json', 'r') as openfile:
         # Reading from json file

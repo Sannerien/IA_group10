@@ -400,6 +400,9 @@
         <NamedIndividual IRI="#AmsterdamCentraal"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AngusBurgerBar"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Anna"/>
     </Declaration>
     <Declaration>
@@ -452,6 +455,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Binnenstad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BinnenstadAmsterdam"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BloatedStomach"/>
@@ -872,6 +878,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ThrillGrill"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TidorestraatChargingSpot"/>
@@ -1526,6 +1535,10 @@
         <NamedIndividual IRI="#AmsterdamCentraal"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#AngusBurgerBar"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Anna"/>
     </ClassAssertion>
@@ -1596,6 +1609,10 @@
     <ClassAssertion>
         <Class IRI="#Neighborhood"/>
         <NamedIndividual IRI="#Binnenstad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Neighborhood"/>
+        <NamedIndividual IRI="#BinnenstadAmsterdam"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#StomachPain"/>
@@ -2172,6 +2189,10 @@
         <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#ThrillGrill"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#TidorestraatChargingSpot"/>
     </ClassAssertion>
@@ -2316,6 +2337,56 @@
         <NamedIndividual IRI="#AmsterdamCentraal"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#BataviastraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#FlevoparkChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#GalileiplantsoenChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#InsulindewegChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#NewtonstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#PolderwegChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#RadiowegChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#TidorestraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#ValentijnskadeChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+        <NamedIndividual IRI="#ZeeburgerdijkChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Amsterdam-Oost"/>
         <NamedIndividual IRI="#Amsterdam"/>
@@ -2324,6 +2395,26 @@
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#AmsterdamCentraal"/>
         <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <NamedIndividual IRI="#AngusBurgerBar"/>
+        <NamedIndividual IRI="#American"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#AngusBurgerBar"/>
+        <NamedIndividual IRI="#BinnenstadAmsterdam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#AngusBurgerBar"/>
+        <NamedIndividual IRI="#Cheeseburger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#AngusBurgerBar"/>
+        <NamedIndividual IRI="#StrawberryMilkshake"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#livesIn"/>
@@ -2344,6 +2435,16 @@
         <ObjectProperty IRI="#hasCuisine"/>
         <NamedIndividual IRI="#BellaItalia"/>
         <NamedIndividual IRI="#Italian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BellaItalia"/>
+        <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#BellaItalia"/>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#serves"/>
@@ -2401,9 +2502,64 @@
         <NamedIndividual IRI="#Binnenstad"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#BiltstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#DomstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#DriftChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#HerenstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#JanskerkhofChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#MariaplaatsChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#NeudeChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#NieuwegrachtChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#OudengrachtChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+        <NamedIndividual IRI="#VoorstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Binnenstad"/>
         <NamedIndividual IRI="#Utrecht"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BinnenstadAmsterdam"/>
+        <NamedIndividual IRI="#Amsterdam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -2464,6 +2620,56 @@
         <ObjectProperty IRI="#adjacentTo"/>
         <NamedIndividual IRI="#DePijp"/>
         <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#CeintuurbaanChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#EersteJanSteenstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#FerdinandBolstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#GerardDoustraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#LutmastraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#QuellijnstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#SarphatiparkChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#TolstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#VanOstadestraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#DePijp"/>
+        <NamedIndividual IRI="#VanWoustraatChargingSpot"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -2544,6 +2750,56 @@
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#Gouda"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#HartenstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#HerengrachtChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#KeizergrachtChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#LeidsegrachtChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#LeliegrachtChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#PrinsengrachtChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#RaadhuisstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#RokinChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#SingelChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+        <NamedIndividual IRI="#WolvenstraatChargingSpot"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -2696,6 +2952,56 @@
         <NamedIndividual IRI="#Grachtengordel"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#BalistraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#BilderdijkstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#CremerpleinChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#KanaalstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#MajellaparkChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#MolukkenstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#PotgieterstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#SpinozawegChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#SumatrastraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Lombok"/>
+        <NamedIndividual IRI="#VleutensewegChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#Lombok"/>
         <NamedIndividual IRI="#Utrecht"/>
@@ -2781,6 +3087,56 @@
         <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#BoteykenChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#LangerakbrugChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#MolensteynChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#NaamrijkChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#OudenrijnsepadChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#RijnzatheChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#StrijkviertelChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#VeldzigtChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#ZandwegChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+        <NamedIndividual IRI="#ZonstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#OudenrijnsepadChargingSpot"/>
         <NamedIndividual IRI="#Oudenrijn"/>
@@ -2804,6 +3160,56 @@
         <ObjectProperty IRI="#adjacentTo"/>
         <NamedIndividual IRI="#Parkwijk"/>
         <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#DamraklaanChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#DillestraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#DragonstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#GroenedijkChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#KarwijstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#MaanzaadstraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#ParkDeHogeWeideChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#RozemarijnsingelChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#SelderiestraatChargingSpot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChargingSpot"/>
+        <NamedIndividual IRI="#Parkwijk"/>
+        <NamedIndividual IRI="#TweedeOosterparklaanChargingSpot"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -3066,9 +3472,19 @@
         <NamedIndividual IRI="#Thai"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#TastyAsian"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#serves"/>
         <NamedIndividual IRI="#TastyAsian"/>
         <NamedIndividual IRI="#GreenCurry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#TastyAsian"/>
+        <NamedIndividual IRI="#RedCurry"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -3094,6 +3510,26 @@
         <ObjectProperty IRI="#hasOrigin"/>
         <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
         <NamedIndividual IRI="#FrenchOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <NamedIndividual IRI="#ThrillGrill"/>
+        <NamedIndividual IRI="#American"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ThrillGrill"/>
+        <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#ThrillGrill"/>
+        <NamedIndividual IRI="#Cheeseburger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#ThrillGrill"/>
+        <NamedIndividual IRI="#StrawberryMilkshake"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -3274,6 +3710,16 @@
         <DataProperty IRI="#hasPopulation"/>
         <NamedIndividual IRI="#Binnenstad"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasArea"/>
+        <NamedIndividual IRI="#BinnenstadAmsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#BinnenstadAmsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20312</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3607,7 +4053,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasChargingSpot"/>
-        <ObjectProperty IRI="#hasTrainStation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasOrigin"/>
@@ -3672,6 +4118,9 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#consumesEnergy"/>
     </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#owns"/>
+    </InverseFunctionalObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#adjacentTo"/>
     </SymmetricObjectProperty>
@@ -3991,6 +4440,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AngusBurgerBar</IRI>
+        <Literal>Angus Burger Bar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AnimalBased</IRI>
         <Literal>Animal Based</Literal>
     </AnnotationAssertion>
@@ -4011,8 +4465,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BalistraatChargingSpot</IRI>
+        <Literal>Balistraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BangladeshOrigin</IRI>
-        <Literal>BangladeshOrigin</Literal>
+        <Literal>Bangladesh Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BataviastraatChargingSpot</IRI>
+        <Literal>Bataviastraat Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4066,13 +4530,33 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BilderdijkstraatChargingSpot</IRI>
+        <Literal>Bilderdijkstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiltstraatChargingSpot</IRI>
+        <Literal>Biltstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Binnenstad</IRI>
         <Literal>Binnenstad</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BinnenstadAmsterdam</IRI>
+        <Literal>Binnenstad Amsterdam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BloatedStomach</IRI>
         <Literal>Bloated Stomach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BoteykenChargingSpot</IRI>
+        <Literal>Boteyken Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4123,6 +4607,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Cashew</IRI>
         <Literal>Cashew</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CeintuurbaanChargingSpot</IRI>
+        <Literal>Ceintuurbaan Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4231,6 +4720,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CremerpleinChargingSpot</IRI>
+        <Literal>Cremerplein Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Cucumber</IRI>
         <Literal>Cucumber</Literal>
     </AnnotationAssertion>
@@ -4251,8 +4745,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DamraklaanChargingSpot</IRI>
+        <Literal>Damraklaan Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DePijp</IRI>
-        <Literal>DePijp</Literal>
+        <Literal>De Pijp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4266,6 +4765,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DillestraatChargingSpot</IRI>
+        <Literal>Dillestraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Dizziness</IRI>
         <Literal>Dizziness</Literal>
     </AnnotationAssertion>
@@ -4276,8 +4780,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DomstraatChargingSpot</IRI>
+        <Literal>Domstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DragonstraatChargingSpot</IRI>
+        <Literal>Dragonstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DriftChargingSpot</IRI>
+        <Literal>Drift Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DutchOrigin</IRI>
         <Literal>Dutch Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EersteJanSteenstraatChargingSpot</IRI>
+        <Literal>EersteJanSteenstraat ChargingSpot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4316,6 +4840,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FerdinandBolstraatChargingSpot</IRI>
+        <Literal>FerdinandBolstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Fever</IRI>
         <Literal>Fever</Literal>
     </AnnotationAssertion>
@@ -4323,6 +4852,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Fish</IRI>
         <Literal>Fish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlevoparkChargingSpot</IRI>
+        <Literal>Flevopark Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4341,6 +4875,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GalileiplantsoenChargingSpot</IRI>
+        <Literal>Galileiplantsoen Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GasEnergy</IRI>
         <Literal>Gas Energy</Literal>
     </AnnotationAssertion>
@@ -4353,6 +4892,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GasolineCar</IRI>
         <Literal>Gasoline Car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GerardDoustraatChargingSpot</IRI>
+        <Literal>GerardDoustraat Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4391,13 +4935,33 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GroenedijkChargingSpot</IRI>
+        <Literal>Groenedijk Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Hamburger</IRI>
         <Literal>Hamburger</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HartenstraatChargingSpot</IRI>
+        <Literal>Hartenstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HealthCondition</IRI>
         <Literal>Health Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HerengrachtChargingSpot</IRI>
+        <Literal>Herengracht Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HerenstraatChargingSpot</IRI>
+        <Literal>Herenstraat Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4416,6 +4980,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InsulindewegChargingSpot</IRI>
+        <Literal>Insulindeweg Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Intolerance</IRI>
         <Literal>Intolerance</Literal>
     </AnnotationAssertion>
@@ -4431,6 +5000,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JanskerkhofChargingSpot</IRI>
+        <Literal>Janskerkhof Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Japanese</IRI>
         <Literal>Japanese</Literal>
     </AnnotationAssertion>
@@ -4438,6 +5012,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#JasminRice</IRI>
         <Literal>Jasmin Rice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KanaalstraatChargingSpot</IRI>
+        <Literal>Kanaalstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KarwijstraatChargingSpot</IRI>
+        <Literal>Karwijstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KeizergrachtChargingSpot</IRI>
+        <Literal>Keizergracht Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4456,6 +5045,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LangerakbrugChargingSpot</IRI>
+        <Literal>Langerakbrug Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Lasagna</IRI>
         <Literal>Lasagna</Literal>
     </AnnotationAssertion>
@@ -4471,6 +5065,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LeidsegrachtChargingSpot</IRI>
+        <Literal>Leidsegracht Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LeliegrachtChargingSpot</IRI>
+        <Literal>Leliegracht Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Lombok</IRI>
         <Literal>Lombok</Literal>
     </AnnotationAssertion>
@@ -4481,8 +5085,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LutmastraatChargingSpot</IRI>
+        <Literal>Lutmastraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MMWoolenTopcoat</IRI>
         <Literal>MMM Woolen Topcoat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MaanzaadstraatChargingSpot</IRI>
+        <Literal>Maanzaadstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MajellaparkChargingSpot</IRI>
+        <Literal>Majellapark Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MariaplaatsChargingSpot</IRI>
+        <Literal>Mariaplaats Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4511,6 +5135,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MolensteynChargingSpot</IRI>
+        <Literal>Molensteyn Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MolukkenstraatChargingSpot</IRI>
+        <Literal>Molukkenstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaamrijkChargingSpot</IRI>
+        <Literal>Naamrijk Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NanushkaNylonTrenchcoat</IRI>
         <Literal>Nanushka Nylon Overcoat</Literal>
     </AnnotationAssertion>
@@ -4518,6 +5157,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#NaturalMaterial</IRI>
         <Literal>NaturalMaterial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NewtonstraatChargingSpot</IRI>
+        <Literal>Newtonstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NieuwegrachtChargingSpot</IRI>
+        <Literal>Nieuwegracht Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4531,8 +5180,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OudengrachtChargingSpot</IRI>
+        <Literal>Oudengracht Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Oudenrijn</IRI>
+        <Literal>Oudenrijn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OudenrijnsepadChargingSpot</IRI>
+        <Literal>Oudenrijnsepad Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OurLegacyLeatherOvershirt</IRI>
         <Literal>Our Legacy Leather Overshirt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParkDeHogeWeideChargingSpot</IRI>
+        <Literal>Park De Hoge Weide Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4591,8 +5260,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PolderwegChargingSpot</IRI>
+        <Literal>Polderweg Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Pork</IRI>
         <Literal>Pork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PotgieterstraatChargingSpot</IRI>
+        <Literal>Potgieterstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrinsengrachtChargingSpot</IRI>
+        <Literal>Prinsengracht Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4613,6 +5297,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PublicTransportation</IRI>
         <Literal>Public Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QuellijnstraatChargingSpot</IRI>
+        <Literal>Quellijnstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RaadhuisstraatChargingSpot</IRI>
+        <Literal>Raadhuisstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RadiowegChargingSpot</IRI>
+        <Literal>Radioweg Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4656,8 +5355,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RijnzatheChargingSpot</IRI>
+        <Literal>Rijnzathe Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RokinChargingSpot</IRI>
+        <Literal>Rokin Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RomanianOrigin</IRI>
+        <Literal>Romanian Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RomanianOrigin</IRI>
         <Literal>RomanianOrigin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RozemarijnsingelChargingSpot</IRI>
+        <Literal>Rozemarijnsingel Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4668,6 +5387,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SalmonSushi</IRI>
         <Literal>Salmon Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SarphatiparkChargingSpot</IRI>
+        <Literal>Sarphatipark Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SelderiestraatChargingSpot</IRI>
+        <Literal>Selderiestraat Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4696,6 +5425,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SingelChargingSpot</IRI>
+        <Literal>Singel Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Solar_Energy</IRI>
         <Literal>Solar Energy</Literal>
     </AnnotationAssertion>
@@ -4721,6 +5455,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpinozawegChargingSpot</IRI>
+        <Literal>Spinozaweg Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SportClothing</IRI>
         <Literal>SportClothing</Literal>
     </AnnotationAssertion>
@@ -4743,6 +5482,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#StrawberryMilkshake</IRI>
         <Literal>Strawberry Milkshake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StrijkviertelChargingSpot</IRI>
+        <Literal>Strijkviertel Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SumatrastraatChargingSpot</IRI>
+        <Literal>Sumatrastraat Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4811,8 +5560,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThrillGrill</IRI>
+        <Literal>Thrill Grill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TidorestraatChargingSpot</IRI>
+        <Literal>Tidorestraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Tofu</IRI>
         <Literal>Tofu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TolstraatChargingSpot</IRI>
+        <Literal>Tolstraat Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4856,6 +5620,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TweedeOosterparklaanChargingSpot</IRI>
+        <Literal>Tweede Oosterparklaan ChargingSpot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UnsustainableEnergy</IRI>
         <Literal>Unsustainable Energy</Literal>
     </AnnotationAssertion>
@@ -4886,6 +5655,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ValentijnskadeChargingSpot</IRI>
+        <Literal>Valentijnskade Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VanOstadestraatChargingSpot</IRI>
+        <Literal>Van Ostadestraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VanWoustraatChargingSpot</IRI>
+        <Literal>Van Woustraat ChargingSpot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Vegetable</IRI>
         <Literal>Vegetable</Literal>
     </AnnotationAssertion>
@@ -4893,6 +5677,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VegetableSushi</IRI>
         <Literal>Vegetable Sushi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VeldzigtChargingSpot</IRI>
+        <Literal>Veldzigt Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VleutensewegChargingSpot</IRI>
+        <Literal>Vleutenseweg Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VoorstraatChargingSpot</IRI>
+        <Literal>Voorstraat Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4921,6 +5720,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WolvenstraatChargingSpot</IRI>
+        <Literal>Wolvenstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Wool</IRI>
         <Literal>Wool</Literal>
     </AnnotationAssertion>
@@ -4933,6 +5737,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Yoghurt</IRI>
         <Literal>Yoghurt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZandwegChargingSpot</IRI>
+        <Literal>Zandweg Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZeeburgerdijkChargingSpot</IRI>
+        <Literal>Zeeburgerdijk Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZonstraatChargingSpot</IRI>
+        <Literal>Zonstraat Charging Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
