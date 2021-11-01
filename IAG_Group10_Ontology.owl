@@ -3221,11 +3221,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.79</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#BershkaTopcoat"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
@@ -3259,21 +3254,6 @@
         <DataProperty IRI="#isFairTrade"/>
         <NamedIndividual IRI="#Bershka_Tracksuit"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#BikeOfDennis"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerKm"/>
-        <NamedIndividual IRI="#BikeOfEmma"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#BikeOfSophie"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3396,11 +3376,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7470</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#MMWoolenTopcoat"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#MMWoolenTopcoat"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
@@ -3414,11 +3389,6 @@
         <DataProperty IRI="#isFairTrade"/>
         <NamedIndividual IRI="#MMWoolenTopcoat"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#NanushkaNylonTrenchcoat"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3439,11 +3409,6 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#Nylon"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.31</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3474,11 +3439,6 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#RecycledCotton"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.8</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3780,14 +3740,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#influences"/>
         <Class IRI="#WeatherConditions"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isForbiddenBy"/>
-        <Class IRI="#Ingredient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isForbiddenBy"/>
-        <Class IRI="#Material"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFromCuisine"/>
