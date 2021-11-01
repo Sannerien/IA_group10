@@ -4,11 +4,12 @@ from pprint import pprint
 import numpy as np
 import operator
 import random_agent
+import random
 
 class RecommendationState:
 
     def __init__(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
-                 time_of_activity=[], pref_not_adhered_to=[]):
+                 time_of_activity=[], pref_not_adhered_to=[], charging_spot = ''):
         self.activity = activity
         self.transportation = transportation
         self.restaurant = restaurant
@@ -18,6 +19,7 @@ class RecommendationState:
         self.time_of_activity = time_of_activity
         self.pref_not_adhered_to = pref_not_adhered_to
         self.duration = 0
+        self.charging_spot = charging_spot
 
     def calculate_utility2(self, per_loose_prefs, CO2_scores_per_domain, n_domains):
         utility = (per_loose_prefs * n_domains) / sum(CO2_scores_per_domain)
@@ -292,7 +294,7 @@ class Agent:
                     location_of_vehicle == current_neighborhood:
                 if vehicle.is_a[0] == self.ontology.ElectricCar:  # Check if electric battery is charged
                     if not vehicle.isBatteryCharged[0]: # TODO add random charging spot in neighborhood
-                        location_of_vehicle.hasChargingStation
+                        self.charging_spot = random.choice(list(location_of_vehicle.hasChargingSpot))
                         extra_travel_time = int(vehicle.timeToChargeElectricCar[0])
                 available_transport.append([vehicle, extra_travel_time])
         return available_transport
@@ -595,6 +597,7 @@ class Agent:
                     adhered_prefs = len(loose_prefs)
                     del CO2_scores_per_domain[1:]
                     pref_not_adhered_to = []
+                    charging_spot = ''
                     if not restaurant in list(restaurants_loc.values())[0]:  # Location preference not adhered to
                         pref_not_adhered_to.append('Location')
                     if not restaurant in list(restaurants_cuisines.values())[0]:  # Cuisine preferences not adhered to
@@ -605,6 +608,8 @@ class Agent:
                         CO2_scores_per_domain.append(1)
                     elif travel_option[0] == 'Public Transport':
                         CO2_scores_per_domain.append(2)
+                    elif self.charging_spot and travel_option[0].is_a[0] == self.ontology.ElectricCar:
+                        charging_spot = self.charging_spot
                     else:
                         CO2_scores_per_domain.append(travel_option[0].hasCO2score[0])
                     n_domains = len(CO2_scores_per_domain)
@@ -613,8 +618,10 @@ class Agent:
                             max_duration = int(pref.split('duration<')[1])
                             if travel_option[1] > max_duration - 1:
                                 pref_not_adhered_to.append('Duration')
+
                     recommendation = RecommendationState('Restaurant', travel_option[0], restaurant, recipe, [],
-                                                         [], preferences['time_of_activity'], pref_not_adhered_to)
+                                                         [], preferences['time_of_activity'], pref_not_adhered_to
+                                                         , charging_spot)
                     adhered_prefs = adhered_prefs - len(pref_not_adhered_to)
                     percentage_loose = adhered_prefs / len(loose_prefs)
                     utility = recommendation.calculate_utility2(percentage_loose,
