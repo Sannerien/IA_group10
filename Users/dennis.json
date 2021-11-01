@@ -3,13 +3,12 @@
   "current_location": "De Pijp",
   "time_of_activity": 20,
   "weather_condition": ["Windy"],
-  "health_conditions": ["Wool Allergy", "Shellfish Allergy", "Citrus Allergy"],
   "symptoms": [],
-  "pref_cuisines": ["Japanese"],
-  "pref_food": ["ingredient some Protein", "not ingredient some Dairy"],
-  "pref_location": ["Amsterdam"],
+  "pref_cuisines": [],
+  "pref_food": [],
+  "pref_location": [],
   "pref_clothing": [],
   "activity": "Activity",
   "strict_prefs" : [],
-  "loose_prefs" : []
+  "loose_prefs" : ["activity"]
  }

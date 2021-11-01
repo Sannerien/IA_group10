@@ -21,22 +21,8 @@ class RecommendationState:
         self.duration = 0
         self.charging_spot = charging_spot
 
-    def calculate_utility2(self, per_loose_prefs, CO2_scores_per_domain, n_domains):
+    def calculate_utility(self, per_loose_prefs, CO2_scores_per_domain, n_domains):
         utility = (per_loose_prefs * n_domains) / sum(CO2_scores_per_domain)
-
-        return utility
-
-    def calculate_utility(self, strict_prefs, loose_prefs, CO2_scores_per_domain, n_domains, completed_pref=0):
-        utility = 0
-        x = len(set(loose_prefs)) + len(set(strict_prefs))
-        if x == 0:
-            percent_match = 1
-        else:
-            # by intersecting their set with users's prefs set
-            percent_match = np.divide(int(completed_pref), int(x))
-        # print("percent match is {}".format(percent_match))
-        # we calculate the score; CO2 value is summed over the list
-        utility = (percent_match * n_domains) / sum(CO2_scores_per_domain)
 
         return utility
 
@@ -226,7 +212,7 @@ class Agent:
         print(1000088, clothing_stores)
         print('Stores found that offer matching items: ', clothing_stores)
         stores_by_location = self.filter_stores_on_location(preferences['pref_location'], clothing_stores)
-        print('Are these items available in physical stores in ', preferences['pref_location'], ' : ', stores_by_location)
+        print('Are these items available in physical stores in ', preferences['pref_location'][0], ' : ', stores_by_location)
         #return preferred_recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location
 
     def infer_health_cond(self, symptoms, user):
@@ -455,11 +441,12 @@ class Agent:
             #print(recipes_restaurants_by_cuisines_loc[recipe], '\n')
         return recipe_with_restaurants, recipe_with_restaurants_by_loc, recipes_restaurants_cuisines, recipes_restaurants_by_cuisines_loc
 
-    def find_options(self, preferences):
+    def find_states(self, preferences):
 
         options = []
 
         if "Activity" in preferences["activity"]:
+            self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
             selected_energy = {}
             if self.rushhour:
                 energy = self.ontology.search(label="Unsustainable Energy")
@@ -481,6 +468,10 @@ class Agent:
             selected_activities = possible_activities[0].instances()
 
             options = [[x, y] for x in selected_activities for y in selected_energy]
+            sorted_options = self.choose_actions(options)
+            self.explain_actions(preferences, sorted_options, options)
+
+
         if "Restaurant" in preferences["activity"]:
             current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
             health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
@@ -505,30 +496,31 @@ class Agent:
                 agent.offer_restaurant_recommendations(options, preferences)
         return options
 
-    def check_preferences(self, preference):
-        preference["strict_prefs"]
 
-    def choose_actions(self, options):
-        recommender = RecommendationState()
+    def choose_actions(self, options, random=False):
+
+
+        recommender = RecommendationState(activity='activity')
         d = {}
 
         for idx, option in enumerate(options):
             CO2_scores_per_domain = [item.hasCO2score[0] for item in option]
             len_domain = len(option)
-            # completed_pref = self.check_preferences(preferences)
-            utility = recommender.calculate_utility(preferences["strict_prefs"], preferences["loose_prefs"],
-                                                    CO2_scores_per_domain, len_domain)
+            percentage_loose = len(preferences["loose_prefs"])
+
+            utility = recommender.calculate_utility(percentage_loose,
+                                                        CO2_scores_per_domain, len_domain)
             d[(option[0].name, option[0].name)] = utility
         sorted_options = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
+
         return sorted_options
 
     def explain_actions(self, preferences, sorted_options, options):
         print("Dear", preferences["user"])
         x = list(list(sorted_options.keys())[0])[0]
         print(
-            'The first advise for selection of {} would be {} with utility score {}.'.format(preferences["activity"][0],
-                                                                                             x, list(
-                    sorted_options.values())[0]))
+            'The first advise for selection of {} would be {}  as it is the most environmentally friendly option.'.format(preferences["activity"], x))
+                                                                                             # list(sorted_options.values())[0]))
 
         if preferences["time_of_activity"] >= 20 and "Activity" in preferences["activity"]:
             self.rushhour = True
@@ -581,13 +573,6 @@ class Agent:
                   'which is estimated to take {}'.format(options[0][2]), 'minutes of travel time.\n')
 
 
-
-    def find_preferences(self, preferences):
-        self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
-        options = self.find_options(preferences)
-        sorted_options = self.choose_actions(options)
-        self.explain_actions(preferences, sorted_options, options)
-
     def create_recommendations(self, recipe_restaurants, restaurants_loc, restaurants_cuisines,
                                current_location, loose_prefs):
         recommendations = []
@@ -628,7 +613,7 @@ class Agent:
                                                          , charging_spot)
                     adhered_prefs = adhered_prefs - len(pref_not_adhered_to)
                     percentage_loose = adhered_prefs / len(loose_prefs)
-                    utility = recommendation.calculate_utility2(percentage_loose,
+                    utility = recommendation.calculate_utility(percentage_loose,
                                                                 CO2_scores_per_domain, n_domains)
                     recommendations.append([recommendation, utility, travel_option[1], adhered_prefs])
         return recommendations
@@ -642,12 +627,19 @@ if __name__ == "__main__":
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
-    options = agent.find_options(preferences)
+    options = agent.find_states(preferences)
     # if preferences['activity'] == 'Restaurant':
     #    agent.recommend_restaurant(options)
 
     random_agent = random_agent.RandomRecommendationAgent("IAG_Group10_Ontology.owl")
     random_agent.recommend_random_restaurant(preferences)
+
+    with open('./Users/dennis.json', 'r') as openfile:
+        # Reading from json file
+        preferences = json.load(openfile)
+    options = agent.find_states(preferences)
+
+    random_agent.recommend_random_activity(preferences)
 
     with open('./Users/alex.json', 'r') as openfile:
         # Reading from json file

@@ -116,3 +116,38 @@ class RandomRecommendationAgent:
                                              [], preferences['time_of_activity'], [])
 
         print(recommendation)
+
+    def recommend_random_activity(self, preferences):
+
+        self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
+        selected_energy = {}
+        if self.rushhour:
+            energy = self.ontology.search(label="Unsustainable Energy")
+            selected_energy = energy[0].instances()
+
+        else:
+            energy = self.ontology.search(label="Energy")
+            selected_energy = []
+            for i in energy[0].instances():
+                for prop in i.get_properties():
+                    if prop.python_name == "requiresWeather":
+                        for value in prop[i]:
+                            for weather in preferences["weather_condition"]:
+                                if str(value).endswith(weather):
+                                    selected_energy = i
+
+        possible_activities = self.ontology.search(label="Activity")
+        selected_activities = possible_activities[0].instances()
+
+        options = [[x, y] for x in selected_activities for y in selected_energy]
+
+        random_number = random.randint(0, len(options))
+
+        select_option =  options[random_number][0].name
+        print(random_number, select_option, "random")
+        print("Dear", preferences["user"])
+
+        print(
+            'The first advise for selection of {} would be {}  as it is the most environmentally friendly option.'.format(
+                preferences["activity"], select_option))
+
