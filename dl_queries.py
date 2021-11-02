@@ -490,16 +490,9 @@ class Agent:
 
             possible_activities = self.ontology.search(label="Activity")
             selected_activities = possible_activities[0].instances()
-
-
-            selected_activities = self.infer_activity(preferences, selected_activities)
-
-
-
-
-
-            options = [[x, y] for x in selected_activities for y in selected_energy]
-            sorted_options = self.choose_actions(options)
+            selected_activities_pref = self.infer_activity(preferences, selected_activities)
+            options = [[x, y] for x in selected_activities_pref for y in selected_energy]
+            sorted_options = self.recommend_activity(options)
             self.explain_actions(preferences, sorted_options, options)
 
 
@@ -554,11 +547,9 @@ class Agent:
                 if item.startswith("activity="):
                     if item.split("=")[1] in selected_activities_names:
                         activities_pref.append(item.split("=")[1])
-        return [[activity,0] if activity.name not in activities_pref else [activity,1] for activity in selected_activities  ]
+        return [[activity, 0] if activity.name not in activities_pref else [activity,1] for activity in selected_activities  ]
 
-    def choose_actions(self, options):
-
-
+    def recommend_activity(self, options):
         d = {}
 
         for idx, option in enumerate(options):
@@ -583,7 +574,7 @@ class Agent:
 
         if preferences["time_of_activity"] >= 20 and "Activity" in preferences["activity"]:
             self.rushhour = True
-            sorted_options = self.choose_actions(options)
+            sorted_options = self.recommend_activity(options)
             print("An alternative option is to wait {} hour. In that case another option would be {}".format(
                 21 - preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
 
