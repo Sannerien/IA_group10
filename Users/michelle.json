@@ -1,0 +1,14 @@
+{
+  "user": "Michelle",
+  "current_location": "Amsterdam-Oost",
+  "time_of_activity": 20,
+  "weather_condition": [],
+  "symptoms": [],
+  "pref_cuisines": ["Italian"],
+  "pref_food": ["ingredient Spinach", "or", "not ingredient some AnimalBased"],
+  "pref_location": ["Amsterdam"],
+  "pref_clothing": [],
+  "activity": "Restaurant",
+  "strict_prefs" : [],
+  "loose_prefs" : ["pref_location", "pref_cuisines", "duration<30"]
+ }
