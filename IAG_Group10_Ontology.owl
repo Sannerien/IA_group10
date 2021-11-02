@@ -463,6 +463,9 @@
         <NamedIndividual IRI="#BloatedStomach"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Bob"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BoteykenChargingSpot"/>
     </Declaration>
     <Declaration>
@@ -1619,6 +1622,10 @@
         <NamedIndividual IRI="#BloatedStomach"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#BoteykenChargingSpot"/>
     </ClassAssertion>
@@ -2567,6 +2574,16 @@
         <NamedIndividual IRI="#Amsterdam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Bob"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Bob"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#BoteykenChargingSpot"/>
         <NamedIndividual IRI="#Oudenrijn"/>
@@ -2575,6 +2592,11 @@
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#Butter"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#COVID19"/>
+        <NamedIndividual IRI="#Cough"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -3548,6 +3570,11 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#TweedeOosterparklaanChargingSpot"/>
         <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
@@ -3980,6 +4007,11 @@
         <DataProperty IRI="#emitsCO2PerKm"/>
         <NamedIndividual IRI="#ToyotaCorolla2020"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.197</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerKm"/>
@@ -4567,6 +4599,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BloatedStomach</IRI>
         <Literal>Bloated Stomach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bob</IRI>
+        <Literal>Bob</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
