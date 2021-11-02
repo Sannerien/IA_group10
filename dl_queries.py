@@ -533,6 +533,7 @@ class Agent:
                 #    agent.find_states(preferences)
             else:
                 options = agent.create_recommendations_clothing(preferred_clothing, items_with_stores_by_location)
+                options.sort(key = operator.itemgetter(1), reverse=True)
 
         return options
 
