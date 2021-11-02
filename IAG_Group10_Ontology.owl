@@ -2594,6 +2594,11 @@
         <NamedIndividual IRI="#LactoseIntolerance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#COVID19"/>
+        <NamedIndividual IRI="#Cough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#CeintuurbaanChargingSpot"/>
         <NamedIndividual IRI="#DePijp"/>
