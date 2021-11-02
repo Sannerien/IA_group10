@@ -158,7 +158,7 @@ class Agent:
                         isFairTrade = word.lower()
                     else:
                         found_clothing = list(self.ontology.search(self.label_to_class[word]))
-            
+
             if negation:
                 if union:
                     included_clothing = list(set(all_clothing) - set(found_clothing))
@@ -237,14 +237,14 @@ class Agent:
             #pref_not_adhered_to = []
             #(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
             #     time_of_activity=[], pref_not_adhered_to=[], charging_spot = ''):
-            
+
             recommendation = RecommendationState(activity='Clothing', clothing_item=cloth)
             percentage_loose = 1
             utility = recommendation.calculate_utility(percentage_loose,
                                                                 CO2_scores_per_domain, n_domains)
             recommendations.append([recommendation, utility])
         return recommendations
-    
+
 
     def infer_health_cond(self, symptoms, user):
         symptom_instances = []
@@ -323,8 +323,21 @@ class Agent:
 
         for destination in destinations:
             destination_dict[destination] = self.check_user_transport_options(owned_transport, current_location)
-            destination_neighborhood = destination.isLocatedIn[0]
-            if city == destination.isLocatedIn[1]:  # Check if current location is in the same city as the destination
+
+            # In the normal situation the destination object contains location already
+            try:
+                destination_neighborhood = destination.isLocatedIn[0]
+                destination_city = destination.isLocatedIn[1]
+            # Exceptional case where we want travel options to a direct neighborhood
+            except AttributeError:
+                destination_neighborhood = destination
+                d_ins = self.ontology.search(label=destination_neighborhood)
+                for n in self.ontology.Neighborhood.instances():
+                    if n == d_ins[0]:
+                        destination_neighborhood = d_ins[0]
+                        destination_city = n
+
+            if city == destination_city:  # Check if current location is in the same city as the destination
                 if current_location in list(destination_neighborhood.adjacentTo) or \
                         current_location == destination_neighborhood:  # check if neighborhoods adjacent
                     if current_location in list(destination_neighborhood.adjacentTo):
@@ -350,7 +363,7 @@ class Agent:
                     destination_dict[destination].append(['Public Transport', 15])
 
             else:  # Not in the same city
-                if city == self.ontology.Amsterdam and destination.isLocatedIn[1] == self.ontology.Utrecht:
+                if city == self.ontology.Amsterdam and destination_city == self.ontology.Utrecht:
                     train = self.ontology.TrainFromAmsterdamToUtrecht
                 else:
                     train = self.ontology.TrainFromUtrechtToAmsterdam
@@ -550,6 +563,21 @@ class Agent:
                 options = agent.create_recommendations_clothing(preferred_clothing, items_with_stores_by_location)
                 options.sort(key = operator.itemgetter(1), reverse=True)
 
+        if "Transportation" in preferences["activity"]:
+            # Get current location, health conditions and available travel options
+            current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
+            health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
+            travel_options = agent.determine_travel_options(current_location, preferences['pref_location'], preferences['user'])
+            # Create travel recommendations
+            options = agent.create_travel_recommendations(travel_options, preferences['loose_prefs'])
+            # Check for Covid
+            restricted = False
+            if agent.ontology.COVID19 in health_conditions:
+                restricted = True
+            # Offer travel recommendations
+            options.sort(key = operator.itemgetter(3, 1), reverse=True)
+            agent.offer_travel_recommendations(options, restricted, preferences)
+
         return options
 
     def infer_activity(self, preferences, selected_activities):
@@ -637,6 +665,39 @@ class Agent:
                   'by {}'.format(options[0][0].transportation.is_a[0].label[0]),
                   'which is estimated to take {}'.format(options[0][2]), 'minutes of travel time.\n')
 
+    def offer_travel_recommendations(self, options, restricted, preferences):
+        print('Dear {},'.format(preferences["user"]))
+        print(
+            'For your entered preferences, {}'.format(len(options)), 'recommendations were found.')
+        if len(options[0][0].pref_not_adhered_to) == 0:
+
+            print('Of these recommendations, the most environmentally friendly option which completely pertains to all your '
+                  'preferences is to travel by {}, which is estimated to take {} minutes of travel time.\n'.format(options[0][0].transportation.is_a[0].label[0], options[0][2]))
+
+            if options[0][0].charging_spot:
+                print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
+                      ' minutes. The nearest car charging spot can be found on {}'.format(options[0][0].charging_spot.label[0].split('Charging')[1]))
+
+            if options[1][1] > options[0][1]:
+                print('However, a more environmentally friendly option was found when we ignore your preference of '
+                      '{}.'.format(options[1][0].pref_not_adhered_to), ' If you are able to loosen this preference, '
+                      'we would recommend the following:\n')
+                print('The most environmentally friendly option is to travel by {}, which is estimated to take {} minutes of travel time.\n'.format(options[1][0].transportation.is_a[0].label[0], options[1][2]))
+
+            if restricted:
+                print('However, due to symptoms applicable to a COVID-19 infection the use of public transportation cannot be recommended.'
+                    'We recommend the following:')
+                print('The best option is to travel by {}, which is estimated to take {} minutes of travel time.'.format(options[1][0].transportation.is_a[0].label[0], options[1][2]))
+
+
+        else:
+            options.sort(key = operator.itemgetter(1), reverse=True)
+            print('No options could be found that adheres to all your preferences. The most environmentally friendly '
+                  'option the agent could find, is when your preference of {}'.format(options[0][0].pref_not_adhered_to),
+                  ' is ignored.\n.')
+            print('This recommends to travel by {}, which is estimated to take {} minutes of travel time.\n'.format(options[0][0].transportation.is_a[0].label[0], options[0][2]))
+
+
 
     def create_recommendations(self, recipe_restaurants, restaurants_loc, restaurants_cuisines,
                                current_location, loose_prefs):
@@ -645,6 +706,7 @@ class Agent:
         recommendations = []
         for recipe, restaurants in recipe_restaurants.items():
             CO2_scores_per_domain = [recipe.hasCO2score[0]]
+            print(CO2_scores_per_domain)
             travel_options = agent.determine_travel_options(current_location, restaurants,
                                                             preferences['user'])
             for restaurant, travel_options in travel_options.items():
@@ -680,9 +742,49 @@ class Agent:
                                                          , charging_spot)
                     adhered_prefs = adhered_prefs - len(pref_not_adhered_to)
                     percentage_loose = adhered_prefs / len(loose_prefs)
+                    print(CO2_scores_per_domain)
                     utility = recommendation.calculate_utility(percentage_loose,
                                                                 CO2_scores_per_domain, n_domains)
                     recommendations.append([recommendation, utility, travel_option[1], adhered_prefs])
+        return recommendations
+
+    def create_travel_recommendations(self, travel_options, loose_prefs):
+
+        recommendations = []
+        CO2_scores_per_domain = []
+
+        for neighborhood, travel_options in travel_options.items():
+            for travel_option in travel_options:
+                adhered_prefs = len(loose_prefs)
+                del CO2_scores_per_domain[1:]
+                pref_not_adhered_to = []
+                charging_spot = ''
+
+                if len(travel_option) == 3:
+                    CO2_scores_per_domain.append(travel_option[0].hasCO2score[0] + travel_option[2])
+                elif travel_option[0] == 'Walk':
+                    CO2_scores_per_domain.append(1)
+                elif travel_option[0] == 'Public Transport':
+                    CO2_scores_per_domain.append(2)
+                #elif self.charging_spot and travel_option[0].is_a[0] == self.ontology.ElectricCar:
+                    #charging_spot = self.charging_spot
+                else:
+                    CO2_scores_per_domain.append(travel_option[0].hasCO2score[0])
+                n_domains = len(CO2_scores_per_domain)
+                for pref in preferences['loose_prefs']:
+                    if 'duration' in pref:
+                        max_duration = int(pref.split('duration<')[1])
+                        if travel_option[1] > max_duration - 1:
+                            pref_not_adhered_to.append('Duration')
+
+                recommendation = RecommendationState('Restaurant', travel_option[0], neighborhood, neighborhood, [],
+                                                     [], preferences['time_of_activity'], pref_not_adhered_to
+                                                     , charging_spot)
+                adhered_prefs = adhered_prefs - len(pref_not_adhered_to)
+                percentage_loose = adhered_prefs / len(loose_prefs)
+                utility = recommendation.calculate_utility(percentage_loose,
+                                                            CO2_scores_per_domain, n_domains)
+                recommendations.append([recommendation, utility, travel_option[1], adhered_prefs])
         return recommendations
 
 
@@ -698,18 +800,15 @@ if __name__ == "__main__":
     options = agent.find_states(preferences)
     # if preferences['activity'] == 'Restaurant':
     #    agent.recommend_restaurant(options)
-
     random_agent = random_agent.RandomRecommendationAgent("IAG_Group10_Ontology.owl")
     random_agent.recommend_random_restaurant(preferences)
-
     with open('./Users/dennis.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     options = agent.find_states(preferences)
-
     random_agent.recommend_random_activity(preferences)
     """
-    with open('./Users/sophie.json', 'r') as openfile:
+    with open('./Users/bob.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
