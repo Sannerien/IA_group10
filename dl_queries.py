@@ -6,6 +6,13 @@ import operator
 import random_agent
 import random
 
+def count_upper_case_letters(str_obj):
+    count = 0
+    for elem in str_obj:
+        if elem.isupper():
+            count += 1
+    return count
+
 class RecommendationState:
 
     def __init__(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
@@ -395,6 +402,13 @@ class Agent:
             containsIngredient = False
             some_clause = False
             for word in food.split(' '):
+                if count_upper_case_letters(word) > 1:  # Need to split label with space
+                    old_word = word
+                    word = ''
+                    for i, letter in enumerate(old_word):
+                        if i and letter.isupper() and i != 0:
+                            word += ' '
+                        word += letter
                 if word == 'not':
                     negation = True
                 elif word == 'ingredient':
@@ -596,7 +610,7 @@ class Agent:
                   'preferences is to eat at the following restaurant: {}.'.format(options[0][0].restaurant.label[0]))
             print('This restaurant offers {}'.format(options[0][0].food.label[0]), 'which matches your food preferences.'
                 ' {}'.format(options[0][0].restaurant.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].restaurant.isLocatedIn[0].label[0]),
-                'in {}.'.format(options[0][0].restaurant.isLocatedIn[0].label[0]))
+                'in {}.'.format(options[0][0].restaurant.isLocatedIn[1].label[0]))
             print( 'It is recommended to travel to the restaurant '
                   'by {}'.format(options[0][0].transportation.is_a[0].label[0]), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
             if options[0][0].charging_spot:
@@ -614,19 +628,20 @@ class Agent:
                       'which matches your food preferences.'
                       ' The restaurant {}'.format(options[1][0].restaurant.label[0]),
                       'is located in the neighborhood of {}'.format(options[1][0].restaurant.isLocatedIn[0].label[0]),
-                      'in {}.'.format(options[1][0].restaurant.isLocatedIn[0].label[0]))
+                      'in {}.'.format(options[1][0].restaurant.isLocatedIn[1].label[0]))
                 print('It is recommended to travel to the restaurant '
                       'by {}'.format(options[1][0].transportation.is_a[0].label[0]),
                       'which is estimated to take {}'.format(options[1][2]), 'minutes of travel time.\n')
         else:
+            options.sort(key = operator.itemgetter(1), reverse=True)
             print('No options could be found that adheres to all your preferences. The most environmentally friendly '
-                  'option the agent could find, is when your preference of {}'.format(options[1][0].pref_not_adhered_to),
-                  ' is ignored. This recommends to eat at the following restaurant: {}.'.format(options[0][0].restaurant.label[0]))
+                  'option the agent could find, is when your preference of {}'.format(options[0][0].pref_not_adhered_to),
+                  ' is ignored.\n This recommends to eat at the following restaurant: {}.'.format(options[0][0].restaurant.label[0]))
             print('This restaurant offers {}'.format(options[0][0].food.label[0]),
                   'which matches your food preferences.'
                   ' {}'.format(options[0][0].restaurant.label[0]),
-                  'is located in the neighborhood of {}'.format(options[0][0].neighborhood[0].label[0]),
-                  'in {}.'.format(options[0][0].neighborhood[1].label[0]))
+                  'is located in the neighborhood of {}'.format(options[0][0].restaurant.isLocatedIn[0].label[0]),
+                  'in {}.'.format(options[0][0].restaurant.isLocatedIn[1].label[0]))
             print('It is recommended to travel to the restaurant '
                   'by {}'.format(options[0][0].transportation.is_a[0].label[0]),
                   'which is estimated to take {}'.format(options[0][2]), 'minutes of travel time.\n')
@@ -634,6 +649,8 @@ class Agent:
 
     def create_recommendations(self, recipe_restaurants, restaurants_loc, restaurants_cuisines,
                                current_location, loose_prefs):
+        restaurants_loc = [item for sublist in restaurants_loc.values() for item in sublist]
+        restaurants_cuisines = [item for sublist in restaurants_cuisines.values() for item in sublist]
         recommendations = []
         for recipe, restaurants in recipe_restaurants.items():
             CO2_scores_per_domain = [recipe.hasCO2score[0]]
@@ -646,9 +663,9 @@ class Agent:
                     del CO2_scores_per_domain[1:]
                     pref_not_adhered_to = []
                     charging_spot = ''
-                    if not restaurant in list(restaurants_loc.values())[0]:  # Location preference not adhered to
+                    if not restaurant in restaurants_loc:  # Location preference not adhered to
                         pref_not_adhered_to.append('Location')
-                    if not restaurant in list(restaurants_cuisines.values())[0]:  # Cuisine preferences not adhered to
+                    if not restaurant in restaurants_cuisines:  # Cuisine preferences not adhered to
                         pref_not_adhered_to.append('Cuisine')
                     if len(travel_option) == 3:
                         CO2_scores_per_domain.append(travel_option[0].hasCO2score[0] + travel_option[2])
@@ -701,7 +718,7 @@ if __name__ == "__main__":
 
     random_agent.recommend_random_activity(preferences)
     """
-    with open('./Users/dennis.json', 'r') as openfile:
+    with open('./Users/sophie.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
