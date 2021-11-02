@@ -1,13 +1,13 @@
 {
     "user": "Alex",
-    "current_location": "DePijp",
+    "current_location": "De Pijp",
     "time_of_activity": 16,
     "weather_condition": ["Windy"],
     "symptoms": [],
     "pref_cuisines": [],
     "pref_food": [],
     "pref_location": ["Utrecht"],
-    "pref_clothing": ["material some NaturalMaterial", "maxprice 599", "isFairTrade true"],
+    "pref_clothing": ["material some NaturalMaterial", "maxprice 1599"],
     "activity": "Clothing",
     "strict_prefs" : [],
     "loose_prefs" : ["pref_location", "pref_clothing"]

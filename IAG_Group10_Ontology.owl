@@ -3663,6 +3663,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#BangladeshOrigin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
@@ -3675,11 +3680,6 @@
         <DataProperty IRI="#isFairTrade"/>
         <NamedIndividual IRI="#BershkaTopcoat"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#Bershka_Tracksuit"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3762,9 +3762,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.01</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#DutchOrigin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#FrenchOrigin"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#FrenchOrigin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3918,6 +3928,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#RomanianOrigin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#SalmonSushi"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
     </DataPropertyAssertion>
@@ -3945,11 +3960,6 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#TeslaModel3"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.081</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#The_North_Face_Puffer_Jacket"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -4476,7 +4486,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BangladeshOrigin</IRI>
-        <Literal>Bangladesh Origin</Literal>
+        <Literal>BangladeshOrigin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4801,7 +4811,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DutchOrigin</IRI>
-        <Literal>Dutch Origin</Literal>
+        <Literal>DutchOrigin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5367,11 +5377,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RokinChargingSpot</IRI>
         <Literal>Rokin Charging Spot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RomanianOrigin</IRI>
-        <Literal>Romanian Origin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
