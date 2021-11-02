@@ -9,6 +9,5 @@
   "pref_location": [],
   "pref_clothing": [],
   "activity": "Activity",
-  "strict_prefs" : [],
-  "loose_prefs" : ["activity"]
+  "loose_prefs" : ["activity=UsingDishwasher or activity=DoingHandwash", "activity=WatchingTV" ]
  }

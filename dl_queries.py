@@ -9,7 +9,7 @@ import random
 class RecommendationState:
 
     def __init__(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
-                 time_of_activity=[], pref_not_adhered_to=[], charging_spot = ''):
+                 time_of_activity=[], pref_not_adhered_to=[], charging_spot = '', energy=[]):
         self.activity = activity
         self.transportation = transportation
         self.restaurant = restaurant
@@ -20,6 +20,7 @@ class RecommendationState:
         self.pref_not_adhered_to = pref_not_adhered_to
         self.duration = 0
         self.charging_spot = charging_spot
+        self.energy = energy
 
     def calculate_utility(self, per_loose_prefs, CO2_scores_per_domain, n_domains):
         utility = (per_loose_prefs * n_domains) / sum(CO2_scores_per_domain)
@@ -470,7 +471,7 @@ class Agent:
 
         if "Activity" in preferences["activity"]:
             self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
-            selected_energy = {}
+
             if self.rushhour:
                 energy = self.ontology.search(label="Unsustainable Energy")
                 selected_energy = energy[0].instances()
@@ -485,10 +486,17 @@ class Agent:
                                 for weather in preferences["weather_condition"]:
                                     if str(value).endswith(weather):
                                         selected_energy = i
-            # options_domains["Energy"] = selected_energy
+
 
             possible_activities = self.ontology.search(label="Activity")
             selected_activities = possible_activities[0].instances()
+
+
+            selected_activities = self.infer_activity(preferences, selected_activities)
+
+
+
+
 
             options = [[x, y] for x in selected_activities for y in selected_energy]
             sorted_options = self.choose_actions(options)
@@ -537,21 +545,31 @@ class Agent:
 
         return options
 
+    def infer_activity(self, preferences, selected_activities):
+        activities_pref = []
+        selected_activities_names = [item.name for item in selected_activities]
+        for preference in preferences["loose_prefs"]:
+            pref = preference.split(" ")
+            for item in pref:
+                if item.startswith("activity="):
+                    if item.split("=")[1] in selected_activities_names:
+                        activities_pref.append(item.split("=")[1])
+        return [[activity,0] if activity.name not in activities_pref else [activity,1] for activity in selected_activities  ]
 
-    def choose_actions(self, options, random=False):
+    def choose_actions(self, options):
 
 
-        recommender = RecommendationState(activity='activity')
         d = {}
 
         for idx, option in enumerate(options):
-            CO2_scores_per_domain = [item.hasCO2score[0] for item in option]
-            len_domain = len(option)
-            percentage_loose = len(preferences["loose_prefs"])
+            CO2_scores_per_domain = [item[0].hasCO2score[0] if type(item) == list else item.hasCO2score[0] for item in option]
+            len_domain = len(option[0])
+            adhered_prefs = option[0][1]
+            percentage_loose =  adhered_prefs / len(preferences["loose_prefs"])
 
-            utility = recommender.calculate_utility(percentage_loose,
-                                                        CO2_scores_per_domain, len_domain)
-            d[(option[0].name, option[0].name)] = utility
+            recommendation = RecommendationState(activity=option[0][0], energy=option[1])
+            utility = recommendation.calculate_utility(percentage_loose, CO2_scores_per_domain, len_domain)
+            d[(option[0][0].name, option[0][0].name)] = utility
         sorted_options = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
 
         return sorted_options
@@ -683,13 +701,13 @@ if __name__ == "__main__":
 
     random_agent.recommend_random_activity(preferences)
     """
-    with open('./Users/alex.json', 'r') as openfile:
+    with open('./Users/dennis.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
     options = agent.find_states(preferences)
-    for option in options:
-        print(option[0].clothing_item, option[1])
+    # for option in options:
+        #print(option[0].clothing_item, option[1])
         #agent.find_preferences(preferences)
         #cloth = agent.label_to_indiv['Bershka Topcoat']
     #agent.infer_clothes(preferences['pref_clothing'], preferences['health_conditions'])

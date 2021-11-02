@@ -144,7 +144,6 @@ class RandomRecommendationAgent:
         random_number = random.randint(0, len(options))
 
         select_option =  options[random_number][0].name
-        print(random_number, select_option, "random")
         print("Dear", preferences["user"])
 
         print(
