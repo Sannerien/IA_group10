@@ -3565,6 +3565,11 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+        <NamedIndividual IRI="#Amsterdam-Oost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#TweedeOosterparklaanChargingSpot"/>
         <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
@@ -3997,6 +4002,11 @@
         <DataProperty IRI="#emitsCO2PerKm"/>
         <NamedIndividual IRI="#ToyotaCorolla2020"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.197</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#ToyotaCorolla2020"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerKm"/>
