@@ -593,7 +593,7 @@ class Agent:
         owned_households = list(self.label_to_indiv[user].ownsAtHome)
         for activity in activities:
             for prop in activity.get_properties():
-                if prop.python_name == "ownsAtHome":
+                if prop.python_name == "requiresHouseHold":
                     for value in prop[activity]:
                         if not value in owned_households:
                             filter_activities.append(activity)
@@ -635,19 +635,19 @@ class Agent:
         return sorted_options
 
     def explain_actions(self, preferences, sorted_options, options):
-        print("Dear", preferences["user"])
+        print("Dear {},".format(preferences["user"]))
         x = list(list(sorted_options.keys())[0])[0]
         print(
-            'The first advise for selection of {} would be {}  as it is the most environmentally friendly option.'.format(
-                preferences["activity"], x))
+            'If you want to do an {} right now the {} we recommend to do is {} as it is the most environmentally friendly option.'.format(
+                preferences["activity"], preferences["activity"], x))
         # list(sorted_options.values())[0]))
 
         if preferences["time_of_activity"] >= 20 and "Activity" in preferences["activity"]:
             self.rushhour = True
             sorted_options = self.recommend_activity(options)
-            print("An alternative option is to wait {} hour. In that case, you use sustainable energy. "
-                  "In that case you could also would be {} consuming less energy".format(
-                21 - preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
+            print("An alternative option is to wait {} hour. In that case, you use sustainable energy if it is still {}.\n"
+                  "In that case you could also {} or {} in which you only use sustainable energy.".format(
+                21 - preferences["time_of_activity"], preferences["weather_condition"][0].lower(), list(list(sorted_options.keys())[1])[0], list(list(sorted_options.keys())[2])[0]))
 
     def create_transport_string(self, options):
         transport1 = transport2 = 'No transport'
@@ -869,7 +869,7 @@ if __name__ == "__main__":
     options = agent.find_states(preferences)
     random_agent.recommend_random_activity(preferences)
     """
-    with open('./Users/isaac.json', 'r') as openfile:
+    with open('./Users/dennis.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")

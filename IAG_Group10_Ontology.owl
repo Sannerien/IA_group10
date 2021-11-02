@@ -106,7 +106,7 @@
         <Class IRI="#HealthCondition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Household"/>
+        <Class IRI="#HouseholdElectronics"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InfrastructuralObject"/>
@@ -320,6 +320,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#providesEnergyTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresHouseHoldElectronics"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#requiresWeather"/>
@@ -1621,7 +1624,7 @@
         <NamedIndividual IRI="#Bob"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Household"/>
+        <Class IRI="#HouseholdElectronics"/>
         <NamedIndividual IRI="#Boiler"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1751,7 +1754,7 @@
         <NamedIndividual IRI="#DillestraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Household"/>
+        <Class IRI="#HouseholdElectronics"/>
         <NamedIndividual IRI="#Dishwasher"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2035,7 +2038,7 @@
         <NamedIndividual IRI="#Parmesan"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Household"/>
+        <Class IRI="#HouseholdElectronics"/>
         <NamedIndividual IRI="#Phone"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2207,7 +2210,7 @@
         <NamedIndividual IRI="#SwollenTongue"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Household"/>
+        <Class IRI="#HouseholdElectronics"/>
         <NamedIndividual IRI="#TV"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2319,7 +2322,7 @@
         <NamedIndividual IRI="#VoorstraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Household"/>
+        <Class IRI="#HouseholdElectronics"/>
         <NamedIndividual IRI="#Washmachine"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2657,7 +2660,7 @@
         <NamedIndividual IRI="#DePijp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ownsAtHome"/>
+        <ObjectProperty IRI="#requiresHouseHoldElectronics"/>
         <NamedIndividual IRI="#ChargingPhone"/>
         <NamedIndividual IRI="#Phone"/>
     </ObjectPropertyAssertion>
@@ -3712,17 +3715,17 @@
         <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ownsAtHome"/>
+        <ObjectProperty IRI="#requiresHouseHoldElectronics"/>
         <NamedIndividual IRI="#UsingDishwasher"/>
         <NamedIndividual IRI="#Dishwasher"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ownsAtHome"/>
+        <ObjectProperty IRI="#requiresHouseHoldElectronics"/>
         <NamedIndividual IRI="#UsingHeating"/>
         <NamedIndividual IRI="#Boiler"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ownsAtHome"/>
+        <ObjectProperty IRI="#requiresHouseHoldElectronics"/>
         <NamedIndividual IRI="#UsingWashingMachine"/>
         <NamedIndividual IRI="#Washmachine"/>
     </ObjectPropertyAssertion>
@@ -3797,7 +3800,7 @@
         <NamedIndividual IRI="#Binnenstad"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ownsAtHome"/>
+        <ObjectProperty IRI="#requiresHouseHoldElectronics"/>
         <NamedIndividual IRI="#WatchingTV"/>
         <NamedIndividual IRI="#TV"/>
     </ObjectPropertyAssertion>
@@ -4378,6 +4381,10 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#provides"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4590,7 +4597,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ownsAtHome"/>
-        <Class IRI="#Household"/>
+        <Class IRI="#HouseholdElectronics"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requiresWeather"/>
@@ -5270,6 +5277,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HerenstraatChargingSpot</IRI>
         <Literal>Herenstraat Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HouseholdElectronic</IRI>
+        <Literal>House Hould Gear</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
