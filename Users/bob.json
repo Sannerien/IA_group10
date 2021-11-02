@@ -1,16 +1,14 @@
 {
-  "name": "Bob",
-  "neighborhood": "Amsterdam-West",
-  "time_of_activity": 11,
-  "owns": ["Bike"],
-  "health_conditions": [],
-  "symptoms": ["sneezing", "fever"],
-  "cuisines": [],
-  "food": ["not 'Animal Based'"],
-  "pref_location": [],
-  "misc_activities": [],
-  "clothing_items": [],
-  "materials": [],
-  "strict_pref": ["Restaurant has not Shellfish", "Restaurant has Seafood"],
-  "advise": ["Restaurant"]
+  "user": "Bob",
+  "current_location": "Amsterdam-Oost",
+  "time_of_activity": 20,
+  "weather_condition": ["Windy"],
+  "symptoms": ["Cough"],
+  "pref_cuisines": [],
+  "pref_food": [],
+  "pref_location": ["Lombok"],
+  "pref_clothing": [],
+  "activity": "Transportation",
+  "strict_prefs" : [],
+  "loose_prefs" : ["transport=Train", "duration<75"]
  }
