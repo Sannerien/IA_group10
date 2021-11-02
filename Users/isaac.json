@@ -1,0 +1,14 @@
+{
+  "user": "Isaac",
+  "current_location": "Binnenstad",
+  "time_of_activity": 20,
+  "weather_condition": [],
+  "symptoms": [],
+  "pref_cuisines": ["American"],
+  "pref_food": ["some ingredient PlantBased"],
+  "pref_location": ["Utrecht"],
+  "pref_clothing": [],
+  "activity": "Restaurant",
+  "strict_prefs" : [],
+  "loose_prefs" : ["pref_location", "pref_cuisines", "travel=ElectricCar"]
+ }

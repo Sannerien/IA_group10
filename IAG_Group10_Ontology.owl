@@ -439,6 +439,12 @@
         <NamedIndividual IRI="#BikeOfEmma"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BikeOfIsaac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BikeOfMichelle"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BikeOfSophie"/>
     </Declaration>
     <Declaration>
@@ -601,6 +607,9 @@
         <NamedIndividual IRI="#GerardDoustraatChargingSpot"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Gnocci"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#GoatMilk"/>
     </Declaration>
     <Declaration>
@@ -635,6 +644,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#InsulindewegChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Isaac"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Italian"/>
@@ -706,6 +718,9 @@
         <NamedIndividual IRI="#MariaplaatsChargingSpot"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Michelle"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MolensteynChargingSpot"/>
     </Declaration>
     <Declaration>
@@ -760,10 +775,16 @@
         <NamedIndividual IRI="#Pineapple"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#PlantBasedPatty"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#PolderwegChargingSpot"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Pork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Potato"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PotgieterstraatChargingSpot"/>
@@ -842,6 +863,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Spinach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpinachGnocci"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SpinozawegChargingSpot"/>
@@ -943,6 +967,9 @@
         <NamedIndividual IRI="#VanWoustraatChargingSpot"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#VeganBurger"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#VegetableSushi"/>
     </Declaration>
     <Declaration>
@@ -986,6 +1013,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ZonstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Allergy"/>
@@ -1156,10 +1186,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hamburger"/>
-        <ObjectExactCardinality cardinality="3">
+        <ObjectMinCardinality cardinality="3">
             <ObjectProperty IRI="#containsIngredient"/>
             <Class IRI="#Ingredient"/>
-        </ObjectExactCardinality>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InfrastructuralObject"/>
@@ -1556,6 +1586,14 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Bike"/>
+        <NamedIndividual IRI="#BikeOfIsaac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bike"/>
+        <NamedIndividual IRI="#BikeOfMichelle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bike"/>
         <NamedIndividual IRI="#BikeOfSophie"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1785,6 +1823,10 @@
         <NamedIndividual IRI="#GerardDoustraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Pasta"/>
+        <NamedIndividual IRI="#Gnocci"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Milk"/>
         <NamedIndividual IRI="#GoatMilk"/>
     </ClassAssertion>
@@ -1831,6 +1873,10 @@
     <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#InsulindewegChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Isaac"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Cuisine"/>
@@ -1997,12 +2043,20 @@
         <NamedIndividual IRI="#Pineapple"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PlantBased"/>
+        <NamedIndividual IRI="#PlantBasedPatty"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#PolderwegChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Meat"/>
         <NamedIndividual IRI="#Pork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Potato"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
@@ -2107,6 +2161,10 @@
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Spinach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PastaRecipe"/>
+        <NamedIndividual IRI="#SpinachGnocci"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
@@ -2241,6 +2299,10 @@
         <NamedIndividual IRI="#VanWoustraatChargingSpot"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Hamburger"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Sushi"/>
         <NamedIndividual IRI="#VegetableSushi"/>
     </ClassAssertion>
@@ -2300,6 +2362,10 @@
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#ZonstraatChargingSpot"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasHealthCondition"/>
         <NamedIndividual IRI="#Alex"/>
@@ -2319,6 +2385,11 @@
         <ObjectProperty IRI="#containsMeal"/>
         <NamedIndividual IRI="#American"/>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#American"/>
+        <NamedIndividual IRI="#VeganBurger"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasTrainStation"/>
@@ -2474,6 +2545,11 @@
         <ObjectProperty IRI="#hasOrigin"/>
         <NamedIndividual IRI="#Bershka_Tracksuit"/>
         <NamedIndividual IRI="#BangladeshOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BikeOfMichelle"/>
+        <NamedIndividual IRI="#DePijp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -2853,6 +2929,11 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
         <NamedIndividual IRI="#GreenCurry"/>
+        <NamedIndividual IRI="#Spinach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#GreenCurry"/>
         <NamedIndividual IRI="#Tofu"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -2886,6 +2967,21 @@
         <NamedIndividual IRI="#Amsterdam-Oost"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#Isaac"/>
+        <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Isaac"/>
+        <NamedIndividual IRI="#Oudenrijn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Isaac"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMeal"/>
         <NamedIndividual IRI="#Italian"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
@@ -2894,6 +2990,11 @@
         <ObjectProperty IRI="#containsMeal"/>
         <NamedIndividual IRI="#Italian"/>
         <NamedIndividual IRI="#SpaghettiCarbonara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Italian"/>
+        <NamedIndividual IRI="#SpinachGnocci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#causesCaseOf"/>
@@ -3059,6 +3160,16 @@
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#MariaplaatsChargingSpot"/>
         <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Michelle"/>
+        <NamedIndividual IRI="#BinnenstadAmsterdam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Michelle"/>
+        <NamedIndividual IRI="#BikeOfMichelle"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -3441,6 +3552,26 @@
         <NamedIndividual IRI="#Spaghetti"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SpinachGnocci"/>
+        <NamedIndividual IRI="#Egg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SpinachGnocci"/>
+        <NamedIndividual IRI="#Gnocci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SpinachGnocci"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#SpinachGnocci"/>
+        <NamedIndividual IRI="#Spinach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#SpinozawegChargingSpot"/>
         <NamedIndividual IRI="#Lombok"/>
@@ -3556,6 +3687,11 @@
         <NamedIndividual IRI="#StrawberryMilkshake"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#ThrillGrill"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#TidorestraatChargingSpot"/>
         <NamedIndividual IRI="#Amsterdam-Oost"/>
@@ -3614,6 +3750,26 @@
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#VanWoustraatChargingSpot"/>
         <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+        <NamedIndividual IRI="#Bun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+        <NamedIndividual IRI="#Cheddar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+        <NamedIndividual IRI="#PlantBasedPatty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+        <NamedIndividual IRI="#Tomato"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
@@ -3685,6 +3841,31 @@
         <NamedIndividual IRI="#ZonstraatChargingSpot"/>
         <NamedIndividual IRI="#Oudenrijn"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
+        <NamedIndividual IRI="#Italian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
+        <NamedIndividual IRI="#DePijp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
+        <NamedIndividual IRI="#LasagnaBolognese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
+        <NamedIndividual IRI="#SpaghettiCarbonara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
+        <NamedIndividual IRI="#SpinachGnocci"/>
+    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#AcyclicFabric"/>
@@ -3739,6 +3920,26 @@
         <DataProperty IRI="#isFairTrade"/>
         <NamedIndividual IRI="#Bershka_Tracksuit"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#BikeOfDennis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#BikeOfEmma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#BikeOfIsaac"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#BikeOfMichelle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3799,11 +4000,6 @@
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#DoingHandwash"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#emitsCO2PerItem"/>
-        <NamedIndividual IRI="#DutchOrigin"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.01</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3894,6 +4090,11 @@
         <DataProperty IRI="#isFairTrade"/>
         <NamedIndividual IRI="#MMWoolenTopcoat"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#Michelle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -3997,6 +4198,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#SpinachGnocci"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#StrawberryMilkshake"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
@@ -4004,6 +4210,21 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#TeslaModel3"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.081</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBatteryCharged"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#timeToChargeElectricCar"/>
+        <NamedIndividual IRI="#TeslaModel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -4074,6 +4295,11 @@
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#UsingWashingMachine"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
@@ -4597,6 +4823,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BikeOfIsaac</IRI>
+        <Literal>Bike Of Isaac</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BikeOfMichelle</IRI>
+        <Literal>Bike Of Michelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BikeOfSophie</IRI>
         <Literal>Bike Of Sophie</Literal>
     </AnnotationAssertion>
@@ -4967,6 +5203,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gnocci</IRI>
+        <Literal>Gnocci</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GoatMilk</IRI>
         <Literal>Goat Milk</Literal>
     </AnnotationAssertion>
@@ -5057,8 +5298,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Isaac</IRI>
+        <Literal>Isaac</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Italian</IRI>
-        <Literal>Italian Cuisine</Literal>
+        <Literal>Italian</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5189,6 +5435,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MentalIlness</IRI>
         <Literal>Mental Illnesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Michelle</IRI>
+        <Literal>Michelle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5327,6 +5578,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PlantBasedPatty</IRI>
+        <Literal>Plant Based Patty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PolderwegChargingSpot</IRI>
         <Literal>Polderweg Charging Spot</Literal>
     </AnnotationAssertion>
@@ -5334,6 +5590,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Pork</IRI>
         <Literal>Pork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Potato</IRI>
+        <Literal>Potato</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5514,6 +5775,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Spinach</IRI>
         <Literal>Spinach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpinachGnocci</IRI>
+        <Literal>Spinach Gnocci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5729,6 +5995,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VanWoustraatChargingSpot</IRI>
         <Literal>Van Woustraat ChargingSpot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VeganBurger</IRI>
+        <Literal>Vegan Burger</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5949,6 +6220,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#travelsWith</IRI>
         <Literal>travelsWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Renato&apos;sOsteria</IRI>
+        <Literal>Renato&apos;s Osteria</Literal>
     </AnnotationAssertion>
 </Ontology>
 
