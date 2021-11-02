@@ -57,33 +57,22 @@ class Agent:
         self.class_type = type(list(self.ontology.classes())[0])
         self.property_type = type(list(self.ontology.properties())[0])
 
-
-    def infer_forbidden_materials(self, health_conditions):
-        list_forbidden_materials = []
-        #print('Health conditions to consider: ', health_conditions)
-        if len(health_conditions) > 0:
-            for health_cond in health_conditions:
-                forbidden_materials = list(self.ontology.search(isForbiddenBy=self.label_to_indiv[health_cond]))
-                list_forbidden_materials = list(set(list_forbidden_materials + forbidden_materials))
-        return list_forbidden_materials
-
     def infer_stores(self, items):
-        stores = ['Online stores']
+        stores = {}
         if len(items) > 0:
             for item in items:
-                #print(item)
                 possible_stores = list(self.ontology.search(selling=item))
-                #print(possible_stores)
-                stores = list(set(stores + possible_stores))
+                stores[item] = list(possible_stores) if possible_stores else ['Online store']
+                #print(stores[item])
         else:
             stores = self.ontology.ClothingStore.instances()
         return stores
 
     def filter_stores_on_location(self, pref_locations, stores):
         stores_in_pref_locations = []
-        #print(86878, stores)
-        stores.remove('Online stores')
-        if len(stores) > 0:
+        if 'Online store' in stores:
+            stores.remove('Online store')
+        if len(stores) > 0: #and 'Online store' not in stores:
             if len(pref_locations) > 0:
                 for store in stores:
                     for location in pref_locations:
@@ -93,15 +82,15 @@ class Agent:
             else:
                 return stores
         else:
-            stores = ['Online stores only']
+            stores = ['Online store only']
             return stores
 
     def infer_clothes(self, pref_clothing, health_cond):
-        health_prevented_materials = self.infer_forbidden_materials(health_cond)
+        health_prevented_materials = self.infer_forbidden_ingredients(health_cond)
         health_prevented_clothing = []
         for material in health_prevented_materials:
             health_prevented_clothing = list(set(health_prevented_clothing + list(self.ontology.search(containsMaterial=material))))
-        #print("Prevented by health problems: ", health_prevented_clothing)
+        print("Prevented by health problems: ", health_prevented_clothing)
 
         all_clothing = []
         clothing = self.ontology.search(label="Clothing")
@@ -112,6 +101,7 @@ class Agent:
         clothing_list = all_clothing
 
         maxprice = 0
+        price = False
         fairness = False
         union = False
         or_found = False
@@ -184,36 +174,69 @@ class Agent:
         if maxprice > 0:
             #print("FOUND PRICE CONDITION: ", maxprice)
             for cloth in clothing_list:
-                print("PRICE: ", cloth.hasPriceEur)
+                #print("PRICE: ", cloth.hasPriceEur)
                 if cloth.hasPriceEur:
                     if cloth.hasPriceEur[0] <= maxprice:
-                        print("ADD: ", cloth)
+                        #print("ADD: ", cloth)
                         clothing_list_price.append(cloth)
         else:
             #print("NO PRICE FILTER")
             clothing_list_price = clothing_list
 
         clothing_list_fair = []
-        #print("BEFORE ETHICAL FILTER", clothing_list_filter, isFairTrade)
+        #print("BEFORE ETHICAL FILTER", clothing_list_price, fairness)
         if fairness:
             for cloth in clothing_list_price:
                 if cloth.isFairTrade and str(cloth.isFairTrade[0]).lower() == isFairTrade:
                     #print("ADD MATCHING FAIRNESS: ", cloth)
                     clothing_list_fair.append(cloth)
         else:
-            clothing_list_fair == clothing_list_price
+            clothing_list_fair = clothing_list_price
 
 
-        #print("Selected clothing after parsing but with prevented: ", clothing_list)
+        #print("Selected clothing after parsing but with prevented: ", clothing_list_fair)
+        #print(1000, set(health_prevented_clothing))
         preferred_clothing = list(set(clothing_list_fair) - set(health_prevented_clothing))
         print('Clothing found based on preferences and health conditions: ', preferred_clothing)
 
-        clothing_stores = self.infer_stores(preferred_clothing)
-        print(1000088, clothing_stores)
-        print('Stores found that offer matching items: ', clothing_stores)
-        stores_by_location = self.filter_stores_on_location(preferences['pref_location'], clothing_stores)
-        print('Are these items available in physical stores in ', preferences['pref_location'][0], ' : ', stores_by_location)
-        #return preferred_recipes, restaurants, restaurants_by_cuisines, restaurants_by_location, restaurants_by_cuisines_location
+        items_with_clothing_stores = self.infer_stores(preferred_clothing)
+        print('Stores found that offer matching items: ', items_with_clothing_stores)
+        #stores_by_location = self.filter_stores_on_location(preferences['pref_location'], clothing_stores)
+        #print('Are these items available in physical stores in ', preferences['pref_location'][0], ' : ', stores_by_location)
+
+        items_with_stores_by_location = {}
+        for item, clothing_store in items_with_clothing_stores.items():
+            items_with_stores_by_location[item] = self.filter_stores_on_location(preferences['pref_location'], clothing_store)
+            #print('Is {0} available in physical stores in {1}: {2}'.format(item, preferences['pref_location'][0], items_with_stores_by_location[item]))
+
+        return preferred_clothing, items_with_clothing_stores, items_with_stores_by_location
+
+    def create_recommendations_clothing(self, preferred_clothing, items_with_stores_by_location):
+
+        recommendations = []
+        #for item, clothing_store in items_with_stores_by_location.items():
+        for cloth in preferred_clothing:
+            n_domains = 1
+            CO2_scores_per_domain = [cloth.hasCO2score[0]]
+            #print(CO2_scores_per_domain)
+            origin = cloth.hasOrigin[0]
+            if origin:
+                n_domains = 2
+            CO2_scores_per_domain.append(origin.hasCO2score[0])
+            #print(CO2_scores_per_domain)
+
+            #adhered_prefs = len(loose_prefs)
+            #pref_not_adhered_to = []
+            #(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
+            #     time_of_activity=[], pref_not_adhered_to=[], charging_spot = ''):
+            
+            recommendation = RecommendationState(activity='Clothing', clothing_item=cloth)
+            percentage_loose = 1
+            utility = recommendation.calculate_utility(percentage_loose,
+                                                                CO2_scores_per_domain, n_domains)
+            recommendations.append([recommendation, utility])
+        return recommendations
+    
 
     def infer_health_cond(self, symptoms, user):
         symptom_instances = []
@@ -494,6 +517,23 @@ class Agent:
                 # options.append(agent.create_recommendations(restaurants, current_location))
                 options.sort(key = operator.itemgetter(3, 1), reverse=True)
                 agent.offer_restaurant_recommendations(options, preferences)
+
+
+        if "Clothing" in preferences["activity"]:
+            current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
+            health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
+            #agent.infer_clothes(preferences['pref_clothing'], preferences['health_conditions'])
+            preferred_clothing, items_with_clothing_stores, items_with_stores_by_location = \
+                (agent.infer_clothes(preferences['pref_clothing'], health_conditions))
+            if len(preferred_clothing) == 0:
+                print('Unfortunately, no clothes with matching preferences were found')
+                #if len(preferences['pref_clothing']) > 0:
+                #    print('Removing preference {}'.format(preferences['pref_clothing'][-1]))
+                #    preferences['pref_clothing'].pop(-1)
+                #    agent.find_states(preferences)
+            else:
+                options = agent.create_recommendations_clothing(preferred_clothing, items_with_stores_by_location)
+
         return options
 
 
@@ -623,6 +663,7 @@ class Agent:
 
 
 if __name__ == "__main__":
+    """
     with open('./Users/sophie.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
@@ -640,12 +681,14 @@ if __name__ == "__main__":
     options = agent.find_states(preferences)
 
     random_agent.recommend_random_activity(preferences)
-
+    """
     with open('./Users/alex.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
-        #agent = Agent("IAG_Group10_Ontology.owl")
+    agent = Agent("IAG_Group10_Ontology.owl")
+    options = agent.find_states(preferences)
+    for option in options:
+        print(option[0].clothing_item, option[1])
         #agent.find_preferences(preferences)
-        #current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
         #cloth = agent.label_to_indiv['Bershka Topcoat']
-    agent.infer_clothes(preferences['pref_clothing'], preferences['health_conditions'])
+    #agent.infer_clothes(preferences['pref_clothing'], preferences['health_conditions'])
