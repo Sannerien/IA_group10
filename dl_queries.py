@@ -616,7 +616,7 @@ class Agent:
 
             recommendation = RecommendationState(activity=option[0][0], energy=option[1])
             utility = recommendation.calculate_utility(percentage_loose, CO2_scores_per_domain, len_domain)
-            d[(option[0][0].name, option[0][0].name)] = utility
+            d[(option[0][0].label[0].lower(), option[0][0].label[0].lower())] = utility
         sorted_options = dict(sorted(d.items(), key=operator.itemgetter(1), reverse=True))
 
         return sorted_options
