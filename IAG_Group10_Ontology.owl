@@ -64,9 +64,6 @@
         <Class IRI="#ClothingStore"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CoalEnergy"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Cuisine"/>
     </Declaration>
     <Declaration>
@@ -97,9 +94,6 @@
         <Class IRI="#Fruit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GasEnergy"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#GasolineCar"/>
     </Declaration>
     <Declaration>
@@ -110,6 +104,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#HealthCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Household"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InfrastructuralObject"/>
@@ -205,9 +202,6 @@
         <Class IRI="#Shellfish"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SolarEnergy"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Spaghetti"/>
     </Declaration>
     <Declaration>
@@ -248,9 +242,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#WeatherConditions"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WindEnergy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#adjacentTo"/>
@@ -320,6 +311,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownsAtHome"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#provides"/>
@@ -466,6 +460,9 @@
         <NamedIndividual IRI="#Bob"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Boiler"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BoteykenChargingSpot"/>
     </Declaration>
     <Declaration>
@@ -548,6 +545,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DillestraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dishwasher"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dizziness"/>
@@ -754,6 +754,9 @@
         <NamedIndividual IRI="#Parmesan"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Phone"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Pineapple"/>
     </Declaration>
     <Declaration>
@@ -871,6 +874,9 @@
         <NamedIndividual IRI="#SwollenTongue"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#TV"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#TastyAsian"/>
     </Declaration>
     <Declaration>
@@ -947,6 +953,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VoorstraatChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Washmachine"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WatchingTV"/>
@@ -1074,17 +1083,6 @@
         <Class IRI="#Business"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CoalEnergy"/>
-        <Class IRI="#UnsustainableEnergy"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CoalEnergy"/>
-        <DataExactCardinality cardinality="5">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Cuisine"/>
         <Class IRI="#Food"/>
     </SubClassOf>
@@ -1136,17 +1134,6 @@
     <SubClassOf>
         <Class IRI="#Fruit"/>
         <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GasEnergy"/>
-        <Class IRI="#UnsustainableEnergy"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GasEnergy"/>
-        <DataExactCardinality cardinality="4">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GasolineCar"/>
@@ -1364,17 +1351,6 @@
         <Class IRI="#AnimalBased"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SolarEnergy"/>
-        <Class IRI="#SustainableEnergy"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SolarEnergy"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SportClothing"/>
         <Class IRI="#Clothing"/>
     </SubClassOf>
@@ -1442,17 +1418,6 @@
         <Class IRI="#Vegetable"/>
         <Class IRI="#Ingredient"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WindEnergy"/>
-        <Class IRI="#SustainableEnergy"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WindEnergy"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasCO2score"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataExactCardinality>
-    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AnimalBased"/>
         <Class IRI="#PlantBased"/>
@@ -1482,10 +1447,6 @@
         <Class IRI="#TemporalCondition"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#CoalEnergy"/>
-        <Class IRI="#GasEnergy"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Cuisine"/>
         <Class IRI="#Ingredient"/>
         <Class IRI="#Recipe"/>
@@ -1504,10 +1465,6 @@
         <Class IRI="#Grains"/>
         <Class IRI="#Protein"/>
         <Class IRI="#Vegetable"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#SolarEnergy"/>
-        <Class IRI="#WindEnergy"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#SustainableEnergy"/>
@@ -1624,6 +1581,10 @@
     <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Household"/>
+        <NamedIndividual IRI="#Boiler"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
@@ -1750,6 +1711,10 @@
     <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#DillestraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Household"/>
+        <NamedIndividual IRI="#Dishwasher"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#PhysicalDiscomfort"/>
@@ -2024,6 +1989,10 @@
         <NamedIndividual IRI="#Parmesan"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Household"/>
+        <NamedIndividual IRI="#Phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Fruit"/>
         <NamedIndividual IRI="#Pineapple"/>
     </ClassAssertion>
@@ -2180,6 +2149,10 @@
         <NamedIndividual IRI="#SwollenTongue"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Household"/>
+        <NamedIndividual IRI="#TV"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Restaurant"/>
         <NamedIndividual IRI="#TastyAsian"/>
     </ClassAssertion>
@@ -2282,6 +2255,10 @@
     <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#VoorstraatChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Household"/>
+        <NamedIndividual IRI="#Washmachine"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Activity"/>
@@ -2604,6 +2581,11 @@
         <NamedIndividual IRI="#DePijp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#ChargingPhone"/>
+        <NamedIndividual IRI="#Phone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#Cheddar"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
@@ -2712,6 +2694,21 @@
         <ObjectProperty IRI="#owns"/>
         <NamedIndividual IRI="#Dennis"/>
         <NamedIndividual IRI="#BikeOfDennis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Dennis"/>
+        <NamedIndividual IRI="#Dishwasher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Dennis"/>
+        <NamedIndividual IRI="#TV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Dennis"/>
+        <NamedIndividual IRI="#Washmachine"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -3579,6 +3576,21 @@
         <NamedIndividual IRI="#Parkwijk"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#UsingDishwasher"/>
+        <NamedIndividual IRI="#Dishwasher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#UsingHeating"/>
+        <NamedIndividual IRI="#Boiler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#UsingWashingMachine"/>
+        <NamedIndividual IRI="#Washmachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasTrainStation"/>
         <NamedIndividual IRI="#Utrecht"/>
         <NamedIndividual IRI="#UtrechtCentraal"/>
@@ -3627,6 +3639,11 @@
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#VoorstraatChargingSpot"/>
         <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#WatchingTV"/>
+        <NamedIndividual IRI="#TV"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requiresWeather"/>
@@ -4250,6 +4267,10 @@
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#rideSharing"/>
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
@@ -4340,6 +4361,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#owns"/>
         <Class IRI="#PrivateTransportation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <Class IRI="#Household"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requiresWeather"/>
@@ -4737,11 +4762,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#CoalEnergy</IRI>
-        <Literal>Coal Energy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Coal_Energy</IRI>
         <Literal>Coal Energy</Literal>
     </AnnotationAssertion>
@@ -4929,11 +4949,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#GalileiplantsoenChargingSpot</IRI>
         <Literal>Galileiplantsoen Charging Spot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#GasEnergy</IRI>
-        <Literal>Gas Energy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5749,11 +5764,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#WeatherConditions</IRI>
         <Literal>Weather Conditions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WindEnergy</IRI>
-        <Literal>Wind Energy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

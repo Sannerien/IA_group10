@@ -494,8 +494,6 @@ class Agent:
 
     def find_states(self, preferences):
 
-        options = []
-
         if "Activity" in preferences["activity"]:
             self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22
 
@@ -513,7 +511,6 @@ class Agent:
                                 for weather in preferences["weather_condition"]:
                                     if str(value).endswith(weather):
                                         selected_energy = i
-
 
             possible_activities = self.ontology.search(label="Activity")
             selected_activities = possible_activities[0].instances()
@@ -539,7 +536,7 @@ class Agent:
                       'The agent will recommend other restaurants which are not located in your specified location.\n')
                 agent.create_recommendations(restaurants_cuisines, current_location)
             else:
-                options = agent.create_recommendations(restaurants, restaurants_loc, restaurants_cuisines, \
+                options = agent.create_recommendations(restaurants, restaurants_loc, restaurants_cuisines,
                                                        current_location, preferences['loose_prefs'])
                 # options.append(agent.create_recommendations(restaurants_cuisines, current_location))
                 # options.append(agent.create_recommendations(restaurants, current_location))
@@ -580,7 +577,24 @@ class Agent:
 
         return options
 
+    def filter_activities(self, activities, user):
+        filter_activities =[]
+        owned_households = list(self.label_to_indiv[user].ownsAtHome)
+        for activity in activities:
+            for prop in activity.get_properties():
+                if prop.python_name == "ownsAtHome":
+                    for value in prop[activity]:
+                        if not value in owned_households:
+                            filter_activities.append(activity)
+
+        return list(set(activities) - set(filter_activities))
+
+        # health_prevented_recipes = list(
+        #     set(list(self.ontology.search(ownsAtHome=owned_households))))
+
     def infer_activity(self, preferences, selected_activities):
+
+        selected_activities = self.filter_activities(selected_activities, preferences["user"])
         activities_pref = []
         selected_activities_names = [item.name for item in selected_activities]
         for preference in preferences["loose_prefs"]:
@@ -617,7 +631,8 @@ class Agent:
         if preferences["time_of_activity"] >= 20 and "Activity" in preferences["activity"]:
             self.rushhour = True
             sorted_options = self.recommend_activity(options)
-            print("An alternative option is to wait {} hour. In that case another option would be {}".format(
+            print("An alternative option is to wait {} hour. In that case, you use sustainable energy. "
+                  "In that case you could also would be {} consuming less energy".format(
                 21 - preferences["time_of_activity"], list(list(sorted_options.keys())[1])[0]))
 
     def offer_restaurant_recommendations(self, options, preferences):
@@ -808,7 +823,7 @@ if __name__ == "__main__":
     options = agent.find_states(preferences)
     random_agent.recommend_random_activity(preferences)
     """
-    with open('./Users/bob.json', 'r') as openfile:
+    with open('./Users/dennis.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
