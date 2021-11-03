@@ -234,7 +234,6 @@ class Agent:
                 n_domains +=1
                 CO2_scores_per_domain.append(origin.hasCO2score[0])
             #print(200, item, CO2_scores_per_domain)
-            print(1111, item, clothing_store)
             if clothing_store[0] != 'Online store only':
                 #print("REAL STORE")
                 travel_options = agent.determine_travel_options(current_location, clothing_store,
