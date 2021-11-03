@@ -202,9 +202,6 @@
         <Class IRI="#Shellfish"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Spaghetti"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#SportClothing"/>
     </Declaration>
     <Declaration>
@@ -677,6 +674,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#KiaE-Niro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KiloKilo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Kiwi"/>
@@ -1918,6 +1918,10 @@
         <NamedIndividual IRI="#KiaE-Niro"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ClothingStore"/>
+        <NamedIndividual IRI="#KiloKilo"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Fruit"/>
         <NamedIndividual IRI="#Kiwi"/>
     </ClassAssertion>
@@ -3038,6 +3042,16 @@
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#KiaE-Niro"/>
         <NamedIndividual IRI="#Parkwijk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#KiloKilo"/>
+        <NamedIndividual IRI="#Binnenstad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#selling"/>
+        <NamedIndividual IRI="#KiloKilo"/>
+        <NamedIndividual IRI="#RecycledSailsRaincoat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSymptom"/>
@@ -5360,6 +5374,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KiloKilo</IRI>
+        <Literal>Kilo Kilo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Kiwi</IRI>
         <Literal>Kiwi</Literal>
     </AnnotationAssertion>
@@ -5772,11 +5791,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Sophie</IRI>
         <Literal>Sophie</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Spaghetti</IRI>
-        <Literal>Spaghetti</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

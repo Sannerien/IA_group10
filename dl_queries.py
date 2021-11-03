@@ -767,9 +767,9 @@ class Agent:
                   
             if not isinstance(options[0][0].clothing_store, list):
                 print('It can be obtained in {}.'.format(options[0][0].clothing_store.label[0]))
-                print(' {}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
+                print('{}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
                 'in {}.'.format(options[0][0].clothing_store.isLocatedIn[1].label[0]))
-                print( 'It is recommended to travel to the restaurant '
+                print( 'It is recommended to travel to the clothing store '
                   'by {}'.format(options[0][0].transportation.is_a[0].label[0]), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
                 if options[0][0].charging_spot:
                     print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
