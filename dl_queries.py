@@ -616,9 +616,9 @@ class Agent:
                     print('Unfortunately, no clothes with all matching preferences were found. We will now try to broaden the request.')
                     if len(preferences['pref_clothing']) > 0:
                         print('Removing preference: {}'.format(preferences['pref_clothing'][-1]))
-                    print(preferences['pref_clothing'])
+                    #print(preferences['pref_clothing'])
                     loosened_prefs.append(preferences['pref_clothing'].pop(-1))
-                    print(preferences['pref_clothing'])
+                    #print(preferences['pref_clothing'])
                     preferred_clothing, items_with_clothing_stores, items_with_stores_by_location = \
                     (agent.infer_clothes(preferences['pref_clothing'], health_conditions))
                 options = agent.create_clothing_recommendations(preferred_clothing, items_with_stores_by_location, current_location, total_pref_len, loosened_prefs)
@@ -775,7 +775,7 @@ class Agent:
                     print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
                       ' minutes. The nearest car charging spot can be found on {}'.format(options[0][0].charging_spot.label[0].split('Charging')[1]))
             else:
-                print('For these recommendation, the only possible option is to purchase the item online')
+                print('For these recommendation, the only possible option is to purchase the item online.')
 
     def offer_restaurant_recommendations(self, options, preferences):
         transport1, transport2 = self.create_transport_string(options)
