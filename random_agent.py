@@ -10,7 +10,7 @@ class RandomRecommendationAgent:
         self.ontology.load()
         # Run the reasoner to obtain the inferences;
         with self.ontology:
-            sync_reasoner(infer_property_values=True)
+            sync_reasoner(infer_property_values=True, debug=0)
 
         self.individuals = []
         for c in self.ontology.classes():
@@ -25,7 +25,7 @@ class RandomRecommendationAgent:
             if vehicle.isLocatedIn[0] in list(current_neighborhood.adjacentTo) or \
                     vehicle.isLocatedIn[0] == current_neighborhood:
                 if vehicle.is_a[0] == self.ontology.ElectricCar:  # Check if electric battery is charged
-                    if not vehicle.isBatteryCharged[0]:  # TODO add random charging spot in neighborhood
+                    if not vehicle.isBatteryCharged[0]:
                         extra_travel_time = int(vehicle.timeToChargeElectricCar[0])
                 available_transport.append([vehicle, extra_travel_time])
         return available_transport

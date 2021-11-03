@@ -9,6 +9,5 @@
     "pref_location": ["Utrecht"],
     "pref_clothing": ["material some NaturalMaterial", "isFairTrade true", "maxprice 49"],
     "activity": "Clothing",
-    "strict_prefs" : [],
     "loose_prefs" : ["pref_location", "transport=Train", "duration<75"]
 }

@@ -18,16 +18,15 @@ def count_upper_case_letters(str_obj):
 class RecommendationState:
 
     def __init__(self, activity=[], transportation=[], restaurant=[], food=[], clothing_store=[], clothing_item=[],
-                 time_of_activity=[], pref_not_adhered_to=[], charging_spot='', energy=[]):
+                 pref_not_adhered_to=[], duration = 0, charging_spot = '', energy = ''):
         self.activity = activity
         self.transportation = transportation
         self.restaurant = restaurant
         self.food = food
         self.clothing_store = clothing_store
         self.clothing_item = clothing_item
-        self.time_of_activity = time_of_activity
         self.pref_not_adhered_to = pref_not_adhered_to
-        self.duration = 0
+        self.duration = duration
         self.charging_spot = charging_spot
         self.energy = energy
 
@@ -269,7 +268,7 @@ class Agent:
                                     pref_len += 1
 
                         recommendation = RecommendationState('Clothing', travel_option[0], [], [], clothing_store,
-                                                         item, preferences['time_of_activity'], loosened_prefs
+                                                         item, loosened_prefs, travel_option[1]
                                                          , charging_spot)
 
                         adhered_prefs = pref_len - len(loosened_prefs)
@@ -286,7 +285,7 @@ class Agent:
                 n_domains +=1
                 CO2_scores_per_domain.append(1)
 
-                recommendation = RecommendationState('Clothing', [], [], [], clothing_store, item, [], loosened_prefs)
+                recommendation = RecommendationState('Clothing', [], [], [], clothing_store, item, loosened_prefs, 0)
 
                 adhered_prefs = pref_len - len(loosened_prefs)
                 percentage_loose = adhered_prefs / pref_len
@@ -312,25 +311,6 @@ class Agent:
         else:
             return health_conditions
 
-    def infer_recipes_for_cuisines(self, preferred_recipes, cuisines):
-        cuisine_meals = []
-        if len(cuisines) > 0:
-            for cuisine in cuisines:
-                cuisine_meals = list(set(cuisine_meals + self.label_to_indiv[cuisine].containsMeal))
-            return list(set(preferred_recipes) & set(cuisine_meals))
-        return preferred_recipes
-
-    def filter_restaurants_on_location(self, pref_locations, restaurants):
-        restaurants_in_pref_locations = []
-        if len(restaurants) > 0 and len(pref_locations) > 0:
-            for restaurant in restaurants:
-                for location in pref_locations:
-                    if self.label_to_indiv[location] in list(
-                            restaurant.isLocatedIn) and restaurant not in restaurants_in_pref_locations:
-                        restaurants_in_pref_locations.append(restaurant)
-            return restaurants_in_pref_locations
-        else:
-            return restaurants
 
     def infer_forbidden_ingredients(self, health_conditions):
         list_forbidden_ingredients = []
@@ -521,33 +501,8 @@ class Agent:
 
         preferred_recipes = list(set(food_list) - set(health_prevented_recipes))
 
-        prefered_recipes_cuisines = self.infer_recipes_for_cuisines(preferred_recipes, cuisines)
-        # print('Recipes found based on preferences and health conditions: ', preferred_recipes)
-        # print('Recipes that match cuisine preferences: ', prefered_recipes_cuisines, '\n')
-
         recipe_with_restaurants = self.infer_restaurants(preferred_recipes)
-        recipes_restaurants_cuisines = self.infer_restaurants(prefered_recipes_cuisines)
-        recipes_restaurants_by_cuisines_loc = {}
-        recipe_with_restaurants_by_loc = {}
-        if recipe_with_restaurants != '':
-            for recipe, restaurants in recipe_with_restaurants.items():
-                # print('Ignoring the cuisine wishes, found the following restaurants that serve:', recipe.label[0])
-                # print(restaurants)
-                recipe_with_restaurants_by_loc[recipe] = self.filter_restaurants_on_location(preferences['pref_location'],
-                                                                                             restaurants)
-                # print('Of these restaurants, the following are available in', preferences['pref_location'][0])
-                # print(recipe_with_restaurants_by_loc[recipe], '\n')
-
-            for recipe, restaurants in recipes_restaurants_cuisines.items():
-                # print('Found the following', preferences['pref_cuisines'], 'restaurants that serve:', recipe.label[0])
-                # print(restaurants)
-                recipes_restaurants_by_cuisines_loc[recipe] = self.filter_restaurants_on_location(
-                    preferences['pref_location'], restaurants)
-                # print('Of these restaurants, the following are available in', preferences['pref_location'][0])
-                # print(recipes_restaurants_by_cuisines_loc[recipe], '\n')
-        else:
-            recipe_with_restaurants_by_loc = recipe_with_restaurants_by_loc = []
-        return recipe_with_restaurants, recipe_with_restaurants_by_loc, recipes_restaurants_cuisines, recipes_restaurants_by_cuisines_loc
+        return recipe_with_restaurants
 
     def find_states(self, preferences):
 
@@ -579,7 +534,7 @@ class Agent:
         if "Restaurant" in preferences["activity"]:
             current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
             health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
-            restaurants, restaurants_loc, restaurants_cuisines, restaurants_by_cuisines_loc = \
+            restaurants = \
                 agent.infer_recipes(preferences['pref_cuisines'], preferences['pref_food'], health_conditions)
 
             if agent.ontology.COVID in health_conditions:  # Agent believes user has COVID
@@ -587,20 +542,15 @@ class Agent:
                       'it has been concluded that you might have COVID-19.\n'
                       'Therefore the agent recommends not travelling and staying inside.')
                 return
-            if len(restaurants_by_cuisines_loc) == 0 and len(restaurants_loc) == 0:
-                print('Unfortunately, no restaurants were found in that location.')
+            if len(restaurants) == 0:
+                print('Unfortunately, no restaurants were found for those preferences.')
                 print('Please input other preferences to the agent')
                 return
-            elif len(restaurants_by_cuisines_loc) == 0 :
-                print('Unfortunately, no restaurants were found in that location. '
-                      'The agent will recommend other restaurants which are not located in your specified location.\n')
-                agent.create_recommendations(restaurants_cuisines, current_location)
             else:
-                options = agent.create_recommendations(restaurants, restaurants_loc, restaurants_cuisines,
-                                                       current_location, preferences['loose_prefs'])
+                options = agent.create_recommendations(restaurants, current_location, preferences)
                 # options.append(agent.create_recommendations(restaurants_cuisines, current_location))
                 # options.append(agent.create_recommendations(restaurants, current_location))
-                options.sort(key=operator.itemgetter(3, 1), reverse=True)
+                options.sort(key=operator.itemgetter(2, 1), reverse=True)
                 agent.offer_restaurant_recommendations(options, preferences)
 
         if "Clothing" in preferences["activity"]:
@@ -716,21 +666,14 @@ class Agent:
                   "In that case you could also {} or {} in which you only use sustainable energy.".format(
                 21 - preferences["time_of_activity"], preferences["weather_condition"][0].lower(), list(list(sorted_options.keys())[1])[0], list(list(sorted_options.keys())[2])[0]))
 
-    def create_transport_string(self, options):
-        transport1 = transport2 = 'No transport'
-        if len(options) > 0:
-            if options[0][0].transportation:
-                if isinstance(options[0][0].transportation, str):
-                    transport1 = options[0][0].transportation
-                else:
-                    transport1 = options[0][0].transportation.is_a[0].label[0]
-        if len(options) > 1:
-            if options[1][0].transportation:
-                if isinstance(options[1][0].transportation, str):
-                    transport2 = options[1][0].transportation
-                else:
-                    transport2 = options[1][0].transportation.is_a[0].label[0]
-        return transport1, transport2
+    def create_transport_string(self, option):
+        transport = 'No transport'
+        if option.transportation:
+            if isinstance(option.transportation, str):
+                transport = option.transportation
+            else:
+                transport = option.transportation.is_a[0].label[0]
+        return transport
 
     def offer_clothing_recommendations(self, options, preferences):
         print('Dear {},'.format(preferences["user"]))
@@ -740,7 +683,7 @@ class Agent:
             'For your entered preferences, we found {}'.format(len(options)), 'recommendation(s).')
 
             if not isinstance(options[0][0].clothing_store, list):
-                transport1, transport2 = self.create_transport_string(options)
+                transport1, transport2 = self.create_transport_string(options[0][0])
                 print('Of these recommendations, the most environmentally friendly choice which completely pertains to all your '
                   'preferences is the following garment: {0}, which can be obtained in {1}.'.format(options[0][0].clothing_item.label[0], options[0][0].clothing_store.label[0]))
                 print('{}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
@@ -771,71 +714,64 @@ class Agent:
             print('The most environmentally friendly option our agent discovered is the following garment: {}.'.format(options[0][0].clothing_item.label[0]))
                   
             if not isinstance(options[0][0].clothing_store, list):
-                transport1, transport2 = self.create_transport_string(options)
+                transport = self.create_transport_string(options[0][0])
                 print('It can be obtained in {}.'.format(options[0][0].clothing_store.label[0]))
                 print('{}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
                 'in {}.'.format(options[0][0].clothing_store.isLocatedIn[1].label[0]))
                 print( 'It is recommended to travel to this clothing store '
-                  'by {}'.format(transport1), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
+                  'by {}'.format(transport), 'which is estimated to take {}'.format(options[0][0].duration),'minutes of travel time.\n')
                 if options[0][0].charging_spot:
                     print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
-                      ' minutes. The nearest car charging spot can be found on {}'.format(options[0][0].charging_spot.label[0].split('Charging')[1]))
+                      'minutes. The nearest car charging spot can be found on {}'.format(options[0][0].charging_spot.label[0].split('Charging')[0]))
             else:
                 print('For these recommendation, the only possible option is to purchase the item online.')
 
+    def explain_restaurant_option(self, option, option_rank, transport):
+        if option_rank == 0:
+            if len(option.pref_not_adhered_to) > 0:
+                print('Of these recommendations, the most environmentally friendly option is to eat'
+                      'at the following restaurant: {}.'.format(option.restaurant.label[0]))
+                print('However this recommendation does not satisfy the following preferences: {}'.format(
+                    option.pref_not_adhered_to))
+            else:
+                print(
+                    'Of these recommendations, the most environmentally friendly option which completely satisfies to all your '
+                    'preferences is to eat at the following restaurant: {}.'.format(option.restaurant.label[0]))
+        else:
+            print(
+                'Recommendation {}'.format(option_rank+1),'is to eat at '
+                'the following restaurant: {}.'.format(option.restaurant.label[0]))
+            if len(option.pref_not_adhered_to) > 0:
+                print('However this recommendation does not satisfy the following preferences: {}'.format(
+                    option.pref_not_adhered_to))
+        print('This restaurant offers {}'.format(option.food.label[0]),
+              'which matches your food preferences.'
+              ' {}'.format(option.restaurant.label[0]),
+              'is located in the neighborhood of {}'.format(option.restaurant.isLocatedIn[0].label[0]),
+              'in {}.'.format(option.restaurant.isLocatedIn[1].label[0]))
+        print('It is recommended to travel to the restaurant '
+              'by {}'.format(transport),
+              'which is estimated to take {}'.format(option.duration), 'minutes of travel time.')
+        if option.charging_spot:
+            print('It seems your electric car needs charging, which will take around {}'.format(
+                option.transportation.timeToChargeElectricCar[0]),
+                  'minutes. The nearest car charging spot can be found on {}\n'.format(
+                      option.charging_spot.label[0].split('Charging')[0]))
+        else:
+            print('')
+
     def offer_restaurant_recommendations(self, options, preferences):
-        transport1, transport2 = self.create_transport_string(options)
         print('Dear {},'.format(preferences["user"]))
         print(
-            'For your entered preferences, {}'.format(len(options)), 'recommendations were found.')
-        if len(options[0][0].pref_not_adhered_to) == 0:
-            print(
-                'Of these recommendations, the most environmentally friendly option which completely pertains to all your '
-                'preferences is to eat at the following restaurant: {}.'.format(options[0][0].restaurant.label[0]))
-            print('This restaurant offers {}'.format(options[0][0].food.label[0]),
-                  'which matches your food preferences.'
-                  ' {}'.format(options[0][0].restaurant.label[0]),
-                  'is located in the neighborhood of {}'.format(options[0][0].restaurant.isLocatedIn[0].label[0]),
-                  'in {}.'.format(options[0][0].restaurant.isLocatedIn[1].label[0]))
-            print('It is recommended to travel to the restaurant '
-                  'by {}'.format(options[0][0].transportation.is_a[0].label[0]),
-                  'which is estimated to take {}'.format(options[0][2]), 'minutes of travel time.\n')
-            if options[0][0].charging_spot:
-                print('It seems your electric car needs charging, which will take around {}'.format(
-                    options[0][0].transportation.timeToChargeElectricCar[0]),
-                      ' minutes. The nearest car charging spot can be found on {}'.format(
-                          options[0][0].charging_spot.label[0].split('Charging')[1]))
-
-            if options[1][1] > options[0][1]:
-                print('However, a more environmentally friendly option was found when we ignore your preference of '
-                      '{}.'.format(options[1][0].pref_not_adhered_to), ' If you are able to loosen this preference, '
-                                                                       'we would recommend the following:\n')
-                print(
-                    'The recommendation with the best environmental score is to eat at the following restaurant:'
-                    ' {}.'.format(options[1][0].restaurant.label[0]))
-                print('This restaurant offers {}'.format(options[1][0].food.label[0]),
-                      'which matches your food preferences.'
-                      ' The restaurant {}'.format(options[1][0].restaurant.label[0]),
-                      'is located in the neighborhood of {}'.format(options[1][0].restaurant.isLocatedIn[0].label[0]),
-                      'in {}.'.format(options[1][0].restaurant.isLocatedIn[1].label[0]))
-                print('It is recommended to travel to the restaurant '
-                      'by {}'.format(transport2),
-                      'which is estimated to take {}'.format(options[1][2]), 'minutes of travel time.\n')
-        else:
-            options.sort(key=operator.itemgetter(1), reverse=True)
-            print('No options could be found that adhere to all your preferences. The most environmentally friendly '
-                  'option the agent could find is when your preference of {}'.format(
-                options[0][0].pref_not_adhered_to),
-                  ' is ignored.\n This recommends to eat at the following restaurant: {}.'.format(
-                      options[0][0].restaurant.label[0]))
-            print('This restaurant offers {}'.format(options[0][0].food.label[0]),
-                  'which matches your food preferences.'
-                  ' {}'.format(options[0][0].restaurant.label[0]),
-                  'is located in the neighborhood of {}'.format(options[0][0].restaurant.isLocatedIn[0].label[0]),
-                  'in {}.'.format(options[0][0].restaurant.isLocatedIn[1].label[0]))
-            print('It is recommended to travel to the restaurant '
-                  'by {}'.format(transport1),
-                  'which is estimated to take {}'.format(options[0][2]), 'minutes of travel time.\n')
+            'For your entered preferences, {}'.format(len(options)), 'recommendations were found. '
+            'The agent will output the top recommendations for you.')
+        print('The agent has ranked the recommendation based on their environmental impact.\n')
+        if len(options) > 0:
+            for index, option in enumerate(options[:]):
+                if index == 5:
+                    break
+                transport = self.create_transport_string(option[0])
+                self.explain_restaurant_option(option[0], index, transport)
 
     def offer_travel_recommendations(self, options, restricted, preferences):
         print('Dear {},'.format(preferences["user"]))
@@ -852,7 +788,7 @@ class Agent:
                 print('It seems your electric car needs charging, which will take around {}'.format(
                     options[0][0].transportation.timeToChargeElectricCar[0]),
                       ' minutes. The nearest car charging spot can be found on {}'.format(
-                          options[0][0].charging_spot.label[0].split('Charging')[1]))
+                          options[0][0].charging_spot.label[0].split('Charging')[0]))
 
             if options[1][1] > options[0][1]:
                 print('However, a more environmentally friendly option was found when we ignore your preference of '
@@ -880,26 +816,38 @@ class Agent:
             print('This recommends to travel by {}, which is estimated to take {} minutes of travel time.\n'.format(
                 options[0][0].transportation.is_a[0].label[0], options[0][2]))
 
-    def create_recommendations(self, recipe_restaurants, restaurants_loc, restaurants_cuisines,
-                               current_location, loose_prefs):
-        restaurants_loc = [item for sublist in restaurants_loc.values() for item in sublist]
-        restaurants_cuisines = [item for sublist in restaurants_cuisines.values() for item in sublist]
+    def check_restaurant_location_cuisine(self, restaurant_city, restaurant_cuisine, preferences):
+        preferred_locations = [self.label_to_indiv[i] for i in preferences["pref_location"]]
+        preferred_cuisines = [self.label_to_indiv[i] for i in preferences["pref_cuisines"]]
+        cuisine_weights = [1, 0.7, 0.5, 0.3, 0.1]
+        unsatisfied_prefs = []
+        cuisine_importance = 0
+        if "pref_cuisines" in preferences["loose_prefs"]:
+            if restaurant_cuisine in preferred_cuisines:
+                cuisine_importance = 1 - cuisine_weights[preferred_cuisines.index(restaurant_cuisine)]
+            else:
+                unsatisfied_prefs.append('Cuisine')
+        if "pref_location" in preferences["loose_prefs"]:
+            if len(preferred_locations) > 0:
+                if not restaurant_city in preferred_locations:
+                    unsatisfied_prefs.append('Location')
+        return unsatisfied_prefs, cuisine_importance
+
+    def create_recommendations(self, recipe_restaurants, current_location, preferences):
         recommendations = []
         for recipe, restaurants in recipe_restaurants.items():
             CO2_scores_per_domain = [recipe.hasCO2score[0]]
             travel_options = agent.determine_travel_options(current_location, restaurants,
                                                             preferences['user'])
             for restaurant, travel_options in travel_options.items():
-
+                restaurant_cuisine = restaurant.hasCuisine[0]
+                restaurant_city = restaurant.isLocatedIn[0].isLocatedIn[0]
                 for travel_option in travel_options:
-                    adhered_prefs = len(loose_prefs)
+                    unsatisfied_prefs, cuisine_importance = \
+                        self.check_restaurant_location_cuisine(restaurant_city, restaurant_cuisine, preferences)
+                    adhered_prefs = len(preferences["loose_prefs"]) - cuisine_importance
                     del CO2_scores_per_domain[1:]
-                    pref_not_adhered_to = []
                     charging_spot = ''
-                    if not restaurant in restaurants_loc:  # Location preference not adhered to
-                        pref_not_adhered_to.append('Location')
-                    if not restaurant in restaurants_cuisines:  # Cuisine preferences not adhered to
-                        pref_not_adhered_to.append('Cuisine')
                     if len(travel_option) == 3:
                         CO2_scores_per_domain.append(travel_option[0].hasCO2score[0] + travel_option[2])
                     elif travel_option[0] == 'Walking':
@@ -916,20 +864,20 @@ class Agent:
                             list_pref_transport = list(
                                 self.label_to_class[str(pref.split('transport=')[1])].instances())
                             if not travel_option[0] in list_pref_transport:
-                                pref_not_adhered_to.append('Transport')
+                                unsatisfied_prefs.append('Transport')
                         if 'duration' in pref:
                             max_duration = int(pref.split('duration<')[1])
                             if travel_option[1] > max_duration - 1:
-                                pref_not_adhered_to.append('Duration')
+                                unsatisfied_prefs.append('Duration')
 
                     recommendation = RecommendationState('Restaurant', travel_option[0], restaurant, recipe, [],
-                                                         [], preferences['time_of_activity'], pref_not_adhered_to
-                                                         , charging_spot)
-                    adhered_prefs = adhered_prefs - len(pref_not_adhered_to)
-                    percentage_loose = adhered_prefs / len(loose_prefs)
+                                                         [], unsatisfied_prefs,
+                                                         travel_option[1], charging_spot)
+                    adhered_prefs = adhered_prefs - len(unsatisfied_prefs)
+                    percentage_loose = adhered_prefs / len(preferences["loose_prefs"])
                     utility = recommendation.calculate_utility(percentage_loose,
                                                                CO2_scores_per_domain, n_domains)
-                    recommendations.append([recommendation, utility, travel_option[1], adhered_prefs])
+                    recommendations.append([recommendation, utility, adhered_prefs])
         return recommendations
 
     def create_travel_recommendations(self, travel_options, loose_prefs):
@@ -946,7 +894,7 @@ class Agent:
 
                 if len(travel_option) == 3:
                     CO2_scores_per_domain.append(travel_option[0].hasCO2score[0] + travel_option[2])
-                elif travel_option[0] == 'Walk':
+                elif travel_option[0] == 'Walking':
                     CO2_scores_per_domain.append(1)
                 elif travel_option[0] == 'Public Transport':
                     CO2_scores_per_domain.append(2)
@@ -961,9 +909,8 @@ class Agent:
                         if travel_option[1] > max_duration - 1:
                             pref_not_adhered_to.append('Duration')
 
-                recommendation = RecommendationState('Restaurant', travel_option[0], neighborhood, neighborhood, [],
-                                                     [], preferences['time_of_activity'], pref_not_adhered_to
-                                                     , charging_spot)
+                recommendation = RecommendationState('Restaurant', travel_option[0], [],
+                                                     [], pref_not_adhered_to, travel_option[1], charging_spot)
                 adhered_prefs = adhered_prefs - len(pref_not_adhered_to)
                 percentage_loose = adhered_prefs / len(loose_prefs)
                 utility = recommendation.calculate_utility(percentage_loose,
@@ -989,13 +936,13 @@ if __name__ == "__main__":
     options = agent.find_states(preferences)
     random_agent.recommend_random_activity(preferences)
     """
-    with open('./Users/alex.json', 'r') as openfile:
+    with open('./Users/dennis.json', 'r') as openfile:
         # Reading from json file
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
     options = agent.find_states(preferences)
-    random_agent = random_agent.RandomRecommendationAgent("IAG_Group10_Ontology.owl")
-    random_agent.recommend_random_clothing(preferences)
+    #random_agent = random_agent.RandomRecommendationAgent("IAG_Group10_Ontology.owl")
+    #random_agent.recommend_random_clothing(preferences)
     # for option in options:
     # print(option[0].clothing_item, option[1])
     # agent.find_preferences(preferences)

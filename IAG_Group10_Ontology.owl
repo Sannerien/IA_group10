@@ -535,6 +535,9 @@
         <NamedIndividual IRI="#CowMilk"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#CremerpleinChargingSpot"/>
     </Declaration>
     <Declaration>
@@ -701,6 +704,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LeliegrachtChargingSpot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lemon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LemonFishPasta"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Lombok"/>
@@ -992,6 +1001,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WatchingTV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WhiteFish"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Wind_Energy"/>
@@ -1733,6 +1745,10 @@
         <NamedIndividual IRI="#CowMilk"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PastaRecipe"/>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#CremerpleinChargingSpot"/>
     </ClassAssertion>
@@ -1955,6 +1971,14 @@
     <ClassAssertion>
         <Class IRI="#ChargingSpot"/>
         <NamedIndividual IRI="#LeliegrachtChargingSpot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruit"/>
+        <NamedIndividual IRI="#Lemon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PastaRecipe"/>
+        <NamedIndividual IRI="#LemonFishPasta"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Neighborhood"/>
@@ -2341,6 +2365,10 @@
         <NamedIndividual IRI="#WatchingTV"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Fish"/>
+        <NamedIndividual IRI="#WhiteFish"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SustainableEnergy"/>
         <NamedIndividual IRI="#Wind_Energy"/>
     </ClassAssertion>
@@ -2518,7 +2546,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#serves"/>
         <NamedIndividual IRI="#BellaItalia"/>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#BellaItalia"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#BellaItalia"/>
+        <NamedIndividual IRI="#LemonFishPasta"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#serves"/>
@@ -2714,6 +2752,21 @@
         <ObjectProperty IRI="#isForbiddenBy"/>
         <NamedIndividual IRI="#CowMilk"/>
         <NamedIndividual IRI="#LactoseIntolerance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+        <NamedIndividual IRI="#Parmesan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+        <NamedIndividual IRI="#Salmon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+        <NamedIndividual IRI="#Spaghetti"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -3008,7 +3061,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMeal"/>
         <NamedIndividual IRI="#Italian"/>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Italian"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsMeal"/>
+        <NamedIndividual IRI="#Italian"/>
+        <NamedIndividual IRI="#LemonFishPasta"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMeal"/>
@@ -3109,6 +3172,21 @@
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#LeliegrachtChargingSpot"/>
         <NamedIndividual IRI="#Grachtengordel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#LemonFishPasta"/>
+        <NamedIndividual IRI="#Lemon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#LemonFishPasta"/>
+        <NamedIndividual IRI="#Spaghetti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsIngredient"/>
+        <NamedIndividual IRI="#LemonFishPasta"/>
+        <NamedIndividual IRI="#WhiteFish"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasChargingSpot"/>
@@ -3888,7 +3966,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#serves"/>
         <NamedIndividual IRI="#Renato&apos;sOsteria"/>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
         <NamedIndividual IRI="#LasagnaBolognese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#serves"/>
+        <NamedIndividual IRI="#Renato&apos;sOsteria"/>
+        <NamedIndividual IRI="#LemonFishPasta"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#serves"/>
@@ -4021,6 +4109,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#CreamySalmonPasta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasArea"/>
         <NamedIndividual IRI="#DePijp"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">750000</Literal>
@@ -4099,6 +4192,11 @@
         <DataProperty IRI="#emitsCO2PerItem"/>
         <NamedIndividual IRI="#Leather"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCO2score"/>
+        <NamedIndividual IRI="#LemonFishPasta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasArea"/>
@@ -5071,6 +5169,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreamySalmonPasta</IRI>
+        <Literal>Creamy Salmon Pasta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CremerpleinChargingSpot</IRI>
         <Literal>Cremerplein Charging Spot</Literal>
     </AnnotationAssertion>
@@ -5438,6 +5541,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LeliegrachtChargingSpot</IRI>
         <Literal>Leliegracht Charging Spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lemon</IRI>
+        <Literal>Lemon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LemonFishPasta</IRI>
+        <Literal>Lemon Fish Pasta</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6083,6 +6196,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#WeatherConditions</IRI>
         <Literal>Weather Conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WhiteFish</IRI>
+        <Literal>White Fish</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
