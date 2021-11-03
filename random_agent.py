@@ -117,6 +117,35 @@ class RandomRecommendationAgent:
 
         print(recommendation)
 
+    def infer_stores(self, item):
+        store = ''
+        possible_stores = list(self.ontology.search(selling=item))
+        store = random.choice(possible_stores) if possible_stores else "Online store"
+        return store
+
+    def recommend_random_clothing(self, preferences):
+        class_clothing = list(self.ontology.search(subclass_of=self.ontology.search_one(label="Clothing")))
+        clothing = []
+        for c in class_clothing:
+            clothing = list(set(clothing + list(c.instances())))
+        random_clothing = random.choice(clothing)
+        random_store = self.infer_stores(random_clothing)
+        current_location = preferences['current_location']
+
+        if not preferences['current_location']:
+            current_location = self.label_to_indiv[preferences['user']].livesIn[0]
+        if random_store != "Online store":
+            travel_for_store = self.determine_travel_options(self.label_to_indiv[current_location],
+                                                              [random_store], preferences['user'])
+            random_travel_option = random.choice(list(travel_for_store[random_store]))
+            recommendation = RecommendationState('Clothing', random_travel_option[0], [], [],
+                                             random_store, random_clothing, preferences['time_of_activity'], [])
+        else: 
+            recommendation = RecommendationState('Clothing', [], [], [],
+                                             random_store, random_clothing, preferences['time_of_activity'], [])
+        
+        print("Random recommendation: item {0} sold in {1}".format(recommendation.clothing_item.label[0], recommendation.clothing_store))
+
     def recommend_random_activity(self, preferences):
 
         self.rushhour = preferences["time_of_activity"] > 16 and preferences["time_of_activity"] < 22

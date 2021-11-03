@@ -762,7 +762,7 @@ class Agent:
 
             options.sort(key = operator.itemgetter(1), reverse=True)
             print('No options could be found that adheres to all your preferences. However, for the extended preferences {}'.format(len(options)), 'recommendations were found.')
-            print('The most environmentally friendly option the agent could find, is when your preference of {}'.format(options[0][0].pref_not_adhered_to),
+            print('The most environmentally friendly option the agent could find is when your preference of {}'.format(options[0][0].pref_not_adhered_to),
                   ' is ignored.\nThis recommends to choose the following garment: {}.'.format(options[0][0].clothing_item.label[0]))
                   
             if not isinstance(options[0][0].clothing_store, list):
@@ -818,7 +818,7 @@ class Agent:
         else:
             options.sort(key=operator.itemgetter(1), reverse=True)
             print('No options could be found that adheres to all your preferences. The most environmentally friendly '
-                  'option the agent could find, is when your preference of {}'.format(
+                  'option the agent could find is when your preference of {}'.format(
                 options[0][0].pref_not_adhered_to),
                   ' is ignored.\n This recommends to eat at the following restaurant: {}.'.format(
                       options[0][0].restaurant.label[0]))
@@ -988,6 +988,8 @@ if __name__ == "__main__":
         preferences = json.load(openfile)
     agent = Agent("IAG_Group10_Ontology.owl")
     options = agent.find_states(preferences)
+    random_agent = random_agent.RandomRecommendationAgent("IAG_Group10_Ontology.owl")
+    random_agent.recommend_random_clothing(preferences)
     # for option in options:
     # print(option[0].clothing_item, option[1])
     # agent.find_preferences(preferences)

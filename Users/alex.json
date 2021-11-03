@@ -7,7 +7,7 @@
     "pref_cuisines": [],
     "pref_food": [],
     "pref_location": ["Utrecht"],
-    "pref_clothing": ["material some NaturalMaterial", "maxprice 27", "maxprice 19"],
+    "pref_clothing": ["material some NaturalMaterial","isFairTrade true", "maxprice 27"],
     "activity": "Clothing",
     "strict_prefs" : [],
     "loose_prefs" : ["pref_location", "transport=Train", "duration<75"]
