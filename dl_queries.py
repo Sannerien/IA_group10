@@ -733,14 +733,14 @@ class Agent:
 
         if len(options[0][0].pref_not_adhered_to) == 0:
             print(
-            'For your entered preferences, {}'.format(len(options)), 'recommendations were found.')
+            'For your entered preferences, we found {}'.format(len(options)), 'recommendation(s).')
 
             if not isinstance(options[0][0].clothing_store, list):
                 print('Of these recommendations, the most environmentally friendly choice which completely pertains to all your '
                   'preferences is the following garment: {0}, which can be obtained in {1}.'.format(options[0][0].clothing_item.label[0], options[0][0].clothing_store.label[0]))
                 print(' {}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
                 'in {}.'.format(options[0][0].clothing_store.isLocatedIn[1].label[0]))
-                print( 'It is recommended to travel to the clothing store '
+                print( 'It is recommended to travel to this clothing store '
                   'by {}'.format(options[0][0].transportation.is_a[0].label[0]), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
                 if options[0][0].charging_spot:
                     print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
@@ -761,15 +761,15 @@ class Agent:
         else:
 
             options.sort(key = operator.itemgetter(1), reverse=True)
-            print('No options could be found that adheres to all your preferences. However, for the extended preferences {}'.format(len(options)), 'recommendations were found.')
-            print('The most environmentally friendly option the agent could find is when your preference of {}'.format(options[0][0].pref_not_adhered_to),
-                  ' is ignored.\nThis recommends to choose the following garment: {}.'.format(options[0][0].clothing_item.label[0]))
+            print('No options could be found that adhere to all of your preferences. However, we found {0} recommendation(s) '
+            'when we ignored the following condition: {1}'.format(len(options), options[0][0].pref_not_adhered_to))
+            print('The most environmentally friendly option our agent discovered is the following garment: {}.'.format(options[0][0].clothing_item.label[0]))
                   
             if not isinstance(options[0][0].clothing_store, list):
                 print('It can be obtained in {}.'.format(options[0][0].clothing_store.label[0]))
                 print('{}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
                 'in {}.'.format(options[0][0].clothing_store.isLocatedIn[1].label[0]))
-                print( 'It is recommended to travel to the clothing store '
+                print( 'It is recommended to travel to this clothing store '
                   'by {}'.format(options[0][0].transportation.is_a[0].label[0]), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
                 if options[0][0].charging_spot:
                     print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
@@ -817,7 +817,7 @@ class Agent:
                       'which is estimated to take {}'.format(options[1][2]), 'minutes of travel time.\n')
         else:
             options.sort(key=operator.itemgetter(1), reverse=True)
-            print('No options could be found that adheres to all your preferences. The most environmentally friendly '
+            print('No options could be found that adhere to all your preferences. The most environmentally friendly '
                   'option the agent could find is when your preference of {}'.format(
                 options[0][0].pref_not_adhered_to),
                   ' is ignored.\n This recommends to eat at the following restaurant: {}.'.format(
