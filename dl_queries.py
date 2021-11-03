@@ -219,9 +219,9 @@ class Agent:
             items_with_stores_by_location[item] = self.filter_stores_on_location(preferences['pref_location'],
                                                                                  clothing_store)
 
-        return preferred_clothing, items_with_clothing_stores, items_with_stores_by_location
+        return preferred_clothing, items_with_stores_by_location
 
-    def create_clothing_recommendations(self, preferred_clothing, items_with_stores_by_location, current_location, pref_len, loosened_prefs=[]):
+    def create_clothing_recommendations(self, items_with_stores_by_location, current_location, pref_len, loosened_prefs=[]):
 
         recommendations = []
         #print("INPUT DICTIONARY: ", items_with_stores_by_location)
@@ -275,7 +275,7 @@ class Agent:
                         adhered_prefs = pref_len - len(loosened_prefs)
                         percentage_loose = adhered_prefs / pref_len
                         #print("REAL STORE ITEM FINAL: ", CO2_scores_per_domain)
-                        #print(1989, adhered_prefs, loosened_prefs, pref_len, percentage_loose)
+                        #print(adhered_prefs, loosened_prefs, pref_len, percentage_loose)
                         #print("DOMAINS: ", n_domains)
                         utility = recommendation.calculate_utility(percentage_loose,
                                                                     CO2_scores_per_domain, n_domains)
@@ -291,7 +291,7 @@ class Agent:
                 adhered_prefs = pref_len - len(loosened_prefs)
                 percentage_loose = adhered_prefs / pref_len
                 #print("ONLINE STORE ITEM FINAL: ", CO2_scores_per_domain)
-                #print(1979, adhered_prefs, loosened_prefs, pref_len, percentage_loose)
+                #print(adhered_prefs, loosened_prefs, pref_len, percentage_loose)
                 #print("DOMAINS: ", n_domains)
                 utility = recommendation.calculate_utility(percentage_loose,
                                                                     CO2_scores_per_domain, n_domains)
@@ -609,7 +609,7 @@ class Agent:
             current_location = agent.get_user_location(preferences['current_location'], preferences['user'])
             health_conditions = agent.infer_health_cond(preferences['symptoms'], preferences['user'])
             #agent.infer_clothes(preferences['pref_clothing'], preferences['health_conditions'])
-            preferred_clothing, items_with_clothing_stores, items_with_stores_by_location = \
+            preferred_clothing, items_with_stores_by_location = \
                 (agent.infer_clothes(preferences['pref_clothing'], health_conditions))
 
             if len(preferred_clothing) == 0:
@@ -621,14 +621,14 @@ class Agent:
                     #print(preferences['pref_clothing'])
                     loosened_prefs.append(preferences['pref_clothing'].pop(-1))
                     #print(preferences['pref_clothing'])
-                    preferred_clothing, items_with_clothing_stores, items_with_stores_by_location = \
+                    preferred_clothing, items_with_stores_by_location = \
                     (agent.infer_clothes(preferences['pref_clothing'], health_conditions))
-                options = agent.create_clothing_recommendations(preferred_clothing, items_with_stores_by_location, current_location, total_pref_len, loosened_prefs)
+                options = agent.create_clothing_recommendations(items_with_stores_by_location, current_location, total_pref_len, loosened_prefs)
                 options.sort(key = operator.itemgetter(3, 1), reverse=True)
                 agent.offer_clothing_recommendations(options, preferences)
 
             else:
-                options = agent.create_clothing_recommendations(preferred_clothing, items_with_stores_by_location, current_location, total_pref_len)
+                options = agent.create_clothing_recommendations(items_with_stores_by_location, current_location, total_pref_len)
                 options.sort(key = operator.itemgetter(3, 1), reverse=True)
                 agent.offer_clothing_recommendations(options, preferences)
                 # commented code for checking all recommendations
