@@ -433,6 +433,9 @@
         <NamedIndividual IRI="#Bershka_Tracksuit"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BijenkorfAmsterdam"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BikeOfDennis"/>
     </Declaration>
     <Declaration>
@@ -1580,6 +1583,10 @@
         <NamedIndividual IRI="#Bershka_Tracksuit"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ClothingStore"/>
+        <NamedIndividual IRI="#BijenkorfAmsterdam"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Bike"/>
         <NamedIndividual IRI="#BikeOfDennis"/>
     </ClassAssertion>
@@ -2552,6 +2559,16 @@
         <ObjectProperty IRI="#hasOrigin"/>
         <NamedIndividual IRI="#Bershka_Tracksuit"/>
         <NamedIndividual IRI="#BangladeshOrigin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#BijenkorfAmsterdam"/>
+        <NamedIndividual IRI="#BinnenstadAmsterdam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#selling"/>
+        <NamedIndividual IRI="#BijenkorfAmsterdam"/>
+        <NamedIndividual IRI="#OurLegacyLeatherOvershirt"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -4826,6 +4843,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Bershka_Tracksuit</IRI>
         <Literal>Bershka Tracksuit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BijenkorfAmsterdam</IRI>
+        <Literal>Bijenkorf Amsterdam</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

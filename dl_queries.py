@@ -88,6 +88,8 @@ class Agent:
                         if self.label_to_indiv[location] in list(
                                 store.isLocatedIn) and store not in stores_in_pref_locations:
                             stores_in_pref_locations.append(store)
+                        else: 
+                            stores_in_pref_locations.append('Online store only')
                 return stores_in_pref_locations
             else:
                 return stores
@@ -232,6 +234,7 @@ class Agent:
                 n_domains +=1
                 CO2_scores_per_domain.append(origin.hasCO2score[0])
             #print(200, item, CO2_scores_per_domain)
+            print(1111, item, clothing_store)
             if clothing_store[0] != 'Online store only':
                 #print("REAL STORE")
                 travel_options = agent.determine_travel_options(current_location, clothing_store,
@@ -717,15 +720,17 @@ class Agent:
     def create_transport_string(self, options):
         transport1 = transport2 = 'No transport'
         if len(options) > 0:
-            if isinstance(options[0][0].transportation, str):
-                transport1 = options[0][0].transportation
-            else:
-                transport1 = options[0][0].transportation.is_a[0].label[0]
+            if options[0][0].transportation:
+                if isinstance(options[0][0].transportation, str):
+                    transport1 = options[0][0].transportation
+                else:
+                    transport1 = options[0][0].transportation.is_a[0].label[0]
         if len(options) > 1:
-            if isinstance(options[1][0].transportation, str):
-                transport2 = options[1][0].transportation
-            else:
-                transport2 = options[1][0].transportation.is_a[0].label[0]
+            if options[1][0].transportation:
+                if isinstance(options[1][0].transportation, str):
+                    transport2 = options[1][0].transportation
+                else:
+                    transport2 = options[1][0].transportation.is_a[0].label[0]
         return transport1, transport2
 
     def offer_clothing_recommendations(self, options, preferences):
@@ -736,12 +741,13 @@ class Agent:
             'For your entered preferences, we found {}'.format(len(options)), 'recommendation(s).')
 
             if not isinstance(options[0][0].clothing_store, list):
+                transport1, transport2 = self.create_transport_string(options)
                 print('Of these recommendations, the most environmentally friendly choice which completely pertains to all your '
                   'preferences is the following garment: {0}, which can be obtained in {1}.'.format(options[0][0].clothing_item.label[0], options[0][0].clothing_store.label[0]))
-                print(' {}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
+                print('{}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
                 'in {}.'.format(options[0][0].clothing_store.isLocatedIn[1].label[0]))
                 print( 'It is recommended to travel to this clothing store '
-                  'by {}'.format(options[0][0].transportation.is_a[0].label[0]), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
+                  'by {}'.format(transport1), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
                 if options[0][0].charging_spot:
                     print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
                       ' minutes. The nearest car charging spot can be found on {}'.format(options[0][0].charging_spot.label[0].split('Charging')[1]))
@@ -766,11 +772,12 @@ class Agent:
             print('The most environmentally friendly option our agent discovered is the following garment: {}.'.format(options[0][0].clothing_item.label[0]))
                   
             if not isinstance(options[0][0].clothing_store, list):
+                transport1, transport2 = self.create_transport_string(options)
                 print('It can be obtained in {}.'.format(options[0][0].clothing_store.label[0]))
                 print('{}'.format(options[0][0].clothing_store.label[0]), 'is located in the neighborhood of {}'.format(options[0][0].clothing_store.isLocatedIn[0].label[0]),
                 'in {}.'.format(options[0][0].clothing_store.isLocatedIn[1].label[0]))
                 print( 'It is recommended to travel to this clothing store '
-                  'by {}'.format(options[0][0].transportation.is_a[0].label[0]), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
+                  'by {}'.format(transport1), 'which is estimated to take {}'.format(options[0][2]),'minutes of travel time.\n')
                 if options[0][0].charging_spot:
                     print('It seems your electric car needs charging, which will take around {}'.format(options[0][0].transportation.timeToChargeElectricCar[0]),
                       ' minutes. The nearest car charging spot can be found on {}'.format(options[0][0].charging_spot.label[0].split('Charging')[1]))
