@@ -1,6 +1,6 @@
 import random
 from owlready2 import *
-from dl_queries import RecommendationState
+from group10_agent import RecommendationState
 
 
 class RandomRecommendationAgent:
