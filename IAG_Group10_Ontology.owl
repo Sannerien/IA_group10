@@ -4451,7 +4451,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
         <NamedIndividual IRI="#UsingDishwasher"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCO2score"/>
