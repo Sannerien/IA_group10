@@ -1,4 +1,5 @@
-# IA_group10: Myrthe Hemker (6007457), Alec Flesher-Clark (1625985), Sannerien van der Toorn (6222773), Thomas Wessels (5054435), Ivan Kondyurin (9086765)
+# IA_group10: 
+Myrthe Hemker (6007457), Alec Flesher-Clark (1625985), Sannerien van der Toorn (6222773), Thomas Wessels (5054435), Ivan Kondyurin (9086765)
 
 ---READ ME---:
 For running our agent, please run the group_10_agent.py file. This requires a certain .json file as input, the standard .json file being sophie.json.
