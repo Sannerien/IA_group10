@@ -2419,6 +2419,16 @@
         <NamedIndividual IRI="#DePijp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#Boiler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Alex"/>
+        <NamedIndividual IRI="#Washmachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMeal"/>
         <NamedIndividual IRI="#American"/>
         <NamedIndividual IRI="#Cheeseburger"/>
@@ -2522,6 +2532,11 @@
         <ObjectProperty IRI="#livesIn"/>
         <NamedIndividual IRI="#Anna"/>
         <NamedIndividual IRI="#Lombok"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#TV"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -3057,6 +3072,16 @@
         <ObjectProperty IRI="#owns"/>
         <NamedIndividual IRI="#Isaac"/>
         <NamedIndividual IRI="#TeslaModel3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Isaac"/>
+        <NamedIndividual IRI="#Boiler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Isaac"/>
+        <NamedIndividual IRI="#Washmachine"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsMeal"/>
@@ -3647,6 +3672,16 @@
         <ObjectProperty IRI="#owns"/>
         <NamedIndividual IRI="#Sophie"/>
         <NamedIndividual IRI="#KiaE-Niro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Sophie"/>
+        <NamedIndividual IRI="#Boiler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsAtHome"/>
+        <NamedIndividual IRI="#Sophie"/>
+        <NamedIndividual IRI="#Dishwasher"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsIngredient"/>
@@ -4633,6 +4668,10 @@
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresHouseHoldElectronics"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#rideSharing"/>
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
@@ -4726,6 +4765,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ownsAtHome"/>
+        <Class IRI="#HouseholdElectronics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresHouseHoldElectronics"/>
         <Class IRI="#HouseholdElectronics"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -5423,6 +5466,11 @@
         <Literal>House Hould Gear</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HouseholdElectronics</IRI>
+        <Literal>Household electronics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#IceCream</IRI>
         <Literal>Ice Cream</Literal>
@@ -5706,6 +5754,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PastaRecipe</IRI>
         <Literal>Pasta Recipe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal>Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
